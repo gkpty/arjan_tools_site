@@ -1,0 +1,24 @@
+{
+  "name": "arjan_translate_gui",
+  "version": "1.0.0",
+  "description": "basic GUI for arjan translate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkpty/arjan_translate_gui.git"
+  },
+  "keywords": [
+    "translations",
+    "localization",
+    "i18n"
+  ],
+  "author": "gabriel kardonski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gkpty/arjan_translate_gui/issues"
+  },
+  "homepage": "https://github.com/gkpty/arjan_translate_gui#readme"
+}
