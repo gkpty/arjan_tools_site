@@ -1,0 +1,15 @@
+img.tool-logo{
+  max-height: 300px;
+}
+
+.navbar-brand {
+  font-size: 220%;
+}
+
+.nav-item {
+  font-size: 150%;
+}
+
+.navbar {
+  padding: 1% 8%;
+}
