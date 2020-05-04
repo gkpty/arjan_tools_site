@@ -18,6 +18,7 @@
     <!-- <link rel="preload" as="image" href="img/drone-city4.jpg"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dz.css">
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body id="page-top">
@@ -48,23 +49,32 @@
             <p>your translated site html and your JSON locale will be downloaded automatically.</p>
             <p>For advanced translation workflows check out the arjan CLI.</p>
           </div>
-          <div class="col-lg-6 p-3 bg-light">
+          <div class="col-lg-6 p-3">
             <!-- FORM BY SUPER EASY FORMS -->
-            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3" action="#">
+            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3 bg-light" action="#">
               <label for="from" class="small mb-0">From</label>
               <select class="form-control" id="from" name="from" required><option value="" selected="selected" disabled="disabled">Select a From</option><option value=en>En</option><option value=es>Es</option><option value=fr>Fr</option></select>
             
               <label for="to" class="small mb-0">To</label>
               <select class="form-control" id="to" name="to" required><option value="" selected="selected" disabled="disabled">Select a To</option><option value=en>En</option><option value=es>Es</option><option value=fr>Fr</option></select>
             
-              <label for="file" class="small mb-0">File</label>
-              <input type="file" class="form-control" id="file" name="file" placeholder="File" required>
-            
               <label for="email" class="small mb-0">Email</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+
+              <label for="file" class="small mb-0">File</label>
+              <div id="drop-area">
+                <div class="cotnainer text-center">
+                  <h4 class="text-center h5">Drag & Drop your html file</h4>
+                  <input type="file" id="fileElem" accept="html, markdown, txt" onchange="handleFiles(this.files)">
+                  <label class="button" for="fileElem">or Browse</label>
+                  <div class=""><span class="pr-2" id="fileName"></span><progress hidden id="progress-bar" max=100 value=0></progress></div>
+                </div>
+              </div>
+
+              <input id="fileBody" hidden>
   
-              <h5 id="arjantranslate-status" class="text-secondary" style="display:none;">Thanks for Contacting Us</h5>
-              <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Send</button>
+              <h5 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h5>
+              <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Translate</button>
             </form>
             <small>made with <a href="http://supereasyforms.com">super easy forms</a> <small>
           </div>
@@ -76,6 +86,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
     </script>
+    <script src="js/dz.js"></script>
     <script src="js/translate.js"></script>
   </body>
 </html>
