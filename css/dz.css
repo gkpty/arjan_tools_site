@@ -8,8 +8,6 @@
 #drop-area {
   border: 2px dashed #ccc;
   border-radius: 20px;
-  width: 480px;
-  margin: 50px auto;
   padding: 20px;
 }
 #drop-area.highlight {
@@ -32,7 +30,8 @@ p {
 }
 .button {
   display: inline-block;
-  padding: 10px;
+  padding: 5px 10px;
+  margin: 10px auto;
   background: #ccc;
   cursor: pointer;
   border-radius: 5px;
