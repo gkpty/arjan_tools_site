@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/gkpty/arjan_translate_gui/issues"
   },
-  "homepage": "https://github.com/gkpty/arjan_translate_gui#readme"
+  "homepage": "https://github.com/gkpty/arjan_translate_gui#readme",
+  "dependencies": {
+    "super-easy-forms": "^2.1.4"
+  }
 }
