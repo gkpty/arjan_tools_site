@@ -10,12 +10,14 @@ $(function(){
       beforeSend: function(data) {
           $('#arjantranslate-btn').prop('disabled', true);
           $('#arjantranslate-form :input').prop('disabled', true);
-          $('#arjantranslate-status').html('Sending...').show();
+          $('#arjantranslate-status').show();
+          $('#arjantranslate-status').addClass('loading')
       },
       success: function(data, status, jqXHR) {
         console.log(data);
         if(status === 'success'){
-          $('#arjantranslate-status').text("We'll get back to you soon").show();
+          $('#arjantranslate-status').removeClass('loading')
+          $('#arjantranslate-status').text("Done. Your download should start soon.").show();
           $('#arjantranslate-form :input').removeProp('disabled');
           $('#arjantranslate-btn').removeProp('disabled');
         }
