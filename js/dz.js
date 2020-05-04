@@ -29,8 +29,6 @@ function handleDrop(e) {
   var ext = e.dataTransfer.files[0].name.split('.')[1]
   console.log(ext)
   if(ext === 'html' || ext === 'md' || ext === 'txt'){
-    document.getElementById('fileName').textContent = e.dataTransfer.files[0].name
-    document.getElementById('progress-bar').hidden = false
     var dt = e.dataTransfer
     var files = dt.files
     handleFiles(files)
@@ -61,6 +59,8 @@ function updateProgress(fileNumber, percent) {
 }
 
 function handleFiles(files) {
+  document.getElementById('fileName').textContent = files[0].name
+  document.getElementById('progress-bar').hidden = false
   files = [...files]
   initializeProgress(files.length)
   files.forEach(uploadFile)
@@ -88,14 +88,14 @@ function uploadFile(file, i) {
     if(reader.result.length < 10380000){
       var sizeMb = reader.result.length*(1/1000000)
       console.log('total upload size: ', sizeMb)
-      document.getElementById('fileBody').value = reader.result;
-      console.log(reader.result)
+      document.getElementById('file').value = reader.result;
+      //console.log(reader.result)
     }
     else {alert('Ha excedido el Limite de 10MB de adjuntos.')};
   }, false);
 }
 
-function removePreview(elem){
+/* function removePreview(elem){
   var colId = elem+'col'
   var preview = document.getElementById(colId)
   var item = document.getElementById(elem)
@@ -105,83 +105,4 @@ function removePreview(elem){
   preview.remove()
   document.getElementById('adjuntos_qty').value -= 1
   document.getElementById('attchSize').value = parseInt(document.getElementById('attchSize').value) - itemSize
-}
-
-
-function removePreview(elem){
-var colId = elem+'col'
-var preview = document.getElementById(colId)
-var item = document.getElementById(elem)
-var itemSize = 0
-if(item.src) itemSize = item.src.length
-else if(item.data) itemSize = item.data.length
-preview.remove()
-document.getElementById('adjuntos_qty').value -= 1
-document.getElementById('attchSize').value = parseInt(document.getElementById('attchSize').value) - itemSize
-}
-
-$(function(){
-$('#consultaspanama-form').submit(function(e){
-  console.log('Submitting ...')
-  e.preventDefault();
-  let captcha = grecaptcha.getResponse();
-  if(captcha.length < 1){
-    alert('please fill out the recaptcha')
-  }
-  else {
-    //get attachments size
-    var attachments = ""
-    var delim = ''
-    var siz = $('#adjuntos_qty').val();
-    if(siz > 0){
-      for(var i =0; i < siz; i++){
-        if(i>0) delim = '*,*'
-        id = '#attch'+i;		
-        if($(id)){
-          if($(id).is('img')){
-            if($(id).attr("src") && $(id).attr("src").length > 0) attachments = attachments + delim + $(id).attr("src")
-            else console.log('image upload error: no src attribute present')
-          }
-          else if($(id).is('div')){
-            if($(id).attr("data") && $(id).attr("data").length > 0) attachments = attachments + delim + $(id).attr("data")
-            else console.log('image upload error: no src attribute present')
-          }
-        }
-      }
-    }
-    console.log(attachments.length)
-    // ** add the number of attachments to the fields
-    console.log({ "id": "","nombre": $('#nombre').val(),"correo": $('#correo').val(),"telefono": $('#telefono').val(),"tipo": $('#tipo').val(),"consulta": $('#consulta').val(),"adjuntos": attachments,"adjuntos_qty":$('#adjuntos_qty').val(), "captcha":captcha })
-    $.ajax({
-      type: "POST",
-      url: "https://1p7rjld7p9.execute-api.us-east-1.amazonaws.com/DeploymentStage/",
-      dataType: "json",
-      contentType: "application/json",
-      data: JSON.stringify( { "id": "","nombre": $('#nombre').val(),"correo": $('#correo').val(),"telefono": $('#telefono').val(),"tipo": $('#tipo').val(),"consulta": $('#consulta').val(),"adjuntos": attachments,"adjuntos_qty":$('#adjuntos_qty').val(), "captcha":captcha } ),
-      beforeSend: function(data) {
-          $('#consultaspanama-btn').prop('disabled', true);
-          $('#consultaspanama-form :input').prop('disabled', true);
-          $('#consultaspanama-status').html('Enviando...').show();
-      },
-      success: function(data, status, jqXHR) {
-        console.log(data);
-        if(data === 'Success'){
-          $('#consultaspanama-status').text("Su consulta ha sido enviada Exitosamente.").show();
-          $('#consultaspanama-form :input').removeProp('disabled');
-          $('#consultaspanama-btn').removeProp('disabled');
-        }
-        else {
-          $('#consultaspanama-status').text('Ha habido un inconveniente... Porfavor intente denuevo').show();
-          $('#consultaspanama-form :input').removeProp('disabled');
-          $('#consultaspanama-btn').removeProp('disabled');
-        }
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-        $('#consultaspanama-status').text('Error. Porfavor revise su coneccion al internet e intente denuevo').show();
-        $('#consultaspanama-form :input').removeProp('disabled');
-        $('#consultaspanama-btn').removeProp('disabled');
-      }
-    });
-  }
-}); 				
-});
+} */
