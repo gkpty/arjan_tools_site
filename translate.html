@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164485830-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-164485830-1');
-		</script> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Arjan Translate is a tool that helps you localize and translate your websites using neural machine translation">
@@ -53,13 +44,127 @@
             <!-- FORM BY SUPER EASY FORMS -->
             <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3 bg-light" action="#">
               <label for="from" class="small mb-0">From</label>
-              <select class="form-control" id="from" name="from" required><option value="" selected="selected" disabled="disabled">Select a From</option><option value=en>En</option><option value=es>Es</option><option value=fr>Fr</option></select>
+              <select class="form-control" id="from" name="from" required>
+                <option value="" selected="selected" disabled="disabled">Origin language of your site</option>
+                <option value="af">Afrikaans</option>
+                <option value="sq">Albanian</option>
+                <option value="am">Amharic</option>
+                <option value="ar">Arabic</option>
+                <option value="az">Azerbaijani</option>
+                <option value="bn">Bengali</option>
+                <option value="bs">Bosnian</option>
+                <option value="bg">Bulgarian</option>
+                <option value="zh">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="hr">Croatian</option>
+                <option value="cs">Czech</option>
+                <option value="da">Danish</option>
+                <option value="fa-AF">Dari</option>
+                <option value="nl">Dutch</option>
+                <option value="en">English</option>
+                <option value="et">Estonian</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="fr-CA">French (Canada)</option>
+                <option value="ka">Georgian</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="ha">Hausa</option>
+                <option value="he">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="lv">Latvian</option>
+                <option value="ms">Malay</option>
+                <option value="no">Norwegian</option>
+                <option value="fa">Persian</option>
+                <option value="ps">Pashto</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="sr">Serbian</option>
+                <option value="sk">Slovak</option>
+                <option value="sl">Slovenian</option>
+                <option value="so">Somali</option>
+                <option value="es">Spanish</option>
+                <option value="es-MX">Spanish (Mexico)</option>
+                <option value="sw">Swahili</option>
+                <option value="sv">Swedish</option>
+                <option value="tl">Tagalog</option>
+                <option value="ta">Tamil</option>
+                <option value="th">Thai</option>
+                <option value="tr">Turkish</option>
+                <option value="uk">Ukrainian</option>
+                <option value="ur">Urdu</option>
+                <option value="vi">Vietnamese</option>
+              </select>
             
               <label for="to" class="small mb-0">To</label>
-              <select class="form-control" id="to" name="to" required><option value="" selected="selected" disabled="disabled">Select a To</option><option value=en>En</option><option value=es>Es</option><option value=fr>Fr</option></select>
+              <select class="form-control" id="to" name="to" required>
+                <option value="" selected="selected" disabled="disabled">Desired translation language</option>
+                <option value="af">Afrikaans</option>
+                <option value="sq">Albanian</option>
+                <option value="am">Amharic</option>
+                <option value="ar">Arabic</option>
+                <option value="az">Azerbaijani</option>
+                <option value="bn">Bengali</option>
+                <option value="bs">Bosnian</option>
+                <option value="bg">Bulgarian</option>
+                <option value="zh">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="hr">Croatian</option>
+                <option value="cs">Czech</option>
+                <option value="da">Danish</option>
+                <option value="fa-AF">Dari</option>
+                <option value="nl">Dutch</option>
+                <option value="en">English</option>
+                <option value="et">Estonian</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="fr-CA">French (Canada)</option>
+                <option value="ka">Georgian</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="ha">Hausa</option>
+                <option value="he">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="lv">Latvian</option>
+                <option value="ms">Malay</option>
+                <option value="no">Norwegian</option>
+                <option value="fa">Persian</option>
+                <option value="ps">Pashto</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="sr">Serbian</option>
+                <option value="sk">Slovak</option>
+                <option value="sl">Slovenian</option>
+                <option value="so">Somali</option>
+                <option value="es">Spanish</option>
+                <option value="es-MX">Spanish (Mexico)</option>
+                <option value="sw">Swahili</option>
+                <option value="sv">Swedish</option>
+                <option value="tl">Tagalog</option>
+                <option value="ta">Tamil</option>
+                <option value="th">Thai</option>
+                <option value="tr">Turkish</option>
+                <option value="uk">Ukrainian</option>
+                <option value="ur">Urdu</option>
+                <option value="vi">Vietnamese</option>
+              </select>
             
               <label for="email" class="small mb-0">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required>
 
               <label for="file" class="small mb-0">File</label>
               <div id="drop-area">
@@ -71,9 +176,9 @@
                 </div>
               </div>
 
-              <input id="fileBody" hidden>
+              <input id="file" name="file" hidden>
   
-              <h5 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h5>
+              <h4 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h4>
               <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Translate</button>
             </form>
             <small>made with <a href="http://supereasyforms.com">super easy forms</a> <small>

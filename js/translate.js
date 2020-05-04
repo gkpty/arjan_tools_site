@@ -14,12 +14,16 @@ $(function(){
           $('#arjantranslate-status').addClass('loading')
       },
       success: function(data, status, jqXHR) {
-        console.log(data);
-        if(status === 'success'){
+        if(data && data.html && data.html.length > 1){
+          console.log(data)
+          var destFile = $('#to').val() + '.html'
+          var destJson = $('#to').val() + '.json'
           $('#arjantranslate-status').removeClass('loading')
           $('#arjantranslate-status').text("Done. Your download should start soon.").show();
           $('#arjantranslate-form :input').removeProp('disabled');
           $('#arjantranslate-btn').removeProp('disabled');
+          download(destJson, data.locale);
+          download(destFile, data.html);
         }
         else {
           $('#arjantranslate-status').text('Error. Please try again.').show();
@@ -35,3 +39,17 @@ $(function(){
     });
   }); 				
 });
+
+
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
