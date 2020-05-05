@@ -1,0 +1,137 @@
+
+              <!doctype html>
+                <html lang="en">
+                  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Documentation for  made with Super Easy Docs">
+    <title> Documentation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Docs Stylesheet -->
+    <link href="css/docs.css" rel="stylesheet">
+    <!-- Additional Stylesheets -->
+    
+    <!-- Favicon -->
+        
+  </head>
+
+                <body id="page-top">
+                  <div class="d-lg-flex" id="wrapper">
+                    
+  <div class="mobibar" id="sidebar-wrapper">
+    <div>
+      <div class="list-group list-group-flush">
+      <a href="#Arjan_Translat0" class="list-group-item list-group-item-action">Arjan Translations</a><a href="#Installation36" class="list-group-item list-group-item-action">Installation</a>
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="Usage44-dropdown">Usage
+          <i id="Usage44-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="Usage44-dropdown">
+          <a href="#Then_what?56"><span>Then what?</span></a>
+        </div>
+      </div>
+      <a href="#Methods88" class="list-group-item list-group-item-action">Methods</a>
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="CLI_Commands_154-dropdown">CLI Commands (coming soon)
+          <i id="CLI_Commands_154-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="CLI_Commands_154-dropdown">
+          <a href="#init156"><span>init</span></a><a href="#translate174"><span>translate</span></a>
+        </div>
+      </div>
+      
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="Translation_Fo206-dropdown">Translation Format
+          <i id="Translation_Fo206-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="Translation_Fo206-dropdown">
+          <a href="#HTML5_Coming_S262"><span>HTML5 (Coming Soon)</span></a><a href="#Dont_translate_290"><span>Dont translate (Coming Soon)</span></a>
+        </div>
+      </div>
+      
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="Provider_Setup298-dropdown">Provider Setup
+          <i id="Provider_Setup298-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="Provider_Setup298-dropdown">
+          <a href="#AWS_306"><span>AWS </span></a><a href="#Google_Cloud_C324"><span>Google Cloud (Coming Soon)</span></a>
+        </div>
+      </div>
+      
+      <div class="dropdown list-group-item p-0">
+        <button class="dropbtn" name="Programmatic_U346-dropdown">Programmatic Use
+          <i id="Programmatic_U346-dropdown-caret" class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="Programmatic_U346-dropdown">
+          <a href="#Installation348"><span>Installation</span></a><a href="#Usage356"><span>Usage</span></a>
+        </div>
+      </div>
+      <a href="#Arjan_translat388" class="list-group-item list-group-item-action">Arjan translate GUI</a>
+      </div>
+    </div>
+  </div>
+  
+                    <div id="page-content-wrapper">
+                      
+  <nav class="navbar navbar-light bg-light fixed-top py-3">
+    <a class="navbar-brand" href="#page-top">Docs</a>
+  </nav>
+  
+                      <div class="container docs">
+                        <section id="Arjan_Translat0"><h1>Arjan Translations</h1><strong>Automatic localization + Translation of HTML files using neural machine translation</strong><strong>You can use Arjan in three ways</strong><ol><li>The Arjan translation GUI:</li><ol><li> Pros: GUI</li><li> cons: </li><ol><li> only translate a single page at a time</li><li> cont update translations</li></ol></ol><li> Programmatic usage</li><ol><li> Pros: integrate into other programs and workflows</li></ol><li> Arjan CLI (coming soon)</li><ol><li> pros: </li><ol><li> translate multiple pages</li><li> bi-directional translation updates</li></ol><li> cons: No GUI. basic terminal usage knowledge</li></ol></ol></section><section id="Installation36"><h1>Installation</h1><code>npm i arjan-translate</code></section><section id="Usage44"><h1>Usage</h1><ol><li>go into your sites directory <code>cd SITE_NAME</code></li></ol><li> run <code>arjan init SITE_NAME</code>  Refer to the provider setup section if you haven't used any of the cloud translation APIs.</li><li> Run the translate command <code>arjan translate SITE_NAME [FILENAME]</code></li></ol><h2 id=Then_what?56>Then what?</h2><p>the translate command generates 3 things (or maybe 4)</p><ol><li><strong>locale JSON files</strong> for the input and output languages</li><li> <strong>translated html file/s</strong> with the output language code (es.html or es/about.html)</li><li> <strong>localized html files.</strong> i18n compatible</li><li> <strong>CSV</strong> file with translations</li></ol><p>Once you have translated your doc you can improve all of your translations by working directly on your neatly organized JSON locale files and running the translate command with the —update flag (-u).</p><p>Arjan translations is bi-directional meaning that you can also work on the output HTML files and then run the translate command with the —backwards (-b) flag to update your JSON files.</p><p>You can also generate a single CSV file with all the translations for your site by running the translate command with the —export flag (-e). if you use both the —export and —backwards flags you can update the CSV with site data. if you provide the filename arg only translations for that file will be included in the CSV.</p></section><section id="Methods88"><h1>Methods</h1><strong>createLocale(html, filename, from, to, callback)</strong>:  <ol><li>Parses the HTML of the input file; </li><li> for all elements that contain text it adds an ID</li><li> generates or re-writes a JSON file that contains ids and the text values.</li></ol><strong>traslateLocale(input, filename, from, to, size, callback)</strong>:<ol><li>Translates each value using amazon translate</li><li> generates or re-writes a JSON file that contains ids and translated values</li></ol><strong>translateHtml(filename, html, translation, translations, to, callback):</strong><ol><li>copies the input HTML </li><li> replaces all values with the translated value</li></ol><strong>translateSite(from, to):</strong><ol><li>createLocale</li><li> translateLocale</li><li> translateHtml</li></ol><strong>exportCsv(lang, filename):</strong><ol><li>Exports a desired JSON locale as a CSV</li></ol><strong>importCsv(lang, filepath):</strong><ol><li>Updates a JSON locale with data from a CSV file</li></ol></section><section id="CLI_Commands_154"><h1>CLI Commands (coming soon)</h1><h2 id=init156>init</h2><code>arjan init SITE_NAME [PROVIDER]</code>  <strong>Args</strong><ul><li><strong>Site Name</strong>: required → String → The name of your site e.g. amazon or amazon.com. Include the TLD (.com) if you have another project with the same name and a different TLD like .org or something.</li><li> <strong>Provider</strong>:optional → aws|gcp → The desired translation provider. You can choose google cloud or AWS</li></ul><strong>Flags</strong><ul><li>profile: local AWS profile name</li><li> region: AWS region e.g. us-east-1</li></ul><h2 id=translate174>translate</h2><code>arjan translate SITE_NAME \[FROM_LANG\] [TO_LANG] [FILENAME]</code><strong>Args</strong><ul><li><strong>Site Name</strong> → required → the name of your site e.g. amazon or amazon.com. Include the TLD (.com) if you have another project with the same name and a different TLD like .org or something.</li><li> <strong>From Lang</strong> → required → origin language code ex. en</li><li> <strong>To Lang</strong> → optional → destination language code ex. es. If the argument is not provided or the same origin lang is used only the origin site will be procesed and parsed.</li><li> <strong>File Name</strong> → optional → the name of your file e.g. index or index.html not necessary to include the .html. if filename is not provided, it will translate all of the html files inside the directory. For quicker builds in large websites its recommended to use this arg if you only change a few files.</li></ul><strong>Flags</strong><ul><li><strong>new</strong> → true|false → Generate a new translation </li><li> <strong>update</strong> → true|false → Update your translated HTML files according to changes in your JSON locales.</li><li> change → true|false → If you make changes to one of your files (e.g. added a new section or changed some of the wording, and you want to reflect these changes in your other languages you can use the —change (-c) flag. (this is the most memory intensive operation)</li><li> <strong>backwards</strong> → true|false → Update your JSON locales according to changes in your HTML files.</li><li> <strong>format</strong> → arjan|i18n|both → Choose your desired HTML file build format. arjan, i18n or both (arjan is default). When building backwards its important to provide this flag if you want to use i18n.</li><li> <strong>export</strong> → true|false → Produce a CSV file with all of your translation data</li><li> <strong>html5</strong> → true|false → produce parent objects in JSON schema.</li></ul></section><section id="Translation_Fo206"><h1>Translation Format</h1><p>You can translate a static site into one of two output formats:</p><ol><li>Arjan: Great for static websites</li><li> i18n: Widely accepted and supported translation format for apps.</li></ol><p>Lets suppose our input is an en.html file with the following content: </p><pre><code><span><</span>section<span>></span>
+  <span><</span>h1 id="title1"<span>></span>Arjan is super cool<span><</span>/h1<span>></span>
+<span><</span>/section<span>></span>
+</pre></code><strong>After running the translate command we would get the following output:</strong><ol><li>locales/en.json → <code>{</code> <code>"</code><code>title1</code><code>"</code><code>:</code><code>"</code><code>Arjan is super cool</code><code>"</code> <code>}</code></li><li> en.html </li><ol><li> Arjan → <code><span><</span>h1 id="title1"<span>></span> Arjan is super cool <span><</span>/h1<span>></span></code></li><li> I18n → <code><span><</span>h1 id="title1"<span>></span> {{arjan.t('title1)}} <span><</span>/h1<span>></span></code></li></ol></ol><strong>Lets suppose that our input string didnt have an id attribute:</strong><ol><li>locales/en.json → <code>{ "arjan_is_sup1":"Arjan is super cool" }</code></li></ol><li> en.html </li><ol><li> Arjan → <code><span><</span>h1 id="arjan_is_sup1"<span>></span> Arjan is super cool <span><</span>/h1<span>></span></code></li><li> en.html → <code><span><</span>h1<span>></span> {{arjan.t('arjan_is_sup1')}} <span><</span>/h1<span>></span></code></li></ol></ol><p>Notice that an id with the first 12 characters of the string is created. Caps are lower-cased and spaces are replaced with underscores. A number with the index of the translations is inserted at the end (in case there’s another string that starts with the same 12 chars)</p><h2 id=HTML5_Coming_S262>HTML5 (Coming Soon)</h2><ul><li>if you are using html5 elements in your page (nav, header, section, footer) you can add the html5 option in the translate command. This will generate objects with ids of html5 elements (nav, header, section, footer) and will insert translations as children of the object they belong to. suppose were still using the example above without ids:</li><ol><li>translations/en.json → <code>{ "section1":{"arjan_is_sup":"Arjan is super cool" }}</code></li></ol><li> en.html</li>
+  <ol>
+    <li>Arjan → <code><span><</span>section id="section1"><span><</span>h1 id="section1_arjan_is_sup"<span>></span> Arjan is super cool <span><</span>/h1<span>></span><span><</span>/section<span>></span></code></li>
+    <li>I18n → <code><span><</span>section<span>></span><span><</span>h1<span>></span> {{arjan.t('section1.arjan_is_sup')}} <span><</span>/h1<span>></span><span><</span>/section<span>></span></code></li>
+</ol><h2 id=Dont_translate_290>Dont translate (Coming Soon)</h2><p>You can use the <a href='https://www.w3schools.com/tags/att_global_translate.asp'>HTML translate tag</a> to tell arjan if you dont want to translate a particular element by setting <code>translate=</code><code>"</code><code>no</code><code>"</code> in your element</p></section><section id="Provider_Setup298"><h1>Provider Setup</h1><p>before doing any of this you must have an account in Amazon Web Services  or an account in Google Cloud Platform with a billing plan. Creating an account in either platform is easy and free. and unless your are translating more than 20 million characters per month both translation services are free.</p><h2 id=AWS_306>AWS </h2><ol><li>Run arjan <code>init SITE_NAME aws -r=your-aws-region -p=profile-name</code> from the root of your project's directory</li></ol><li> Finish creating your IAM user in the AWS Console and hold on to the access keys.</li><li> <strong>Update the local profile in your machine.</strong> The local profiles are stored in <code>~/.aws/credentials</code> in mac/linux or in <code>C:\Users\USER_NAME\.aws\credentials</code> in windows. you can create/edit this file by runing <code>sudo nano ~/.aws/credentials</code>. add the profile keys in the format shown bellow.</li><pre><code> [profilename]
+ aws_access_key_id = <span><</span>YOUR_ACCESS_KEY_ID<span>></span>
+ aws_secret_access_key = <span><</span>YOUR_SECRET_ACCESS_KEY<span>></span>
+</ol></pre></code><h2 id=Google_Cloud_C324>Google Cloud (Coming Soon)</h2><ol><li>Go to https://cloud.google.com/translate/docs/basic/setup-basic and click on the set up a project button.</li><li> Click to:</li><pre><code>- Create a project, you can call it arjan translate if you like, then click next
+- Enable the Cloud Translation API for that project.
+- Create a service account.
+- Download a private key as JSON.
+</ol></pre></code>3. Set the environment variable <strong>GOOGLE_APPLICATION_CREDENTIALS</strong> to your service account key.<p>Then run the init command <code>arjan init SITE_NAME gcs</code> </p></section><section id="Programmatic_U346"><h1>Programmatic Use</h1><h2 id=Installation348>Installation</h2><code>npm i arjan_translate</code><h2 id=Usage356>Usage</h2><pre><code>const arjanTranslate = require('arjan-translate')
+
+//REGION is the AWS region of your IAM role ex. 'use-east-1'
+//PROFILE is the name of your desired AWS IAM profile ex. 'deafult'
+
+arjanTranslate.Build('REGION', 'PROFILE', function(err, data){
+  if(err) console.log(err)
+  else {
+    //FROM is the language code of your origin file ex. 'en'
+    //TO is the language code of your destination file ex. 'es'
+    arjanTranslate.TranslateSite('FROM', 'TO');
+  }
+})
+</pre></code></section><section id="Arjan_translat388"><h1>Arjan translate GUI</h1><p>Arjan translate also has a GUI at <a href='http://arjan.tools/trans;ate.html'>arjan.tools/translate</a> </p><p>the GUI is pretty limited as you cant update your translations but its good for a one time job especially if you have no programming experience. Its also a cool way of trying out the tool and checking out the format.</p><p>The GUI is a form with a from field, a to field, and a drop zone were you can drag and drop your files. Only HTML, txt, and markdown files supported.</p>
+                        </section>
+                      </div>
+                      
+<footer class="bg-dark sticky-bottom text-center text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="text-lg-left">Copyright &copy; Super Easy Forms 2019</p>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-lg-right">powered by Super Easy Docs</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+                    </div>
+                  </div>
+                  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="js/docs.js"></script>
+
+                </body>
+              </html>        
+              
