@@ -17,11 +17,13 @@
     <title>Arjan</title>
     <!-- <link rel="preload" as="image" href="img/drone-city4.jpg"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/index.css">
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/flip-card.css">
+    <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Arjan</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,34 +31,101 @@
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="translate.html">Translate</a>
-          <a class="nav-item nav-link" href="#">Docs</a>
+          <a class="nav-item nav-link" href="docs.html">Docs</a>
         </div>
       </div>
     </nav>
+
     <header>
       <div class="container">
-        <h1 class="text-center pt-5">Modular Tools for Static Sites</h1>
-        <div class="row pt-5">
-          <div class="col-lg-4">
-            <a href="#">
-              <img class="tool-logo img-fluid p-4" src="img/optimize.svg" alt="">
-              <h2 class="text-center h3">Optimize</h2>
-            </a>
+        <h1 class="text-center main-title">Modular Tools for Static Websites</h1>
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center tool-element flip-card" id="torufobj_torus_framework">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/optimize.svg" class="tool-logo">
+                <h2><span class="torufattr_title">Optimize</span></h2>
+              </div>
+              <div class="flip-card-back">
+                <p class="p-3"><span class="torufattr_description">An open source serverless form generator</span></p>
+                <div>
+                  <a class="torufhref_website px-2" href="https://supereasyforms.com">
+                    <i class="fas fa-xl fa-globe"></i>
+                  </a>
+                  <a class="torufhref_github px-2" href="gkpty/super-easy-forms">
+                    <i class="fab fa-xl fa-github"></i>
+                  </a>
+                  <a class="torufhref_installation px-2" href="https://supereasyforms.com/#getting_started">
+                    <i class="fas fa-xl fa-download"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4">
-            <a href="translate.html">
-              <img class="tool-logo img-fluid p-4" src="img/translate.svg" alt="">
-              <h2 class="text-center h3">Translate</h2>
-            </a>
+
+          <div class="col-lg-4 text-center tool-element flip-card" id="torufobj_torus_framework">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/translate.svg" class="tool-logo">
+                <h2><span class="torufattr_title">Translate</span></h2>
+              </div>
+              <div class="flip-card-back">
+                <p class="p-3"><span class="torufattr_description">An open source serverless form generator</span></p>
+                <div>
+                  <a class="torufhref_website px-2" href="https://supereasyforms.com">
+                    <i class="fas fa-xl fa-globe"></i>
+                  </a>
+                  <a class="torufhref_github px-2" href="gkpty/super-easy-forms">
+                    <i class="fab fa-xl fa-github"></i>
+                  </a>
+                  <a class="torufhref_installation px-2" href="https://supereasyforms.com/#getting_started">
+                    <i class="fas fa-xl fa-download"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4">
-            <a href="#">
-              <img class="tool-logo img-fluid p-4" src="img/deploy.svg" alt="">
-              <h2 class="text-center h3">Deploy</h2>
-            </a>
+
+          <div class="col-lg-4 text-center tool-element flip-card" id="torufobj_torus_framework">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/deploy.svg" class="tool-logo">
+                <h2><span class="torufattr_title">Deploy</span></h2>
+              </div>
+              <div class="flip-card-back">
+                <p class="p-3"><span class="torufattr_description">An open source serverless form generator</span></p>
+                <div>
+                  <a class="torufhref_website px-2" href="https://supereasyforms.com">
+                    <i class="fas fa-xl fa-globe"></i>
+                  </a>
+                  <a class="torufhref_github px-2" href="gkpty/super-easy-forms">
+                    <i class="fab fa-xl fa-github"></i>
+                  </a>
+                  <a class="torufhref_installation px-2" href="https://supereasyforms.com/#getting_started">
+                    <i class="fas fa-xl fa-download"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+          
         </div>
       </div>
     </header>
+      <footer class="bg-secondary text-center sticky-bottom p-footer">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="text-lg-left">Copyright &copy; Arjan Tools 2020</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-lg-right">powered by Super Easy Docs</a></p>
+          </div>
+        </div>
+    </footer>
+    <script defer
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"></script>
+    <script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
   </body>
 </html>

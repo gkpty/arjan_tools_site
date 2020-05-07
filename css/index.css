@@ -1,3 +1,13 @@
+.main-title {
+  font-size: 300%;
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+.fa-xl {
+  font-size: 2.8em;
+}
+
 img.tool-logo{
   max-height: 300px;
 }
@@ -32,4 +42,8 @@ img.tool-logo{
 }
 .loading span:nth-child(3) {
   animation-delay: .4s;
+}
+
+.p-footer {
+  padding: 2% 8%;
 }

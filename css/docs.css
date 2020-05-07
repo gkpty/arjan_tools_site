@@ -2,10 +2,7 @@
 body {
   overflow-x: hidden;
 }
-section, h2 {
-  padding-top: 65px;
-  margin-top: -60px;
-}
+
 span, i {
   pointer-events: none;
 }
@@ -17,26 +14,24 @@ span, i {
   
 }
 @media (min-width: 800px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
+
   #page-content-wrapper {
     min-width: 0;
     width: 100%;
   }
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
-  }
+
   .mobibar {
-    background-color: #fff !important;
+    height: 100vh;
+    background-color: transparent !important;
     min-width: 25%;
     border-right: 1px solid #cccccc;
-    padding-top: 8%;
+    position: fixed;
+  }
+  .docs{
+    margin-left: 27%;
   }
 }
-.docs{
-  padding-top: 100px;
-}
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -83,4 +78,27 @@ span, i {
 }
 .sub-dropdown a span {
   margin-left: 50px;
+}
+pre code {
+  color: #e83e8c;
+}
+
+h1{
+  padding-top: 2%;
+}
+h2 {
+  padding-top: 1%;
+}
+
+.pl-8 {
+  padding-left: 32%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 220%;
+  color: #000;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
 }
