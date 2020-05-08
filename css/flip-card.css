@@ -25,19 +25,22 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: hsla(0, 0%, 90%, .4);
+  background-color: hsl(0, 0%, 90%);
   color: black;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: hsla(0, 0%, 80%, .5);
-  color: white;
+  background-color: hsl(0, 0%, 90%);
   transform: rotateY(180deg);
+}
+
+.bg-card{
+  background-color: hsl(0, 0%, 90%);
 }

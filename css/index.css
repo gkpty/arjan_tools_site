@@ -1,7 +1,14 @@
+header {
+  min-height: 75vh;
+}
+
 .main-title {
   font-size: 300%;
   padding-top: 5%;
-  padding-bottom: 7%;
+}
+
+.card-row {
+  padding: 7% 0%;
 }
 
 .fa-xl {
@@ -46,4 +53,8 @@ img.tool-logo{
 
 .p-footer {
   padding: 2% 8%;
+}
+
+.bold{
+  font-weight: bold;
 }
