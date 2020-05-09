@@ -1,5 +1,5 @@
 header {
-  min-height: 75vh;
+  min-height: 79vh;
 }
 
 .main-title {
@@ -26,9 +26,20 @@ img.tool-logo{
 .nav-item {
   font-size: 150%;
 }
+.text-lg {
+  font-size: 150%;
+}
 
 .navbar {
   padding: 1% 8%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.card-icons a:hover {
+  text-decoration: none;
 }
 
 
@@ -57,4 +68,10 @@ img.tool-logo{
 
 .bold{
   font-weight: bold;
+}
+
+@media(max-width: 992px){
+  .tool-element{
+    margin-bottom: 4%;
+  }
 }

@@ -28,7 +28,8 @@ span, i {
     position: fixed;
   }
   .docs{
-    margin-left: 27%;
+    margin-left: 25%;
+    padding: 0 2%;
   }
 }
 
