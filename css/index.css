@@ -1,3 +1,6 @@
+body {font-family: 'Open Sans', sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Nunito', sans-serif;}
+
 header {
   min-height: 79vh;
 }
@@ -21,6 +24,7 @@ img.tool-logo{
 
 .navbar-brand {
   font-size: 220%;
+  font-family: 'Nunito', sans-serif;
 }
 
 .nav-item {
