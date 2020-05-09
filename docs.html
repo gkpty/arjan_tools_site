@@ -1,8 +1,18 @@
 
-              <!doctype html>
-                <html lang="en">
+<!doctype html>
+  <html lang="en">
                   
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120987591-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120987591-4');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Documentation for  made with Super Easy Docs">
@@ -12,19 +22,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Docs Stylesheet -->
     <link href="css/docs.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <!-- Additional Stylesheets -->
     
     <!-- Favicon -->
         
   </head>
 
-                <body id="page-top">
-                  <div class="d-lg-flex" id="wrapper">
+  <body id="page-top">
+    <div class="d-lg-flex" id="wrapper">
                     
   <div class="mobibar" id="sidebar-wrapper">
     <div>
       <div class="list-group list-group-flush">
-      <a href="#Arjan_Translat0" class="list-group-item list-group-item-action">Arjan Translations</a><a href="#Installation36" class="list-group-item list-group-item-action">Installation</a>
+      <a class="pl-8 bg-light" href="#page-top">Arjan</a> 
+      <a href="#Arjan_Translat0" class="list-group-item list-group-item-action">Arjan Translate</a><a href="#Installation36" class="list-group-item list-group-item-action">Installation</a>
       <div class="dropdown list-group-item p-0">
         <button class="dropbtn" name="Usage44-dropdown">Usage
           <i id="Usage44-dropdown-caret" class="fa fa-caret-down"></i>
@@ -76,12 +88,21 @@
   
                     <div id="page-content-wrapper">
                       
-  <nav class="navbar navbar-light bg-light fixed-top py-3">
-    <a class="navbar-brand" href="#page-top">Docs</a>
-  </nav>
+                      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">Arjan</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                          <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="translate.html">Translate</a>
+                            <a class="nav-item nav-link" href="#page-top">Docs</a>
+                          </div>
+                        </div>
+                      </nav>
   
-                      <div class="container docs">
-                        <section id="Arjan_Translat0"><h1>Arjan Translations</h1><strong>Automatic localization + Translation of HTML files using neural machine translation</strong><strong>You can use Arjan in three ways</strong><ol><li>The Arjan translation GUI:</li><ol><li> Pros: GUI</li><li> cons: </li><ol><li> only translate a single page at a time</li><li> cont update translations</li></ol></ol><li> Programmatic usage</li><ol><li> Pros: integrate into other programs and workflows</li></ol><li> Arjan CLI (coming soon)</li><ol><li> pros: </li><ol><li> translate multiple pages</li><li> bi-directional translation updates</li></ol><li> cons: No GUI. basic terminal usage knowledge</li></ol></ol></section><section id="Installation36"><h1>Installation</h1><code>npm i arjan-translate</code></section><section id="Usage44"><h1>Usage</h1><ol><li>go into your sites directory <code>cd SITE_NAME</code></li></ol><li> run <code>arjan init SITE_NAME</code>  Refer to the provider setup section if you haven't used any of the cloud translation APIs.</li><li> Run the translate command <code>arjan translate SITE_NAME [FILENAME]</code></li></ol><h2 id=Then_what?56>Then what?</h2><p>the translate command generates 3 things (or maybe 4)</p><ol><li><strong>locale JSON files</strong> for the input and output languages</li><li> <strong>translated html file/s</strong> with the output language code (es.html or es/about.html)</li><li> <strong>localized html files.</strong> i18n compatible</li><li> <strong>CSV</strong> file with translations</li></ol><p>Once you have translated your doc you can improve all of your translations by working directly on your neatly organized JSON locale files and running the translate command with the —update flag (-u).</p><p>Arjan translations is bi-directional meaning that you can also work on the output HTML files and then run the translate command with the —backwards (-b) flag to update your JSON files.</p><p>You can also generate a single CSV file with all the translations for your site by running the translate command with the —export flag (-e). if you use both the —export and —backwards flags you can update the CSV with site data. if you provide the filename arg only translations for that file will be included in the CSV.</p></section><section id="Methods88"><h1>Methods</h1><strong>createLocale(html, filename, from, to, callback)</strong>:  <ol><li>Parses the HTML of the input file; </li><li> for all elements that contain text it adds an ID</li><li> generates or re-writes a JSON file that contains ids and the text values.</li></ol><strong>traslateLocale(input, filename, from, to, size, callback)</strong>:<ol><li>Translates each value using amazon translate</li><li> generates or re-writes a JSON file that contains ids and translated values</li></ol><strong>translateHtml(filename, html, translation, translations, to, callback):</strong><ol><li>copies the input HTML </li><li> replaces all values with the translated value</li></ol><strong>translateSite(from, to):</strong><ol><li>createLocale</li><li> translateLocale</li><li> translateHtml</li></ol><strong>exportCsv(lang, filename):</strong><ol><li>Exports a desired JSON locale as a CSV</li></ol><strong>importCsv(lang, filepath):</strong><ol><li>Updates a JSON locale with data from a CSV file</li></ol></section><section id="CLI_Commands_154"><h1>CLI Commands (coming soon)</h1><h2 id=init156>init</h2><code>arjan init SITE_NAME [PROVIDER]</code>  <strong>Args</strong><ul><li><strong>Site Name</strong>: required → String → The name of your site e.g. amazon or amazon.com. Include the TLD (.com) if you have another project with the same name and a different TLD like .org or something.</li><li> <strong>Provider</strong>:optional → aws|gcp → The desired translation provider. You can choose google cloud or AWS</li></ul><strong>Flags</strong><ul><li>profile: local AWS profile name</li><li> region: AWS region e.g. us-east-1</li></ul><h2 id=translate174>translate</h2><code>arjan translate SITE_NAME \[FROM_LANG\] [TO_LANG] [FILENAME]</code><strong>Args</strong><ul><li><strong>Site Name</strong> → required → the name of your site e.g. amazon or amazon.com. Include the TLD (.com) if you have another project with the same name and a different TLD like .org or something.</li><li> <strong>From Lang</strong> → required → origin language code ex. en</li><li> <strong>To Lang</strong> → optional → destination language code ex. es. If the argument is not provided or the same origin lang is used only the origin site will be procesed and parsed.</li><li> <strong>File Name</strong> → optional → the name of your file e.g. index or index.html not necessary to include the .html. if filename is not provided, it will translate all of the html files inside the directory. For quicker builds in large websites its recommended to use this arg if you only change a few files.</li></ul><strong>Flags</strong><ul><li><strong>new</strong> → true|false → Generate a new translation </li><li> <strong>update</strong> → true|false → Update your translated HTML files according to changes in your JSON locales.</li><li> change → true|false → If you make changes to one of your files (e.g. added a new section or changed some of the wording, and you want to reflect these changes in your other languages you can use the —change (-c) flag. (this is the most memory intensive operation)</li><li> <strong>backwards</strong> → true|false → Update your JSON locales according to changes in your HTML files.</li><li> <strong>format</strong> → arjan|i18n|both → Choose your desired HTML file build format. arjan, i18n or both (arjan is default). When building backwards its important to provide this flag if you want to use i18n.</li><li> <strong>export</strong> → true|false → Produce a CSV file with all of your translation data</li><li> <strong>html5</strong> → true|false → produce parent objects in JSON schema.</li></ul></section><section id="Translation_Fo206"><h1>Translation Format</h1><p>You can translate a static site into one of two output formats:</p><ol><li>Arjan: Great for static websites</li><li> i18n: Widely accepted and supported translation format for apps.</li></ol><p>Lets suppose our input is an en.html file with the following content: </p><pre><code><span><</span>section<span>></span>
+                      <div class="docs">
+                        <section id="Arjan_Translat0"><h1>Arjan Translate</h1><h4 class="pb-3">Automatic localization + Translation of HTML files using neural machine translation</h4><strong>You can use Arjan in three ways</strong><ol><li>The Arjan translation GUI:</li><ol><li> Pros: GUI</li><li> cons: </li><ol><li> only translate a single page at a time</li><li> cont update translations</li></ol></ol><li> Programmatic usage</li><ol><li> Pros: integrate into other programs and workflows</li></ol><li> Arjan CLI (coming soon)</li><ol><li> pros: </li><ol><li> translate multiple pages</li><li> bi-directional translation updates</li></ol><li> cons: No GUI. basic terminal usage knowledge</li></ol></ol></section><section id="Installation36"><h1>Installation</h1><code>npm i arjan-translate</code></section><section id="Usage44"><h1>Usage</h1><ol><li>go into your sites directory <code>cd SITE_NAME</code></li><li> run <code>arjan init SITE_NAME</code>  Refer to the provider setup section if you haven't used any of the cloud translation APIs.</li><li> Run the translate command <code>arjan translate SITE_NAME [FILENAME]</code></li></ol><h2 id=Then_what?56>Then what?</h2><p>the translate command generates 3 things (or maybe 4)</p><ol><li><strong>locale JSON files</strong> for the input and output languages</li><li> <strong>translated html file/s</strong> with the output language code (es.html or es/about.html)</li><li> <strong>localized html files.</strong> i18n compatible</li><li> <strong>CSV</strong> file with translations</li></ol><p>Once you have translated your doc you can improve all of your translations by working directly on your neatly organized JSON locale files and running the translate command with the —update flag (-u).</p><p>Arjan translations is bi-directional meaning that you can also work on the output HTML files and then run the translate command with the —backwards (-b) flag to update your JSON files.</p><p>You can also generate a single CSV file with all the translations for your site by running the translate command with the —export flag (-e). if you use both the —export and —backwards flags you can update the CSV with site data. if you provide the filename arg only translations for that file will be included in the CSV.</p></section><section id="Methods88"><h1>Methods</h1><strong>createLocale(html, filename, from, to, callback)</strong>:  <ol><li>Parses the HTML of the input file; </li><li> for all elements that contain text it adds an ID</li><li> generates or re-writes a JSON file that contains ids and the text values.</li></ol><strong>traslateLocale(input, filename, from, to, size, callback)</strong>:<ol><li>Translates each value using amazon translate</li><li> generates or re-writes a JSON file that contains ids and translated values</li></ol><strong>translateHtml(filename, html, translation, translations, to, callback):</strong><ol><li>copies the input HTML </li><li> replaces all values with the translated value</li></ol><strong>translateSite(from, to):</strong><ol><li>createLocale</li><li> translateLocale</li><li> translateHtml</li></ol><strong>exportCsv(lang, filename):</strong><ol><li>Exports a desired JSON locale as a CSV</li></ol><strong>importCsv(lang, filepath):</strong><ol><li>Updates a JSON locale with data from a CSV file</li></ol></section><section id="CLI_Commands_154"><h1>CLI Commands (coming soon)</h1><h2 id=init156>init</h2><code>arjan init SITE_NAME [PROVIDER]</code>  <strong>Args</strong><ul><li><strong>Site Name</strong>: required → String → The name of your site e.g. amazon or amazon.com. Include the TLD (.com) if you have another project with the same name and a different TLD like .org or something.</li><li> <strong>Provider</strong>:optional → aws|gcp → The desired translation provider. You can choose google cloud or AWS</li></ul><strong>Flags</strong><ul><li>profile: local AWS profile name</li><li> region: AWS region e.g. us-east-1</li></ul><h2 id=translate174>translate</h2><code>arjan translate SITE_NAME \[FROM_LANG\] [TO_LANG] [FILENAME]</code><strong>Args</strong><ul><li><strong>Site Name</strong> → required → the name of your site e.g. amazon or amazon.com. Include the TLD (.com) if you have another project with the same name and a different TLD like .org or something.</li><li> <strong>From Lang</strong> → required → origin language code ex. en</li><li> <strong>To Lang</strong> → optional → destination language code ex. es. If the argument is not provided or the same origin lang is used only the origin site will be procesed and parsed.</li><li> <strong>File Name</strong> → optional → the name of your file e.g. index or index.html not necessary to include the .html. if filename is not provided, it will translate all of the html files inside the directory. For quicker builds in large websites its recommended to use this arg if you only change a few files.</li></ul><strong>Flags</strong><ul><li><strong>new</strong> → true|false → Generate a new translation </li><li> <strong>update</strong> → true|false → Update your translated HTML files according to changes in your JSON locales.</li><li> change → true|false → If you make changes to one of your files (e.g. added a new section or changed some of the wording, and you want to reflect these changes in your other languages you can use the —change (-c) flag. (this is the most memory intensive operation)</li><li> <strong>backwards</strong> → true|false → Update your JSON locales according to changes in your HTML files.</li><li> <strong>format</strong> → arjan|i18n|both → Choose your desired HTML file build format. arjan, i18n or both (arjan is default). When building backwards its important to provide this flag if you want to use i18n.</li><li> <strong>export</strong> → true|false → Produce a CSV file with all of your translation data</li><li> <strong>html5</strong> → true|false → produce parent objects in JSON schema.</li></ul></section><section id="Translation_Fo206"><h1>Translation Format</h1><p>You can translate a static site into one of two output formats:</p><ol><li>Arjan: Great for static websites</li><li> i18n: Widely accepted and supported translation format for apps.</li></ol><p>Lets suppose our input is an en.html file with the following content: </p><pre><code><span><</span>section<span>></span>
   <span><</span>h1 id="title1"<span>></span>Arjan is super cool<span><</span>/h1<span>></span>
 <span><</span>/section<span>></span>
 </pre></code><strong>After running the translate command we would get the following output:</strong><ol><li>locales/en.json → <code>{</code> <code>"</code><code>title1</code><code>"</code><code>:</code><code>"</code><code>Arjan is super cool</code><code>"</code> <code>}</code></li><li> en.html </li><ol><li> Arjan → <code><span><</span>h1 id="title1"<span>></span> Arjan is super cool <span><</span>/h1<span>></span></code></li><li> I18n → <code><span><</span>h1 id="title1"<span>></span> {{arjan.t('title1)}} <span><</span>/h1<span>></span></code></li></ol></ol><strong>Lets suppose that our input string didnt have an id attribute:</strong><ol><li>locales/en.json → <code>{ "arjan_is_sup1":"Arjan is super cool" }</code></li></ol><li> en.html </li><ol><li> Arjan → <code><span><</span>h1 id="arjan_is_sup1"<span>></span> Arjan is super cool <span><</span>/h1<span>></span></code></li><li> en.html → <code><span><</span>h1<span>></span> {{arjan.t('arjan_is_sup1')}} <span><</span>/h1<span>></span></code></li></ol></ol><p>Notice that an id with the first 12 characters of the string is created. Caps are lower-cased and spaces are replaced with underscores. A number with the index of the translations is inserted at the end (in case there’s another string that starts with the same 12 chars)</p><h2 id=HTML5_Coming_S262>HTML5 (Coming Soon)</h2><ul><li>if you are using html5 elements in your page (nav, header, section, footer) you can add the html5 option in the translate command. This will generate objects with ids of html5 elements (nav, header, section, footer) and will insert translations as children of the object they belong to. suppose were still using the example above without ids:</li><ol><li>translations/en.json → <code>{ "section1":{"arjan_is_sup":"Arjan is super cool" }}</code></li></ol><li> en.html</li>
@@ -112,18 +133,12 @@ arjanTranslate.Build('REGION', 'PROFILE', function(err, data){
                         </section>
                       </div>
                       
-<footer class="bg-dark sticky-bottom text-center text-white py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <p class="text-lg-left">Copyright &copy; Super Easy Forms 2019</p>
-      </div>
-      <div class="col-sm-6">
-        <p class="text-lg-right">powered by Super Easy Docs</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
+                      <footer class="bg-light text-center sticky-bottom p-footer text-lg">
+                        <div class="row">
+                          <div class="col-sm-6 text-lg-left">Copyright &copy; Arjan Tools 2020</div>
+                          <div class="col-sm-6 text-lg-right">powered by <a href="#">Super Easy Docs</a></div>
+                        </div>
+                    </footer>
 
                     </div>
                   </div>

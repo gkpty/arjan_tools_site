@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120987591-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120987591-4');
+    </script>
+ 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Arjan Translate is a tool that helps you localize and translate your websites using neural machine translation">
@@ -9,19 +19,19 @@
     <!-- <link rel="preload" as="image" href="img/drone-city4.jpg"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/dz.css">
+    <link rel="stylesheet" href="css/translate.css">
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Arjan</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="translate.html">Translate</a>
-          <a class="nav-item nav-link" href="#">Docs</a>
+          <a class="nav-item nav-link" href="#page-top">Translate</a>
+          <a class="nav-item nav-link" href="docs.html">Docs</a>
         </div>
       </div>
     </nav>
@@ -29,20 +39,20 @@
       <div class="container">
         <div class="row pt-5">
           <div class="col-lg-6">
-            <h1 class="pb-3">A simple GUI for arjan translate</h1>
-            <h5>Usage:</h5>
+            <h1 class="pb-3 h2">A simple GUI for arjan translate</h1>
+            <h5 class="h4">Usage</h5>
             <ol>
-              <li>select the language of your origin file</li>
-              <li>Select the desired destination language</li>
-              <li>Drag & Drop your file (only supports html, markdown and txt files)</li>
+              <li>select the language of your origin file.</li>
+              <li>Select the desired destination language.</li>
+              <li>Drag & Drop your file (only supports html, markdown and txt files).</li>
             </ol>
-            <h5>Result:</h5>
+            <h5 class="h4">Result</h5>
             <p>your translated site html and your JSON locale will be downloaded automatically.</p>
-            <p>For advanced translation workflows check out the arjan CLI.</p>
+            <h4 class="h5">For advanced translation workflows check out the <a href="docs.html">arjan CLI</a>.</h4>
           </div>
-          <div class="col-lg-6 p-3">
+          <div class="col-lg-6 p-3 bg-light">
             <!-- FORM BY SUPER EASY FORMS -->
-            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3 bg-light" action="#">
+            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3" action="#">
               <label for="from" class="small mb-0">From</label>
               <select class="form-control" id="from" name="from" required>
                 <option value="" selected="selected" disabled="disabled">Origin language of your site</option>
@@ -186,12 +196,17 @@
         </div>
       </div>
     </header>
+    <footer class="bg-light text-center sticky-bottom p-footer text-lg">
+      <div class="row">
+        <div class="col-sm-6 text-lg-left">Copyright &copy; Arjan Tools 2020</div>
+        <div class="col-sm-6 text-lg-right">powered by <a href="#">Super Easy Docs</a></div>
+      </div>
+  </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
     </script>
-    <script src="js/dz.js"></script>
     <script src="js/translate.js"></script>
   </body>
 </html>
