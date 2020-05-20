@@ -1,3 +1,3 @@
-#Arjan Translate GUI
+# Arjan Site
 
-A simple site with a very simple GUI for Arjan translate made with Super Easy Forms.
+A static website for arjan tools. contains a very simple GUI for Arjan translate made with Super Easy Forms.
