@@ -1,0 +1,71 @@
+.cls-1{opacity:0.4;}
+.cls-2,.cls-4{fill:#fff92c;}
+.cls-2,
+.cls-3{opacity:0.25;}
+.cls-3,
+.cls-5{fill:#ff0;}
+.cls-4{opacity:0.1;}
+.cls-5{opacity:0.17;}
+
+
+.audit-logo-bg{
+  width: 110%;
+  position: relative;
+  z-index: -1;
+}
+.audit-logo{
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  right: 20%;
+  top: 10%;
+}
+
+.arjan-btn {
+  border: #ff0 2px solid;
+  color: #ff0;
+  padding: 2% 3%
+}
+
+.banner-container{
+  padding: 5% 20%;
+}
+
+.bg-sepia{
+  padding: 5%;
+  background-color: hsla(60, 100%, 50%, .6);
+}
+
+.lighthouse{
+  width: 110%;
+  position: relative;
+  z-index: -1;
+}
+.lighthouse-text{
+  width: 43%;
+  margin-top: -15%;
+}
+
+
+/* The animation code */
+@keyframes squaretop {
+  0% {top: -8%; opacity: 0;}
+  10% {top: 8%; opacity: .1;}
+  30% {top: -5%; opacity: .2;}
+  40% {top: 5%; opacity: .3;}
+  50% {top: -3%; opacity: .3;}
+  60% {top: 3%; opacity: .3;}
+  70% {top: -2%; opacity: .3;}
+  80% {top: 2%; opacity: .3;}
+  90% {top: -1%; opacity: .3;}
+  100% {top: 0%; opacity: .3;}
+}
+
+/* The element to apply the animation to */
+.square-top {
+  top: -8%;
+  opacity: 0%;
+  animation-name: squaretop;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,81 @@
+body{
+  font-size: 12pt;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.bg-black{
+  background-color: #000;
+}
+
+.bg-dark-purple{
+  background-color: hsla(288, 100%, 6%, 1);
+}
+
+.bg-secondary-nav{
+  background-color: hsla(338, 100%, 74%, .3);
+}
+
+.arjan-localize-card{
+  background-color: hsla(120, 100%, 50%, .2);
+}
+.localize-text{
+  color: hsla(120, 100%, 50%, 1);
+}
+
+.arjan-card-logo{
+  width: 70%;
+  padding: 3% 0%;
+}
+
+.card{
+  border-radius:0 !important;
+  padding: 0% 2%;
+}
+
+/*.card-icons{}*/
+
+.card-p{
+  font-size: 120%;
+  line-height: 1.2em;
+}
+
+.card-icons {
+  margin: 0% 2%;
+}
+
+.card-col{
+  padding: 2%;
+}
+
+.img-arrow{
+  width: 120px;
+  padding: 0 5%;
+}
+
+.workflow-elem{
+  font-size: 180%;
+  padding: 0% 2%;
+}
+.hidden-workflow-elem{
+  visibility: hidden;
+}
+
+.nodArjan{
+  animation-name: squaretop;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
+}
+
+/* The animation code */
+@keyframes squaretop {
+  25% {transform: rotate(10deg);}
+  75% {transform: rotate(-10deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.arjan-localize-card:hover{
+  box-shadow: 5px 5px 5px hsl(120, 100%, 50%);
+}
