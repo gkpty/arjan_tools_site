@@ -51,14 +51,14 @@
 @keyframes squaretop {
   0% {transform: translateY(-8%); opacity: 0;}
   25% {transform: translateY(8%); opacity: .1;}
-  75% {transform: translateY(-2%); opacity: .2;}
+  50% {transform: translateY(-2%); opacity: .2;}
   100% {transform: translateY(5%); opacity: .3;}
 }
 
 @keyframes squareright {
   0% {transform: translateX(-8%); opacity: 0;}
   25% {transform: translateX(8%); opacity: .1;}
-  75% {transform: translateX(-2%); opacity: .2;}
+  50% {transform: translateX(-2%); opacity: .2;}
   100% {transform: translateX(5%); opacity: .3;}
 }
 
