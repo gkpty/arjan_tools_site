@@ -8,7 +8,7 @@
     <title>Arjan Audit</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/audit.css">
+    <link rel="stylesheet" href="css/deploy.css">
   </head>
   <body id="page-top" class="bg-black text-white">
     <nav>
@@ -36,14 +36,14 @@
     </nav>
     <header>
       <div class="container pt-md-5">
-        <div class="row pt-5">
+        <div class="row pt-3">
           <div class="col-md-6 text-white text-md-left text-center px-lg-5 order-1 order-lg-0">
-            <h1 class="py-2">Arjan Audit</h1>
-            <p class="pb-2">Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6.</p>
-            <a href="#" class="arjan-btn">Get Started</a>
+            <h1 class="py-2 deploy-text">Arjan Deploy</h1>
+            <p class="pb-2">Arjan deploy is a tool that helps you deploy static sites to the AWS Cloud using Cloudformation.  </p>
+            <a href="#" class="arjan-btn text-white">Get Started</a>
           </div>
           <div class="col-md-6 order-0 px-5 order-md-1 text-center">
-            <img src="img/arjan_audit_logo.svg" class="audit-logo" alt="">
+            <img src="img/arjan_deploy_logo.svg" class="audit-logo" alt="">
             <div class="audit-logo-bg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
               <title>arjan_audit_bg</title>
@@ -64,13 +64,20 @@
       </div>
     </header>
     <script src="js/audit.js"></script>
+    
+    
+    
+    <!--SQUARE BANNER -->
     <section>
-      <div class="container banner-container">
-        <div class="bg-sepia">
-          <h2 class="text-white h1 text-box-audit">Test your static site or javascript app's SEO score locally before deploying</h2>
+      <div class="container banner-container py-5">
+        <div class="bg-aqua">
+          <h2 class="text-white h1 text-box-audit">Leverage the power and savings of the AWS Cloud for your static sites</h2>
         </div>
       </div>
     </section>
+
+
+    <!-- HOW IT WORKS -->
     <section>
       <div class="container pt-5">
         <div class="row">
@@ -79,11 +86,83 @@
           </div>
           <div class="col-md-6 px-lg-5">
             <h3 class="h2 pb-4">How it Works</h3>
-            <p>Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6.</p>
+            <p>Arjan deploy uses Infrastructure as Code templates to help you provision and deploy all the necessary resources for your site in the cloud. </p>
+
+            <p>Generally static sites in the cloud consist of an object storage solution (i.e. S3) with a public policy, a CDN, a DNS (from your domain name provider or your cloud provider) and optionally may contain a digital certificate.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- TEXT BANNER -->
+    <section>
+            <div> 
+                <h2 class="text-center deploy-text px-2 py-5 h1"> For an easier development workflow we have defined some templates that include:
+                    </h2>
+            </div>
+        </section>
+
+
+            <!--SQUARE BANNER -->
+    <section>
+            <div class="container banner-container-1">
+              <div class="bg-aqua-2">
+                <h2 class="text-white h1 text-box-audit text-center">Dev</h2>
+                <p class="text-white text-box-audit">  S3 root bucket with a public policy
+                </p>
+            </div>
+            </div>
+          </section>
+
+            <!--SQUARE BANNER -->
+            <section>
+                    <div class="container banner-container-2">
+                      <div class="bg-aqua-2">
+                        <h2 class="text-white h1 text-box-audit text-center">Test</h2>
+                        <p class="text-white text-box-audit">  S3 root bucket, www reroute bucket and a route53 hosted zone.
+                        </p>
+                    </div>
+                    </div>
+                  </section>
+            
+      <!--SQUARE BANNER -->
+            <section>
+                    <div class="container banner-container-3">
+                      <div class="bg-aqua-2">
+                        <h2 class="text-white h1 text-box-audit text-center">Production</h2>
+                        <p class="text-white  text-box-audit">  CDN w/ Route53 DNS (https): Deploys s3 bucket, route53 DNS, a cloudfront distribution and creates TLS certificates in AWS ACM.
+                        </P>
+                    </div>
+                    </div>
+                  </section>
+
+
+    
+    <!-- FEATURES-->
+    <section>
+            <div class="container pt-5">
+              <div class="row">
+
+                <div class="col-md-6 px-lg-5">
+                  <h3 class="h2 pb-4 deploy-text">Features</h3>
+                  <ul style="list-style: none;">
+                        <li>Content Delivery Network CDN:  Adds an AWS Cloudfront distribution to your sites stack.  Learn more about AWS Coudfront</li>
+                        <li>Domain Name System DNS: Adds a Route53 Hosted zone to your stack. Learn more about Route 53</li> 
+                        <li> HTTPS: cCreates a digital certificate for your domain with AWS ACM. If you have a route53 DNS it will automatically verify your certificate. Else you must manually verify your certificate with your DNS provider. </li>        
+                        <li>imports existing resources in the AWS Cloud</li> 
+                        <li>Second item</li>
+                       </ul>
+                </div>
+                <div class="col-md-6">
+                     <div class="bg-light" style="height: 150px; width: 200px;"></div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+
+
     <section>
       <div class="container mt-1">
         <div class="lighthouse">

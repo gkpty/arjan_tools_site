@@ -1,9 +1,9 @@
 .cls-1{opacity:0.4;}
-.cls-2,.cls-4{fill:#fff92c;}
+.cls-2,.cls-4{fill:#ff00ff;}
 .cls-2,
 .cls-3{opacity:0.45;}
 .cls-3,
-.cls-5{fill:#ff0;}
+.cls-5{fill: #ff00ff;}
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
@@ -22,23 +22,55 @@
 }
 
 .arjan-btn {
-  border: #ff0 1px solid;
-  color: #ff0;
-  padding: 2% 5%
+  border: hsla(300, 100%, 50%, 1) 1px solid;
+  color: hsla(0, 0%, 100%, 1);
+  padding: 2% 5%;
+}
+
+
+.header-padding:{
+
 }
 
 .banner-container{
-  padding: 5% 20%;
+  padding: 2% 20%;
 }
 
-.bg-sepia{
-  padding: 8% 10%;
-  background-color: hsla(60, 100%, 50%, .6);
+.banner-container-1 {
+    padding: 0% 32%;
+    margin: 1% 0% 0% -17%;
+    
+}
+
+.banner-container-2 {
+    padding: 0% 25%;
+    margin: 1% 0% 0% -17%;
+}
+
+.banner-container-3 {
+    padding: 0% 25%;
+    margin: 1% 0% 0% -17%;
+}
+.bg-aqua{
+  padding: 6% 9%;
+  background-color: hsla(300, 100%, 50%, .6);
+  line-height:1.8;
+}
+
+.bg-aqua-2{
+  padding: 6% 9%;
+  background-color: hsla(300, 100%, 50%, .2);
   line-height:1.8;
 }
 
 .text-box-audit{
 line-height:1.4;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: -9%;
 }
 
 .lighthouse{

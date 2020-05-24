@@ -13,7 +13,11 @@ body{
 }
 
 .bg-secondary-nav{
-  background-color: hsla(338, 100%, 74%, .3);
+     background-color: hsla(0,0%, 50%, .1);
+}
+
+.header-bg-size{
+ padding: 3rem;
 }
 
 .text-white{
@@ -59,13 +63,15 @@ body{
 
 .card{
   border-radius:0 !important;
-  padding: 0% 2%;
+  padding: 0% 5%;
+  height: 35rem;
+  width: 100%;
 }
 
 /*.card-icons{}*/
 
 .card-p{
-  font-size: 120%;
+  font-size: 140%;
   line-height: 1.2em;
 }
 
