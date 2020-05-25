@@ -1,81 +1,229 @@
-body {font-family: 'Open Sans', sans-serif;}
-h1,h2,h3,h4,h5,h6 {font-family: 'Nunito', sans-serif;}
-
-header {
-  min-height: 79vh;
+body{
+  font-size: 12pt;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.main-title {
-  font-size: 300%;
-  padding-top: 5%;
+.bg-black{
+  background-color: #000;
 }
 
-.card-row {
-  padding: 7% 0%;
+.bg-dark-purple{
+  background-color: hsla(288, 100%, 6%, 1);
 }
 
-.fa-xl {
-  font-size: 2.8em;
+.bg-secondary-nav{
+     background-color: hsla(0,0%, 50%, .1);
 }
 
-img.tool-logo{
-  max-height: 300px;
+.header-bg-size{
+ padding: 3rem;
 }
 
-.navbar-brand {
-  font-size: 220%;
-  font-family: 'Nunito', sans-serif;
+.text-white{
+  color: hsla(0, 0% , 100%, 1);
 }
 
-.nav-item {
-  font-size: 150%;
+.arjan-localize-card{
+  background-color: hsla(120, 100%, 50%, .2);
 }
-.text-lg {
-  font-size: 150%;
-}
-
-.navbar {
-  padding: 1% 8%;
+.localize-text{
+  color: hsla(120, 100%, 50%, 1);
 }
 
-.italic {
-  font-style: italic;
+.arjan-optimize-card{
+  background-color:  hsla(180, 100%, 50%, .2);
 }
 
-.card-icons a:hover {
-  text-decoration: none;
+.optimize-text{
+  color: hsla(180, 100%, 50%, 1);
+}
+
+.arjan-audit-card{
+  background-color:  hsla(60, 100%, 50%, .2);
+}
+
+.audit-text{
+  color: hsla(60, 100%, 50%, 1);
+}
+
+.arjan-deploy-card{
+  background-color:  hsla(300, 100%, 50%, .2);
+}
+
+.deploy-text{
+  color: hsla(300, 100%, 50%, 1);
 }
 
 
-@keyframes blink {
-  0% {opacity: .2;}
-  20% {opacity: 1;}
-  100% {opacity: .2;}
+.arjan-card-logo{
+  width: 70%;
+  padding: 3% 0%;
 }
 
-.loading span {
-  animation-name: blink;
-  animation-duration: 1.4s;
-  animation-iteration-count: infinite;
+.card{
+  border-radius:0 !important;
+  padding: 0% 5%;
+  height: 35rem;
+  width: 100%;
+}
+
+/*.card-icons{}*/
+
+.card-p{
+  font-size: 140%;
+  line-height: 1.2em;
+}
+
+.card-icons {
+  margin: 0% 2%;
+}
+
+.card-col{
+  padding: 2%;
+}
+
+.img-arrow{
+  width: 120px;
+  padding: 0 5%;
+}
+
+.workflow-elem{
+  font-size: 180%;
+  padding: 0% 2%;
+}
+.hidden-workflow-elem{
+  visibility: hidden;
+}
+
+.nodArjan{
+  animation-name: nodarjan;
+  animation-duration: 4s;
   animation-fill-mode: both;
-}
-.loading span:nth-child(2) {
-  animation-delay: .2s;
-}
-.loading span:nth-child(3) {
-  animation-delay: .4s;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
 }
 
-.p-footer {
-  padding: 2% 8%;
+/* The animation code */
+@keyframes nodarjan {
+  25% {transform: rotate(10deg);}
+  75% {transform: rotate(-10deg);}
+  100% {transform: rotate(0deg);}
 }
 
-.bold{
-  font-weight: bold;
+.arjan-localize-card:hover{
+  box-shadow: 5px 5px 5px hsl(120, 100%, 50%);
 }
 
-@media(max-width: 992px){
-  .tool-element{
-    margin-bottom: 4%;
-  }
+
+.fade-in{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* The animation code */
+@keyframes fade {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+.load-nav{
+  animation-name: loadnav;
+  animation-duration: 4s;
+  animation-delay: 2ms;
+  animation-fill-mode: forwards;
+}
+
+/* The animation code */
+@keyframes loadnav {
+  25% {transform: rotate(10deg);}
+  75% {transform: rotate(-10deg);}
+  100% {transform: rotate(0deg);}
+}
+
+
+.load-link{
+  animation-name: loadwidth;
+  animation-duration: 2s;
+  animation-delay: 1500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes loadwidth {
+  0% {padding: 0% 0%;}
+  100% {padding: 0% 3%}
+}
+.load_letter{
+  animation-name: margin;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+}
+@keyframes margin {
+  0% {margin-right: 0px;}
+  100% {margin-right: -5px;}
+}
+.load-word{
+  animation-name: loadword;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  width: 0px;
+}
+@keyframes loadword {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#load_l{
+  color: hsla(120, 100%, 50%, 1);
+  animation-name: colorl;
+  animation-duration: 1.5s;
+  margin-right: 0px;
+}
+@keyframes colorl {
+  0%{color: hsl(120, 100%, 50%); margin-right: 0px;}
+  25%{color: hsl(180, 100%, 50%); margin-right: 0px;}
+  50%{color: hsl(60, 100%, 50%); margin-right: 0px;}
+  75%{color: hsl(300, 100%, 50%); margin-right: 0px;}
+  100%{color: hsl(120, 100%, 50%); margin-right: -5px;}
+}
+#load_o{
+  color: hsl(120, 100%, 50%);
+  animation-name: coloro;
+  animation-duration: 1.5s;
+  margin-right: 0px;
+}
+@keyframes coloro {
+  0%{color: hsl(180, 100%, 50%); margin-right: 0px;}
+  25%{color: hsl(60, 100%, 50%); margin-right: 0px;}
+  50%{color: hsl(300, 100%, 50%); margin-right: 0px;}
+  75%{color: hsl(120, 100%, 50%); margin-right: 0px;}
+  100%{color: hsl(180, 100%, 50%); margin-right: -5px;}
+}
+#load_a{
+  color: hsl(60, 100%, 50%);
+  animation-name: colora;
+  animation-duration: 1.5s;
+  margin-right: 0px;
+}
+@keyframes colora {
+  0%{color: hsl(60, 100%, 50%); margin-right: 0px;}
+  25%{color: hsl(300, 100%, 50%); margin-right: 0px;}
+  50%{color: hsl(120, 100%, 50%); margin-right: 0px;}
+  75%{color: hsl(180, 100%, 50%); margin-right: 0px}
+  100%{color: hsl(60, 100%, 50%); margin-right: -5px;}
+}
+#load_d{
+  color: hsl(300, 100%, 50%);
+  animation-name: colord;
+  animation-duration: 1.5s;
+  margin-right: 0px;
+}
+@keyframes colord {
+  0%{color: hsl(300, 100%, 50%); margin-right: 0px;}
+  25%{color: hsl(120, 100%, 50%); margin-right: 0px;}
+  50%{color: hsl(180, 100%, 50%); margin-right: 0px}
+  75%{color: hsl(60, 100%, 50%); margin-right: 0px;}
+  100%{color: hsl(300, 100%, 50%); margin-right: -5px;}
 }

@@ -1,134 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120987591-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-120987591-4');
-    </script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Arjan Translate is a tool that helps you localize and translate your websites using neural machine translation">
-    <meta name="author" content="Gabriel Kardonski">
+    <meta name="description" content="">
+    <meta name="author" content="Torus Project">
     <title>Arjan</title>
-    <!-- <link rel="preload" as="image" href="img/drone-city4.jpg"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/flip-card.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
-  <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#page-top">Arjan</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="translate.html">Translate</a>
-          <a class="nav-item nav-link" href="docs.html">Docs</a>
+  <body id="page-top" class="bg-black">
+    <script src="js/index.js"></script>
+    <nav>
+      <div class="d-flex justify-content-center pt-2 fade-in">
+        <div class="load-link">
+          <a href="localize.html" class="h4" id="localize_nav">
+            <span id="load_l" class="load_letter">L</span>
+            <span id="load_ocalize" class="load-word d-none localize-text">ocalize</span>
+          </a>
+        </div>
+        <div class="load-link">
+          <a href="optimize.html" class="h4" id="optimize_nav">
+            <span id="load_o" class="load_letter">O</span>
+            <span id="load_ocalize" class="load-word d-none optimize-text">ptimize</span>
+          </a>
+        </div>
+        <div class="load-link">
+          <a href="audit.html" class="h4" id="audit_nav">
+            <span id="load_a" class="load_letter">A</span>
+            <span id="load_ocalize" class="load-word d-none audit-text">udit</span>
+          </a>
+        </div>
+        <div class="load-link">
+          <a href="deploy.html" class="h4" id="deploy_nav">
+            <span id="load_d" class="load_letter">D</span>
+            <span id="load_ocalize" class="load-word d-none deploy-text">eploy</span>
+          </a>
         </div>
       </div>
+      <div class="d-flex justify-content-center py-2 bg-secondary-nav text-white">
+        <h1 class="h3">Arjan Tools</h1>
+      </div>
     </nav>
-
     <header>
-      <div class="container">
-        <h1 class="text-center main-title">Modular Tools for Static Websites</h1>
-        
-        <div class="row align-items-center card-row">
-          
-          <div class="col-lg-4 tool-element flip-card" id="torufobj_torus_framework">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/optimize.svg" class="tool-logo">
-                <h2><span class="torufattr_title">Optimize</span></h2>
-              </div>
-              <div class="flip-card-back px-4">
-                <h3 class="bold pt-4 h5 text-left">A single tool for all of your static optimization needs</h3><p class="text-left">Some of the features include deleting unused css classes, Minifying and compressing static assets (css/js/html/images), automatically resizing/replacing images to their optimal sizes, converting/replacing images to webP, and more!</p>
-                <div class="fixed-bottom card-icons pb-3">
-                  <a class="torufhref_website px-2" href="https://github.com/arjan-tools/optimize">
-                    <i class="fas fa-xl fa-globe"></i>
-                  </a>
-                  <a class="torufhref_installation px-2" href="#">
-                    <i class="fab fa-xl fa-npm"></i>
-                  </a>
-                  <a class="torufhref_github px-2" href="https://github.com/arjan-tools/optimize">
-                    <i class="fab fa-xl fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="container pt-md-5">
+        <div class="h2 my-4 text-center header-bg-size text-white bg-dark-purple">Open Source DevOps tool kit for Static Sites and Javascript Apps</div>
+        <div class="container px-5">
+          <div class="row">
 
-          <div class="col-lg-4 tool-element flip-card" id="torufobj_torus_framework">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/translate.svg" class="tool-logo">
-                <h2><span class="torufattr_title">Translate</span></h2>
-              </div>
-              <div class="flip-card-back px-4">
-                <h3 class="bold pt-4 h5 text-left">Localization, automatic translation, and collaboration of content in HTML websites</h3><p class="text-left">The flexible workflow allows you to export all of your website’s content to a spreadsheet and collaborate with your customers. Select from 54 available languages, localize, and translate your site’s content using neural machine translation.</p>
-                <div class="fixed-bottom card-icons pb-3">
-                  <a class="torufhref_website px-2" href="translate.html">
-                    <i class="fas fa-xl fa-globe"></i>
-                  </a>
-                  <a class="torufhref_installation px-2" href="https://www.npmjs.com/package/arjan-translate">
-                    <i class="fab fa-xl fa-npm"></i>
-                  </a>
-                  <a class="torufhref_github px-2" href="https://github.com/arjan-tools/translate">
-                    <i class="fab fa-xl fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+           <!-- ARJAN LOCALIZE -->
 
-          <div class="col-lg-4 tool-element flip-card" id="torufobj_torus_framework">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/deploy.svg" class="tool-logo">
-                <h2><span class="torufattr_title">Deploy</span></h2>
-              </div>
-              <div class="flip-card-back px-4">
-                <h3 class="bold pt-4 h5 text-left">An easy and flexible way of deploying static websites in AWS using Cloudformation</h3><p class="text-left"> It allows you to select multiple options for your website’s stack like adding a CDN or a digital certificate. Arjan also helps you import infrastructure of existing static websites in AWS into a cloudformation stack.</p>
-                <div class="fixed-bottom card-icons pb-3">
-                  <a class="torufhref_website px-2" href="https://github.com/arjan-tools/deploy">
-                    <i class="fas fa-xl fa-globe"></i>
-                  </a>
-                  <a class="torufhref_installation px-2" href="#">
-                    <i class="fab fa-xl fa-npm"></i>
-                  </a>
-                  <a class="torufhref_github px-2" href="https://github.com/arjan-tools/deploy">
-                    <i class="fab fa-xl fa-github"></i>
-                  </a>
+            <div class="col-md-6 card-col">
+              <a href="localize.html">
+                <div class="card arjan-localize-card" onmouseover="nodArjan('localize')" onmouseout="removeNod('localize')">
+                  <div class="card-body text-center">
+                    <img id="arjan-logo-localize" class="arjan-card-logo" src="img/arjan_localize_logo.svg" alt="Arjan Localize">
+                    <h2 class="h1 localize-text pb-3">Localize</h2>
+                    <p class="card-p text-white">Automatic translation and localization for static sites</p>
+                    <div class="d-flex icon-row justify-content-center">
+                      <i class="card-icons"><a href="https://www.npmjs.com/package/arjan-localize"><img height="30px" src="img/npm_logo.svg" alt=""></a></i>
+                      <i class="card-icons"><a href="https://github.com/arjan-tools/localize"><img height="30px" src="img/github_logo.svg" alt=""></a></i>
+                      <i class="card-icons"><a href="docs.html#localize"><img height="30px" src="img/docs_icon.svg" alt=""></a></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
+            </div>
+
+            <!-- ARJAN OPTIMIZE -->
+
+            <div class="col-md-6 card-col">
+              <a href="optimize.html">
+                <div class="card arjan-optimize-card" onmouseover="nodArjan('localize')" onmouseout="removeNod('localize')">
+                  <div class="card-body text-center">
+                    <img id="arjan-logo-localize" class="arjan-card-logo" src="img/arjan_optimize_logo.svg" alt="Arjan Optimize">
+                    <h2 class="h1 optimize-text pb-3">Optimize</h2>
+                    <p class="card-p text-white">Asynchronous optimization of static assets and much more </p>
+                    <div class="d-flex icon-row justify-content-center">
+                      <i class="card-icons"><a href="https://www.npmjs.com/package/arjan-localize"><img height="30px" src="img/npm_logo.svg" alt=""></a></i>
+                      <i class="card-icons"><a href="https://github.com/arjan-tools/localize"><img height="30px" src="img/github_logo.svg" alt=""></a></i>
+                      <i class="card-icons"><a href="docs.html#localize"><img height="30px" src="img/docs_icon.svg" alt=""></a></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- ARJAN AUDIT -->
+
+            <div class="col-md-6 card-col">
+              <a href="audit.html">
+                <div class="card arjan-audit-card" onmouseover="nodArjan('localize')" onmouseout="removeNod('localize')">
+                  <div class="card-body text-center">
+                    <img id="arjan-logo-localize" class="arjan-card-logo" src="img/arjan_audit_logo.svg" alt="Arjan Localize">
+                    <h2 class="h1 audit-text pb-3">Audit</h2>
+                    <p class="card-p text-white">Audit your site SEO with Lighthouse 6 before deploying</p>
+                    <div class="d-flex icon-row justify-content-center">
+                      <i class="card-icons"><a href="https://www.npmjs.com/package/arjan-localize"><img height="30px" src="img/npm_logo.svg" alt=""></a></i>
+                      <i class="card-icons"><a href="https://github.com/arjan-tools/localize"><img height="30px" src="img/github_logo.svg" alt=""></a></i>
+                      <i class="card-icons"><a href="docs.html#localize"><img height="30px" src="img/docs_icon.svg" alt=""></a></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <!-- ARJAN DEPLOY -->
+
+            <div class="col-md-6 card-col">
+              <a href="deploy.html">
+                <div class="card arjan-deploy-card" onmouseover="nodArjan('localize')" onmouseout="removeNod('localize')">
+                  <div class="card-body text-center">
+                    <img id="arjan-logo-localize" class="arjan-card-logo" src="img/arjan_deploy_logo.svg" alt="Arjan Localize">
+                    <h2 class="h1 deploy-text pb-3">Deploy</h2>
+                    <p class="card-p text-white">Deploy static sites to the AWS cloud using Cloudformation</p>
+                    <div class="d-flex icon-row justify-content-center">
+                      <i class="card-icons"><a href="https://www.npmjs.com/package/arjan-localize"><img height="30px" src="img/npm_logo.svg" alt=""></a></i>
+                      <i class="card-icons"><a href="https://github.com/arjan-tools/localize"><img height="30px" src="img/github_logo.svg" alt=""></a></i>
+                      <i class="card-icons"><a href="docs.html#localize"><img height="30px" src="img/docs_icon.svg" alt=""></a></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-          
         </div>
       </div>
     </header>
-    <section class="bg-light py-5">
-      <div class="container h2 text-center">To get started install the Arjan CLI → <code>npm i arjan-cli</code></div>
-    </section>
-    <section class="py-5">
-      <div class="container h3 text-center">
-        <p class="">All the tools can be used together with the arjan CLI, inside of a task runner like gulp or grunt, programmatically inside your application, or may also be deployed as a lambda function with an API and used as a github webhook. For additional information read the <a href="docs.html">docs</a>.</p>
+    <section>
+
+<!-- THE LOAD WORKFLOW -->
+
+      <div class="container text-center text-white bg-dark-purple">
+        <h2>The LOAD Workflow</h2>
+        <div class="d-flex justify-content-center pt-2">
+          <div class="workflow-item d-flex">
+            <a href="#" class="workflow-elem localize-text" id="localize_workflow">Localize</a>
+            <img class="img-arrow" src="img/arjan_arrow.svg" alt="">
+          </div>
+          <div class="workflow-item d-flex">
+            <a href="#" class="workflow-elem optimize-text" id="optimize_workflow">Optimize</a>
+            <img class="img-arrow" src="img/arjan_arrow.svg" alt="">
+          </div>
+          <div class="workflow-item d-flex">
+            <a href="#" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
+            <img class="img-arrow" src="img/arjan_arrow.svg" alt="">
+          </div>
+          <div class="d-flex">
+            <a href="#" class="workflow-elem deploy-text" id="deploy_workflow">Deploy</a>
+          </div>
+        </div>
+        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed di</p>
       </div>
     </section>
-      <footer class="bg-light text-center sticky-bottom p-footer text-lg">
-        <div class="row">
-          <div class="col-sm-6 text-lg-left">Copyright &copy; Arjan Tools 2020</div>
-          <div class="col-sm-6 text-lg-right">powered by <a href="https://torus-digital.com/">Torus Digital</a></div>
-        </div>
-    </footer>
+
     <script defer
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
