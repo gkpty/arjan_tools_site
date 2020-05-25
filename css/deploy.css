@@ -8,6 +8,10 @@
 .cls-5{opacity:0.5;}
 
 
+p{
+  font-size: 1.3rem;
+}
+
 .audit-logo-bg{
   width: 110%;
   position: relative;
@@ -25,6 +29,7 @@
   border: hsla(300, 100%, 50%, 1) 1px solid;
   color: hsla(0, 0%, 100%, 1);
   padding: 2% 5%;
+  font-size: 1.4rem;
 }
 
 
@@ -73,14 +78,15 @@ ul {
     margin-left: -9%;
 }
 
-.lighthouse{
-  width: 110%;
-  position: relative;
-  z-index: -1;
+.banner-padding{
+  padding-left: 39rem;
+  padding-right: 7rem;
 }
-.lighthouse-text{
-  width: 43%;
-  margin-top: -15%;
+
+.get-started{
+    padding: 6% 9%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1.8;
 }
 
 

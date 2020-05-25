@@ -1,12 +1,16 @@
 .cls-1{opacity:0.4;}
-.cls-2,.cls-4{fill:#ff00ff;}
+.cls-2,.cls-4{fill:#00ff00;}
 .cls-2,
 .cls-3{opacity:0.45;}
 .cls-3,
-.cls-5{fill: #ff00ff;}
+.cls-5{fill: #00ff00;}
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
+
+p{
+    font-size: 1.3rem;
+}
 
 .audit-logo-bg{
   width: 110%;
@@ -17,14 +21,14 @@
     position: absolute;
     z-index: 1;
     width: 46%;
-    right: 22%;
+    right: 27%;
     top: 15%
 }
 
 .arjan-btn {
-  border: hsla(300, 100%, 50%, 1) 1px solid;
-  color: hsla(0, 0%, 100%, 1);
+  border: hsla(120, 100%, 50%, 1) 1px solid;
   padding: 2% 5%;
+  font-size: 1.4rem;
 }
 
 
@@ -52,9 +56,9 @@
     margin: 1% 0% 0% -17%;
 }
 .bg-aqua{
-  padding: 6% 9%;
-  background-color: hsla(300, 100%, 50%, .6);
-  line-height:1.8;
+    padding: 6% 9%;
+    background-color: hsla(120, 100%, 50%, .6);
+    line-height:1.8;
 }
 
 .bg-aqua-2{
@@ -73,14 +77,10 @@ ul {
     margin-left: -9%;
 }
 
-.lighthouse{
-  width: 110%;
-  position: relative;
-  z-index: -1;
-}
-.lighthouse-text{
-  width: 43%;
-  margin-top: -15%;
+.get-started{
+    padding: 6% 9%;
+    background-color:  hsla(120, 100%, 50%, .1);
+    line-height: 1.8;
 }
 
 
