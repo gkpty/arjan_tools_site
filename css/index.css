@@ -232,3 +232,24 @@ body{
   75%{color: hsl(60, 100%, 50%); margin-right: 0px;}
   100%{color: hsl(300, 100%, 50%); margin-right: -5px;}
 }
+
+.img-arrow{
+  width: 120px;
+  padding: 0 5%;
+}
+
+@media(max-width: 736px){
+  .arrow-tate{
+    transform: rotate(90deg);
+    position: absolute;
+    z-index:2;
+    margin-top: 80px;
+    padding: 1% 1% !important;
+  }
+  .arrow-back{
+    transform: rotate(180deg);
+  }
+  .secondary-arrow{
+    padding-top: 100px;
+  }
+}
