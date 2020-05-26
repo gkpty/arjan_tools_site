@@ -123,7 +123,7 @@ body{
 
 .fade-in{
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
   animation-fill-mode: forwards;
 }
 
@@ -133,51 +133,18 @@ body{
   100% {opacity: 100%;}
 }
 
-.load-nav{
-  animation-name: loadnav;
-  animation-duration: 4s;
-  animation-delay: 2ms;
-  animation-fill-mode: forwards;
-}
-
-/* The animation code */
-@keyframes loadnav {
-  25% {transform: rotate(10deg);}
-  75% {transform: rotate(-10deg);}
-  100% {transform: rotate(0deg);}
-}
-
-
-.load-link{
-  animation-name: loadwidth;
-  animation-duration: 2s;
-  animation-delay: 1500ms;
-  animation-fill-mode: forwards;
-}
-@keyframes loadwidth {
-  0% {padding: 0% 0%;}
-  100% {padding: 0% 3%}
-}
-.load_letter{
-  animation-name: margin;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-delay: 500ms;
-}
-@keyframes margin {
-  0% {margin-right: 0px;}
-  100% {margin-right: -5px;}
-}
-.load-word{
-  animation-name: loadword;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-  width: 0px;
-}
-@keyframes loadword {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+@media(min-width:992px){
+  .load-link{
+    animation-name: loadwidth;
+    animation-duration: 1.5s;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes loadwidth {
+    0% {padding: 0% 0%;}
+    100% {padding: 0% 3%}
+  }
+  
 }
 
 #load_l{
@@ -187,50 +154,48 @@ body{
   margin-right: 0px;
 }
 @keyframes colorl {
-  0%{color: hsl(120, 100%, 50%); margin-right: 0px;}
-  25%{color: hsl(180, 100%, 50%); margin-right: 0px;}
-  50%{color: hsl(60, 100%, 50%); margin-right: 0px;}
-  75%{color: hsl(300, 100%, 50%); margin-right: 0px;}
-  100%{color: hsl(120, 100%, 50%); margin-right: -5px;}
+  0%{color: hsl(120, 100%, 50%);}
+  25%{color: hsl(180, 100%, 50%);}
+  50%{color: hsl(60, 100%, 50%);}
+  75%{color: hsl(300, 100%, 50%);}
+  100%{color: hsl(120, 100%, 50%);}
 }
 #load_o{
   color: hsl(120, 100%, 50%);
   animation-name: coloro;
   animation-duration: 1.5s;
-  margin-right: 0px;
 }
 @keyframes coloro {
-  0%{color: hsl(180, 100%, 50%); margin-right: 0px;}
-  25%{color: hsl(60, 100%, 50%); margin-right: 0px;}
-  50%{color: hsl(300, 100%, 50%); margin-right: 0px;}
-  75%{color: hsl(120, 100%, 50%); margin-right: 0px;}
-  100%{color: hsl(180, 100%, 50%); margin-right: -5px;}
+  0%{color: hsl(180, 100%, 50%);}
+  25%{color: hsl(60, 100%, 50%);}
+  50%{color: hsl(300, 100%, 50%);}
+  75%{color: hsl(120, 100%, 50%);}
+  100%{color: hsl(180, 100%, 50%);}
 }
 #load_a{
   color: hsl(60, 100%, 50%);
   animation-name: colora;
   animation-duration: 1.5s;
-  margin-right: 0px;
 }
 @keyframes colora {
-  0%{color: hsl(60, 100%, 50%); margin-right: 0px;}
-  25%{color: hsl(300, 100%, 50%); margin-right: 0px;}
-  50%{color: hsl(120, 100%, 50%); margin-right: 0px;}
-  75%{color: hsl(180, 100%, 50%); margin-right: 0px}
-  100%{color: hsl(60, 100%, 50%); margin-right: -5px;}
+  0%{color: hsl(60, 100%, 50%);}
+  25%{color: hsl(300, 100%, 50%);}
+  50%{color: hsl(120, 100%, 50%);}
+  75%{color: hsl(180, 100%, 50%);}
+  100%{color: hsl(60, 100%, 50%);}
 }
 #load_d{
   color: hsl(300, 100%, 50%);
   animation-name: colord;
   animation-duration: 1.5s;
-  margin-right: 0px;
+
 }
 @keyframes colord {
-  0%{color: hsl(300, 100%, 50%); margin-right: 0px;}
-  25%{color: hsl(120, 100%, 50%); margin-right: 0px;}
-  50%{color: hsl(180, 100%, 50%); margin-right: 0px}
-  75%{color: hsl(60, 100%, 50%); margin-right: 0px;}
-  100%{color: hsl(300, 100%, 50%); margin-right: -5px;}
+  0%{color: hsl(300, 100%, 50%);}
+  25%{color: hsl(120, 100%, 50%);}
+  50%{color: hsl(180, 100%, 50%);
+  75%{color: hsl(60, 100%, 50%);}
+  100%{color: hsl(300, 100%, 50%);;}
 }
 
 .img-arrow{
