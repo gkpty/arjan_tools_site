@@ -27,8 +27,6 @@ var words = {
   load_d:"Deploy"
 }
 
-
-
 function addWords(i) {
   setTimeout(function(){ 
     for(var w in words){
@@ -69,4 +67,14 @@ window.onload = function() {
   loadWords(x)
 };
 
-x.addListener(loadWords)
+x.addListener(loadWords);
+
+
+function copyVal(val){
+  const el = document.createElement('textarea');
+  el.value = val;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+}
