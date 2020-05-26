@@ -28,9 +28,6 @@
 }
 
 
-.header-padding:{
-
-}
 
 .banner-container{
   padding: 5% 8%;
@@ -96,4 +93,10 @@ line-height:1.4;
   animation-name: squareright;
   animation-duration: 8s;
   animation-fill-mode: forwards;
+}
+
+.footer-deploy{
+  background-color: #a4a4a4;
+  color: #f5f4f6;
+  font-size: 1rem;
 }
