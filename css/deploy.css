@@ -102,9 +102,8 @@ line-height:1.4;
 }
 
 ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: -9%;
+  padding: 5% 0%;
+  list-style-type: none;
 }
 
 .banner-padding{
