@@ -96,6 +96,7 @@ body{
 .img-arrow{
   width: 50px;
   padding: 0 5%;
+  opacity: 0%;
 }
 
 .workflow-elem{
@@ -204,23 +205,33 @@ body{
 }
 
 .img-arrow{
-  width: 120px;
+  width: 100px;
   padding: 0 5%;
 }
+.arrow-set{
+  padding: 5% 0%;
+}
 
-@media(max-width: 736px){
+.arrowanimate{
+  opacity: 0%;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@media(max-width: 766px){
   .arrow-tate{
     transform: rotate(90deg);
     position: absolute;
     z-index:2;
-    margin-top: 80px;
+    margin-top: 70px;
     padding: 1% 1% !important;
   }
   .arrow-back{
     transform: rotate(180deg);
   }
   .secondary-arrow{
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
