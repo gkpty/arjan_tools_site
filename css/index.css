@@ -2,7 +2,9 @@ body{
   font-size: 12pt;
   width: 100%;
   overflow-x: hidden;
+  color: #fff;
 }
+
 
 .bg-black{
   background-color: #000;
@@ -129,7 +131,7 @@ body{
 
 .fade-in{
   animation-name: fade;
-  animation-duration: 1.2s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -248,4 +250,16 @@ body{
   .social-icon{
     padding: 8% 0%;
   }
+}
+
+.get-started{
+  padding: 6% 9%;
+  background-color: hsla(300, 100%, 50%, .1);
+  line-height: 1.8;
+}
+.codebox{
+  padding: 2% 3%;
+  background-color: black;
+  color: white;
+  border: hsla(120, 100%, 50%, 0) 1.5px solid;
 }

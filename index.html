@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body id="page-top" class="bg-black">
+
+    <!-- NAV -->
     <nav>
       <div class="d-flex justify-content-center py-2 fade-in">
         <div class="load-link">
@@ -37,6 +39,7 @@
         <h1 class="h3">Arjan Tools</h1>
       </div>
     </nav>
+    <script src="js/nav.js"></script>
     
     <header>
       <div class="container pt-md-4">
@@ -192,31 +195,42 @@
       </div>
     </section>
 
-
-    <div class="container card-padding-2"> 
-      <h1 class="text-white text-center">Installation</h1>
-      <div class= "arjan-optimize-card text-white p-5"><p>Click on the board</p></div>
-      <div class= "bg-black text-white "><p>Click on the board</p></div>
-      <div class= "arjan-optimize-card text-white p-5"><p>Click on the board</p></div>
-
-
-    </div>
+    <!--GET STARTED-->
+    <section>
+      <div class="container">
+        <div class="get-started">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="h2 pb-4 text-center text-md-left localize-text">Get Started</h3>
+              <ol>
+                <li class="py-2">Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
+                <li class="py-2">Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
+                <li class="py-2">Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
+                <li class="py-2">Translate your site <button class="codebox" onclick="copyVal(this.textContent)">arjan translate SITE_NAME from [to]</button></li>
+              </ol>
+            </div>
+            <div class="col-lg-6">
+              <div style="height: 100%;width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+    </section>
 
     <section>
       <div class="social-row d-flex justify-content-center d-lg-block">
         <div class="d-lg-block social-icon">
           <a href="#">
-            <img width="50px" src="img/npm_logo.svg" alt="npm logo outline">
+            <img width="50px" src="img/twitter_logo_2.svg" alt="npm logo outline">
           </a>
         </div>
         <div class="d-lg-block social-icon">
           <a href="#">
-            <img width="50px" src="img/npm_logo.svg" alt="npm logo outline">
+            <img width="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
           </a>
         </div>
         <div class="d-lg-block social-icon">
           <a href="#">
-            <img width="50px" src="img/npm_logo.svg" alt="npm logo outline">
+            <img width="50px" src="img/docs_icon.svg" alt="npm logo outline">
           </a>
         </div>
       </div>
