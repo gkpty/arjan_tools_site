@@ -37,7 +37,7 @@
         <h1 class="h3">Arjan Tools</h1>
       </div>
     </nav>
-    <script src="js/index.js"></script>
+    
     <header>
       <div class="container pt-md-4">
         <div class="h1 my-5 px-1 py-4 p-md-5 text-center header-bg-size text-white bg-dark-purple">Open Source DevOps toolkit for static sites</div>
@@ -134,33 +134,35 @@
 </div>
 
 <!-- THE LOAD WORKFLOW -->
-    <section>
+    <section id="arrowset">
       <div class="container text-center text-white bg-dark-purple p-5">
         <h2>The LOAD Workflow</h2>
-        <div class="d-flex justify-content-center py-2">
-          <div class="workflow-item d-flex">
-            <a href="#" class="workflow-elem localize-text" id="localize_workflow">Localize</a>
-            <img class="img-arrow" src="img/arrow.svg" alt="">
+        <div class="arrow-set container">
+          <div class="d-flex justify-content-center py-2">
+            <div class="workflow-item d-flex">
+              <a href="#" class="workflow-elem localize-text" id="localize_workflow">Localize</a>
+              <img id="arrow2" class="img-arrow" src="img/arrow.svg">
+            </div>
+            <div class="workflow-item d-flex">
+              <a href="#" class="workflow-elem optimize-text" id="optimize_workflow">Optimize</a>
+              <img id="arrow3" class="img-arrow arrow-tate" src="img/arrow.svg">
+            </div>
+            <div class="workflow-item d-none d-md-flex">
+              <a href="#" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
+              <img id="arrow4" class="img-arrow" src="img/arrow.svg">
+            </div>
+            <div class="d-flex">
+              <a href="#" class="workflow-elem d-none d-md-flex deploy-text" id="deploy_workflow">Deploy</a>
+            </div>
           </div>
-          <div class="workflow-item d-flex">
-            <a href="#" class="workflow-elem optimize-text" id="optimize_workflow">Optimize</a>
-            <img class="img-arrow arrow-tate" src="img/arjan_arrow.svg" alt="">
-          </div>
-          <div class="workflow-item d-none d-md-flex">
-            <a href="#" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
-            <img class="img-arrow" src="img/arrow.svg" alt="">
-          </div>
-          <div class="d-flex">
-            <a href="#" class="workflow-elem d-none d-md-flex deploy-text" id="deploy_workflow">Deploy</a>
-          </div>
-        </div>
-        <div class="d-flex secondary-arrow d-md-none justify-content-center">
-          <div class="workflow-item d-flex">
-            <a href="#" class="workflow-elem deploy-text" id="deploy_workflow">Deploy</a>
-            <img class="img-arrow arrow-back" src="img/arjan_arrow.svg" alt="">
-          </div>
-          <div class="d-flex">
-            <a href="#" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
+          <div class="d-flex secondary-arrow d-md-none justify-content-center">
+            <div class="workflow-item d-flex">
+              <a href="#" class="workflow-elem deploy-text" id="deploy_workflow">Deploy</a>
+              <img alt="arrow4" id="arrowsm4" class="img-arrow arrow-back" src="img/arrow.svg">
+            </div>
+            <div class="d-flex">
+              <a href="#" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
+            </div>
           </div>
         </div>
         <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed di</p>
@@ -200,6 +202,25 @@
 
     </div>
 
+    <section>
+      <div class="social-row d-flex justify-content-center d-lg-block">
+        <div class="d-lg-block social-icon">
+          <a href="#">
+            <img width="50px" src="img/npm_logo.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="#">
+            <img width="50px" src="img/npm_logo.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="#">
+            <img width="50px" src="img/npm_logo.svg" alt="npm logo outline">
+          </a>
+        </div>
+      </div>
+    </section>
     
 
     <footer class="footer pt-5">
@@ -207,6 +228,8 @@
         <span class="text-muted">Powered by Torus</span>
       </div>
     </footer>
+
+    <script src="js/index.js"></script>
 
     <script defer
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
