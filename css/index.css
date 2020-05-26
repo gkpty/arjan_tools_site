@@ -83,6 +83,16 @@ body{
   padding: 2%;
 }
 
+.card-padding{
+  padding: 3rem 3rem;
+  width: 100%;
+}
+
+.img-arrow{
+  width: 50px;
+  padding: 0 5%;
+}
+
 .workflow-elem{
   font-size: 180%;
   padding: 0% 2%;

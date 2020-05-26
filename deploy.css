@@ -28,9 +28,6 @@
 }
 
 
-.header-padding:{
-
-}
 
 .banner-container{
   padding: 5% 8%;
@@ -46,14 +43,23 @@
 line-height:1.4;
 }
 
-.lighthouse{
-  width: 110%;
-  position: relative;
-  z-index: -1;
+.banner-container-1 {
+  padding: 0% 32%;
+  margin: 0% 0% 0% -17%;
+  background-color: hsla(120, 100%, 50%, .6);
+  
 }
-.lighthouse-text{
-  width: 43%;
-  margin-top: -15%;
+
+.banner-container-2 {
+  padding: 0% 28%;
+  margin: 0% 17%;
+  background-color:  hsla(120, 100%, 50%, .6);
+}
+
+.banner-container-3 {
+  padding: 0% 25%;
+  margin: 0% 0% 0% 22%;
+  background-color:  hsla(120, 100%, 50%, .6); 
 }
 
 
@@ -87,4 +93,10 @@ line-height:1.4;
   animation-name: squareright;
   animation-duration: 8s;
   animation-fill-mode: forwards;
+}
+
+.footer-deploy{
+  background-color: #a4a4a4;
+  color: #f5f4f6;
+  font-size: 1rem;
 }

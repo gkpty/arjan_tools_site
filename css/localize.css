@@ -41,20 +41,24 @@ p{
 }
 
 .banner-container-1 {
-    padding: 0% 32%;
-    margin: 1% 0% 0% -17%;
-    
+  width: 30%;
+  margin: 0 14%;
+  background-color: hsla(120, 100%, 50%, .6);
+  
 }
 
 .banner-container-2 {
-    padding: 0% 25%;
-    margin: 1% 0% 0% -17%;
+  width: 30%;
+  margin: -28px 35%;
+  background-color:  hsla(120, 100%, 50%, .6);
 }
 
 .banner-container-3 {
-    padding: 0% 25%;
-    margin: 1% 0% 0% -17%;
+  width: 30%;
+  margin: 0 56%;
+  background-color:  hsla(120, 100%, 50%, .6); 
 }
+
 .bg-aqua{
     padding: 6% 9%;
     background-color: hsla(120, 100%, 50%, .6);
@@ -81,6 +85,10 @@ ul {
     padding: 6% 9%;
     background-color:  hsla(120, 100%, 50%, .1);
     line-height: 1.8;
+}
+
+.diagram-padding{
+  padding: 0% 20% 4% 20%;
 }
 
 
