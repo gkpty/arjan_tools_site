@@ -88,6 +88,11 @@ body{
   width: 100%;
 }
 
+.card-padding-2{
+    padding: 4rem 17rem;
+    width: 100%;
+}
+
 .img-arrow{
   width: 50px;
   padding: 0 5%;
@@ -253,3 +258,5 @@ body{
     padding-top: 100px;
   }
 }
+
+.padding
