@@ -55,15 +55,23 @@ ul {
 line-height:1.4;
 }
 
-.get-started{
-    padding: 6% 9%;
-    background-color: hsla(180, 100%, 50%, .1);
-    line-height: 1.8;
+.get-started {
+  padding: 2%;
+  margin: 3% 25% 14% 25%;
+  background-color: hsla(120, 100%, 50%, .1);
+  line-height: 1.8;
 }
 
 .logo-size{
   width: 80%;
 
+}
+
+.codebox {
+  padding: 2% 3%;
+  background-color: black;
+  color: white;
+  border: hsla(120, 100%, 50%, 0) 1.5px solid;
 }
 
 /* The animation code */
@@ -97,3 +105,4 @@ line-height:1.4;
   animation-duration: 8s;
   animation-fill-mode: forwards;
 }
+
