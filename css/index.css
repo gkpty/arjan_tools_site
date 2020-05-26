@@ -198,9 +198,9 @@ body{
 @keyframes colord {
   0%{color: hsl(300, 100%, 50%);}
   25%{color: hsl(120, 100%, 50%);}
-  50%{color: hsl(180, 100%, 50%);
+  50%{color: hsl(180, 100%, 50%);}
   75%{color: hsl(60, 100%, 50%);}
-  100%{color: hsl(300, 100%, 50%);;}
+  100%{color: hsl(300, 100%, 50%);}
 }
 
 .img-arrow{
@@ -224,4 +224,17 @@ body{
   }
 }
 
-.padding
+.social-icon{
+  padding: 0% 3%;
+}
+
+@media(min-width:992px){
+  .social-row{
+    position: fixed;
+    right: 3%;
+    bottom: 7%;
+  }
+  .social-icon{
+    padding: 8% 0%;
+  }
+}
