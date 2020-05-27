@@ -48,7 +48,7 @@
           <div class="col-md-6 text-white text-md-left text-center px-lg-5 order-1 order-lg-0">
             <h1 class="py-3 deploy-text">Arjan Deploy</h1>
             <p class="pb-2">Arjan deploy is a tool that helps you deploy static sites to the AWS Cloud using Infrastructure as Code  </p>
-            <a href="#" class="arjan-btn text-white">Get Started</a>
+            <a href="#getstarted" class="arjan-btn text-white">Get Started</a>
           </div>
           <div class="col-md-6 order-0 px-5 order-md-1 text-center">
             <img src="img/arjan_deploy_logo.svg" class="audit-logo" alt="">
@@ -107,8 +107,8 @@
             <div class="container pt-5">
               <div class="row">
                 <h3 class="h1 col-12 pb-2 text-center text-md-left deploy-text">Features</h3>
-                <div class="col-md-6 order-1">
-
+               
+                <div class="col-md-6 ">
                   <ul style="list-style: none;">
                         <li class="py-2 h5">Connect to a global CDN network with low latency and high speeds. Learn more about Cloudfront </li>
                         <li class="py-2 h5">Add/verify TLS certificates with ease using AWS ACM</li> 
@@ -120,9 +120,8 @@
                        </ul>
                 </div>
                 <div class="col-md-6 order-0">
-                     <div class="" style="height: 150px; width: 200px;"> <h3>Add a CDN, DNS, HTTPS to your site with only one command</h3></div>
+                     <div class="bg-aqua"> <h3>Add a CDN, DNS, HTTPS to your site with only one command</h3></div>
                 </div>
-
               </div>
             </div>
           </section>
@@ -148,24 +147,46 @@
     </section>
 
 
-              <!--GET STARTED-->
-         <section>
-            <div class="container pt-5">
-              <div class="row">
 
-                <div class="col-md-6 px-lg-5 get-started">
-                  <h3 class="h2 pb-4 deploy-text">Get Started</h3>
-                 <p>1. go into your sites directory `cd SITE_NAME`
-                        2. run `arjan init SITE_NAME`  Refer to the provider setup section if you haven't used any of the cloud translation APIs.
-                        3. Run the translate command `arjan translate SITE_NAME [FILENAME]`</p>
-                </div>
-                <div class="col-md-6">
-                     <div class="bg-light" style="height: 400px; width: 450px;"></div>
-                </div>
-
-              </div>
+    <!--GET STARTED-->
+    <section>
+      <div class="container-fluid">
+        
+          <div class="row  get-started">
+            <div class="col-lg-12">
+              <h3 id="getstarted" class="h1 pb-4 text-center deploy-text">Get Started</h3>
+              <ol>
+                <li class="py-2">Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li><br>
+                <li class="py-2">Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
+                <li class="py-2">Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
+                <li class="py-2">Deploy your project <button class="codebox" onclick="copyVal(this.textContent)">arjan deploy yoursite.com prod</button></li>
+              </ol>
             </div>
-          </section>
+            </div>
+          </div>
+        </div>
+
+
+        <section>
+          <div class="social-row d-flex justify-content-center d-lg-block">
+            <div class="d-lg-block social-icon">
+              <a href="https://twitter.com/ArjanTools">
+                <img height="45px" src="img/twitter_logo_2.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="#">
+                <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="#docs.html">
+                <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
+              </a>
+            </div>
+          </div>
+        </section>
+
 
           <footer class="footer pt-5">
             <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">

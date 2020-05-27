@@ -37,7 +37,9 @@
         </div>
       </div>
       <div class="d-flex justify-content-center py-2 bg-secondary-nav text-white">
-        <h1 class="h3">Arjan Tools</h1>
+        <a href="index.html">
+          <h1 class="load-link h3">Arjan Tools</h1>
+        </a>
       </div>
     </nav>
     <script src="js/nav.js"></script>
@@ -46,12 +48,12 @@
     <header>
       <div class="container pt-md-5">
         <div class="row py-3">
-          <div class="col-md-6 text-white text-md-left text-center px-lg-5 order-1 order-lg-0">
-            <h1 class="py-3 localize-text">Arjan Localize</h1>
-            <p class="pb-2">A localization workflow with automatic translation for static sites  </p>
-            <a href="#" class="arjan-btn text-white">Get Started</a>
+          <div class="col-md-6 text-md-left text-center px-lg-5 order-1 order-lg-0">
+            <h1 class="localize-text">Arjan Localize</h1>
+            <p class="py-3">A localization workflow with automatic translation for static sites  </p>
+            <a href="#getstarted" class="arjan-btn text-white">Get Started</a>
           </div>
-          <div class="col-md-6 order-0 px-5 pt-5 pb-2 pt-md-0 order-md-1 text-center">
+          <div class="col-md-6 order-0 pt-md-0 order-md-1 text-center">
             <img src="img/arjan_localize_logo.svg" class="audit-logo" alt="">
             <div class="audit-logo-bg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
@@ -82,12 +84,15 @@
             <h3 class="h1 pb-4 localize-text text-center text-md-left">How it Works</h3>
 
             <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
-              <div class="row">
-              <div class="col-6">
-<img src="img/brain.svg" alt="">              </div> 
+              
+            <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
+            <div class="">
+              <div class="col-md-4">
+              <img src="img/brain.svg" alt="">              
+            </div> 
 
-              <div class="col-6">
-              <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
+              <div class="col-md-8">
+              
 
               <div>
           </div>
@@ -153,8 +158,8 @@
       <div class="container">
         <div class="get-started">
           <div class="row">
-            <div class="col-lg-6">
-              <h3 class="h2 pb-4 text-center text-md-left localize-text">Get Started</h3>
+            <div class="col-12">
+              <h3 id="getstarted" class="h2 pb-4 text-center text-md-left localize-text">Get Started</h3>
               <ol>
                 <li class="py-2">Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
                 <li class="py-2">Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
@@ -168,6 +173,27 @@
           </div>
         </div>
     </section>
+
+    <section>
+      <div class="social-row d-flex justify-content-center d-lg-block">
+        <div class="d-lg-block social-icon">
+          <a href="https://twitter.com/ArjanTools">
+            <img height="45px" src="img/twitter_logo_2.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="#">
+            <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="#docs.html">
+            <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
+          </a>
+        </div>
+      </div>
+    </section>
+    
 
     <footer class="footer pt-5">
       <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">

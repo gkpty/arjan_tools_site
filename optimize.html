@@ -41,9 +41,9 @@
       <div class="container pt-md-5">
         <div class="row pt-3">
           <div class="col-md-6 text-white text-md-left text-center px-lg-5 order-1 order-lg-0">
-            <h1 class="py-3 optimize-text">Arjan Optimize</h1>
-            <p class="pb-3">Arjan optimize uses some of the best node.js modules for compression and minification along with it’s own special features. </p>
-            <a href="#" class="arjan-btn text-white">Get Started</a>
+            <h1 class="optimize-text">Arjan Optimize</h1>
+            <p class="py-3">Arjan optimize uses some of the best node.js modules for compression and minification along with it’s own special features. </p>
+            <a href="#getstarted" class="arjan-btn">Get Started</a>
           </div>
           <div class="col-md-6 order-0 px-5 pt-3 pt-lg-0 order-md-1 text-center">
             <img src="img/arjan_optimize_logo.svg" class="audit-logo" alt="">
@@ -97,10 +97,6 @@
                 </div>
               </section>
 
-
-
-    
-
         <!-- FEATURES-->
         <section>
           <div class="container pt-5">
@@ -108,11 +104,11 @@
               <div class="col-md-6 px-lg-5 ">
                 <h3 class="h1 text-center text-md-left optimize-text">Features</h3>
                 <ul style="list-style: none;">
-                      <li class="py-1 h5">Compresses all your static asset with a single command</li>
-                      <li class="py-1 h5">Deletes unused CSS classes</li> 
-                      <li class="py-1 h5">Create responsive images (for each device type)</li>         
-                      <li class="py-1 h5">Convert images to Webp with fallbacks for unsupported browsers</li>
-                      <li class="py-1 h5">Supports ES6+ syntax</li>
+                      <li class="py-1">Compresses all your static asset with a single command</li>
+                      <li class="py-1">Deletes unused CSS classes</li> 
+                      <li class="py-1">Create responsive images (for each device type)</li>         
+                      <li class="py-1">Convert images to Webp with fallbacks for unsupported browsers</li>
+                      <li class="py-1">Supports ES6+ syntax</li>
                      </ul>
               </div>
               <div class="col-md-6">
@@ -153,7 +149,7 @@
                   <div class="container  banner-container">
                     <div class="bg-aqua-2">
                       <div class="col-12"> 
-                        <h3 class="h2 optimize-text text-center py-2">Modules used in Arjan Optimize</h3>
+                        <h3 class="h1 optimize-text text-center py-2">Modules used</h3>
                       </div>
 
                       <div class="row">
@@ -192,11 +188,11 @@
     <section>
       <div class="container-fluid">
         
-          <div class="row get-started">
+          <div class="row  get-started">
             <div class="col-lg-12">
-              <h3 class="h1 pb-4 text-center optimize-text">Get Started</h3>
+              <h3 id="getstarted" class="h1 pb-4 text-center optimize-text">Get Started</h3>
               <ol>
-                <li class="py-2">Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
+                <li class="py-2">Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li><br>
                 <li class="py-2">Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
                 <li class="py-2">Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
                 <li class="py-2">Optimize your assets <button class="codebox" onclick="copyVal(this.textContent)">arjan optimize -w</button></li>
@@ -206,6 +202,26 @@
           </div>
         </div>
 
+        <section>
+          <div class="social-row d-flex justify-content-center d-lg-block">
+            <div class="d-lg-block social-icon">
+              <a href="https://twitter.com/ArjanTools">
+                <img height="45px" src="img/twitter_logo_2.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="#">
+                <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="#docs.html">
+                <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
+              </a>
+            </div>
+          </div>
+        </section>
+        
 
           <footer class="footer pt-5">
             <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">

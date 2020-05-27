@@ -248,15 +248,16 @@ body{
     bottom: 7%;
   }
   .social-icon{
-    padding: 8% 0%;
+    padding: 15% 0%;
   }
 }
-
-.get-started{
-  padding: 6% 9%;
-  background-color: hsla(300, 100%, 50%, .1);
-  line-height: 1.8;
+.get-started {
+  padding: 1% 0%;
+  margin: 4% 31% 8% 31%;
+  background-color: hsla(0, 0%, 50%, .3);
+  line-height: 1;
 }
+
 .codebox{
   padding: 2% 3%;
   background-color: black;

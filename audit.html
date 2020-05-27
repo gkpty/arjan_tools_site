@@ -43,9 +43,9 @@
           <div class="col-md-6 text-white text-md-left text-center px-lg-5 order-1 order-lg-0">
             <h1 class="py-3 audit-text">Arjan Audit</h1>
             <p class="pb-3">Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6.</p>
-            <a href="#" class="arjan-btn">Get Started</a>
+            <a href="#getstarted" class="arjan-btn">Get Started</a>
           </div>
-          <div class="col-md-6 order-0 px-5 pt-5 pt-lg-0 order-md-1 text-center">
+          <div class="col-md-6 order-0 px-md-5 pt-lg-0 order-md-1 text-center">
             <img src="img/arjan_audit_logo.svg" class="audit-logo" alt="">
             <div class="audit-logo-bg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
@@ -92,12 +92,29 @@
 
     
     <section>
-      <div class="container mt-1">
+      <div class="container py-5 ">
         <div class="lighthouse">
           <img src="img/lighthouse.svg" alt="">
         </div>
-        <div class="lighthouse-text bg-light">
+        <div class="lighthouse-text ">
           <p>Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audit Report -->
+    <section>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-6 px-lg-5">
+            <h3 class="h1 audit-text text-center text-md-left pb-4">Audit Report</h3>
+            <p>Arjan deploy uses Infrastructure as Code templates to help you provision and deploy all the necessary resources for your site in the cloud. </p>
+
+            <p>Generally static sites in the cloud consist of an object storage solution (i.e. S3) with a public policy, a CDN, a DNS (from your domain name provider or your cloud provider) and optionally may contain a digital certificate.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-light float-right" style="height: 250px; width: 200px;"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -105,22 +122,42 @@
 
     <!--GET STARTED-->
     <section>
-        <div class="container pt-5">
-          <div class="row">
-
-            <div class="col-md-6 px-lg-5 get-started">
-              <h3 class="h2 pb-4 audit-text text-center text-md-left ">Get Started</h3>
-             <p>1. go into your sites directory `cd SITE_NAME`
-                    2. run `arjan init SITE_NAME`  Refer to the provider setup section if you haven't used any of the cloud translation APIs.
-                    3. Run the translate command `arjan translate SITE_NAME [FILENAME]`</p>
+      <div class="container-fluid">
+        
+          <div class="row  get-started">
+            <div class="col-lg-12">
+              <h3 id="getstarted" class="h1 pb-4 text-center audit-text">Get Started</h3>
+              <ol>
+                <li class="py-2">Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li><br>
+                <li class="py-2">Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
+                <li class="py-2">Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
+                <li class="py-2">Deploy your project <button class="codebox" onclick="copyVal(this.textContent)">arjan deploy yoursite.com prod</button></li>
+              </ol>
             </div>
-            <div class="col-md-6">
-                 <div class="bg-light" style="height: 4; width: ;"></div>
             </div>
-
           </div>
         </div>
-      </section>
+
+        <section>
+          <div class="social-row d-flex justify-content-center d-lg-block">
+            <div class="d-lg-block social-icon">
+              <a href="https://twitter.com/ArjanTools">
+                <img height="45px" src="img/twitter_logo_2.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="#">
+                <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="#docs.html">
+                <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
+              </a>
+            </div>
+          </div>
+        </section>
+        
 
 
       <footer class="footer pt-5">
