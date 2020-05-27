@@ -50,10 +50,11 @@ line-height:1.4;
 }
 
 .lighthouse{
-  width: 66%;
-  position: relative;
-  z-index: -1;
+  width: 60%;
+    margin: 0% 34%;
+    z-index: -1;
 }
+
 .lighthouse-text{
   width: 43%;
   margin-top: -15%;
@@ -98,17 +99,3 @@ line-height:1.4;
   animation-duration: 8s;
   animation-fill-mode: forwards;
 }
-
-.social-icon{
-  padding: 0% 3%;
-}
-
-@media(min-width:992px){
-  .social-row{
-    position: fixed;
-    right: 3%;
-    bottom: 7%;
-  }
-  .social-icon{
-    padding: 15% 0%;
-  }

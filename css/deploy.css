@@ -14,31 +14,32 @@
   padding: 2% 3%;
 }
 .rect1{
-  width: 60%;
-  margin-bottom: -2%;
+  width: 45%;
+  margin: 2% 28%;
 }
 .rect2{
-  width: 70%;
-  margin-bottom: -2%;
+  width: 63%;
+  margin: 2% 19%;
 }
 .rect3{
-  width: 80%;
+  margin: 0% 13%;
+  width: 76%;
 }
 
-@media(min-width:900px){
+@media(min-width:768px){
   .rect1{
     margin-left: 9%;
-    margin-bottom: -3%;
-    width: 25%;
+    margin-bottom: -4%;
+    width: 33%;
   }
   .rect2{
     margin-left: 30%;
-    margin-bottom: -3%;
-    width: 30%;
+    margin-bottom: -2%;
+    width: 37%;
   }
   .rect3{
     margin-left: 55%;
-    width: 35%;
+    width: 46%;
   }
 }
 
@@ -160,16 +161,3 @@ ul {
   animation-fill-mode: forwards;
 }
 
-.social-icon{
-  padding: 0% 3%;
-}
-
-@media(min-width:992px){
-  .social-row{
-    position: fixed;
-    right: 3%;
-    bottom: 7%;
-  }
-  .social-icon{
-    padding: 15% 0%;
-  }

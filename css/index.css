@@ -3,8 +3,15 @@ body{
   width: 100%;
   overflow-x: hidden;
   color: #fff;
+ }
+
+  h1{
+    font-family: 'Baloo Chettan 2', cursive;
 }
 
+p{
+  font-family: 'quicksand', sans-serif;
+}
 
 .bg-black{
   background-color: #000;
@@ -19,7 +26,21 @@ body{
 }
 
 .header-bg-size{
- padding: 3rem;
+  padding: 8% 2%;
+  margin: 7% 2%;
+}
+
+@media(min-width: 991px){
+
+  .header-bg-size{
+    margin: 2%;
+  }  
+
+}
+
+.header-bg-size{
+  padding: 5% 2%;
+  margin: 6% 2%;
 }
 
 .text-white{
@@ -251,11 +272,31 @@ body{
     padding: 15% 0%;
   }
 }
+
 .get-started {
   padding: 1% 0%;
-  margin: 4% 31% 8% 31%;
+  margin: 3% 1% 10% 1%;
   background-color: hsla(0, 0%, 50%, .3);
   line-height: 1;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .get-started {
+    margin: 5% 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  .get-started {
+    margin: 5% 25%;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 897px) {
+  .h3-about {
+      font-size: 1.6vw;
+  }  
 }
 
 .codebox{
@@ -263,4 +304,13 @@ body{
   background-color: black;
   color: white;
   border: hsla(120, 100%, 50%, 0) 1.5px solid;
+}
+
+a#torus {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: rgb(247, 0, 255);
+  text-decoration: none;
 }

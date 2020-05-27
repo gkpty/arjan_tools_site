@@ -50,6 +50,8 @@
   animation-direction: reverse;
 }
 @media(min-width:992px){
+  .audit-logo-bg{
+    width: 110%;}
   .diagram-container{padding: 10%;}
 }
 
