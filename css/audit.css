@@ -7,8 +7,10 @@
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
+
+
 p{
-  font-size:1.3rem;
+  font-size: 1.3rem;
 }
 
 .bg-secondary-nav {
@@ -46,7 +48,7 @@ li {
 
 .bg-sepia{
   padding: 3%;
-  margin: 15% 11%;
+  margin: 15% 9%;
   background-color: hsla(60, 100%, 50%, .6);
   line-height:1.8;
 }
@@ -131,4 +133,14 @@ line-height:1.4;
   animation-name: squareright;
   animation-duration: 8s;
   animation-fill-mode: forwards;
+}
+
+.report-padding{
+  padding: 5% 5%;
+  margin: 5% 5%;
+  width: 100%;
+}
+
+html,body{
+  font-size: 12pt !important;
 }
