@@ -28,11 +28,6 @@
   animation-fill-mode: forwards;
 }
 
-.get-started{
-  padding: 6% 9%;
-  background-color:  hsla(120, 100%, 50%, .1);
-}
-
 .diagram_text{font-size:46.54px;fill:#fff;letter-spacing:.05em}
 .diagram_line{
   fill:none;
@@ -129,6 +124,11 @@ ul {
   padding: 0% 20% 4% 20%;
 }
 
+li {
+  padding-top:2%;
+  padding-bottom: 2%; 
+}
+
 
 /* The animation code */
 @keyframes squaretop {
@@ -174,4 +174,29 @@ ul {
   }
   .social-icon{
     padding: 15% 0%;
+  }
+
+  .get-started {
+    padding: 1% 0%;
+    margin: 16% 2% 14% 2%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1;
+  }
+  
+  @media (min-width: 768px){
+    .get-started {
+      padding: 1% 0%;
+      margin: 16% 2% 14% 2%;
+      background-color: hsla(300, 100%, 50%, .1);
+      line-height: 1;
+    }
+  }
+  
+  @media (min-width: 992px){
+    .get-started {
+      padding: 1% 0%;
+      margin: 12% 24%;
+      background-color: hsla(300, 100%, 50%, .1);
+      line-height: 1;
+    }
   }

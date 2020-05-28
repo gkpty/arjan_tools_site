@@ -39,10 +39,26 @@ p{
   padding: 5% 20%;
 }
 
+li {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 .bg-sepia{
-  padding: 8% 10%;
+  padding: 3%;
+  margin: 15% 11%;
   background-color: hsla(60, 100%, 50%, .6);
   line-height:1.8;
+}
+
+@media (min-width: 768px){
+  .bg-sepia{
+    padding: 3%;
+    margin: 13% 24% 6% 24%;
+    background-color: hsla(60, 100%, 50%, .6);
+    line-height:1.8;
+  }
+
 }
 
 .text-box-audit{
@@ -59,14 +75,31 @@ line-height:1.4;
   width: 43%;
   margin-top: -15%;
 }
+
 .get-started {
   padding: 1% 0%;
-  margin: 4% 31% 8% 31%;
-  background-color: hsla(60, 100%, 50%, .1);
+  margin: 16% 2% 14% 2%;
+  background-color: hsla(300, 100%, 50%, .1);
   line-height: 1;
 }
 
+@media (min-width: 768px){
+  .get-started {
+    padding: 1% 0%;
+    margin: 16% 2% 14% 2%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1;
+  }
+}
 
+@media (min-width: 992px){
+  .get-started {
+    padding: 1% 0%;
+    margin: 12% 24%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1;
+  }
+}
 
 /* The animation code */
 @keyframes squaretop {

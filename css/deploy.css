@@ -136,10 +136,29 @@ ul {
 }
 .get-started {
   padding: 1% 0%;
-  margin: 4% 31% 8% 31%;
+  margin: 16% 2% 14% 2%;
   background-color: hsla(300, 100%, 50%, .1);
   line-height: 1;
 }
+
+@media (min-width: 768px){
+  .get-started {
+    padding: 1% 0%;
+    margin: 16% 2% 14% 2%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px){
+  .get-started {
+    padding: 1% 0%;
+    margin: 12% 24%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1;
+  }
+}
+
 .text-padding{
   padding: 2% 0%;
   margin: 0% 0%;
