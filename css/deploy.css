@@ -89,11 +89,31 @@ p{
     padding: 0% 25%;
     margin: 1% 0% 0% -17%;
 }
+
 .bg-aqua{
-  padding: 6% 9%;
-  background-color: hsla(300, 100%, 50%, .6);
+  padding: 4%;
+  margin: 16% 3%;
+  background-color: hsla(300, 100%, 50%, .5);
   line-height:1.8;
 }
+
+
+@media (min-width: 768px){
+.bg-aqua{
+  padding: 3%;
+  margin: 9% 22% 4% 22%;
+  background-color: hsla(300, 100%, 50%, .5);
+  line-height:1.8;
+}}
+
+
+@media (min-width: 991px){
+.bg-aqua{
+  padding: 4%;
+  margin: 10% 27% 6% 27%;
+  background-color: hsla(300, 100%, 50%, .5);
+  line-height:1.8;
+}}
 
 .bg-aqua-2{
   padding: 6% 9%;
@@ -120,6 +140,11 @@ ul {
   background-color: hsla(300, 100%, 50%, .1);
   line-height: 1;
 }
+.text-padding{
+  padding: 2% 0%;
+  margin: 0% 0%;
+}
+
 
 .codebox {
   padding: 2% 3%;

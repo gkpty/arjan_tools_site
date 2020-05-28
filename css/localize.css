@@ -89,40 +89,31 @@ p{
 padding: 5% 10%;
 }
 
-.banner-container{
-  padding: 2% 20%;
-}
-
-.banner-container-1 {
-  width: 30%;
-  margin: 0 14%;
-  background-color: hsla(120, 100%, 50%, .6);
-  
-}
-
-.banner-container-2 {
-  width: 30%;
-  margin: -28px 35%;
-  background-color:  hsla(120, 100%, 50%, .6);
-}
-
-.banner-container-3 {
-  width: 30%;
-  margin: 0 56%;
-  background-color:  hsla(120, 100%, 50%, .6); 
-}
 
 .bg-aqua{
-    padding: 6% 9%;
+    padding: 4%;
+    margin: 6% 3%;
     background-color: hsla(120, 100%, 50%, .6);
     line-height:1.8;
 }
 
-.bg-aqua-2{
-  padding: 6% 9%;
-  background-color: hsla(300, 100%, 50%, .2);
-  line-height:1.8;
-}
+
+@media (min-width: 768px){
+  .bg-aqua{
+    padding: 3%;
+    margin: 9% 22% 4% 22%;
+    background-color: hsla(120, 100%, 50%, .6);
+    line-height:1.8;
+}}
+
+
+@media (min-width: 991px){
+  .bg-aqua{
+    padding: 4%;
+    margin: 9% 27% 4% 27%;
+    background-color: hsla(120, 100%, 50%, .6);
+    line-height:1.8;
+}}
 
 .text-box-audit{
 line-height:1.4;
