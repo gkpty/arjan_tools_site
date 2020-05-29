@@ -1,55 +1,19 @@
-html,body{
-  font-size: 12pt;
-  width: 100%;
-  overflow-x: hidden;
-  color: #fff;
- }
-
-  h1 h2 h3 {
-    font-family: 'Montserrat', cursive;
-}
-
-
-
-p{
-  font-family: 'quicksand', sans-serif;
-}
-
-.bg-black{
-  background-color: #000;
-}
 
 .bg-dark-purple{
   background-color: hsla(288, 100%, 6%, 1);
 }
-
-.bg-secondary-nav{
-     background-color: hsla(0,0%, 50%, .1);
-}
-
 .header-bg-size{
   padding: 8% 2%;
   margin: 7% 2%;
 }
-
-@media (min-width: 768px){
-
-  .header-bg-size{
-    padding: 5% 2%;
-    margin: 2%;
-  }  
-
-}
-
 .header-bg-size{
   padding: 5% 2%;
   margin: 6% 2%;
 }
-
-
 .text-white{
   color: hsla(0, 0% , 100%, 1);
 }
+
 
 .arjan-localize-card{
   background-color: hsla(120, 100%, 50%, .2);
@@ -57,27 +21,21 @@ p{
 .localize-text{
   color: hsla(120, 100%, 50%, 1);
 }
-
 .arjan-optimize-card{
   background-color:  hsla(180, 100%, 50%, .2);
 }
-
 .optimize-text{
   color: hsla(180, 100%, 50%, 1);
 }
-
 .arjan-audit-card{
   background-color:  hsla(60, 100%, 50%, .2);
 }
-
 .audit-text{
   color: hsla(60, 100%, 50%, 1);
 }
-
 .arjan-deploy-card{
   background-color:  hsla(300, 100%, 50%, .2);
 }
-
 .deploy-text{
   color: hsla(300, 100%, 50%, 1);
 }
@@ -87,54 +45,27 @@ p{
   width: 70%;
   padding: 3% 0%;
 }
-
 .card{
     border-radius: 0 !important;
     padding: 2% 2%;
     height: 100%;
     width: auto;
 }
-
-/*.card-icons{}*/
-
 .card-p{
   font-size: 140%;
   line-height: 1.2em;
 }
-
 .card-icons {
   margin: 0% 2%;
 }
-
 .card-col{
   padding: 2%;
 }
-
 .card-padding{
   padding: 3rem 3rem;
   width: 100%;
 }
 
-@media(min-width: 768px){
-  card-padding{
-    padding: 3rem 3rem;
-    width: 100%;
-  }
-}
-
-.img-arrow{
-  width: 50px;
-  padding: 0 5%;
-  opacity: 0%;
-}
-
-.workflow-elem{
-  font-size: 180%;
-  padding: 0% 2%;
-}
-.hidden-workflow-elem{
-  visibility: hidden;
-}
 
 .nodArjan{
   animation-name: nodarjan;
@@ -143,8 +74,6 @@ p{
   animation-iteration-count: infinite;
   animation-delay: 0ms;
 }
-
-/* The animation code */
 @keyframes nodarjan {
   25% {transform: rotate(10deg);}
   75% {transform: rotate(-10deg);}
@@ -156,98 +85,30 @@ p{
 }
 
 
-.fade-in{
-  animation-name: fade;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-
-/* The animation code */
-@keyframes fade {
-  0% {opacity: 0%;}
-  100% {opacity: 100%;}
-}
-
-@media(min-width:992px){
-  .load-link{
-    animation-name: loadwidth;
-    animation-duration: 1.5s;
-    animation-delay: 1000ms;
-    animation-fill-mode: forwards;
+@media (min-width: 768px){
+  .header-bg-size{
+    padding: 5% 2%;
+    margin: 2%;
   }
-  @keyframes loadwidth {
-    0% {padding: 0% 0%;}
-    100% {padding: 0% 3%}
-  }
-  
+  .card-padding{
+    padding: 3rem 3rem;
+    width: 100%;
+  }  
 }
 
-#load_l{
-  color: hsla(120, 100%, 50%, 1);
-  animation-name: colorl;
-  animation-duration: 1.5s;
-  margin-right: 0px;
-}
-@keyframes colorl {
-  0%{color: hsl(120, 100%, 50%);}
-  25%{color: hsl(180, 100%, 50%);}
-  50%{color: hsl(60, 100%, 50%);}
-  75%{color: hsl(300, 100%, 50%);}
-  100%{color: hsl(120, 100%, 50%);}
-}
-#load_o{
-  color: hsl(120, 100%, 50%);
-  animation-name: coloro;
-  animation-duration: 1.5s;
-}
-@keyframes coloro {
-  0%{color: hsl(180, 100%, 50%);}
-  25%{color: hsl(60, 100%, 50%);}
-  50%{color: hsl(300, 100%, 50%);}
-  75%{color: hsl(120, 100%, 50%);}
-  100%{color: hsl(180, 100%, 50%);}
-}
-#load_a{
-  color: hsl(60, 100%, 50%);
-  animation-name: colora;
-  animation-duration: 1.5s;
-}
-@keyframes colora {
-  0%{color: hsl(60, 100%, 50%);}
-  25%{color: hsl(300, 100%, 50%);}
-  50%{color: hsl(120, 100%, 50%);}
-  75%{color: hsl(180, 100%, 50%);}
-  100%{color: hsl(60, 100%, 50%);}
-}
-#load_d{
-  color: hsl(300, 100%, 50%);
-  animation-name: colord;
-  animation-duration: 1.5s;
-
-}
-@keyframes colord {
-  0%{color: hsl(300, 100%, 50%);}
-  25%{color: hsl(120, 100%, 50%);}
-  50%{color: hsl(180, 100%, 50%);}
-  75%{color: hsl(60, 100%, 50%);}
-  100%{color: hsl(300, 100%, 50%);}
-}
 
 .img-arrow{
   width: 100px;
   padding: 0 5%;
-}
-.arrow-set{
-  padding: 5% 0%;
-}
-
-.arrowanimate{
   opacity: 0%;
-  animation-name: fade;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
 }
-
+.workflow-elem{
+  font-size: 180%;
+  padding: 0% 2%;
+}
+.hidden-workflow-elem{
+  visibility: hidden;
+}
 @media(max-width: 766px){
   .arrow-tate{
     transform: rotate(90deg);
@@ -263,31 +124,16 @@ p{
     padding-top: 80px;
   }
 }
-
-.social-icon{
-  padding: 0% 3%;
-  background-color: transparent;
+.arrow-set{
+  padding: 5% 0%;
 }
-@keyframes icon{
-  0% {background-color: transparent;}
-  100% {background-color: hsla(180, 100%, 50%, .1);}
-}
-.social-icon:hover{
-  animation-name: icon;
+.arrowanimate{
+  opacity: 0%;
+  animation-name: fade;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-@media(min-width:992px){
-  .social-row{
-    position: fixed;
-    right: 3%;
-    bottom: 7%;
-  }
-  .social-icon{
-    padding: 15% 0%;
-  }
-}
 
 .get-started {
   padding: 1% 0%;
@@ -320,13 +166,4 @@ p{
   background-color: black;
   color: white;
   border: hsla(120, 100%, 50%, 0) 1.5px solid;
-}
-
-a#torus {
-  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 3px 3px;
-  color: rgb(247, 0, 255);
-  text-decoration: none;
 }

@@ -1,14 +1,3 @@
-window.onload = function() {
-    setTimeout(() => loadnav(), 2000)
-  };
-  
-  function loadnav(){
-    var loadwords = document.getElementsByClassName('load-word')
-    for(var lw of loadwords) {
-      lw.classList.remove('d-none')
-      lw.classList.add('fade-in')
-    }
-  }
   
   var words = {
     load_l:"Localize",
@@ -41,7 +30,7 @@ window.onload = function() {
       console.log('Large')
       setTimeout(function(){
         addWords(i);
-      }, 1750)
+      }, 1000)
     }
     else {
       console.log('Small')
