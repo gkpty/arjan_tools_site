@@ -14,33 +14,37 @@
   padding: 2% 3%;
 }
 .rect1{
-  width: 60%;
-  margin-bottom: -2%;
+  width: 45%;
+  margin: 2% 28%;
 }
 .rect2{
-  width: 70%;
-  margin-bottom: -2%;
+  width: 63%;
+  margin: 2% 19%;
 }
 .rect3{
-  width: 80%;
+  margin: 0% 13%;
+  width: 76%;
 }
 
-@media(min-width:900px){
+@media(min-width:768px){
   .rect1{
     margin-left: 9%;
-    margin-bottom: -3%;
-    width: 25%;
+    margin-bottom: -4%;
+    width: 33%;
   }
   .rect2{
     margin-left: 30%;
-    margin-bottom: -3%;
-    width: 30%;
+    margin-bottom: -2%;
+    width: 37%;
   }
   .rect3{
     margin-left: 55%;
-    width: 35%;
+    width: 46%;
   }
 }
+
+
+
 
 p{
   font-size: 1.3rem;
@@ -85,11 +89,31 @@ p{
     padding: 0% 25%;
     margin: 1% 0% 0% -17%;
 }
+
 .bg-aqua{
-  padding: 6% 9%;
-  background-color: hsla(300, 100%, 50%, .6);
+  padding: 4%;
+  margin: 16% 3%;
+  background-color: hsla(300, 100%, 50%, .5);
   line-height:1.8;
 }
+
+
+@media (min-width: 768px){
+.bg-aqua{
+  padding: 3%;
+  margin: 9% 22% 4% 22%;
+  background-color: hsla(300, 100%, 50%, .5);
+  line-height:1.8;
+}}
+
+
+@media (min-width: 991px){
+.bg-aqua{
+  padding: 4%;
+  margin: 10% 27% 6% 27%;
+  background-color: hsla(300, 100%, 50%, .5);
+  line-height:1.8;
+}}
 
 .bg-aqua-2{
   padding: 6% 9%;
@@ -110,11 +134,42 @@ ul {
   padding-left: 39rem;
   padding-right: 7rem;
 }
+.get-started {
+  padding: 1% 0%;
+  margin: 16% 2% 14% 2%;
+  background-color: hsla(300, 100%, 50%, .1);
+  line-height: 1;
+}
 
-.get-started{
-    padding: 6% 9%;
+@media (min-width: 768px){
+  .get-started {
+    padding: 1% 0%;
+    margin: 16% 2% 14% 2%;
     background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1.8;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px){
+  .get-started {
+    padding: 1% 0%;
+    margin: 12% 24%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1;
+  }
+}
+
+.text-padding{
+  padding: 2% 0%;
+  margin: 0% 0%;
+}
+
+
+.codebox {
+  padding: 2% 3%;
+  background-color: black;
+  color: white;
+  border: hsla(120, 100%, 50%, 0) 1.5px solid;
 }
 
 
@@ -149,3 +204,4 @@ ul {
   animation-duration: 8s;
   animation-fill-mode: forwards;
 }
+

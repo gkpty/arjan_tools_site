@@ -1,14 +1,18 @@
-.cls-1{opacity:0.4;}
+.cls-1{opacity:0.2;}
 .cls-2,.cls-4{fill:#00FFFF;}
 .cls-2,
-.cls-3{opacity:0.45;}
+.cls-3{opacity:0.2;}
 .cls-3,
 .cls-5{fill: #00FFFF;}
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
 p{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+
+.header-padding{
+
 }
 
 .audit-logo-bg{
@@ -27,23 +31,40 @@ p{
 .arjan-btn {
   border: hsla(180, 100%, 50%, 1) 1px solid;
   color: hsla(180, 100%, 50%, 1);
-  padding: 2% 5%;
+  padding: 2% 7%;
   font-size: 1.4rem;
 }
 
 ul {
   padding: 5% 0%;
   list-style-type: none;
+  font-size: 1.3rem;
+
+}
+li {
+  padding: 2% 0%;
 }
 
 .banner-container{
-  padding: 5% 20%;
+  padding: 6% 4%;
 }
 
+@media (min-width:768px) and (max-width: 992px){
+.banner-container{
+  padding: 6% 16%;
+}
+}
+
+@media (min-width:992px){
+  .banner-container{
+   width: 50vw;
+  }
+  }
+
 .bg-aqua{
-  padding: 3%;
+  padding: 5%;
   background-color: hsla(180, 100%, 50%, .6);
-  line-height:1.8;
+  line-height:6.8;
 }
 
 .bg-aqua-2{
@@ -55,16 +76,36 @@ ul {
 line-height:1.4;
 }
 
+/* .get-started {
+  padding: 1% 0%;
+  margin: 4% 31% 8% 31%;
+  background-color: hsla(180, 100%, 50%, .1);
+  line-height: 1;
+} */
+
 .get-started {
-  padding: 2%;
-  margin: 3% 25% 14% 25%;
-  background-color: hsla(120, 100%, 50%, .1);
-  line-height: 1.8;
+  padding: 1% 0%;
+  margin: 3% 1% 10% 1%;
+  background-color: hsla(180, 100%, 50%, .);
+  line-height: 1;
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .get-started {
+    margin: 5% 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  .get-started {
+    margin: 5% 25%;
+  }
+}
+
 
 .logo-size{
   width: 80%;
-
+  margin: auto;
 }
 
 .codebox {
@@ -120,3 +161,16 @@ line-height:1.4;
   0% {opacity: 0%;}
   100% {opacity: 100%;}
 }
+.social-icon{
+  padding: 0% 3%;
+}
+
+@media(min-width:992px){
+  .social-row{
+    position: fixed;
+    right: 3%;
+    bottom: 7%;
+  }
+  .social-icon{
+    padding: 15% 0%;
+  }

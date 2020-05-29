@@ -11,42 +11,48 @@
     <link rel="stylesheet" href="css/deploy.css">
   </head>
   <body id="page-top" class="bg-black text-white">
-   
-   <!-- NAV -->
-    <nav>
-            <div class="d-flex justify-content-center py-2">
-                <a href="localize.html" class="h4" id="localize_nav">
+
+        <!-- NAV -->
+        <nav>
+          <div class="d-flex justify-content-center py-2 fade-in">
+            <div class="load-link">
+              <a href="localize.html" class="h4" id="localize_nav">
                 <span id="load_l" class="load_letter">L</span>
-                <span id="load_ocalize" class="load_word d-none">ocalize</span>
-                </a>
-                <a href="optimize.html" class="h4" id="optimize_nav">
-                <span id="load_l" class="load_letter">O</span>
-                <span id="load_ocalize" class="load_word d-none">ptimize</span>
-                </a>
-                <a href="audit.html" class="h4" id="audit_nav">
-                <span id="load_l" class="load_letter">A</span>
-                <span id="load_ocalize" class="load_word d-none">udit</span>
-                </a>
-                <a href="deploy.html" class="h4" id="deploy_nav">
-                <span id="load_l" class="load_letter">D</span>
-                <span id="load_ocalize" class="load_word d-none">eploy</span>
-                </a>
+              </a>
             </div>
-            <div class="d-flex justify-content-center py-2 bg-secondary-nav text-white">
-                <h1  class="h3">Arjan Tools</h1>
+            <div class="load-link">
+              <a href="optimize.html" class="h4" id="optimize_nav">
+                <span id="load_o" class="load_letter">O</span>
+              </a>
             </div>
-            </nav>
+            <div class="load-link">
+              <a href="audit.html" class="h4" id="audit_nav">
+                <span id="load_a" class="load_letter">A</span>
+              </a>
+            </div>
+            <div class="load-link">
+              <a href="deploy.html" class="h4" id="deploy_nav">
+                <span id="load_d" class="load_letter">D</span>
+              </a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center py-2 bg-secondary-nav text-white">
+            <a href="index.html">
+              <h1 class="text-white h3">Arjan Tools</h1>
+            </a>
+          </div>
+        </nav>
 
 
     <header>
-      <div class="container py-md-5">
-        <div class="row pt-3">
-          <div class="col-md-6 text-white text-md-left text-center px-lg-5 order-1 order-lg-0">
-            <h1 class="py-3 deploy-text">Arjan Deploy</h1>
-            <p class="pb-2">Arjan deploy is a tool that helps you deploy static sites to the AWS Cloud using Infrastructure as Code  </p>
-            <a href="#" class="arjan-btn text-white">Get Started</a>
+      <div class="container pt-5">
+        <div class="row ">
+          <div class="col-md-6 text-white text-md-left text-center order-1 order-lg-0">
+            <h1 class="deploy-text">Arjan Deploy</h1>
+            <p class="py-3">Arjan deploy is a tool that helps you deploy static sites to the AWS Cloud using Infrastructure as Code  </p>
+            <a href="#getstarted" class="arjan-btn">Get Started</a>
           </div>
-          <div class="col-md-6 order-0 px-5 order-md-1 text-center">
+          <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_deploy_logo.svg" class="audit-logo" alt="">
             <div class="audit-logo-bg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
@@ -73,7 +79,7 @@
     
     <!--SQUARE BANNER -->
     <section>
-      <div class="container banner-container py-5">
+      <div class="container">
         <div class="bg-aqua">
           <h2 class="text-white h1 text-box-audit">Leverage the power and cost savings of the AWS Cloud in your static sites</h2>
         </div>
@@ -103,8 +109,8 @@
             <div class="container pt-5">
               <div class="row">
                 <h3 class="h1 col-12 pb-2 text-center text-md-left deploy-text">Features</h3>
-                <div class="col-md-6 order-1">
-
+               
+                <div class="col-md-6 ">
                   <ul style="list-style: none;">
                         <li class="py-2 h5">Connect to a global CDN network with low latency and high speeds. Learn more about Cloudfront </li>
                         <li class="py-2 h5">Add/verify TLS certificates with ease using AWS ACM</li> 
@@ -116,9 +122,8 @@
                        </ul>
                 </div>
                 <div class="col-md-6 order-0">
-                     <div class="" style="height: 150px; width: 200px;"> <h3>Add a CDN, DNS, HTTPS to your site with only one command</h3></div>
+                     <div class="bg-aqua"> <h3>Add a CDN, DNS, HTTPS to your site with only one command</h3></div>
                 </div>
-
               </div>
             </div>
           </section>
@@ -127,7 +132,7 @@
     <section>
       <div class="container"> 
 
-        <h2 class="text-left deploy-text  px-0 px-md-5 py-5 h1"> For an easier development workflow we have defined some templates that include:</h2>
+        <h2 class="text-left deploy-text text-padding h1"> For an easier development workflow we have defined some templates that include:</h2>
 
       <div class="rect rect1">
         <h2 class="text-white h1 text-center">Dev</h2>
@@ -144,30 +149,58 @@
     </section>
 
 
-              <!--GET STARTED-->
-         <section>
-            <div class="container pt-5">
-              <div class="row">
 
-                <div class="col-md-6 px-lg-5 get-started">
-                  <h3 class="h2 pb-4 deploy-text">Get Started</h3>
-                 <p>1. go into your sites directory `cd SITE_NAME`
-                        2. run `arjan init SITE_NAME`  Refer to the provider setup section if you haven't used any of the cloud translation APIs.
-                        3. Run the translate command `arjan translate SITE_NAME [FILENAME]`</p>
-                </div>
-                <div class="col-md-6">
-                     <div class="bg-light" style="height: 400px; width: 450px;"></div>
-                </div>
-
-              </div>
+    <!--GET STARTED-->
+    <section>
+      <div class="container">
+        
+          <div class="row get-started">
+            <div class="col-lg-12">
+              <h3 id="getstarted" class="h1 pb-4 text-center deploy-text">Get Started</h3>
+              <ol>
+                <li class="py-2">Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li><br>
+                <li class="py-2">Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
+                <li class="py-2">Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
+                <li class="py-2">Deploy your project <button class="codebox" onclick="copyVal(this.textContent)">arjan deploy yoursite.com prod</button></li>
+              </ol>
             </div>
-          </section>
-
-          <footer class="footer pt-5">
-            <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
-              <span class="text-muted">Powered by Torus</span>
             </div>
-          </footer>
+          </div>
+        </div>
+
+
+        <section>
+          <div class="social-row d-flex justify-content-center d-lg-block">
+            <div class="d-lg-block social-icon">
+              <a href="https://twitter.com/ArjanTools">
+                <img height="45px" src="img/twitter_logo_2.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="#">
+                <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="#docs.html">
+                <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- FOOTER -->
+    <footer class="footer pt-5">
+      <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
+        <span class="text-muted">Powered by </span>
+        <a href="https://torus-digital.com/">
+          <span id="torus" class="text-muted">Torus</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
 
     <script defer
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
