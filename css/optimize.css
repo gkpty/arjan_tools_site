@@ -46,7 +46,8 @@ li {
 }
 
 .bg-aqua{
-  padding: 5%;
+  padding: 3%;
+  margin: 5% 4%;
   background-color: hsla(180, 100%, 50%, .6);
   line-height:6.8;
 }
@@ -137,6 +138,11 @@ line-height:1.4;
   .banner-container{
     padding: 6% 16%;
   }
+  .bg-aqua {
+    padding: 3%;
+    margin: 4% 18%;
+    background-color: hsla(180, 100%, 50%, .6);
+    line-height: 6.8;
 }
 
 @media(min-width:992px){
@@ -154,4 +160,10 @@ line-height:1.4;
   .banner-container{
     width: 50vw;
    }
+   .bg-aqua {
+    padding: 3%;
+    margin: 4% 26%;
+    background-color: hsla(180, 100%, 50%, .6);
+    line-height: 6.8;
+}
 }
