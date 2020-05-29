@@ -1,20 +1,14 @@
 .cls-1{opacity:0.4;}
-.cls-2,.cls-4{fill:#fff92c;}
+.cls-2,.cls-4{fill:#ff00ff;}
 .cls-2,
 .cls-3{opacity:0.45;}
 .cls-3,
-.cls-5{fill:#ff0;}
+.cls-5{fill: #ff00ff;}
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
-
-
 p{
   font-size: 1.3rem;
-}
-
-.bg-secondary-nav {
-    background-color: hsla(0,0%, 50%, .1);
 }
 
 .audit-logo-bg{
@@ -26,82 +20,57 @@ p{
     position: absolute;
     z-index: 1;
     width: 46%;
-    right: 26%;
+    right: 22%;
     top: 15%
 }
 
 .arjan-btn {
-  border: hsla(60, 100%, 50%, 1)1px solid;
-  color: hsla(0, 0%,  100%, .8);
+  border: hsla(60, 100%, 50%, 1) 1px solid;
+  color: hsla(0, 0%, 100%, 1);
   padding: 2% 5%;
   font-size: 1.4rem;
 }
 
-.banner-container{
-  padding: 5% 20%;
-}
-
-li {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
 
 .bg-sepia{
-  padding: 3%;
-  margin: 15% 9%;
-  background-color: hsla(60, 100%, 50%, .6);
-  line-height:1.8;
-}
-
-@media (min-width: 768px){
-  .bg-sepia{
     padding: 3%;
-    margin: 13% 24% 6% 24%;
+    margin: 15% 9%;
     background-color: hsla(60, 100%, 50%, .6);
     line-height:1.8;
   }
-
-}
 
 .text-box-audit{
 line-height:1.4;
 }
 
-.lighthouse{
-  width: 60%;
-    margin: 0% 34%;
-    z-index: -1;
+ul {
+  padding: 5% 0%;
+  list-style-type: none;
 }
 
-.lighthouse-text{
-  width: 43%;
-  margin-top: -15%;
+.banner-padding{
+  padding-left: 39rem;
+  padding-right: 7rem;
 }
-
 .get-started {
   padding: 1% 0%;
   margin: 16% 2% 14% 2%;
-  background-color: hsla(300, 100%, 50%, .1);
+  background-color: hsla(60, 100%, 50%, .1);
   line-height: 1;
 }
 
-@media (min-width: 768px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 16% 2% 14% 2%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
+.text-padding{
+  padding: 2% 0%;
+  margin: 0% 0%;
 }
 
-@media (min-width: 992px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 12% 24%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
+.codebox {
+  padding: 2% 3%;
+  background-color: black;
+  color: white;
+  border: hsla(120, 100%, 50%, 0) 1.5px solid;
 }
+
 
 /* The animation code */
 @keyframes squaretop {
@@ -135,12 +104,44 @@ line-height:1.4;
   animation-fill-mode: forwards;
 }
 
-.report-padding{
-  padding: 5% 5%;
-  margin: 5% 5%;
-  width: 100%;
+.lighthouse{
+    width: 60%;
+      margin: 0% 34%;
+      z-index: -1;
+  }
+  
+  .lighthouse-text{
+    width: 43%;
+    margin-top: -15%;
+  }
+
+  .report-padding{
+    padding: 5% 5%;
+    margin: 5% 5%;
+    width: 100%;
+  }
+  
+@media(min-width:768px){
+
+  .get-started {
+    padding: 1% 0%;
+    margin: 16% 5% 14% 5%;
+    background-color: hsla(60, 100%, 50%, .1);;
+    line-height: 1;
+  }
+  .bg-sepia{
+    padding: 3%;
+    margin: 13% 24% 6% 24%;
+    background-color: hsla(60, 100%, 50%, .6);
+    line-height:1.8;
+  }
 }
 
-html,body{
-  font-size: 12pt !important;
+@media (min-width: 992px){
+  .get-started {
+    padding: 1% 0%;
+    margin: 12% 24%;
+    background-color:hsla(60, 100%, 50%, .1);;
+    line-height: 1;
+  }
 }
