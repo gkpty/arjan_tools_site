@@ -38,23 +38,6 @@ p{
     background-color: hsla(60, 100%, 50%, .6);
     line-height:1.8;
   }
-  
-  @media (min-width: 768px){
-    .bg-sepia{
-      padding: 3%;
-      margin: 13% 24% 6% 24%;
-      background-color: hsla(60, 100%, 50%, .6);
-      line-height:1.8;
-    }
-
-  }
-
-
-.bg-aqua-2{
-  padding: 6% 9%;
-  background-color: hsla(300, 100%, 50%, .2);
-  line-height:1.8;
-}
 
 .text-box-audit{
 line-height:1.4;
@@ -72,7 +55,7 @@ ul {
 .get-started {
   padding: 1% 0%;
   margin: 16% 2% 14% 2%;
-  background-color: hsla(300, 100%, 50%, .1);
+  background-color: hsla(60, 100%, 50%, .1);
   line-height: 1;
 }
 
@@ -138,17 +121,20 @@ ul {
     width: 100%;
   }
   
-
-
 @media(min-width:768px){
 
   .get-started {
     padding: 1% 0%;
-    margin: 16% 2% 14% 2%;
+    margin: 16% 5% 14% 5%;
     background-color: hsla(60, 100%, 50%, .1);;
     line-height: 1;
   }
-
+  .bg-sepia{
+    padding: 3%;
+    margin: 13% 24% 6% 24%;
+    background-color: hsla(60, 100%, 50%, .6);
+    line-height:1.8;
+  }
 }
 
 @media (min-width: 992px){

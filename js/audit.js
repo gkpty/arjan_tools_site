@@ -2,6 +2,7 @@ window.onload = function() {
   animateSquares();
 };
 
+//squares animation
 function animateSquares(){
   var sqtops = document.getElementsByClassName('square-top')
   for(var sq of sqtops) {
