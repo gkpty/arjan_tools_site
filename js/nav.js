@@ -40,7 +40,7 @@
     }
   }
   
-  var x = window.matchMedia("(min-width: 992px)")
+  var x = window.matchMedia("(min-width: 768px)")
   
   window.onload = function() {
     loadWords(x)
