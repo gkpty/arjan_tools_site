@@ -1,6 +1,6 @@
 
 .bg-dark-purple{
-  background-color: hsla(288, 100%, 6%, 1);
+  background-color: hsla(288, 100%, 6%, .6);
 }
 .header-bg-size{
   padding: 8% 2%;
@@ -118,19 +118,6 @@
 }
 
 
-
-@media (min-width: 768px){
-  .header-bg-size{
-    padding: 5% 2%;
-    margin: 2%;
-  }
-  .card-padding{
-    padding: 3rem 3rem;
-    width: 100%;
-  }  
-}
-
-
 .img-arrow{
   width: 40px;
   padding: 0 0%;
@@ -143,14 +130,7 @@
 .hidden-workflow-elem{
   visibility: hidden;
 }
-@media(max-width: 766px){
-  .arrow-tate{
-    transform: rotate(90deg);
-    position: absolute;
-    z-index:2;
-    margin-top: 60px;
-    margin-left: 7%;
-  }
+
   .arrow-back{
     transform: rotate(180deg);
   }
@@ -168,19 +148,47 @@
   animation-fill-mode: forwards;
 }
 
+.codebox{
+  padding: 2% 3%;
+  background-color: black;
+  color: white;
+  border: hsla(120, 100%, 50%, 0) 1.5px solid;
+}
 
 .get-started {
   padding: 1% 0%;
   margin: 3% 1% 10% 1%;
-  background-color: hsla(0, 0%, 50%, .3);
   line-height: 1;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 897px) {
+  .h3-about {
+      font-size: 1.6vw;
+  }  
+}
+
+@media (min-width: 768px) {
   .get-started {
     margin: 5% 15%;
   }
+  .header-bg-size{
+    padding: 5% 2%;
+    margin: 2%;
+  }
+  .card-padding{
+    padding: 3rem 3rem;
+    width: 100%;
+  }  
 }
+
+@media(max-width: 768px){
+  .arrow-tate{
+    transform: rotate(90deg);
+    position: absolute;
+    z-index:2;
+    margin-top: 60px;
+    margin-left: 7%;
+  }
 
 @media (min-width: 992px) {
   .get-started {
@@ -189,15 +197,3 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 897px) {
-  .h3-about {
-      font-size: 1.6vw;
-  }  
-}
-
-.codebox{
-  padding: 2% 3%;
-  background-color: black;
-  color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
-}
