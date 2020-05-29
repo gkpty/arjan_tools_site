@@ -3,7 +3,6 @@ html,body{
   width: 100%;
   overflow-x: hidden;
   color: #fff;
-  background-color: #000;
 }
 h1 h2 h3 {
   font-family: 'Montserrat', cursive;
@@ -17,6 +16,22 @@ p{
 .bg-secondary-nav{
   background-color: hsla(0,0%, 50%, .1);
 }
+.text-white{
+  color: hsla(0, 0% , 100%, 1);
+}
+.localize-text{
+  color: hsla(120, 100%, 50%, 1);
+}
+.optimize-text{
+  color: hsla(180, 100%, 50%, 1);
+}
+.audit-text{
+  color: hsla(60, 100%, 50%, 1);
+}
+.deploy-text{
+  color: hsla(300, 100%, 50%, 1);
+}
+
 
 /* NAV */
 .load-link{padding:0% 3%}

@@ -10,34 +10,19 @@
   padding: 5% 2%;
   margin: 6% 2%;
 }
-.text-white{
-  color: hsla(0, 0% , 100%, 1);
-}
 
 
 .arjan-localize-card{
   background-color: hsla(120, 100%, 50%, .2);
 }
-.localize-text{
-  color: hsla(120, 100%, 50%, 1);
-}
 .arjan-optimize-card{
   background-color:  hsla(180, 100%, 50%, .2);
-}
-.optimize-text{
-  color: hsla(180, 100%, 50%, 1);
 }
 .arjan-audit-card{
   background-color:  hsla(60, 100%, 50%, .2);
 }
-.audit-text{
-  color: hsla(60, 100%, 50%, 1);
-}
 .arjan-deploy-card{
   background-color:  hsla(300, 100%, 50%, .2);
-}
-.deploy-text{
-  color: hsla(300, 100%, 50%, 1);
 }
 
 
