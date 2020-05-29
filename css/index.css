@@ -83,13 +83,13 @@
 
 
 .img-arrow{
-  width: 100px;
-  padding: 0 5%;
+  width: 40px;
+  padding: 0 0%;
   opacity: 0%;
 }
 .workflow-elem{
   font-size: 180%;
-  padding: 0% 2%;
+  padding: 0% 8%;
 }
 .hidden-workflow-elem{
   visibility: hidden;
@@ -99,14 +99,14 @@
     transform: rotate(90deg);
     position: absolute;
     z-index:2;
-    margin-top: 70px;
-    padding: 1% 1% !important;
+    margin-top: 60px;
+    margin-left: 7%;
   }
   .arrow-back{
     transform: rotate(180deg);
   }
   .secondary-arrow{
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 .arrow-set{

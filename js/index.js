@@ -1,16 +1,17 @@
 var observer = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true)
 		for(let l of document.getElementsByClassName('img-arrow')){
-      console.log(l)
+      //console.log(l)
       let num = 0;
-      if(l.id.split('arrow')) num = parseInt(l.id.split('arrow')[1]) - 2; 
-      else if(l.alt.split('arrow')) {
-        num = parseInt(l.alt.split('arrow')[1]) -2
-        l.id='arrowsm'+num+2;
+      if(l.id.startsWith('arrow')) num = parseInt(l.id.split('arrow')[1]); 
+      else if(l.alt.startsWith('arrow')) {
+        num = parseInt(l.alt.split('arrow')[1])
+        l.id='smarrow'+num+2;
       }
+      console.log(num)
       setTimeout(function(){
         document.getElementById(l.id).classList.add('arrowanimate')
-      }, num*500)
+      }, num*400)
     }
 }, { threshold: [.6] });
 
