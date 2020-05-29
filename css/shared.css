@@ -7,6 +7,11 @@ html,body{
 h1 h2 h3 {
   font-family: 'Montserrat', cursive;
 }
+a:hover{
+  text-decoration: none;
+  text-shadow: 1px 1px 6px hsla(120, 100%, 50%, .6);
+}
+
 p{
   font-family: 'quicksand', sans-serif;
 }

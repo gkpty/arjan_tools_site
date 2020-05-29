@@ -69,9 +69,54 @@
   100% {transform: rotate(0deg);}
 }
 
-.arjan-localize-card:hover{
-  box-shadow: 5px 5px 5px hsl(120, 100%, 50%);
+.arjan-localize-card:hover {
+  border: hsla(120, 100%, 50%, 0) 2px solid;
+  animation-name: fadelocborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
 }
+@keyframes fadelocborder {
+  0% {border: hsla(120, 100%, 50%, 0) 1.5px solid;}
+  50% {border: hsla(120, 100%, 50%, .5) 1.5px solid;}
+  100% {border: hsla(120, 100%, 50%, .4) 1.5px solid;}
+}
+
+.arjan-optimize-card:hover {
+  border: hsla(180, 100%, 50%, 0) 2px solid;
+  animation-name: fadeoptborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeoptborder {
+  0% {border: hsla(180, 100%, 50%, 0) 1.5px solid;}
+  50% {border: hsla(180, 100%, 50%, .5) 1.5px solid;}
+  100% {border: hsla(180, 100%, 50%, .4) 1.5px solid;}
+}
+
+.arjan-audit-card:hover {
+  border: hsla(60, 100%, 50%, 0) 2px solid;
+  animation-name: fadeaudborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeaudborder {
+  0% {border: hsla(60, 100%, 50%, 0) 1.5px solid;}
+  50% {border: hsla(60, 100%, 50%, .5) 1.5px solid;}
+  100% {border: hsla(60, 100%, 50%, .4) 1.5px solid;}
+}
+
+.arjan-deploy-card:hover {
+  border: hsla(300, 100%, 50%, 0) 2px solid;
+  animation-name: fadedepborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadedepborder {
+  0% {border: hsla(300, 100%, 50%, 0) 1.5px solid;}
+  50% {border: hsla(300, 100%, 50%, .5) 1.5px solid;}
+  100% {border: hsla(300, 100%, 50%, .4) 1.5px solid;}
+}
+
 
 
 @media (min-width: 768px){
@@ -87,13 +132,13 @@
 
 
 .img-arrow{
-  width: 100px;
-  padding: 0 5%;
+  width: 40px;
+  padding: 0 0%;
   opacity: 0%;
 }
 .workflow-elem{
   font-size: 180%;
-  padding: 0% 2%;
+  padding: 0% 8%;
 }
 .hidden-workflow-elem{
   visibility: hidden;
@@ -103,14 +148,14 @@
     transform: rotate(90deg);
     position: absolute;
     z-index:2;
-    margin-top: 70px;
-    padding: 1% 1% !important;
+    margin-top: 60px;
+    margin-left: 7%;
   }
   .arrow-back{
     transform: rotate(180deg);
   }
   .secondary-arrow{
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 .arrow-set{
