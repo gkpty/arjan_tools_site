@@ -14,7 +14,7 @@ function animateSquares(){
         let dec = 5
         if(i%2) dec = -5
         initVal += dec;
-        console.log(initVal)
+        //console.log(initVal)
         sq.setAttribute("y", initVal.toString());
       }, 10)
     }
