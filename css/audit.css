@@ -131,7 +131,7 @@ ul {
   }
   .bg-sepia{
     padding: 3%;
-    margin: 13% 24% 6% 24%;
+    margin: 12% 20% 6% 20%;
     background-color: hsla(60, 100%, 50%, .6);
     line-height:1.8;
   }
@@ -143,5 +143,11 @@ ul {
     margin: 12% 24%;
     background-color:hsla(60, 100%, 50%, .1);;
     line-height: 1;
+  }
+  .bg-sepia{
+    padding: 3%;
+    margin: 12% 30% 6% 30%;
+    background-color: hsla(60, 100%, 50%, .6);
+    line-height:1.8;
   }
 }

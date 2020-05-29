@@ -27,7 +27,7 @@ p{
 .arjan-btn {
   border: hsla(180, 100%, 50%, 1) 1px solid;
   color: hsla(180, 100%, 50%, 1);
-  padding: 2% 7%;
+  padding: 2% 5%;
   font-size: 1.4rem;
 }
 
@@ -162,7 +162,7 @@ line-height:1.4;
    }
    .bg-aqua {
     padding: 3%;
-    margin: 4% 26%;
+    margin: 4% 30%;
     background-color: hsla(180, 100%, 50%, .6);
     line-height: 6.8;
 }

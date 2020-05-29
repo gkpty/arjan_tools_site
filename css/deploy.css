@@ -154,7 +154,7 @@ ul {
   }
   .bg-aqua{
     padding: 3%;
-    margin: 9% 22% 4% 22%;
+    margin: 12% 16% 4% 16%;
     background-color: hsla(300, 100%, 50%, .5);
     line-height:1.8;
   }
@@ -168,8 +168,8 @@ ul {
     line-height: 1;
   }
   .bg-aqua{
-    padding: 4%;
-    margin: 10% 27% 6% 27%;
+    padding: 3%;
+    margin: 12% 23% 6% 23%;
     background-color: hsla(300, 100%, 50%, .5);
     line-height:1.8;
   }
