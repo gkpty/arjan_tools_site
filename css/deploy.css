@@ -160,4 +160,18 @@ ul {
     background-color: hsla(300, 100%, 50%, .5);
     line-height:1.8;
   }
+  .rect1{
+    margin-left: 10%;
+    margin-bottom: -4%;
+    width: 27%;
+  }
+  .rect2{
+    margin-left: 30%;
+    margin-bottom: -2%;
+    width: 29%;
+  }
+  .rect3{
+    margin-left: 52%;
+    width: 37%;
+  }
 }
