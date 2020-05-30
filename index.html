@@ -133,9 +133,10 @@
 
 <!-- WHAT IS ARJAN TOOLKIT       -->
 <section>
-  <div class="container text-center">
+  <div class="container text-center container-padding-top">
     <h2 class="h1"><span id="_What_is_Arj5"> What is Arjan Toolkit</span></h3>
-<h3 id="Arjan_Toolki7" class="h4 card-padding">Arjan Toolkit is an intuitive CLI that helps you use the other tools of the LOAD Stack. There is no need to learn a new language or frameworks,  just keep on developing in HTML, CSS and Javascript </h3>
+<h3 id="" class="h4 card-padding">
+  Arjan is a simple Node.js tool kit that helps you take your static (html/css/js) projects to production with the  minimum overhead, lowest cost, and best performance. <br> Arjan features an easy to use CLI (made to resemble git) with intuitive commands for each tool in the kit. </h3>
 
 </div>
 
@@ -143,41 +144,49 @@
 </section>
 
 <!-- THE LOAD WORKFLOW -->
-    <section id="arrowset">
-      <div class="container text-center text-white bg-dark-purple p-5">
-        <h2 id="The_LOAD_Wor6">The LOAD Workflow</h2>
-        <div class="arrow-set container">
-          <div class="d-flex justify-content-center py-2">
-            <div class="workflow-item d-flex">
-              <a href="localize.html" class="workflow-elem localize-text" id="localize_workflow">Localize</a>
-              <img id="arrow2" class="img-arrow" src="img/arrow.svg">
+    <section class="container-padding-top" id="arrowset">
+      <div class="container p-5 text-center bg-dark-purple ">
+        <div class="container">
+          <h2 id="The_LOAD_Wor6">The LOAD Workflow</h2>
+          <div class="arrow-set container">
+            <div class="d-flex justify-content-center py-2">
+              <div class="workflow-item d-flex">
+                <a href="localize.html" class="workflow-elem localize-text" id="localize_workflow">Localize</a>
+                <img id="arrow2" class="img-arrow" src="img/arrow.svg">
+              </div>
+              <div class="workflow-item d-flex">
+                <a href="optimize.html" class="workflow-elem optimize-text" id="optimize_workflow">Optimize</a>
+                <img id="arrow3" class="img-arrow arrow-tate" src="img/arrow.svg">
+              </div>
+              <div class="workflow-item d-none d-md-flex">
+                <a href="audit.html" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
+                <img id="arrow4" class="img-arrow" src="img/arrow.svg">
+              </div>
+              <div class="d-flex">
+                <a href="deploy.html" class="workflow-elem d-none d-md-flex deploy-text" id="deploy_workflow">Deploy</a>
+              </div>
             </div>
-            <div class="workflow-item d-flex">
-              <a href="optimize.html" class="workflow-elem optimize-text" id="optimize_workflow">Optimize</a>
-              <img id="arrow3" class="img-arrow arrow-tate" src="img/arrow.svg">
-            </div>
-            <div class="workflow-item d-none d-md-flex">
-              <a href="audit.html" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
-              <img id="arrow4" class="img-arrow" src="img/arrow.svg">
-            </div>
-            <div class="d-flex">
-              <a href="deploy.html" class="workflow-elem d-none d-md-flex deploy-text" id="deploy_workflow">Deploy</a>
+            <div class="d-flex secondary-arrow d-md-none justify-content-center">
+              <div class="workflow-item d-flex">
+                <a href="#" class="workflow-elem deploy-text" id="deploy_workflow">Deploy</a>
+                <img alt="arrow4" id="smarrow4" class="img-arrow arrow-back" src="img/arrow.svg">
+              </div>
+              <div class="d-flex">
+                <a href="#" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
+              </div>
             </div>
           </div>
-          <div class="d-flex secondary-arrow d-md-none justify-content-center">
-            <div class="workflow-item d-flex">
-              <a href="#" class="workflow-elem deploy-text" id="deploy_workflow">Deploy</a>
-              <img alt="arrow4" id="smarrow4" class="img-arrow arrow-back" src="img/arrow.svg">
-            </div>
-            <div class="d-flex">
-              <a href="#" class="workflow-elem audit-text" id="audit_workflow">Audit</a>
-            </div>
-          </div>
-        </div>
-        <p id="_Lorem_ipsum18"> Load is an acronym for localize, optimize, audit, deploy. Four things that we repeatedly do to our static site projects. <br>
+          <p id="_Lorem_ipsum18"> Load is an acronym for localize, optimize, audit, deploy. Four things that we repeatedly do to our static site projects. </p>
+  
+           <p>Arjan uses several really popular node js modules and builds some functionalities on top/besides them to help you LOAD effectively, with 0 overhead.</p> 
+          <p> The purpose of the load workflow is to allow to continue doing what your doing (i.e. using HTML5, CSS3 and VanillaJS) and help you take your projects to production with the minimum amount of overhead. Avoid learning any new frameworks. Avoid having to constantly download and maintain many things at once. Avoid having to pay for a service to do all these things for you. with all the APIs and new features that have been and continue being added to the web, including the support for ES6 syntax it seems that vanilla js will always continue becoming more usable and powerful. 
+          </p>
+          <p>Its CLI is fast and easy to use/integrate into your current process. </p> 
 
-          Arjan uses several really popular node js modules and builds some functionalities on top/besides them to help you LOAD effectively, with 0 overhead.<br> Its CLI is fast and easy to use/integrate into your current process.</p>
-      </div>
+        </div>
+
+        </div>
+        
     </section>
 
     <!--GET STARTED-->
@@ -186,7 +195,7 @@
         
           <div class="row  get-started bg-dark-purple">
             <div class="col-lg-12">
-              <h3 id="getstarted" class="h1 pb-4 text-center">Get Started</h3>
+              <h3 id="getstarted" class="h1 pb-3 text-center">Get Started</h3>
               <ol>
                 <li class=""><span id="Install_arja33">Install arjan globally (you only have to do this once)</span><button id="npm_i_-g_arj36" class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li><br>
                 <li class=""><span id="Go_into_your34">Go into your project's directory </span><button id="cd_SITE_NAME37" class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>

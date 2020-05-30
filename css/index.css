@@ -1,6 +1,6 @@
 
 .bg-dark-purple{
-  background-color: hsla(288, 100%, 6%, .6);
+  background-color: hsla(288, 100%, 6%, .8);
 }
 .header-bg-size{
   padding: 8% 2%;
@@ -51,7 +51,7 @@
   padding: 2%;
 }
 .card-padding{
-  padding: 3rem 3rem;
+  padding: 2rem 0rem;
   width: 100%;
 }
 
@@ -158,7 +158,7 @@
 .get-started {
   padding: 1% 0%;
   margin: 3% 1% 10% 1%;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 @media (min-width: 576px) and (max-width: 897px) {
@@ -176,7 +176,7 @@
     margin: 2%;
   }
   .card-padding{
-    padding: 3rem 3rem;
+    padding: 2rem 3rem;
     width: 100%;
   }  
 }
@@ -189,6 +189,7 @@
     margin-top: 60px;
     margin-left: 7%;
   }
+}
 
 @media (min-width: 992px) {
   .get-started {
