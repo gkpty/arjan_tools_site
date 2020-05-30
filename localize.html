@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/localize.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body id="page-top" class="bg-black text-white">
     
@@ -54,7 +55,7 @@
             <a href="#getstarted" class="arjan-btn text-white">Get Started</a>
             <a href="#getstarted" class="arjan-btn text-white">Get Started</a>
           </div>
-          <div class="col-md-6 order-0 pt-md-0 order-md-1 text-center">
+          <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_localize_logo.svg" class="audit-logo" alt="">
             <div class="audit-logo-bg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
@@ -82,29 +83,149 @@
         <div class="row">
           <div class="col-md-6 order-1">
             <h3 class="h1 pb-4 localize-text text-center text-md-left">How it Works</h3>
-
             <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
-              
             <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
-            <div class="">
-              <!-- <div class="col-md-4">
-              <img src="img/brain.svg" alt="">              
-            </div>  -->
-
-              <div class="col-md-8">
-              
-
-              <div>
-          </div>
-        </div>
-      </div>
-
           </div>
           <div class="col-6 order-0">
-                <h3 class="localize-text text-center h1">Try it Out</h3>
-            <div class="bg-light" style="height: 200px; width: 280px;"></div>
+            <h3 class="localize-text text-center text-md-left h1">Try it Out</h3>
+            <!-- FORM BY SUPER EASY FORMS -->
+            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3 holoform" action="#">
+              <label for="from" class="small mb-0">From</label>
+              <select class="form-control" id="from" name="from" required>
+                <option value="" selected="selected" disabled="disabled">Origin language of your site</option>
+                <option value="af">Afrikaans</option>
+                <option value="sq">Albanian</option>
+                <option value="am">Amharic</option>
+                <option value="ar">Arabic</option>
+                <option value="az">Azerbaijani</option>
+                <option value="bn">Bengali</option>
+                <option value="bs">Bosnian</option>
+                <option value="bg">Bulgarian</option>
+                <option value="zh">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="hr">Croatian</option>
+                <option value="cs">Czech</option>
+                <option value="da">Danish</option>
+                <option value="fa-AF">Dari</option>
+                <option value="nl">Dutch</option>
+                <option value="en">English</option>
+                <option value="et">Estonian</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="fr-CA">French (Canada)</option>
+                <option value="ka">Georgian</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="ha">Hausa</option>
+                <option value="he">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="lv">Latvian</option>
+                <option value="ms">Malay</option>
+                <option value="no">Norwegian</option>
+                <option value="fa">Persian</option>
+                <option value="ps">Pashto</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="sr">Serbian</option>
+                <option value="sk">Slovak</option>
+                <option value="sl">Slovenian</option>
+                <option value="so">Somali</option>
+                <option value="es">Spanish</option>
+                <option value="es-MX">Spanish (Mexico)</option>
+                <option value="sw">Swahili</option>
+                <option value="sv">Swedish</option>
+                <option value="tl">Tagalog</option>
+                <option value="ta">Tamil</option>
+                <option value="th">Thai</option>
+                <option value="tr">Turkish</option>
+                <option value="uk">Ukrainian</option>
+                <option value="ur">Urdu</option>
+                <option value="vi">Vietnamese</option>
+              </select>
+              <label for="to" class="small mb-0">To</label>
+              <select class="form-control" id="to" name="to" required>
+                <option value="" selected="selected" disabled="disabled">Desired translation language</option>
+                <option value="af">Afrikaans</option>
+                <option value="sq">Albanian</option>
+                <option value="am">Amharic</option>
+                <option value="ar">Arabic</option>
+                <option value="az">Azerbaijani</option>
+                <option value="bn">Bengali</option>
+                <option value="bs">Bosnian</option>
+                <option value="bg">Bulgarian</option>
+                <option value="zh">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="hr">Croatian</option>
+                <option value="cs">Czech</option>
+                <option value="da">Danish</option>
+                <option value="fa-AF">Dari</option>
+                <option value="nl">Dutch</option>
+                <option value="en">English</option>
+                <option value="et">Estonian</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="fr-CA">French (Canada)</option>
+                <option value="ka">Georgian</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="ha">Hausa</option>
+                <option value="he">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="lv">Latvian</option>
+                <option value="ms">Malay</option>
+                <option value="no">Norwegian</option>
+                <option value="fa">Persian</option>
+                <option value="ps">Pashto</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="sr">Serbian</option>
+                <option value="sk">Slovak</option>
+                <option value="sl">Slovenian</option>
+                <option value="so">Somali</option>
+                <option value="es">Spanish</option>
+                <option value="es-MX">Spanish (Mexico)</option>
+                <option value="sw">Swahili</option>
+                <option value="sv">Swedish</option>
+                <option value="tl">Tagalog</option>
+                <option value="ta">Tamil</option>
+                <option value="th">Thai</option>
+                <option value="tr">Turkish</option>
+                <option value="uk">Ukrainian</option>
+                <option value="ur">Urdu</option>
+                <option value="vi">Vietnamese</option>
+              </select>
+              <label for="email" class="small mb-0">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required>
+              <label for="file" class="small mb-0">File</label>
+              <div id="drop-area">
+                <div class="cotnainer text-center">
+                  <h4 class="text-center h5">Drag & Drop your html file</h4>
+                  <input type="file" id="fileElem" accept="html, markdown, txt" onchange="handleFiles(this.files)">
+                  <label class="button" for="fileElem">or Browse</label>
+                  <div class=""><span class="pr-2" id="fileName"></span><progress hidden id="progress-bar" max=100 value=0></progress></div>
+                </div>
+              </div>
+              <input id="file" name="file" hidden>
+              <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT"></div>
+              <h4 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h4>
+              <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Translate</button>
+            </form>
+            <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
           </div>
-         
         </div>
       </div>
     </section>
@@ -204,7 +325,8 @@
       </a>
     </div>
   </footer>
-  
+
+    <script src="js/localize.js"></script>
     <script src="js/copy.js"></script>
       <script defer
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

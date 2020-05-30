@@ -11,19 +11,6 @@ p{
   font-size: 1.3rem;
 }
 
-.audit-logo-bg{
-  width: 110%;
-  position: relative;
-  z-index: -1;
-}
-.audit-logo {
-    position: absolute;
-    z-index: 1;
-    width: 46%;
-    right: 22%;
-    top: 15%
-}
-
 .arjan-btn {
   border: hsla(180, 100%, 50%, 1) 1px solid;
   color: hsla(180, 100%, 50%, 1);

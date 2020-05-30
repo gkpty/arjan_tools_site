@@ -91,6 +91,22 @@ p{
   100%{color: hsl(300, 100%, 50%);}
 }
 
+/* BG */
+.audit-logo-bg{
+  width: 110%;
+  position: relative;
+  z-index: -1;
+}
+.audit-logo {
+    position: absolute;
+    z-index: 1;
+    width: 46%;
+    right: 27%;
+    top: 15%
+}
+
+
+
 /* SOCIAL ICONS */
 .social-icon{
   padding: 0% 3%;
@@ -118,16 +134,16 @@ p{
 
 
 .container-padding-top{
-  padding-top: 3rem; 
+  padding-top: 1rem; 
 }
 
 .h1-padding{
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 @media(min-width:768px){
   .container-padding-top{
-    padding-top: 5rem; 
+    padding-top: 3rem; 
   }
   .h1-padding{
     padding-top: 2rem;
@@ -147,7 +163,7 @@ p{
     padding: 15% 0%;
   }
   .h1-padding{
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 }
 
