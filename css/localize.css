@@ -72,6 +72,11 @@ padding: 5% 10%;
     line-height:1.8;
 }
 
+.form-padding{
+  padding: 3rem 1rem 1rem 1rem;
+  max-width: 450px;
+}
+
 
 .text-box-audit{
 line-height:1.4;
@@ -142,6 +147,9 @@ li {
     margin: 12% 22% 5% 22%;
     background-color: hsla(120, 100%, 50%, .6);
     line-height:1.8;
+  }
+  .form-padding{
+    padding: 0rem;
   }
 }
 

@@ -79,17 +79,19 @@
     
     <!-- HOW IT WORKS -->
     <section>
-      <div class="container container-padding-top">
+      <div class="container pt-5">
         <div class="row">
-          <div class="col-md-6 order-1">
-            <h3 class="h1 pb-4 localize-text text-center text-md-left">How it Works</h3>
+          <div class="col-md-6 order-1 pt-5 pt-md-0">
+            <h3 class="h1 localize-text text-center text-md-left">How it Works</h3>
             <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
             <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
           </div>
-          <div class="col-6 order-0">
+          <div class="col-md-6 order-0">
+            <div class="form-padding">
+
             <h3 class="localize-text text-center text-md-left h1">Try it Out</h3>
             <!-- FORM BY SUPER EASY FORMS -->
-            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3 holoform" action="#">
+            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="holoform" action="#">
               <label for="from" class="small mb-0">From</label>
               <select class="form-control" id="from" name="from" required>
                 <option value="" selected="selected" disabled="disabled">Origin language of your site</option>
@@ -227,6 +229,7 @@
             <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
           </div>
         </div>
+      </div>
       </div>
     </section>
 
