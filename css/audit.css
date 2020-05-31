@@ -7,15 +7,11 @@
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
-p{
-  font-size: 1.3rem;
-}
-
 .arjan-btn {
   border: hsla(60, 100%, 50%, 1) 1px solid;
   color: hsla(0, 0%, 100%, 1);
   padding: 2% 5%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 
@@ -50,14 +46,6 @@ ul {
   padding: 2% 0%;
   margin: 0% 0%;
 }
-
-.codebox {
-  padding: 2% 3%;
-  background-color: black;
-  color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
-}
-
 
 /* The animation code */
 @keyframes squaretop {

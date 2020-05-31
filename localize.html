@@ -17,29 +17,29 @@
     <nav>
       <div class="d-flex justify-content-center py-2 fade-in">
         <div class="load-link">
-          <a href="localize.html" class="h4" id="localize_nav">
+          <a href="localize.html" id="localize_nav">
             <span id="load_l" class="load_letter">L</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="optimize.html" class="h4" id="optimize_nav">
+          <a href="optimize.html" id="optimize_nav">
             <span id="load_o" class="load_letter">O</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="audit.html" class="h4" id="audit_nav">
+          <a href="audit.html" id="audit_nav">
             <span id="load_a" class="load_letter">A</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="deploy.html" class="h4" id="deploy_nav">
+          <a href="deploy.html" id="deploy_nav">
             <span id="load_d" class="load_letter">D</span>
           </a>
         </div>
       </div>
       <div class="d-flex justify-content-center py-2 bg-secondary-nav text-white">
         <a href="index.html">
-          <h1 class="text-white h3">Arjan Tools</h1>
+          <h1 class="text-white h5">Arjan Tools</h1>
         </a>
       </div>
     </nav>
@@ -51,9 +51,12 @@
         <div class="row">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
             <h1 class="localize-text h1-padding">Arjan Localize</h1>
-            <p class="py-3">A localization workflow with automatic translation for static sites  </p>
+            <p class="header-text-padding">A localization workflow with automatic translation for static sites  </p>
             <a href="#getstarted" class="arjan-btn text-white">Get Started</a>
-            <a href="#getstarted" class="arjan-btn text-white">Get Started</a>
+            <div class="pt-3"> 
+              <a href="#getstarted" class="text-white">Read the Docs</a>
+
+            </div>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_localize_logo.svg" class="audit-logo" alt="">
@@ -81,7 +84,7 @@
     <section>
       <div class="container pt-5">
         <div class="row">
-          <div class="col-md-6 order-1 pt-5 pt-md-0">
+          <div class="col-md-6 order-1">
             <h3 class="h1 localize-text text-center text-md-left">How it Works</h3>
             <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
             <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
