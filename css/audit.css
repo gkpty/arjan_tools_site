@@ -17,7 +17,7 @@
 
 .bg-sepia{
     padding: 3%;
-    margin: 15% 9%;
+    margin: 15% 3%;
     background-color: hsla(60, 100%, 50%, .6);
     line-height:1.8;
   }
@@ -35,6 +35,7 @@ ul {
   padding-left: 39rem;
   padding-right: 7rem;
 }
+
 .get-started {
   padding: 1% 0%;
   margin: 16% 2% 14% 2%;
@@ -45,6 +46,13 @@ ul {
 .text-padding{
   padding: 2% 0%;
   margin: 0% 0%;
+  width: 60%;
+}
+
+.video-padding{
+  padding: 3rem 3rem;
+  margin: 3rem 3rem;
+  width: 60%;
 }
 
 /* The animation code */

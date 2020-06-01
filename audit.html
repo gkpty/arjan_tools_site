@@ -86,14 +86,19 @@
 
     <!-- HOW IT WORKS -->
     <section>
-      <div class="container pt-5">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="bg-light" style="height: 150px; width: 200px;"></div>
+          <div class="col-12">
+            <video class="w-100" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 mt-5">
+              <source src="video/movie_test.mp4">
+              </video>
           </div>
-          <div class="col-md-6">
-            <h3 class="h1 audit-text text-center text-md-left pb-4">How it Works</h3>
-            <p>Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6</p>
+          <div class="col-12">
+            <div class="">  
+              <h3 class="h1 audit-text text-center text-md-left pb-4">How it Works</h3>
+              <p>Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6</p>
+  
+            </div>
           </div>
         </div>
       </div>
@@ -113,15 +118,15 @@
   
           <!-- Audit Report -->
     <section>
-        <div class="container pt-5">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <h3 class="h1 audit-text text-center text-md-left pb-4">Audit Report</h3>
               <p>Arjan deploy uses Infrastructure as Code templates to help you provision and deploy all the necessary resources for your site in the cloud. </p>
   
               <p>Generally static sites in the cloud consist of an object storage solution (i.e. S3) with a public policy, a CDN, a DNS (from your domain name provider or your cloud provider) and optionally may contain a digital certificate.</p>
             </div>
-            <div class="col-lg-6 d-flex justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
               <img class="report-padding" src="img/audit_report.svg" alt="arjan audit SEO lighthouse 6 report"> 
             </div>
           </div>
