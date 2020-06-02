@@ -86,18 +86,11 @@
 
     <!-- HOW IT WORKS -->
     <section>
-      <div class="container">
-        <div class="row">
+
           <div class="col-12">
-            <video class="w-100" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 mt-5">
-              <source src="video/movie_test.mp4">
-              </video>
-          </div>
-          <div class="col-12">
-            <div class="">  
-              <h3 class="h1 audit-text text-center text-md-left pb-4">How it Works</h3>
+            <div class="padding2">  
+              <h3 class="h1 audit-text text-center pb-4">How it Works</h3>
               <p>Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6</p>
-  
             </div>
           </div>
         </div>
@@ -120,17 +113,22 @@
     <section>
         <div class="container">
           <div class="row">
+            <div class="">
+              <h3 class="h1 audit-text text-center pb-4">Audit Report</h3>
+
+            </div>
+            <div class="row">
             <div class="col-md-6">
-              <h3 class="h1 audit-text text-center text-md-left pb-4">Audit Report</h3>
               <p>Arjan deploy uses Infrastructure as Code templates to help you provision and deploy all the necessary resources for your site in the cloud. </p>
   
               <p>Generally static sites in the cloud consist of an object storage solution (i.e. S3) with a public policy, a CDN, a DNS (from your domain name provider or your cloud provider) and optionally may contain a digital certificate.</p>
             </div>
-            <div class="col-md-6 d-flex justify-content-center">
-              <img class="report-padding" src="img/audit_report.svg" alt="arjan audit SEO lighthouse 6 report"> 
+            <div class="col-6 ">
+           <video class="w-100" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="video/movie_test.mp4"></video>
             </div>
           </div>
         </div>
+      </div>
       </section>
  
       
@@ -143,7 +141,7 @@
               <div class="col-lg-12">
                 <h3 id="getstarted" class="h1 pb-3 text-center audit-text">Get Started</h3>
                 <ol>
-                  <li>Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li><br>
+                  <li>Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
                   <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
                   <li>Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
                   <li>Deploy your project <button class="codebox" onclick="copyVal(this.textContent)">arjan deploy yoursite.com prod</button></li>

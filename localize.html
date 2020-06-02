@@ -50,13 +50,10 @@
       <div class="container container-padding-top">
         <div class="row">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
-            <h1 class="localize-text h1-padding">Arjan Localize</h1>
+            <h1 class="localize-text h2 h1-padding">Arjan Localize</h1>
             <p class="header-text-padding">A localization workflow with automatic translation for static sites  </p>
-            <a href="#getstarted" class="arjan-btn text-white">Get Started</a>
-            <div class="pt-3"> 
-              <a href="#getstarted" class="text-white">Read the Docs</a>
-
-            </div>
+            <a href="#getstarted" class="arjan-btn text-white d-block d-md-inline">Get Started</a>
+            <a href="#getstarted" class="text-white btn-alt d-block d-md-inline">Read the Docs</a>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_localize_logo.svg" class="audit-logo" alt="">
@@ -83,19 +80,31 @@
     <!-- HOW IT WORKS -->
     <section>
       <div class="container pt-5">
+        <h3 class="localize-text pb-lg-4 text-center h2">Try it Out</h3>
+
         <div class="row">
           <div class="col-md-6 order-1">
-            <h3 class="h1 localize-text text-center text-md-left">How it Works</h3>
-            <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
-            <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
+            <div class="row"> 
+              <div class="col-12">
+                <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <img class="image-fluid w-100" src="img/brain.svg" alt="">
+              </div>
+              <div class="col-8">
+                <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
+              </div>
+            </div>
           </div>
+          
           <div class="col-md-6 order-0">
             <div class="form-padding">
 
-            <h3 class="localize-text text-center text-md-left h1">Try it Out</h3>
             <!-- FORM BY SUPER EASY FORMS -->
             <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="holoform" action="#">
-              <label for="from" class="small mb-0">From</label>
+              <!-- <label for="from" class="small mb-0">From</label> -->
               <select class="form-control" id="from" name="from" required>
                 <option value="" selected="selected" disabled="disabled">Origin language of your site</option>
                 <option value="af">Afrikaans</option>
@@ -154,7 +163,7 @@
                 <option value="ur">Urdu</option>
                 <option value="vi">Vietnamese</option>
               </select>
-              <label for="to" class="small mb-0">To</label>
+              <!-- <label for="to" class="small mb-0">To</label> -->
               <select class="form-control" id="to" name="to" required>
                 <option value="" selected="selected" disabled="disabled">Desired translation language</option>
                 <option value="af">Afrikaans</option>
@@ -213,19 +222,19 @@
                 <option value="ur">Urdu</option>
                 <option value="vi">Vietnamese</option>
               </select>
-              <label for="email" class="small mb-0">Email</label>
+              <!-- <label for="email" class="small mb-0">Email</label> -->
               <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required>
-              <label for="file" class="small mb-0">File</label>
+              <!-- <label for="file" class="small mb-0">File</label> -->
               <div id="drop-area">
                 <div class="cotnainer text-center">
                   <h4 class="text-center h5">Drag & Drop your html file</h4>
                   <input type="file" id="fileElem" accept="html, markdown, txt" onchange="handleFiles(this.files)">
-                  <label class="button" for="fileElem">or Browse</label>
+                  <label class="arjan-btn" for="fileElem">or Browse</label>
                   <div class=""><span class="pr-2" id="fileName"></span><progress hidden id="progress-bar" max=100 value=0></progress></div>
                 </div>
               </div>
               <input id="file" name="file" hidden>
-              <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT"></div>
+              <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT" data-theme="dark"></div>
               <h4 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h4>
               <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Translate</button>
             </form>
@@ -237,19 +246,10 @@
     </section>
 
 
-    <!--SQUARE BANNER -->
-    <section>
-      <div class="container">
-        <div class="bg-aqua">
-          <h2 class="text-white h1 text-box-audit">Collaborate with your customers on their site's content with spreadsheets</h2>
-        </div>
-      </div>
-    </section>
-
     <!-- ADVANCED LOCALIZATION WORKFLOW -->
     <section>
-      <h2 class="text-center localize-text px-2 pt-5 pb-3 h1"> Advanced Localization Workflow </h2>
-      <div class="container diagram-container py-5">
+      <h2 class="text-center localize-text h2"> Advanced Localization Workflow </h2>
+      <div class="container diagram-container">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1036.3 410.9">
           <g id="diagram_group" data-name="Layer 2">
             <text class="diagram_text" transform="translate(707 357)">
@@ -282,11 +282,14 @@
     
     <!--GET STARTED-->
     <section>
-      <div class="container">
-        <div class="get-started">
+      <div class="container"> 
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-12">
               <h3 id="getstarted" class="h2 pb-3 text-center localize-text">Get Started</h3>
+
+            </div>
+            <div class="row">
+            <div class="col-6">
               <ol>
                 <li>Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
                 <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
@@ -294,11 +297,12 @@
                 <li>Translate your site <button class="codebox" onclick="copyVal(this.textContent)">arjan translate SITE_NAME from [to]</button></li>
               </ol>
             </div>
-            <div class="col-lg-6">
-              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 mt-5">
-                <source src="video/movie_test.mp4">
-                </video>
-            </div>
+              <div class="col-6">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 mt-5">
+                  <source src="video/movie_test.mp4">
+                  </video>
+              </div>
+          </div>
           </div>
         </div>
     </section>

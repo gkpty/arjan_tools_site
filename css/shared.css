@@ -1,8 +1,9 @@
 html,body{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 100%;
   overflow-x: hidden;
   color: #fff;
+  line-height: 1.6;
 }
 h1 h2 h3 {
   font-family: 'Montserrat', cursive;
@@ -93,15 +94,16 @@ p{
 
 /* BG */
 .audit-logo-bg{
-  width: 110%;
+  width: 100%;
   position: relative;
   z-index: -1;
+  padding: 0% 8%;
 }
 .audit-logo {
     position: absolute;
     z-index: 1;
-    width: 46%;
-    right: 27%;
+    width: 35%;
+    right: 34%;
     top: 15%
 }
 
@@ -115,7 +117,7 @@ li {
 }
 
 .header-text-padding{
-  padding: 3% 0% 1% 0%;
+  padding: 3% 2% 1% 0%;
 }
 
 /* SOCIAL ICONS */
@@ -149,30 +151,29 @@ li {
 }
 
 .h1-padding{
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .codebox{
-  padding: 2% 0%;
+  padding: 1% 0%;
   background-color: black;
   color: white;
   border: hsla(120, 100%, 50%, 0) 1.5px solid;
   white-space: nowrap;
   min-width: max-content;
-  margin: 1% 0%;
-
 }
 
 
 @media(min-width:768px){
   .container-padding-top{
-    padding-top: 3rem; 
-  }
-  .h1-padding{
-    padding-top: 2rem;
+    padding-top: 2rem; 
   }
   .load-link{
-    padding:0% 2%}
+    padding:0% 2%
+  }
+  .header-text-padding {
+    padding: 3% 7% 1% 0%;
+}
 }
 
 
@@ -185,8 +186,8 @@ li {
   .social-icon{
     padding: 15% 0%;
   }
-  .h1-padding{
-    padding-top: 3rem;
-  }
+  .header-text-padding {
+    padding: 3% 22% 1% 0%;
+}
 }
 

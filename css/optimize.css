@@ -46,6 +46,14 @@ line-height:1.4;
   margin: auto;
 }
 
+.video-size{
+  width: 100%;
+  max-width: 350px;
+  border: hsla(180, 100%, 50%, .6) 1px solid;
+  padding: 1%;
+
+}
+
 /* The animation code */
 @keyframes squaretop {
   0% {transform: translateY(-8%); opacity: 0;}
