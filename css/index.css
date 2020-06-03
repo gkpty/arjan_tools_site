@@ -1,14 +1,10 @@
 
 .bg-dark-purple{
-  background-color: hsla(288, 100%, 6%, .8);
+  background-color: hsla(288, 100%, 6%, .9);
 }
 .header-bg-size{
-  padding: 8% 2%;
+  padding: 5% 3%;
   margin: 7% 2%;
-}
-.header-bg-size{
-  padding: 5% 2%;
-  margin: 8% 2%;
 }
 
 .arjan-localize-card{
@@ -50,8 +46,7 @@
 
 .load{
     padding: 1% 0%;
-    margin: 3% 1% 10% 1%
-    background-color: hsla(300, 100%, 50%, .1);
+    margin: 3% 1% 10% 1%;
     line-height: 1.5;
 }
 
@@ -123,7 +118,7 @@
   opacity: 0%;
 }
 .workflow-elem{
-  font-size: 180%;
+  font-size: 140%;
   padding: 0% 8%;
 }
 .hidden-workflow-elem{
@@ -173,16 +168,15 @@
   }
   .header-bg-size{
     padding: 5% 2%;
-    margin: 2%;
+    margin: 2% 1%;
   }
   .card-padding{
-    padding: 0rem 3rem;
+    padding: 0rem 1rem;
     width: 100%;
   }  
   .load{
     padding: 3% 1%;
-    margin: 0% 8%;
-    background-color: hsla(300, 100%, 50%, .1);
+    margin: 0% 2%;
     line-height: 1;
 }
 }
@@ -206,6 +200,14 @@
     margin: 0% 8%;
     background-color: hsla(300, 100%, 50%, .1);
     line-height: 1;
+}
+.card-padding{
+  padding: 0rem 6rem;
+  width: 100%;
+}  
+.header-bg-size{
+  padding: 5% 2%;
+  margin: 2% 10%;
 }
 }
 

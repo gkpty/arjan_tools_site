@@ -13,6 +13,10 @@
 .bg-color{
   background-color:hsla(180, 100%, 50%, .4)
 }
+.bg-color-2{
+  background-color:hsla(180, 100%, 50%, .15)
+}
+
 
 .banner-container{
   padding: 6% 4%;

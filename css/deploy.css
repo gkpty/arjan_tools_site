@@ -32,6 +32,9 @@
 
 .bg-color{
   background-color: hsla(300, 100%, 50%, .4);
+}
+.bg-color-2{
+  background-color: hsla(300, 100%, 50%, .15);
 
 }
 

@@ -52,7 +52,7 @@
             <h1 class="deploy-text h1-padding ">Arjan Deploy</h1>
             <p class="header-text-padding">Arjan deploy is a tool that helps you deploy static sites to the AWS Cloud using Infrastructure as Code  </p>
             <a href="#getstarted" class="arjan-btn border-color text-white">Get Started</a>
-            <a href="#getstarted" class="text-white arjan-btn border-color ">Docs</a>
+            <a href="#docs.html" class="text-white arjan-btn border-color ">Docs</a>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_deploy_logo.svg" class="audit-logo" alt="">
@@ -187,7 +187,7 @@
     <section class="contop">
       <div class="container"> 
 
-        <h2 class="text-left deploy-text text-padding h2"> For an easier development workflow we've added some pre defined templates</h2>
+        <h2 class="text-left deploy-text pb-3 h2"> For an easier development workflow we've added some pre defined templates</h2>
 
       <div class="rect rect1">
         <h2 class="1 text-center">Dev</h2>
@@ -208,10 +208,9 @@
     <!--GET STARTED-->
     <section class="contop">
       <div class="container">
-        
-          <div class="row get-started-1">
+        <h3 id="getstarted" class="h1 pb-4 text-center deploy-text">Get Started</h3>
+          <div class="row bg-color-2 get-started-1">
             <div class="col-lg-12">
-              <h3 id="getstarted" class="h1 pb-4 text-center deploy-text">Get Started</h3>
               <ol>
                 <li>Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
                 <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
@@ -224,8 +223,8 @@
         </div>
 
 
-        <section class="contop">
-          <div class="social-row d-flex justify-content-center d-lg-block">
+        <section>
+          <div class="social-row contop d-flex justify-content-center d-lg-block">
             <div class="d-lg-block social-icon">
               <a href="#docs.html">
                 <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">

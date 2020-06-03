@@ -51,7 +51,7 @@
             <h1 class="audit-text h1-padding">Arjan Audit</h1>
             <p class="header-text-padding">Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6</p>
             <a href="#getstarted" class="arjan-btn border-color text-white">Get Started</a>
-            <a href="#getstarted" class="text-white arjan-btn border-color ">Docs</a>
+            <a href="docs.html" class="text-white arjan-btn border-color ">Docs</a>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_audit_logo.svg" class="audit-logo" alt="">
@@ -79,15 +79,17 @@
     <section class="contop">
       <div class="container">
         <div class="bg-aqua bg-color">
-          <h2 class="h1 text-box-audit">Test your static site's SEO score locally before deploying</h2>
+          <h2 class="h2 text-box-audit">Test your static site's SEO score locally before deploying</h2>
         </div>
       </div>
 
 <!-- HOW IT WORKS -->
     <section class="contop">
         <div class="container">
-          <h3 class="h1 audit-text text-center pb-4">How it Works</h3>
-
+          <h3 class="h1 audit-text text-center text-padding">How it Works</h3>
+<div class="col-md-6">
+  
+</div>
           <div class="lighthouse">
             <img src="img/lighthouse.svg" alt="">
           </div>
@@ -100,7 +102,7 @@
           <!-- Audit Report -->
     <section class="contop">
         <div class="container">
-          <h3 class="h1 audit-text text-center pb-4">Audit Report</h3>
+          <h3 class="h1 audit-text text-center text-padding">Audit Report</h3>
           <div class="">
             <div class="row">
             <div class="col-md-6">
@@ -122,9 +124,9 @@
     <!--GET STARTED-->  
     <section class="contop">
         <div class="container">
-            <div class="row  get-started-1">
+          <h3 id="getstarted" class="h1 pb-3 text-center audit-text">Get Started</h3>
+            <div class="row  bg-color-2 get-started-1">
               <div class="col-lg-12">
-                <h3 id="getstarted" class="h1 pb-3 text-center audit-text">Get Started</h3>
                 <ol>
                   <li>Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
                   <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
@@ -137,8 +139,9 @@
           </div>
       </section>
 
+      
         <section>
-          <div class="social-row d-flex justify-content-center d-lg-block">
+          <div class="social-row contop d-flex justify-content-center d-lg-block">
             <div class="d-lg-block social-icon">
               <a href="#docs.html">
                 <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
