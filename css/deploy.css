@@ -26,19 +26,15 @@
   width: 76%;
 }
 
-.arjan-btn {
+.border-color{
   border: hsla(300, 100%, 50%, 1) 1px solid;
-  color: hsla(0, 0%, 100%, 1);
-  padding: 2% 5%;
-  font-size: 1.2rem;
 }
 
-.bg-aqua{
-  padding: 4%;
-  margin: 16% 3%;
-  background-color: hsla(300, 100%, 50%, .5);
-  line-height:1.8;
+.bg-color{
+  background-color: hsla(300, 100%, 50%, .4);
+
 }
+
 
 .bg-aqua-2{
   padding: 6% 9%;
@@ -53,17 +49,6 @@ line-height:1.4;
 .banner-padding{
   padding-left: 39rem;
   padding-right: 7rem;
-}
-.get-started {
-  padding: 1% 0%;
-  margin: 16% 2% 14% 2%;
-  background-color: hsla(300, 100%, 50%, .1);
-  line-height: 1;
-}
-
-.text-padding{
-
-  margin: 0% 0% 4% 0%;
 }
 
 .video-padding{
@@ -123,33 +108,9 @@ line-height:1.4;
     margin-left: 55%;
     width: 46%;
   }
-  .get-started {
-    padding: 1% 0%;
-    margin: 16% 2% 14% 2%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
-  .bg-aqua{
-    padding: 3%;
-    margin: 11% 16% 5% 16%;
-    background-color: hsla(300, 100%, 50%, .5);
-    line-height:1.8;
-  }
 }
 
 @media (min-width: 992px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 12% 24%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
-  .bg-aqua{
-    padding: 3%;
-    margin: 10% 23% 6% 23%;
-    background-color: hsla(300, 100%, 50%, .5);
-    line-height:1.8;
-  }
   .rect1{
     margin-left: 10%;
     margin-bottom: -4%;

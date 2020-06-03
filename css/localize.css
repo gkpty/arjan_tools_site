@@ -42,16 +42,15 @@
   }
 }
 
-.arjan-btn {
-  border: hsla(120, 100%, 50%, 1) 1px solid;
-  padding: 7px 16px;
-  font-size: 1.1rem;
-  letter-spacing: 2px;
+.border-color{
+  border: hsla(120, 100%, 50%, .6) 1px solid;
 }
 
 .btn-alt{
-  padding: 12px 12px;
-  font-size: .8rem;
+  border: hsla(120, 100%, 50%, .4) 1px solid;
+  background-color: hsla(120, 100%, 50%, .1);
+  padding: 7px 16px;
+  font-size: 1.1rem;
   letter-spacing: 2px;
 }
 
@@ -73,7 +72,7 @@ padding: 5% 10%;
 }
 
 .form-padding{
-  padding: 0rem 0rem 2rem 0rem;
+  padding: 1rem;
   max-width: 450px;
   border: hsla(0, 0%, 100%, .6) 1px solid;
 }
@@ -135,33 +134,29 @@ li {
 }
 
 
+.workflow-padding{
+  padding: 3% 2%;
+}
+
+
 @media (min-width: 768px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 16% 2% 14% 2%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
+
   .bg-aqua{
     padding: 3%;
     margin: 10% 21% 5% 21%;
     background-color: hsla(120, 100%, 50%, .6);
     line-height:1.8;
   }
-  .form-padding{
-    padding: 2%;
+
+  .workflow-padding {
+    padding: 2% 12% 0% 12%;
   }
 }
 
 
   
 @media (min-width: 992px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 12% 24%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
+
   .social-row{
     position: fixed;
     right: 3%;
@@ -176,12 +171,6 @@ li {
     padding: 15% 0%;
   }
 
-  .get-started {
-    padding: 1% 0%;
-    margin: 16% 2% 14% 2%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
   .bg-aqua{
     padding: 3%;
     margin: 5% 24% 8% 24%;
@@ -189,11 +178,19 @@ li {
     line-height:1.
   }
 }
+
 .diagram-container{
   padding: 1% 2%;
-  margin: 5% 0% 12% 0%;
+  margin: 4% 0% 6% 0%;
 }
 
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 
 /* ARJAN LOCALIZE GUI */
 .holoform select,

@@ -45,12 +45,13 @@
     <script src="js/nav.js"></script>
 
     <header>
-      <div class="container container-padding-top">
+      <div class="container contop">
         <div class="row ">
           <div class="col-md-6 text-white text-md-left text-center order-1 order-lg-0">
             <h1 class="audit-text h1-padding">Arjan Audit</h1>
             <p class="header-text-padding">Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6</p>
-            <a href="#getstarted" class="arjan-btn">Get Started</a>
+            <a href="#getstarted" class="arjan-btn border-color text-white">Get Started</a>
+            <a href="#getstarted" class="text-white arjan-btn border-color ">Docs</a>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_audit_logo.svg" class="audit-logo" alt="">
@@ -75,31 +76,18 @@
     </header>
     
     <!--SQUARE BANNER -->
-    <section>
+    <section class="contop">
       <div class="container">
-        <div class="bg-sepia">
+        <div class="bg-aqua bg-color">
           <h2 class="h1 text-box-audit">Test your static site's SEO score locally before deploying</h2>
         </div>
       </div>
-    </section>
 
+<!-- HOW IT WORKS -->
+    <section class="contop">
+        <div class="container">
+          <h3 class="h1 audit-text text-center pb-4">How it Works</h3>
 
-    <!-- HOW IT WORKS -->
-    <section>
-
-          <div class="col-12">
-            <div class="padding2">  
-              <h3 class="h1 audit-text text-center pb-4">How it Works</h3>
-              <p>Arjan audit is a node module that helps you automate the auditing process of static sites during dev process using Google's Lighthouse 6</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section>
-        <div class="container py-5 ">
           <div class="lighthouse">
             <img src="img/lighthouse.svg" alt="">
           </div>
@@ -110,21 +98,18 @@
       </section>
   
           <!-- Audit Report -->
-    <section>
+    <section class="contop">
         <div class="container">
-          <div class="row">
-            <div class="">
-              <h3 class="h1 audit-text text-center pb-4">Audit Report</h3>
-
-            </div>
+          <h3 class="h1 audit-text text-center pb-4">Audit Report</h3>
+          <div class="">
             <div class="row">
             <div class="col-md-6">
               <p>Arjan deploy uses Infrastructure as Code templates to help you provision and deploy all the necessary resources for your site in the cloud. </p>
   
               <p>Generally static sites in the cloud consist of an object storage solution (i.e. S3) with a public policy, a CDN, a DNS (from your domain name provider or your cloud provider) and optionally may contain a digital certificate.</p>
             </div>
-            <div class="col-6 ">
-           <video class="w-100" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="video/movie_test.mp4"></video>
+            <div class="col-md-6">
+           <video class="get-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="video/movie_test.mp4"></video>
             </div>
           </div>
         </div>
@@ -135,9 +120,9 @@
 
 
     <!--GET STARTED-->  
-    <section>
+    <section class="contop">
         <div class="container">
-            <div class="row  get-started">
+            <div class="row  get-started-1">
               <div class="col-lg-12">
                 <h3 id="getstarted" class="h1 pb-3 text-center audit-text">Get Started</h3>
                 <ol>
@@ -174,7 +159,7 @@
 
 
         <!-- FOOTER -->
-    <footer class="footer pt-5">
+    <footer class="footer contop">
       <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
         <span class="text-muted">Powered by </span>
         <a href="https://torus-digital.com/">

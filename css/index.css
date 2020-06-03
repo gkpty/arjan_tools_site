@@ -45,8 +45,14 @@
   padding: 2%;
 }
 .card-padding{
-  padding: 2rem 0rem;
   width: 100%;
+}
+
+.load{
+    padding: 1% 0%;
+    margin: 3% 1% 10% 1%
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1.5;
 }
 
 
@@ -170,9 +176,15 @@
     margin: 2%;
   }
   .card-padding{
-    padding: 2rem 3rem;
+    padding: 0rem 3rem;
     width: 100%;
   }  
+  .load{
+    padding: 3% 1%;
+    margin: 0% 8%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1;
+}
 }
 
 @media(max-width: 768px){
@@ -189,6 +201,12 @@
   .get-started {
     margin: 5% 25%;
   }
+  .load{
+    padding: 3% 1%;
+    margin: 0% 8%;
+    background-color: hsla(300, 100%, 50%, .1);
+    line-height: 1;
+}
 }
 
 

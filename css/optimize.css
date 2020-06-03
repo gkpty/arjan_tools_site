@@ -7,22 +7,15 @@
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
-.arjan-btn {
-  border: hsla(180, 100%, 50%, 1) 1px solid;
-  color: hsla(180, 100%, 50%, 1);
-  padding: 2% 5%;
-  font-size: 1.2rem;
+.border-color{
+  border: hsla(180, 100%, 50%, .8) 1px solid;
+}
+.bg-color{
+  background-color:hsla(180, 100%, 50%, .4)
 }
 
 .banner-container{
   padding: 6% 4%;
-}
-
-.bg-aqua{
-  padding: 3%;
-  margin: 5% 4%;
-  background-color: hsla(180, 100%, 50%, .6);
-  line-height:6.8;
 }
 
 .bg-aqua-2{
@@ -32,13 +25,6 @@
 }
 .text-box-audit{
 line-height:1.4;
-}
-
-.get-started {
-  padding: 1% 0%;
-  margin: 3% 1% 10% 1%;
-  background-color: hsla(180, 100%, 50%, .1);
-  line-height: 1;
 }
 
 .logo-size{
@@ -90,12 +76,6 @@ line-height:1.4;
   opacity: 0;
 }
 
-.checklist-padding{
-  padding: 0% 27%;
-  margin: 0% 0% 12% 0%;
-}
-
-
 .checkanimate{
   animation-name: fade;
   animation-duration: 1s;
@@ -113,25 +93,9 @@ line-height:1.4;
 
 @media (min-width: 768px){
 
-  .get-started {
-    padding: 1% 0%;
-    margin: 5% 15%;
-    background-color: hsla(180, 100%, 50%, .1);
-    line-height: 1;
-  }
   .banner-container{
     padding: 6% 16%;
   }
-  .bg-aqua {
-    padding: 3%;
-    margin: 6% 18%;
-    background-color: hsla(180, 100%, 50%, .6);
-    line-height: 6.8;
-}
-.checklist-padding{
-  padding: 0% 21%;
-  margin: 0% 0% 12% 0%;
-}
 }
 
 @media(min-width:992px){
@@ -143,23 +107,8 @@ line-height:1.4;
   .social-icon{
     padding: 15% 0%;
   }
-  .get-started {
-    padding: 1% 0%;
-    margin: 5% 25%;
-    background-color: hsla(180, 100%, 50%, .1);
-    line-height: 1;
-  }
+
   .banner-container{
     width: 50vw;
    }
-   .bg-aqua {
-    padding: 3%;
-    margin: 5% 25%;
-    background-color: hsla(180, 100%, 50%, .6);
-    line-height: 6.8;
-}
-.checklist-padding{
-  padding: 0% 30%;
-  margin: 0% 0% 12% 0%;
-}
 }

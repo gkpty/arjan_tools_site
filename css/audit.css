@@ -7,20 +7,14 @@
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
-.arjan-btn {
+
+.border-color{
   border: hsla(60, 100%, 50%, 1) 1px solid;
-  color: hsla(0, 0%, 100%, 1);
-  padding: 2% 5%;
-  font-size: 1.2rem;
 }
 
-
-.bg-sepia{
-    padding: 3%;
-    margin: 15% 3%;
-    background-color: hsla(60, 100%, 50%, .6);
-    line-height:1.8;
-  }
+.bg-color{
+  background-color: hsla(60, 100%, 50%, .4);
+}
 
 .text-box-audit{
 line-height:1.4;
@@ -45,13 +39,6 @@ ul {
 .banner-padding{
   padding-left: 39rem;
   padding-right: 7rem;
-}
-
-.get-started {
-  padding: 1% 0%;
-  margin: 16% 2% 14% 2%;
-  background-color: hsla(60, 100%, 50%, .1);
-  line-height: 1;
 }
 
 .text-padding{
@@ -96,13 +83,14 @@ ul {
   animation-duration: 8s;
   animation-fill-mode: forwards;
 }
+}
+.lighthouse {
+    width: 75%;
+    margin: 0% 17%;
+    z-index: -1;
+    position: absolute;
+}
 
-.lighthouse{
-    width: 60%;
-      margin: 0% 34%;
-      z-index: -1;
-  }
-  
   .lighthouse-text{
     width: 43%;
     margin-top: -15%;
@@ -120,18 +108,6 @@ ul {
   
 @media(min-width:768px){
 
-  .get-started {
-    padding: 1% 0%;
-    margin: 16% 5% 14% 5%;
-    background-color: hsla(60, 100%, 50%, .1);;
-    line-height: 1;
-  }
-  .bg-sepia{
-    padding: 3%;
-    margin: 12% 15% 8% 15%;
-    background-color: hsla(60, 100%, 50%, .6);
-    line-height:1.8;
-  }
   .video-padding {
     padding: 0%;
     margin: 0%;
@@ -144,18 +120,6 @@ ul {
 }
 
 @media (min-width: 992px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 12% 24%;
-    background-color:hsla(60, 100%, 50%, .1);;
-    line-height: 1;
-  }
-  .bg-sepia{
-    padding: 3%;
-    margin: 12% 23% 8% 23%;
-    background-color: hsla(60, 100%, 50%, .6);
-    line-height:1.8;
-  }
   .padding2{
     padding: 3rem 11rem 1rem 11rem;
   }

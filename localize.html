@@ -47,13 +47,13 @@
 
     <!-- HEADER -->
     <header>
-      <div class="container container-padding-top">
+      <div class="container contop">
         <div class="row">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
-            <h1 class="localize-text h2 h1-padding">Arjan Localize</h1>
+            <h1 class="localize-text h1 h1-padding">Arjan Localize</h1>
             <p class="header-text-padding">A localization workflow with automatic translation for static sites  </p>
-            <a href="#getstarted" class="arjan-btn text-white d-block d-md-inline">Get Started</a>
-            <a href="#getstarted" class="text-white btn-alt d-block d-md-inline">Read the Docs</a>
+            <a href="#getstarted" class="arjan-btn border-color text-white ">Get Started</a>
+            <a href="#getstarted" class="text-white arjan-btn border-color ">Docs</a>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_localize_logo.svg" class="audit-logo" alt="">
@@ -78,14 +78,14 @@
     </header>
     
     <!-- HOW IT WORKS -->
-    <section>
-      <div class="container pt-5">
-        <h3 class="localize-text pb-lg-4 text-center h2">Try it Out</h3>
+    <section class="contop">
+      <div class="container">
+        <h3 class="localize-text pb-lg-4 text-center h1">Try it Out</h3>
 
         <div class="row">
           <div class="col-md-6 order-1">
             <div class="row"> 
-              <div class="col-12">
+              <div class="col-12 pt-4 pt-md-0">
                 <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
               </div>
             </div>
@@ -236,9 +236,9 @@
               <input id="file" name="file" hidden>
               <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT" data-theme="dark"></div>
               <h4 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h4>
-              <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Translate</button>
+              <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Translate</button>             <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
+
             </form>
-            <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
           </div>
         </div>
       </div>
@@ -247,9 +247,9 @@
 
 
     <!-- ADVANCED LOCALIZATION WORKFLOW -->
-    <section>
+    <section class="contop">
       <h2 class="text-center localize-text h2"> Advanced Localization Workflow </h2>
-      <div class="container diagram-container">
+      <div class="container workflow-padding center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1036.3 410.9">
           <g id="diagram_group" data-name="Layer 2">
             <text class="diagram_text" transform="translate(707 357)">
@@ -281,15 +281,15 @@
     </section>
     
     <!--GET STARTED-->
-    <section>
+    <section class="contop">
       <div class="container"> 
           <div class="row">
             <div class="col-12">
-              <h3 id="getstarted" class="h2 pb-3 text-center localize-text">Get Started</h3>
+              <h3 id="getstarted" class="h1 pb-3 text-center localize-text">Get Started</h3>
 
             </div>
             <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 get-started">
               <ol>
                 <li>Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
                 <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
@@ -297,8 +297,8 @@
                 <li>Translate your site <button class="codebox" onclick="copyVal(this.textContent)">arjan translate SITE_NAME from [to]</button></li>
               </ol>
             </div>
-              <div class="col-6">
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100 mt-5">
+              <div class="col-md-6">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
                   <source src="video/movie_test.mp4">
                   </video>
               </div>
@@ -307,7 +307,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="contop">
       <div class="social-row d-flex justify-content-center d-lg-block">
         <div class="d-lg-block social-icon">
           <a href="#docs.html">
@@ -329,7 +329,7 @@
     
 
   <!-- FOOTER -->
-  <footer class="footer pt-5">
+  <footer class="footer contop">
     <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
       <span class="text-muted">Powered by </span>
       <a href="https://torus-digital.com/">
