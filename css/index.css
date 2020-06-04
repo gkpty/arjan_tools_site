@@ -50,6 +50,9 @@
     margin: 3% 1% 10% 1%;
 }
 
+.index-text{
+  color: #7300ff;
+}
 
 .nodArjan{
   animation-name: nodarjan;
@@ -112,6 +115,23 @@
   100% {border: hsla(300, 100%, 50%, .4) 1.5px solid;}
 }
 
+.codebox{
+  padding: 1% 0%;
+  background-color: black;
+  color: white;
+  border: hsla(120, 100%, 50%, 0) 1.5px solid;
+  white-space: nowrap;
+  min-width: max-content;
+}
+
+.codebox:hover {
+  border: hsla(120, 100%, 50%, 0) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
+
 .img-arrow{
   width: 40px;
   padding: 0 0%;
@@ -143,12 +163,6 @@
   animation-fill-mode: forwards;
 }
 
-.codebox:hover {
-  border: hsla(120, 100%, 50%, 0) 2px solid;
-  animation-name: fadeborder;
-  animation-duration: .8s;
-  animation-fill-mode: forwards;
-}
 
 .get-started {
   padding: 1% 0%;
@@ -201,7 +215,7 @@
     background-color: hsla(300, 100%, 50%, .1);
 }
 .card-padding{
-  padding: 0rem 6rem;
+  padding: 0rem 7rem;
   width: 100%;
 }  
 .header-bg-size{

@@ -51,7 +51,7 @@
         <div class="row">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
             <h1 class="localize-text h1 h1-padding">Arjan Localize</h1>
-            <p class="header-text-padding">A localization workflow with automatic translation for static sites  </p>
+            <p class="header-text-padding">Arjan Localize is node module for automatically localizing and translating html sites. It also works as a basic content management system for static sites</p>
             <a href="#getstarted" class="arjan-btn border-color text-white ">Get Started</a>
             <a href="#docs.html" class="text-white arjan-btn border-color ">Docs</a>
           </div>
@@ -90,11 +90,11 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
-                <img class="image-fluid w-100" src="img/brain.svg" alt="">
-              </div>
               <div class="col-8">
                 <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
+              </div>
+              <div class="col-4">
+                <img class="image-fluid w-100" src="img/brain.svg" alt="">
               </div>
             </div>
           </div>
@@ -230,14 +230,14 @@
                 <div class="cotnainer text-center">
                   <h4 class="text-center h5">Drag & Drop your html file</h4>
                   <input type="file" id="fileElem" accept="html, markdown, txt" onchange="handleFiles(this.files)">
-                  <label class="arjan-btn" for="fileElem">or Browse</label>
+                  <label class="btn-gui border-color" for="fileElem">or Browse</label>
                   <div class=""><span class="pr-2" id="fileName"></span><progress hidden id="progress-bar" max=100 value=0></progress></div>
                 </div>
               </div>
               <input id="file" name="file" hidden>
               <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT" data-theme="dark"></div>
               <h4 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h4>
-              <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Translate</button>             <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
+              <button class="btn text-white arjan-btn border-color mt-3" type="submit" id="arjantranslate-btn">Translate</button>             <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
 
             </form>
           </div>
@@ -249,7 +249,7 @@
 
     <!-- ADVANCED LOCALIZATION WORKFLOW -->
     <section class="contop">
-      <h2 class="text-center text-padding localize-text h1"> Advanced Localization Workflow </h2>
+      <h2 class="text-center text-padding localize-text"> Advanced Localization Workflow </h2>
       <div class="container workflow-padding center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1036.3 410.9">
           <g id="diagram_group" data-name="Layer 2">
@@ -293,9 +293,8 @@
             <div class="row">
             <div class="col-md-6 bg-color get-started">
               <ol>
-                <li>Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
-                <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
-                <li>Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
+                <li>Install arjan globally <button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
+                <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button> and Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
                 <li>Translate your site <button class="codebox" onclick="copyVal(this.textContent)">arjan translate SITE_NAME from [to]</button></li>
               </ol>
             </div>

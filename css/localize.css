@@ -97,6 +97,13 @@ li {
   padding-bottom: 1%; 
 }
 
+.btn-gui{
+    padding: 2px 8px;
+    margin: 2% 0rem;
+    font-size: .9rem;
+    letter-spacing: 2px;
+}
+
 
 /* The animation code */
 @keyframes squaretop {

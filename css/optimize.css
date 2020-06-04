@@ -16,7 +16,12 @@
 .bg-color-2{
   background-color:hsla(180, 100%, 50%, .15)
 }
-
+.codebox:hover {
+  border: hsla(120, 100%, 50%, 0) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
 
 .banner-container{
   padding: 6% 4%;
