@@ -117,7 +117,7 @@ p{
 
 ul {
   list-style-type: square;
-  margin-left: -10%;
+  margin-left: -5%;
   line-height: 1.3;
 }
 li {
@@ -185,7 +185,7 @@ li {
 }
 
 .text-padding{
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .checklist-padding{
@@ -202,6 +202,10 @@ li {
 .get-video{
   width: 100%;
   padding: 0rem 1rem;
+}
+
+.nav-logo{
+  color:hsla(0, 0% , 100%, .9)
 }
 
 .center {
