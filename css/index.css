@@ -164,6 +164,10 @@
 }
 
 
+.board{
+  margin: 0% 25%;
+}
+
 
 .get-started {
   padding: 1% 0%;
@@ -194,6 +198,10 @@
     padding: 3% 1%;
     margin: 0% 2%;
 }
+.board{
+  margin: 0% 7%;
+}
+
 }
 
 @media(max-width: 768px){
@@ -222,6 +230,9 @@
 .header-bg-size{
   padding: 5% 2%;
   margin: 2% 10%;
+}
+.board{
+  margin: 0% 20%;
 }
 }
 

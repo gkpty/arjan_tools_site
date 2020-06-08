@@ -155,7 +155,7 @@ li {
 
 
 .contop{
-  padding-top: 3rem; 
+  padding-top: 4rem; 
 }
 
 .h1-padding{
@@ -226,7 +226,7 @@ li {
 
 @media(min-width:768px){
   .contop{
-    padding-top: 3rem; 
+    padding-top: 5rem; 
   }
   .load-link{
     padding:0% 2%
@@ -244,6 +244,9 @@ li {
   position: relative;
   z-index: -1;
   padding: 0% 2%;
+}
+.text-padding {
+  padding-bottom: 2rem;
 }
 
 .audit-logo {
