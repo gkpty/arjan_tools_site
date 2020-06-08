@@ -8,7 +8,7 @@
 .cls-5{opacity:0.5;}
 
 .rect{
-  border: hsla(300, 100%, 50%, .8) 1px dashed;
+  border: hsla(300, 100%, 50%, .8) 2px dashed;
   height: auto;
   min-height: 100px;
   padding: 2% 3%;
@@ -26,36 +26,18 @@
   width: 76%;
 }
 
-p{
-  font-size: 1.3rem;
-}
-
-.audit-logo-bg{
-  width: 110%;
-  position: relative;
-  z-index: -1;
-}
-.audit-logo {
-    position: absolute;
-    z-index: 1;
-    width: 46%;
-    right: 22%;
-    top: 15%
-}
-
-.arjan-btn {
+.border-color{
   border: hsla(300, 100%, 50%, 1) 1px solid;
-  color: hsla(0, 0%, 100%, 1);
-  padding: 2% 5%;
-  font-size: 1.4rem;
 }
 
-.bg-aqua{
-  padding: 4%;
-  margin: 16% 3%;
-  background-color: hsla(300, 100%, 50%, .5);
-  line-height:1.8;
+.bg-color{
+  background-color: hsla(300, 100%, 50%, .4);
 }
+.bg-color-2{
+  background-color: hsla(300, 100%, 50%, .15);
+
+}
+
 
 .bg-aqua-2{
   padding: 6% 9%;
@@ -67,34 +49,17 @@ p{
 line-height:1.4;
 }
 
-ul {
-  padding: 5% 0%;
-  list-style-type: none;
-}
-
 .banner-padding{
   padding-left: 39rem;
   padding-right: 7rem;
 }
-.get-started {
-  padding: 1% 0%;
-  margin: 16% 2% 14% 2%;
-  background-color: hsla(300, 100%, 50%, .1);
-  line-height: 1;
-}
 
-.text-padding{
-  padding: 2% 0%;
-  margin: 0% 0%;
-}
+.video-padding{
+  padding: 0% 0% 0% 0%;
+  width: 100%;
+  max-width: 400px;
 
-.codebox {
-  padding: 2% 3%;
-  background-color: black;
-  color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
 }
-
 
 /* The animation code */
 @keyframes squaretop {
@@ -146,31 +111,21 @@ ul {
     margin-left: 55%;
     width: 46%;
   }
-  .get-started {
-    padding: 1% 0%;
-    margin: 16% 2% 14% 2%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
-  .bg-aqua{
-    padding: 3%;
-    margin: 9% 22% 4% 22%;
-    background-color: hsla(300, 100%, 50%, .5);
-    line-height:1.8;
-  }
 }
 
 @media (min-width: 992px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 12% 24%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
+  .rect1{
+    margin-left: 10%;
+    margin-bottom: -4%;
+    width: 27%;
   }
-  .bg-aqua{
-    padding: 4%;
-    margin: 10% 27% 6% 27%;
-    background-color: hsla(300, 100%, 50%, .5);
-    line-height:1.8;
+  .rect2{
+    margin-left: 30%;
+    margin-bottom: -2%;
+    width: 29%;
+  }
+  .rect3{
+    margin-left: 52%;
+    width: 37%;
   }
 }

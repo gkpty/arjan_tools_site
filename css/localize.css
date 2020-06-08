@@ -7,13 +7,6 @@
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
-.codebox{
-  padding: 2% 3%;
-  background-color: black;
-  color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
-}
-
 @keyframes fadeborder {
   0% {border: hsla(120, 100%, 50%, 0) 1.5px solid;}
   50% {border: hsla(120, 100%, 50%, .5) 1.5px solid;}
@@ -43,36 +36,34 @@
   animation: dash 20s infinite;
   animation-direction: reverse;
 }
-
 @keyframes dash {
   to {
     stroke-dashoffset: 1000;
   }
 }
 
-p{
-    font-size: 1.3rem;
+.border-color{
+  border: hsla(120, 100%, 50%, .6) 1px solid;
 }
 
-.audit-logo-bg{
-  width: 110%;
-  position: relative;
-  z-index: -1;
-}
-.audit-logo {
-    position: absolute;
-    z-index: 1;
-    width: 46%;
-    right: 27%;
-    top: 15%
+.bg-color{
+  background-color: hsla(120, 100%, 50%, .15);
+
 }
 
-.arjan-btn {
-  border: hsla(120, 100%, 50%, 1) 1px solid;
-  padding: 2% 5%;
-  font-size: 1.4rem;
+
+.btn-alt{
+  border: hsla(120, 100%, 50%, .4) 1px solid;
+  background-color: hsla(120, 100%, 50%, .1);
+  padding: 7px 16px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
 }
 
+.form-control{
+  border-radius: 0;
+  margin: 4% 0%;
+}
 
 .header-padding:{
 padding: 5% 10%;
@@ -80,22 +71,22 @@ padding: 5% 10%;
 
 
 .bg-aqua{
-    padding: 4%;
-    margin: 6% 3%;
+    padding: 1% 2%;
+    margin: 5% 0% 12% 0%;
     background-color: hsla(120, 100%, 50%, .6);
     line-height:1.8;
 }
 
+.form-padding{
+  padding: 1rem;
+  max-width: 450px;
+  border: hsla(0, 0%, 100%, .6) 1px solid;
+}
 
 .text-box-audit{
 line-height:1.4;
 }
 
-ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: -9%;
-}
 
 .diagram-padding{
   padding: 0% 20% 4% 20%;
@@ -104,6 +95,13 @@ ul {
 li {
   padding-top:1%;
   padding-bottom: 1%; 
+}
+
+.btn-gui{
+    padding: 2px 8px;
+    margin: 2% 0rem;
+    font-size: .9rem;
+    letter-spacing: 2px;
 }
 
 
@@ -143,29 +141,30 @@ li {
   padding: 0% 3%;
 }
 
-  
+
+.workflow-padding{
+  padding: 3% 2%;
+}
+
+
 @media (min-width: 768px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 16% 2% 14% 2%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
+
   .bg-aqua{
     padding: 3%;
-    margin: 9% 22% 4% 22%;
+    margin: 10% 21% 5% 21%;
     background-color: hsla(120, 100%, 50%, .6);
     line-height:1.8;
   }
+
+  .workflow-padding {
+    padding: 0% 12% 0% 12%;
+  }
 }
 
+
+  
 @media (min-width: 992px){
-  .get-started {
-    padding: 1% 0%;
-    margin: 12% 24%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
+
   .social-row{
     position: fixed;
     right: 3%;
@@ -179,21 +178,19 @@ li {
   .social-icon{
     padding: 15% 0%;
   }
-  .get-started {
-    padding: 1% 0%;
-    margin: 16% 2% 14% 2%;
-    background-color: hsla(300, 100%, 50%, .1);
-    line-height: 1;
-  }
+
   .bg-aqua{
-    padding: 4%;
-    margin: 9% 27% 4% 27%;
+    padding: 3%;
+    margin: 5% 24% 8% 24%;
     background-color: hsla(120, 100%, 50%, .6);
     line-height:1.
   }
 }
-.diagram-container{padding: 10%;}
 
+.diagram-container{
+  padding: 1% 2%;
+  margin: 4% 0% 6% 0%;
+}
 
 /* ARJAN LOCALIZE GUI */
 .holoform select,
@@ -236,8 +233,8 @@ input:-webkit-autofill  {
 }
 #drop-area {
   border: 2px dashed #ccc;
-  border-radius: 20px;
-  padding: 20px;
+  padding: 5px;
+  background-color: hsla(120, 100%, 50%, .1);
 }
 #drop-area.highlight {
   border-color: hsl(120, 100%, 50%);

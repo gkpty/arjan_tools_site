@@ -1,54 +1,30 @@
-.cls-1{opacity:0.2;}
+.cls-1{opacity:0.4;}
 .cls-2,.cls-4{fill:#00FFFF;}
 .cls-2,
-.cls-3{opacity:0.2;}
+.cls-3{opacity:0.45;}
 .cls-3,
 .cls-5{fill: #00FFFF;}
 .cls-4{opacity:0.3;}
 .cls-5{opacity:0.5;}
 
-p{
-  font-size: 1.3rem;
+.border-color{
+  border: hsla(180, 100%, 50%, .8) 1px solid;
 }
-
-.audit-logo-bg{
-  width: 110%;
-  position: relative;
-  z-index: -1;
+.bg-color{
+  background-color:hsla(180, 100%, 50%, .4)
 }
-.audit-logo {
-    position: absolute;
-    z-index: 1;
-    width: 46%;
-    right: 22%;
-    top: 15%
+.bg-color-2{
+  background-color:hsla(180, 100%, 50%, .15)
 }
-
-.arjan-btn {
-  border: hsla(180, 100%, 50%, 1) 1px solid;
-  color: hsla(180, 100%, 50%, 1);
-  padding: 2% 7%;
-  font-size: 1.4rem;
-}
-
-ul {
-  padding: 5% 0%;
-  list-style-type: none;
-  font-size: 1.3rem;
-
-}
-li {
-  padding: 2% 0%;
+.codebox:hover {
+  border: hsla(120, 100%, 50%, 0) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
 }
 
 .banner-container{
   padding: 6% 4%;
-}
-
-.bg-aqua{
-  padding: 5%;
-  background-color: hsla(180, 100%, 50%, .6);
-  line-height:6.8;
 }
 
 .bg-aqua-2{
@@ -60,23 +36,17 @@ li {
 line-height:1.4;
 }
 
-.get-started {
-  padding: 1% 0%;
-  margin: 3% 1% 10% 1%;
-  background-color: hsla(180, 100%, 50%, .);
-  line-height: 1;
-}
-
 .logo-size{
   width: 80%;
   margin: auto;
 }
 
-.codebox {
-  padding: 2% 3%;
-  background-color: black;
-  color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
+.video-size{
+  width: 100%;
+  max-width: 350px;
+  border: hsla(180, 100%, 50%, .6) 1px solid;
+  padding: 1%;
+
 }
 
 /* The animation code */
@@ -131,9 +101,7 @@ line-height:1.4;
 
 
 @media (min-width: 768px){
-  .get-started {
-    margin: 5% 15%;
-  }
+
   .banner-container{
     padding: 6% 16%;
   }
@@ -148,9 +116,7 @@ line-height:1.4;
   .social-icon{
     padding: 15% 0%;
   }
-  .get-started {
-    margin: 5% 25%;
-  }
+
   .banner-container{
     width: 50vw;
    }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Torus Project">
-    <title>Arjan Audit</title>
+    <title>Arjan Localize</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/localize.css">
@@ -17,29 +17,29 @@
     <nav>
       <div class="d-flex justify-content-center py-2 fade-in">
         <div class="load-link">
-          <a href="localize.html" class="h4" id="localize_nav">
+          <a href="localize.html" id="localize_nav">
             <span id="load_l" class="load_letter">L</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="optimize.html" class="h4" id="optimize_nav">
+          <a href="optimize.html" id="optimize_nav">
             <span id="load_o" class="load_letter">O</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="audit.html" class="h4" id="audit_nav">
+          <a href="audit.html" id="audit_nav">
             <span id="load_a" class="load_letter">A</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="deploy.html" class="h4" id="deploy_nav">
+          <a href="deploy.html" id="deploy_nav">
             <span id="load_d" class="load_letter">D</span>
           </a>
         </div>
       </div>
       <div class="d-flex justify-content-center py-2 bg-secondary-nav text-white">
-        <a href="index.html">
-          <h1 class="text-white h3">Arjan Tools</h1>
+        <a href="index.html" class="d-inline nav-logo"> 
+                  <h1 class="h3 d-inline" id="Arjan_Tools0">Arjan Tools</h1><div class="pt-3 pl-2 d-inline small">Beta</div>
         </a>
       </div>
     </nav>
@@ -47,14 +47,15 @@
 
     <!-- HEADER -->
     <header>
-      <div class="container pt-5">
+      <div class="container contop">
         <div class="row">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
-            <h1 class="localize-text header-padding">Arjan Localize</h1>
-            <p class="py-3">A localization workflow with automatic translation for static sites  </p>
-            <a href="#getstarted" class="arjan-btn text-white">Get Started</a>
+            <h1 class="localize-text h1 h1-padding">Arjan Localize</h1>
+            <p class="header-text-padding">Arjan Localize is node module for automatically localizing and translating html sites. It also works as a basic content management system for static sites</p>
+            <a href="#getstarted" class="arjan-btn border-color text-white ">Get Started</a>
+            <a href="#docs.html" class="text-white arjan-btn border-color ">Docs</a>
           </div>
-          <div class="col-md-6 order-0 pt-md-0 order-md-1 text-center">
+          <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_localize_logo.svg" class="audit-logo" alt="">
             <div class="audit-logo-bg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
@@ -77,19 +78,34 @@
     </header>
     
     <!-- HOW IT WORKS -->
-    <section>
-      <div class="container pt-5">
+    <section class="contop">
+      <div class="container">
+        <h3 class="localize-text text-padding text-center h1">Try it Out</h3>
+
         <div class="row">
-          <div class="col-md-6">
-            <h3 class="h1 pb-4 localize-text text-center text-md-left">How it Works</h3>
-            <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
-            <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
+          <div class="col-md-6 order-1">
+            <div class="row"> 
+              <div class="col-12 pt-4 pt-md-0">
+                <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
+              </div>
+              <div class="col-4">
+                <img class="image-fluid w-100" src="img/brain.svg" alt="">
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <h3 class="localize-text text-center text-md-left h1">Try it Out</h3>
-            <!-- FORM BY SUPER EASY FORMS -->
-            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3 holoform" action="#">
-              <label for="from" class="small mb-0">From</label>
+          
+          <div class="col-md-6 px-5 order-0">
+            <div class="form-padding">
+
+            <!-- TRY IT OUT -->
+
+            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="holoform" action="#">
+              <!-- <label for="from" class="small mb-0">From</label> -->
               <select class="form-control" id="from" name="from" required>
                 <option value="" selected="selected" disabled="disabled">Origin language of your site</option>
                 <option value="af">Afrikaans</option>
@@ -148,7 +164,7 @@
                 <option value="ur">Urdu</option>
                 <option value="vi">Vietnamese</option>
               </select>
-              <label for="to" class="small mb-0">To</label>
+              <!-- <label for="to" class="small mb-0">To</label> -->
               <select class="form-control" id="to" name="to" required>
                 <option value="" selected="selected" disabled="disabled">Desired translation language</option>
                 <option value="af">Afrikaans</option>
@@ -207,42 +223,34 @@
                 <option value="ur">Urdu</option>
                 <option value="vi">Vietnamese</option>
               </select>
-              <label for="email" class="small mb-0">Email</label>
+              <!-- <label for="email" class="small mb-0">Email</label> -->
               <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required>
-              <label for="file" class="small mb-0">File</label>
+              <!-- <label for="file" class="small mb-0">File</label> -->
               <div id="drop-area">
                 <div class="cotnainer text-center">
                   <h4 class="text-center h5">Drag & Drop your html file</h4>
                   <input type="file" id="fileElem" accept="html, markdown, txt" onchange="handleFiles(this.files)">
-                  <label class="button" for="fileElem">or Browse</label>
+                  <label class="btn-gui border-color" for="fileElem">or Browse</label>
                   <div class=""><span class="pr-2" id="fileName"></span><progress hidden id="progress-bar" max=100 value=0></progress></div>
                 </div>
               </div>
               <input id="file" name="file" hidden>
-              <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT"></div>
+              <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT" data-theme="dark"></div>
               <h4 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h4>
-              <button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Translate</button>
+              <button class="btn text-white arjan-btn border-color mt-3" type="submit" id="arjantranslate-btn">Translate</button>             <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
+
             </form>
-            <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
           </div>
         </div>
       </div>
-    </section>
-
-
-    <!--SQUARE BANNER -->
-    <section>
-      <div class="container">
-        <div class="bg-aqua">
-          <h2 class="text-white h1 text-box-audit">Collaborate with your customers on their site's content with spreadsheets</h2>
-        </div>
       </div>
     </section>
 
+
     <!-- ADVANCED LOCALIZATION WORKFLOW -->
-    <section>
-      <h2 class="text-center localize-text px-2 pt-5 pb-3 h1"> Advanced Localization Workflow </h2>
-      <div class="container diagram-container py-5">
+    <section class="contop">
+      <h2 class="text-center text-padding localize-text"> Advanced Localization Workflow </h2>
+      <div class="container workflow-padding center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1036.3 410.9">
           <g id="diagram_group" data-name="Layer 2">
             <text class="diagram_text" transform="translate(707 357)">
@@ -274,28 +282,39 @@
     </section>
     
     <!--GET STARTED-->
-    <section>
-      <div class="container">
-        <div class="get-started">
+    <section class="contop">
+      <div class="container"> 
           <div class="row">
             <div class="col-12">
-              <h3 id="getstarted" class="h2 pb-4 text-center localize-text">Get Started</h3>
+              <h3 id="getstarted" class="h1 text-center text-padding localize-text">Get Started</h3>
+
+            </div>
+            <div class="container">
+            <div class="row">
+            <div class="col-md-6 bg-color get-started">
               <ol>
-                <li>Install arjan globally (you only have to do this once)<button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
-                <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
-                <li>Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
+                <li>Install arjan globally <button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
+                <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button> and Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
                 <li>Translate your site <button class="codebox" onclick="copyVal(this.textContent)">arjan translate SITE_NAME from [to]</button></li>
               </ol>
             </div>
-            <div class="col-lg-6">
-              <div style="height: 100%;width: 100%;"></div>
-            </div>
+              <div class="col-md-6">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
+                  <source src="video/movie_test.mp4">
+                  </video>
+              </div>
+          </div>
           </div>
         </div>
     </section>
 
-    <section>
+    <section class="contop">
       <div class="social-row d-flex justify-content-center d-lg-block">
+        <div class="d-lg-block social-icon">
+          <a href="#docs.html">
+            <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
+          </a>
+        </div>
         <div class="d-lg-block social-icon">
           <a href="https://twitter.com/ArjanTools">
             <img height="45px" src="img/twitter_logo_2.svg" alt="npm logo outline">
@@ -306,17 +325,12 @@
             <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
           </a>
         </div>
-        <div class="d-lg-block social-icon">
-          <a href="#docs.html">
-            <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
-          </a>
-        </div>
       </div>
     </section>
     
 
   <!-- FOOTER -->
-  <footer class="footer pt-5">
+  <footer class="footer contop">
     <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
       <span class="text-muted">Powered by </span>
       <a href="https://torus-digital.com/">

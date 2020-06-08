@@ -1,16 +1,11 @@
 
 .bg-dark-purple{
-  background-color: hsla(288, 100%, 6%, 1);
+  background-color: hsla(288, 100%, 6%, .9);
 }
 .header-bg-size{
-  padding: 8% 2%;
+  padding: 5% 3%;
   margin: 7% 2%;
 }
-.header-bg-size{
-  padding: 5% 2%;
-  margin: 6% 2%;
-}
-
 
 .arjan-localize-card{
   background-color: hsla(120, 100%, 50%, .2);
@@ -25,7 +20,6 @@
   background-color:  hsla(300, 100%, 50%, .2);
 }
 
-
 .arjan-card-logo{
   width: 70%;
   padding: 3% 0%;
@@ -37,8 +31,8 @@
     width: auto;
 }
 .card-p{
-  font-size: 140%;
-  line-height: 1.2em;
+  font-size: 110%;
+  line-height: 1.5;
 }
 .card-icons {
   margin: 0% 2%;
@@ -47,10 +41,18 @@
   padding: 2%;
 }
 .card-padding{
-  padding: 3rem 3rem;
   width: 100%;
+
 }
 
+.load{
+    padding: 1% 0%;
+    margin: 3% 1% 10% 1%;
+}
+
+.index-text{
+  color: #7300ff;
+}
 
 .nodArjan{
   animation-name: nodarjan;
@@ -113,17 +115,20 @@
   100% {border: hsla(300, 100%, 50%, .4) 1.5px solid;}
 }
 
+.codebox{
+  padding: 1% 0%;
+  background-color: black;
+  color: white;
+  border: hsla(120, 100%, 50%, 0) 1.5px solid;
+  white-space: nowrap;
+  min-width: max-content;
+}
 
-
-@media (min-width: 768px){
-  .header-bg-size{
-    padding: 5% 2%;
-    margin: 2%;
-  }
-  .card-padding{
-    padding: 3rem 3rem;
-    width: 100%;
-  }  
+.codebox:hover {
+  border: hsla(120, 100%, 50%, 0) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
 }
 
 
@@ -133,25 +138,19 @@
   opacity: 0%;
 }
 .workflow-elem{
-  font-size: 180%;
+  font-size: 140%;
   padding: 0% 8%;
 }
 .hidden-workflow-elem{
   visibility: hidden;
 }
-@media(max-width: 766px){
-  .arrow-tate{
-    transform: rotate(90deg);
-    position: absolute;
-    z-index:2;
-    margin-top: 60px;
-    margin-left: 7%;
+
+.arrow-back{
+   transform: rotate(180deg);
   }
-  .arrow-back{
-    transform: rotate(180deg);
-  }
+
   .secondary-arrow{
-    padding-top: 40px;
+   padding-top: 40px;
   }
 }
 .arrow-set{
@@ -165,25 +164,12 @@
 }
 
 
+
 .get-started {
   padding: 1% 0%;
   margin: 3% 1% 10% 1%;
-  background-color: hsla(0, 0%, 50%, .3);
-  line-height: 1;
+  line-height: 1.5;
 }
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .get-started {
-    margin: 5% 15%;
-  }
-}
-
-@media (min-width: 992px) {
-  .get-started {
-    margin: 5% 25%;
-  }
-}
-
 
 @media (min-width: 576px) and (max-width: 897px) {
   .h3-about {
@@ -191,9 +177,52 @@
   }  
 }
 
-.codebox{
-  padding: 2% 3%;
-  background-color: black;
-  color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
+@media (min-width: 768px) {
+  .get-started {
+    margin: 5% 15%;
+  }
+  .header-bg-size{
+    padding: 5% 2%;
+    margin: 2% 1%;
+  }
+  .card-padding{
+    padding: 0rem 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+  }  
+  .load{
+    padding: 3% 1%;
+    margin: 0% 2%;
 }
+}
+
+@media(max-width: 768px){
+  .arrow-tate{
+    transform: rotate(90deg);
+    position: absolute;
+    z-index:2;
+    margin-top: 60px;
+    margin-left: 7%;
+  }
+}
+
+@media (min-width: 992px) {
+  .get-started {
+    margin: 5% 25%;
+  }
+  .load{
+    padding: 3% 1%;
+    margin: 0% 10%;
+    background-color: hsla(300, 100%, 50%, .1);
+}
+.card-padding{
+  padding: 0rem 7rem;
+  width: 100%;
+}  
+.header-bg-size{
+  padding: 5% 2%;
+  margin: 2% 10%;
+}
+}
+
+
