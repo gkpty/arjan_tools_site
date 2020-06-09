@@ -193,13 +193,13 @@
           <div class="row get-started-1">
             <div class="col-lg-12">
               <div class="container bg-dark-purple">
-                <h4 class="text-center pb-2">One time setup: You only do this once</h4>
+                <h4 id="One_time_set11" class="text-center pb-2">One time setup: You only do this once</h4>
                 <ol>
                 <li><span id="Install_the_33">Install the arjan cli globally </span></span><button id="npm_i_-g_arj36" class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
                <li id="If_you_alrea34"> If you already have a local AWS profile that you intend to use with arjan you can disregard steps 3 - 5.</li>
-               <li><span id="create_an_IA35">Run </span></span><button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan init IAM_USER_NAME AWS_REGION -g</button>. this will pop open a browser window with the AWS console. Finish creating the IAM user in the AWS console and hold on to the keys.</li> 
-               <li>Update/create the local AWS profile on your machine by adding the profile and keys in the format shown bellow. The AWS profiles are stored in ~/.aws/credentials on mac/linux or in C:\Users\USER_NAME\.aws\credentials on windows.
-                <button class="codebox text-left" onclick="copyVal('[profilename]\naws_access_key_id = YOUR_ACCESS_KEY_ID\naws_secret_access_key = YOUR_SECRET_ACCESS_KEY')">
+               <li><span id="create_an_IA35">Run </span></span><button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan init IAM_USER_NAME AWS_REGION -g</button><span id="._this_will_39">. this will pop open a browser window with the AWS console. Finish creating the IAM user in the AWS console and hold on to the keys.</span></li> 
+               <li><span id="Update/creat40">Update/create the local AWS profile on your machine by adding the profile and keys in the format shown bellow. The AWS profiles are stored in ~/.aws/credentials on mac/linux or in C:\Users\USER_NAME\.aws\credentials on windows.
+                </span><button id="[profilename43" class="codebox text-left" onclick="copyVal('[profilename]\naws_access_key_id = YOUR_ACCESS_KEY_ID\naws_secret_access_key = YOUR_SECRET_ACCESS_KEY')">
                   [profilename]<br>
                   aws_access_key_id = YOUR_ACCESS_KEY_ID<br>
                   aws_secret_access_key = YOUR_SECRET_ACCESS_KEY<br>
@@ -208,12 +208,12 @@
                 </ol>
               </div>
               <div class="container bg-dark-purple">
-                <h4 class="text-center pb-2">Initialize your project</h4>
+                <h4 id="Initialize_y12" class="text-center pb-2">Initialize your project</h4>
                 <ol>
                  <li><span id="Go_into_your37">Go into your project's directory </span></span><button id="cd_SITE_NAME37" class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button> and run <button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init</button> (you need to do this once on each project) </span></li>
                 </ol>
               </div>
-              <p>Your all set. Now you can run <button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan</button> followed by any of the four commands (localize, optimize, audit, deploy). To view all of the available commands you can always run <button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan --help</button></p>
+              <p><span id="Your_all_set19">Your all set. Now you can run </span><button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan</button> followed by any of the four commands (localize, optimize, audit, deploy). To view all of the available commands you can always run <button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan --help</button></p>
             </div>
             </div>
           </div>
