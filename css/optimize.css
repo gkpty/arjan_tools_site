@@ -42,9 +42,12 @@
 line-height:1.4;
 }
 
-.logo-size{
-  width: 80%;
-  margin: auto;
+.hplus{
+  font-size: 280%
+}
+.module-logo{
+  max-width: 170px;
+  max-height: 100px;
 }
 
 .video-size{
