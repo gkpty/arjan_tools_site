@@ -9,10 +9,9 @@
 
 @keyframes fadeborder {
   0% {border: hsla(120, 100%, 50%, 0) 1.5px solid;}
-  50% {border: hsla(120, 100%, 50%, .5) 1.5px solid;}
-  100% {border: rgba(68, 161, 68, 0.4) 1.5px solid;}
+  50% {border: hsla(120, 100%, 50%, .45) 1.5px solid;}
+  100% {border: hsla(120, 100%, 50%, .4) 1.5px solid;}
 }
-
 .codebox:hover {
   border: hsla(120, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
