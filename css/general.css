@@ -1,0 +1,10 @@
+html,body{
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: -5%;
+  line-height: 1.3;
+}

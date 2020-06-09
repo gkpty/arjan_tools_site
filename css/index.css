@@ -1,3 +1,14 @@
+@keyframes fadeborder {
+  0% {border: hsla(120, 100%, 50%, 0) 1.5px solid;}
+  50% {border: hsla(120, 100%, 50%, .45) 1.5px solid;}
+  100% {border: hsla(120, 100%, 50%, .4) 1.5px solid;}
+}
+.codebox:hover {
+  border: hsla(120, 100%, 50%, 0) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
 
 .bg-dark-purple{
   background-color: hsla(288, 100%, 6%, .9);

@@ -129,3 +129,18 @@ line-height:1.4;
     width: 37%;
   }
 }
+
+.checkmark{
+  opacity: 0;
+}
+
+.checkanimate{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
