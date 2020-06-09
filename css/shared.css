@@ -48,7 +48,7 @@ p{
 
 
 /* NAV */
-.load-link{padding:0% 3%}
+.load-link{padding:0px 17px}
 #load_l{
   color: hsla(120, 100%, 50%, .8);
   animation-name: colorl;
@@ -115,24 +115,8 @@ p{
     top: 17%
 }
 
-/* 
-ul {
-  list-style-type: square;
-  margin-left: -5%;
-  line-height: 1.3;
-} */
-li {
-  padding: 2% 0%;
-}
-
 .header-text-padding{
   padding: 3% 0% 1% 0%;
-}
-
-/* SOCIAL ICONS */
-.social-icon{
-  padding: 0% 3%;
-  background-color: transparent;
 }
 
 .fade-in{
@@ -158,7 +142,7 @@ li {
   padding: 1% 0%;
   background-color: black;
   color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
+  border: hsla(120, 100%, 50%, 0) 2px solid;
   white-space: nowrap;
   min-width: max-content;
 }
@@ -214,12 +198,19 @@ li {
   padding: 0%;
 }
 
+.social-icon{
+  padding: 0px 20px;
+}
+.social-row{
+  padding: 9% 0px;
+}
+
 @media(min-width:768px){
   .contop{
     padding-top: 6rem; 
   }
   .load-link{
-    padding:0% 2%
+    padding:0px 25px;
   }
   .bg-aqua {
     padding: 3%;
@@ -254,7 +245,7 @@ li {
   margin: 0% 2%;
 }
 .get-video {
-  max-width: 350px;
+  max-width: 500px;
 }
 .checklist-padding{
   padding: 0% 19%;
@@ -269,9 +260,10 @@ li {
 
 @media(min-width:992px){
   .social-row{
+    padding: 0px 0px;
     position: fixed;
     right: 3%;
-    bottom: 7%;
+    bottom: 9%;
   }
   .social-icon{
     padding: 15% 0%;
@@ -310,7 +302,8 @@ li {
 }
 .get-started-3 {
   margin: 0% 20%;
-}}
+  padding-bottom: 10%;
+}
 .checklist-padding{
   padding: 0% 28%;
   margin: -6% 0%;

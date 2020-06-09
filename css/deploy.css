@@ -38,13 +38,17 @@
 
 }
 
+@keyframes fadeborder {
+  0% {border: hsla(300, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(300, 100%, 50%, .45) 2px solid;}
+  100% {border: hsla(300, 100%, 50%, .4) 2px solid;}
+}
 .codebox:hover {
-  border: hsla(300, 100%, 50%, .8) 2px solid;
+  border: hsla(300, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
   animation-duration: .8s;
   animation-fill-mode: forwards;
 }
-
 
 
 .bg-aqua-2{
