@@ -221,7 +221,7 @@ li {
 }
 
 .get-started-1 {
-  padding: 2% 0%;
+  padding: 0%;
 }
 
 @media(min-width:768px){
@@ -261,7 +261,6 @@ li {
   margin: 0% 0% 11% 0%;
 }
 .get-started-1 {
-  padding: 2% 0%;
   margin: 0% 2%;
 }
 .get-video {
@@ -313,7 +312,6 @@ li {
   margin: 0% 0% 7% 0%;
 }
 .get-started-1 {
-  padding: 2% 0%;
   margin: 0% 10%;
 
 }
