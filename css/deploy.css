@@ -38,6 +38,14 @@
 
 }
 
+.codebox:hover {
+  border: hsla(300, 100%, 50%, .8) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
+
 
 .bg-aqua-2{
   padding: 6% 9%;

@@ -19,6 +19,13 @@
   background-color: hsla(60, 100%, 50%, .15);
 }
 
+.codebox:hover {
+  border: hsla(60, 100%, 50%, .8) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
 
 .text-box-audit{
 line-height:1.4;

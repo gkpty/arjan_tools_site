@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/gkpty/arjan_translate_gui#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "super-easy-forms": "^2.1.4"
   }
 }

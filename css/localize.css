@@ -12,13 +12,21 @@
   50% {border: hsla(120, 100%, 50%, .45) 1.5px solid;}
   100% {border: hsla(120, 100%, 50%, .4) 1.5px solid;}
 }
+.codebox{
+  padding: 1% 0%;
+  background-color: black;
+  color: white;
+  border: hsla(120, 100%, 50%, 0) 1.5px solid;
+  white-space: nowrap;
+  min-width: max-content;
+}
+
 .codebox:hover {
   border: hsla(120, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
   animation-duration: .8s;
   animation-fill-mode: forwards;
 }
-
 .diagram_text{font-size:46.54px;fill:#fff;letter-spacing:.05em}
 .diagram_line{
   fill:none;

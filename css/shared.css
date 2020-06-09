@@ -163,12 +163,6 @@ li {
   min-width: max-content;
 }
 
-.codebox:hover {
-  border: hsla(120, 100%, 50%, 0) 2px solid;
-  animation-name: fadeborder;
-  animation-duration: .8s;
-  animation-fill-mode: forwards;
-}
 
 .bg-aqua{
   padding: 3%;
