@@ -13,6 +13,7 @@ h1, h2, h3{
 }
 a:hover{
   text-decoration: none;
+  color: currentColor;
   text-shadow: 1px 1px 6px hsla(120, 100%, 50%, .6);
 }
 
@@ -133,15 +134,6 @@ li {
   padding: 0% 3%;
   background-color: transparent;
 }
-@keyframes icon{
-  0% {background-color: transparent;}
-  100% {background-color: hsla(180, 100%, 50%, .1);}
-}
-.social-icon:hover{
-  animation-name: icon;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
 
 .fade-in{
   animation-name: fade;
@@ -155,7 +147,7 @@ li {
 
 
 .contop{
-  padding-top: 3rem; 
+  padding-top: 4rem; 
 }
 
 .h1-padding{
@@ -221,12 +213,12 @@ li {
 }
 
 .get-started-1 {
-  padding: 2% 0%;
+  padding: 0%;
 }
 
 @media(min-width:768px){
   .contop{
-    padding-top: 3rem; 
+    padding-top: 5rem; 
   }
   .load-link{
     padding:0% 2%
@@ -245,6 +237,9 @@ li {
   z-index: -1;
   padding: 0% 2%;
 }
+.text-padding {
+  padding-bottom: 2rem;
+}
 
 .audit-logo {
   position: absolute;
@@ -258,7 +253,6 @@ li {
   margin: 0% 0% 11% 0%;
 }
 .get-started-1 {
-  padding: 2% 0%;
   margin: 0% 2%;
 }
 .get-video {
@@ -310,8 +304,7 @@ li {
   margin: 0% 0% 7% 0%;
 }
 .get-started-1 {
-  padding: 2% 0%;
-  margin: 0% 22%;
+  margin: 0% 10%;
 
 }
 .checklist-padding{

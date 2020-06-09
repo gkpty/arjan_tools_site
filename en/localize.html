@@ -7,9 +7,12 @@
     <meta name="author" content="Torus Project">
     <title>Arjan Localize</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/shared.css">
-    <link rel="stylesheet" href="css/localize.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/localize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:ital,wght@0,200;0,300;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">  </head>
+
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
   </head>
   <body id="page-top" class="bg-black text-white">
     
@@ -19,7 +22,7 @@
         <div class="load-link">
           <a href="localize.html" id="localize_nav">
             <span id="load_l" class="load_letter">L</span>
-          </a>
+          </a>                    
         </div>
         <div class="load-link">
           <a href="optimize.html" id="optimize_nav">
@@ -43,7 +46,7 @@
         </a>
       </div>
     </nav>
-    <script src="js/nav.js"></script>
+    <script src="../js/nav.js"></script>
 
     <!-- HEADER -->
     <header>
@@ -51,12 +54,12 @@
         <div class="row">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
             <h1 class="localize-text h1 h1-padding">Arjan Localize</h1>
-            <p class="header-text-padding">Arjan Localize is node module for automatically localizing and translating html sites. It also works as a basic content management system for static sites</p>
+            <p class="header-text-padding">Arjan Localize is node module for automatically localizing and translating html sites. It also works as a basic content management system for static sites.</p>
             <a href="#getstarted" class="arjan-btn border-color text-white ">Get Started</a>
             <a href="#docs.html" class="text-white arjan-btn border-color ">Docs</a>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
-            <img src="img/arjan_localize_logo.svg" class="audit-logo" alt="">
+            <img src="../img/arjan_localize_logo.svg" class="audit-logo" alt="">
             <div class="audit-logo-bg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
               <title>arjan_localize_bg</title>
@@ -94,7 +97,7 @@
                 <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
               </div>
               <div class="col-4">
-                <img class="image-fluid w-100" src="img/brain.svg" alt="">
+                <img class="image-fluid w-100" src="../img/brain.svg" alt="">
               </div>
             </div>
           </div>
@@ -249,7 +252,7 @@
 
     <!-- ADVANCED LOCALIZATION WORKFLOW -->
     <section class="contop">
-      <h2 class="text-center text-padding localize-text"> Advanced Localization Workflow </h2>
+      <h2 class="text-center h1 text-padding localize-text"> Advanced Localization Workflow </h2>
       <div class="container workflow-padding center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1036.3 410.9">
           <g id="diagram_group" data-name="Layer 2">
@@ -284,25 +287,23 @@
     <!--GET STARTED-->
     <section class="contop">
       <div class="container"> 
-          <div class="row">
-            <div class="col-12">
               <h3 id="getstarted" class="h1 text-center text-padding localize-text">Get Started</h3>
-
-            </div>
-            <div class="container">
             <div class="row">
-            <div class="col-md-6 bg-color get-started">
-              <ol>
-                <li>Install arjan globally <button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
-                <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button> and Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
-                <li>Translate your site <button class="codebox" onclick="copyVal(this.textContent)">arjan translate SITE_NAME from [to]</button></li>
-              </ol>
-            </div>
               <div class="col-md-6">
+              <div class="container bg-color get-started"> 
+                <ol>
+                  <li>Install arjan globally <button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
+                  <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button> and Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
+                  <li>Localize and translate your site into multiple languages <button class="codebox" onclick="copyVal(this.textContent)">arjan translate en -c -t=es -t=fr</button></li>
+                </ol>
+            </div>
+            </div>
+              <div class="col-md-6 text-right">
                 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
-                  <source src="video/movie_test.mp4">
+                  <source src="../video/movie_test.mp4">
                   </video>
               </div>
+             </div> 
           </div>
           </div>
         </div>
@@ -312,17 +313,17 @@
       <div class="social-row d-flex justify-content-center d-lg-block">
         <div class="d-lg-block social-icon">
           <a href="#docs.html">
-            <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
+            <img height="50px" src="../img/docs_icon.svg" alt="npm logo outline">
           </a>
         </div>
         <div class="d-lg-block social-icon">
           <a href="https://twitter.com/ArjanTools">
-            <img height="45px" src="img/twitter_logo_2.svg" alt="npm logo outline">
+            <img height="45px" src="../img/twitter_logo_2.svg" alt="npm logo outline">
           </a>
         </div>
         <div class="d-lg-block social-icon">
           <a href="#">
-            <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
+            <img height="50px" src="../img/slack_logo_2.svg" alt="npm logo outline">
           </a>
         </div>
       </div>
@@ -339,8 +340,8 @@
     </div>
   </footer>
 
-    <script src="js/localize.js"></script>
-    <script src="js/copy.js"></script>
+    <script src="../js/localize.js"></script>
+    <script src="../js/copy.js"></script>
       <script defer
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
