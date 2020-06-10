@@ -31,11 +31,11 @@ exports.handler = (event, context, callback) => {
 			dynamodb.putItem(params).promise().then(()=> {
 				Arjan.CreateLocale(html).then((locale) => {
 					let origin_html = locale.html;
-					Arjan.TranslateLocale(locale.locale, event.from, event.to, locale.size).then((data)=>{
-						let translated_locale = JSON.stringify(data);
-						Arjan.TranslateHtml(origin_html, translated_locale).then((new_html) => {
+					Arjan.TranslateLocale(locale.locale, event.from, event.to).then((data)=>{
+						let locale_string = JSON.stringify(data);
+						Arjan.TranslateHtml(origin_html, data).then((new_html) => {
 							console.log('All Done!');
-							callback(null, {"body":{"html":new_html, "locale":translated_locale}});
+							callback(null, {"body":{"html":new_html, "locale":locale_string}});
 						}).catch(err=> callback(err))
 					}).catch(err=> callback(err))
 				}).catch(err=> callback(err))
