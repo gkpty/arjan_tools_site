@@ -50,11 +50,11 @@
 
     <!-- HEADER -->
     <header>
-      <div class="container contop">
+      <div class="container pt-5">
         <div class="row">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
             <h1 class="localize-text h1 h1-padding">Arjan Localize</h1>
-            <p class="header-text-padding">Arjan Localize is node module for automatically localizing and translating html sites. It also works as a basic content management system for static sites.</p>
+            <p class="header-text-padding">A node module that automatically localizes and translates your html sites and may even work as a very basic content management system.</p>
             <a href="#getstarted" class="arjan-btn border-color text-white ">Get Started</a>
             <a href="#docs.html" class="text-white arjan-btn border-color ">Docs</a>
           </div>
@@ -89,20 +89,20 @@
           <div class="col-md-6 order-1">
             <div class="row"> 
               <div class="col-12 pt-4 pt-md-0">
-                <p>The localization of html consists of parsing the html document, extracting/inserting id’s into elements with text, and creating a JSON locale that contains all of the document’s ID’s and text content.  </p>
+                <p><strong>Under the hood: </strong>It uses the id attributes already present in your html as the keys in the locale. If the elements don't have an ID Arjan automatically creates one.</p>
               </div>
             </div>
             <div class="row">
               <div class="col-8">
-                <p>It uses AWS’s neural machine translation system which is used in amazon.com.</p>
+                <p>Arjan also uses AWS’s neural machine translation service to translate your content into any of its 54 available languages</p>
               </div>
               <div class="col-4">
-                <img class="image-fluid w-100" src="../img/brain.svg" alt="">
+                <img class="image-fluid img-brain w-100" src="../img/brain.svg" alt="">
               </div>
             </div>
           </div>
           
-          <div class="col-md-6 px-5 order-0">
+          <div class="col-md-6 px-lg-5 order-0">
             <div class="form-padding">
 
             <!-- TRY IT OUT -->
@@ -240,10 +240,10 @@
               <input id="file" name="file" hidden>
               <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT" data-theme="dark"></div>
               <h4 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h4>
-              <button class="btn text-white arjan-btn border-color mt-3" type="submit" id="arjantranslate-btn">Translate</button>             <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
-
+              <button class="btn text-white arjan-btn border-color mt-3" type="submit" id="arjantranslate-btn">Translate</button>
             </form>
           </div>
+          <small>made with <a href="http://supereasyforms.com">super easy forms</a> </small>
         </div>
       </div>
       </div>
@@ -292,15 +292,15 @@
               <div class="col-md-6">
               <div class="container bg-color get-started"> 
                 <ol>
-                  <li>Install arjan globally <button class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
-                  <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button> and Initialize the project (you only have to do this once per project) <button class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
-                  <li>Localize and translate your site into multiple languages <button class="codebox" onclick="copyVal(this.textContent)">arjan translate en -c -t=es -t=fr</button></li>
+                  <li>If you haven't already, <a class="localize-text" href="index.html#One_time">install Arjan globally</a></li>
+                  <li>Go into your project's directory <button class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button> and Initialize the project <button class="codebox mt-1" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
+                  <li>Localize and translate your site into multiple languages <button class="codebox" onclick="copyVal(this.textContent)">arjan localize en -c -t=es -t=fr</button></li>
                 </ol>
             </div>
             </div>
               <div class="col-md-6 text-right">
                 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
-                  <source src="../video/movie_test.mp4">
+                  <source src="../video/localize_vid.mp4">
                   </video>
               </div>
              </div> 
@@ -309,11 +309,16 @@
         </div>
     </section>
 
-    <section class="contop">
-      <div class="social-row d-flex justify-content-center d-lg-block">
+    <section> 
+      <div class="social-row d-flex justify-content-center vertical-align-middle d-lg-block">
         <div class="d-lg-block social-icon">
-          <a href="#docs.html">
+          <a href="docs.html">
             <img height="50px" src="../img/docs_icon.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="https://github.com/arjan-tools">
+            <img height="45px" src="../img/github_logo_2.svg" alt="npm logo outline">
           </a>
         </div>
         <div class="d-lg-block social-icon">
@@ -321,7 +326,7 @@
             <img height="45px" src="../img/twitter_logo_2.svg" alt="npm logo outline">
           </a>
         </div>
-        <div class="d-lg-block social-icon">
+        <div class="d-lg-block  social-icon">
           <a href="#">
             <img height="50px" src="../img/slack_logo_2.svg" alt="npm logo outline">
           </a>
@@ -329,9 +334,10 @@
       </div>
     </section>
     
+    
 
   <!-- FOOTER -->
-  <footer class="footer contop">
+  <footer class="footer">
     <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
       <span class="text-muted">Powered by </span>
       <a href="https://torus-digital.com/">

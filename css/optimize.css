@@ -11,13 +11,19 @@
   border: hsla(180, 100%, 50%, .8) 1px solid;
 }
 .bg-color{
-  background-color:hsla(180, 100%, 50%, .4)
+  background-color:hsla(180, 100%, 50%, .4);
 }
 .bg-color-2{
-  background-color:hsla(180, 100%, 50%, .15)
+  background-color:hsla(180, 100%, 50%, .15);
+}
+
+@keyframes fadeborder {
+  0% {border: hsla(180, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(180, 100%, 50%, .45) 2px solid;}
+  100% {border: hsla(180, 100%, 50%, .4) 2px solid;}
 }
 .codebox:hover {
-  border: hsla(120, 100%, 50%, 0) 2px solid;
+  border: hsla(180, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
   animation-duration: .8s;
   animation-fill-mode: forwards;
@@ -36,9 +42,12 @@
 line-height:1.4;
 }
 
-.logo-size{
-  width: 80%;
-  margin: auto;
+.hplus{
+  font-size: 280%
+}
+.module-logo{
+  max-width: 170px;
+  max-height: 100px;
 }
 
 .video-size{
@@ -95,9 +104,6 @@ line-height:1.4;
   0% {opacity: 0%;}
   100% {opacity: 100%;}
 }
-.social-icon{
-  padding: 0% 3%;
-}
 
 
 @media (min-width: 768px){
@@ -108,15 +114,6 @@ line-height:1.4;
 }
 
 @media(min-width:992px){
-  .social-row{
-    position: fixed;
-    right: 3%;
-    bottom: 7%;
-  }
-  .social-icon{
-    padding: 15% 0%;
-  }
-
   .banner-container{
     width: 50vw;
    }

@@ -45,11 +45,11 @@
     <script src="../js/nav.js"></script>
 
     <header>
-      <div class="container contop">
+      <div class="container pt-5">
         <div class="row">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
             <h1 id="Arjan_Optimi2" class="optimize-text h1-padding">Arjan Optimize</h1>
-            <p id="Arjan_optimi8" class="header-text-padding">It uses some of the best node.js modules for compression/minification and adds some neat features on top to generate an optimal deployment package.</p>
+            <p id="Arjan_optimi8" class="header-text-padding">It uses some of the best node modules for compression/minification to help you generate an optimal deployment package with one command.</p>
             <a id="Get_Started9" href="#getstarted" class="arjan-btn border-color text-white">Get Started</a>
             <a id="Docs10" href="#docs.html" class="text-white arjan-btn border-color ">Docs</a>
           </div>
@@ -87,10 +87,10 @@
     
     
     <!--VIDEO -->
-    <section class="contop">
+    <section class="pt-5">
       <div class="container text-center">
           <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
-            <source src="../video/movie_test.mp4">
+            <source src="../video/optimize_video.mp4">
             </video>        </div>
       </div>
     </section>
@@ -156,32 +156,28 @@
                 <section class="contop">
                   <div class="container">
                     <div class="bg-aqua">
-                      <div class="col-12"> 
-                        <h3 id="Modules_used6" class="h1 optimize-text text-center text-padding">Modules used</h3>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-6"> 
-                          <img class="logo-size" src="../img/css_nano_logo.svg" alt="html minifier logo">
+                      <h3 id="Modules_used6" class="h1 optimize-text text-center text-padding">Modules used</h3>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="col-6 text-center"> 
+                          <h4 class="module-logo hplus">CSSO</h4>                       
                         </div>
-                        <div class="col-6"> 
-                         <img class="logo-size" src="../img/terser_logo.png" alt="terser logo">
+                        <div class="col-6 text-center"> 
+                         <img class="module-logo" src="../img/terser_logo.png" alt="terser logo">
                         </div>
                       </div>
-
-                      <div class="row">
+                      <div class="d-flex justify-content-center align-items-center">
                         <div class="col-4"> 
-                          <img class="logo-size" src="../img/htmlminifier_logo.svg" alt="html minifier logo">
+                          <h4 class="module-logo h1">HTML minifier</h4>
                         </div>
                         <div class="col-4"> 
-                          <img class="logo-size" src="../img/sharpjs_logo.svg" alt="sharp js logo">
+                          <img class="module-logo" src="../img/sharpjs_logo.svg" alt="sharp js logo">
                         </div>
                         <div class="col-4"> 
-                          <img class="logo-size" src="../img/svgo_logo.svg" alt="">
+                          <img class="module-logo" src="../img/svgo_logo.svg" alt="">
                         </div>
-
                       </div>
-
+                    </div>
+                  </div>
                 </section>
 
 
@@ -189,11 +185,11 @@
     <section class="contop">
       <div class="container">
         <h3 id="getstarted" class="h1 text-padding text-center optimize-text">Get Started</h3>
-          <div class="row get-started-1">
+          <div class="row get-started-3">
             <div class="col-lg-12">
-              <div class="container bg-color-2">
+              <div class="container p-2 bg-color-2">
                 <ol>
-                  <li><span id="Install_arja23">Install arjan globally (you only have to do this once)</span><button id="npm_i_-g_arj27" class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
+                  <li>If you haven't already, <a class="optimize-text" href="index.html#One_time">install Arjan globally</a></li>
                   <li><span id="Go_into_your24">Go into your project's directory </span><button id="cd_SITE_NAME28" class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
                   <li><span id="Initialize_t25">Initialize the project (you only have to do this once per project) </span><button id="arjan_init_S29" class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
                   <li><span id="Optimize_you26">Optimize your assets </span><button id="arjan_optimi30" class="codebox" onclick="copyVal(this.textContent)">arjan optimize -w</button></li>
@@ -205,28 +201,33 @@
         </div>
     </section>
 
-        <section class="contop">
-          <div class="social-row d-flex justify-content-center d-lg-block">
-            <div class="d-lg-block social-icon">
-              <a href="#docs.html">
-                <img height="50px" src="../img/docs_icon.svg" alt="npm logo outline">
-              </a>
-            </div>
-            <div class="d-lg-block social-icon">
-              <a href="https://twitter.com/ArjanTools">
-                <img height="45px" src="../img/twitter_logo_2.svg" alt="npm logo outline">
-              </a>
-            </div>
-            <div class="d-lg-block social-icon">
-              <a href="#">
-                <img height="50px" src="../img/slack_logo_2.svg" alt="npm logo outline">
-              </a>
-            </div>
-          </div>
-        </section>
-        
+    <section> 
+      <div class="social-row d-flex justify-content-center vertical-align-middle d-lg-block">
+        <div class="d-lg-block social-icon">
+          <a href="docs.html">
+            <img height="50px" src="../img/docs_icon.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="https://github.com/arjan-tools">
+            <img height="45px" src="../img/github_logo_2.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="https://twitter.com/ArjanTools">
+            <img height="45px" src="../img/twitter_logo_2.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block  social-icon">
+          <a href="#">
+            <img height="50px" src="../img/slack_logo_2.svg" alt="npm logo outline">
+          </a>
+        </div>
+      </div>
+    </section>
+    
 <!-- FOOTER -->
-<footer class="footer contop">
+<footer class="footer">
   <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
     <span id="Powered_by16" class="text-muted">Powered by </span>
     <a href="https://torus-digital.com/">

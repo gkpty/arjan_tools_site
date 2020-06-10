@@ -46,7 +46,7 @@
 
 
     <header>
-      <div class="container contop">
+      <div class="container pt-5">
         <div class="row ">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
             <h1 id="Arjan_Deploy2" class="deploy-text h1-padding ">Arjan Deploy</h1>
@@ -96,7 +96,7 @@
         <div class="row">
           <div class="col-md-6">
               <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
-                <source src="../video/movie_test.mp4">
+                <source src="../video/deploy_video.mp4">
                 </video>          </div>
           <div class="col-md-6">
             <p id="Arjan_deploy20">Arjan deploy uses Cloudformation templates to help you provision and deploy all the necessary resources for your site in the AWS cloud. This means your entire stack and all of its resources are kept inside a JSON file which you can store locally and update continually. </p>
@@ -181,10 +181,10 @@
                 <ul>
                   <li id="Add_a_CDN__D38">Customize the stack of your static website</li>
                   <li><span id="Manage_your_43">Manage your project’s infrastructure with a single JSON file using AWS </span><span> <a id="Cloudformati26" class="text-white" href="https://aws.amazon.com/cloudfront/"> Cloudformation</a> </span></li>
-                  <li><span>Save changesets locally</span></li>
-                  <li><span>Add and automatically verify SSL certificates with </span><a id="ACM28" class="text-white" href="https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html">ACM</a></li> 
-                  <li><span>Import existing AWS Resources</span><span></li>        
-                  <li><span>Stack presets for faster deployments</span></li> 
+                  <li><span id="Save_changes33">Save changesets locally</span></li>
+                  <li><span id="Add_and_auto34">Add and automatically verify SSL certificates with </span><a id="ACM28" class="text-white" href="https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html">ACM</a></li> 
+                  <li><span id="Import_exist35">Import existing AWS Resources</span><span></li>        
+                  <li><span id="Stack_preset36">Predefined templates for faster deployments</span></li> 
                      </ul>
               </div> 
             </div>
@@ -242,11 +242,11 @@
     <section class="contop">
       <div class="container">
         <h3 id="getstarted" class="h1 pb-4 text-center deploy-text">Get Started</h3>
-          <div class="row get-started-1">
+          <div class="row get-started-3">
             <div class="col-lg-12">
-              <div class="container bg-color-2">
+              <div class="container p-2 bg-color-2">
               <ol>
-                <li><span id="Install_arja49">Install arjan globally (you only have to do this once)</span><button id="npm_i_-g_arj53" class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
+                <li>If you haven't already, <a class="deploy-text" href="index.html#One_time">install Arjan globally</a></li>
                 <li><span id="Go_into_your50">Go into your project's directory </span><button id="cd_SITE_NAME54" class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
                 <li><span id="Initialize_t51">Initialize the project (you only have to do this once per project) </span><button id="arjan_init_S55" class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
                 <li><span id="Deploy_your_52">Deploy your project </span><button id="arjan_deploy56" class="codebox" onclick="copyVal(this.textContent)">arjan deploy yoursite.com prod</button></li>
@@ -258,11 +258,16 @@
         </div>
 
 
-        <section>
-          <div class="social-row contop d-flex justify-content-center d-lg-block">
+        <section> 
+          <div class="social-row d-flex justify-content-center vertical-align-middle d-lg-block">
             <div class="d-lg-block social-icon">
-              <a href="#docs.html">
+              <a href="docs.html">
                 <img height="50px" src="../img/docs_icon.svg" alt="npm logo outline">
+              </a>
+            </div>
+            <div class="d-lg-block social-icon">
+              <a href="https://github.com/arjan-tools">
+                <img height="45px" src="../img/github_logo_2.svg" alt="npm logo outline">
               </a>
             </div>
             <div class="d-lg-block social-icon">
@@ -270,17 +275,17 @@
                 <img height="45px" src="../img/twitter_logo_2.svg" alt="npm logo outline">
               </a>
             </div>
-            <div class="d-lg-block social-icon">
+            <div class="d-lg-block  social-icon">
               <a href="#">
                 <img height="50px" src="../img/slack_logo_2.svg" alt="npm logo outline">
               </a>
             </div>
           </div>
         </section>
-
+        
 
         <!-- FOOTER -->
-    <footer class="footer contop">
+    <footer class="footer">
       <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
         <span id="Powered_by36" class="text-muted">Powered by </span>
         <a href="https://torus-digital.com/">
