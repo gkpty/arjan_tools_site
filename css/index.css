@@ -18,6 +18,11 @@
 .bg-dark-purple{
   background-color: hsla(288, 100%, 6%, .9);
 }
+
+.bg-ready{
+  background-color: hsla(323, 100%, 50%, .2);
+}
+
 .header-bg-size{
   padding: 5% 3%;
   margin: 7% 2%;
