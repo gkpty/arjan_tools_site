@@ -199,8 +199,8 @@
                 <h4 id="One_time" class="text-center py-3">You only do this once</h4>
                 <ol>
                 <li><span id="Install_the_33">Install the arjan cli globally </span></span><button id="npm_i_-g_arj36" class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
-               <li id="If_you_alrea34"> If you already have a local AWS profile that you intend to use with arjan you can disregard steps 3 - 5.</li>
-               <li><span id="create_an_IA35">Run </span></span><button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan init IAM_USER_NAME AWS_REGION -g</button><span id="._this_will_39">. this will pop open a browser window with the AWS console. Finish creating the IAM user in the AWS console and hold on to the keys.</span></li> 
+               <li id="If_you_alrea34"> If you already have a local AWS profile that you intend to use with arjan you can skip steps 3 - 5.</li>
+               <li><span id="create_an_IA35">Run </span></span><button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan init IAM_USER_NAME AWS_REGION -g</button><span id="._this_will_39">. This will pop open a browser window with the AWS console; finish creating the IAM user and hold on to the keys.</span></li> 
                <li><span id="Update/creat40">Update/create the local AWS profile on your machine by adding the profile and keys in the format shown bellow. The AWS profiles are stored in <button class="codebox" onclick="copyVal(this.textContent)">~/.aws/credentials</button> on mac/linux or in <button class="codebox" onclick="copyVal(this.textContent)">C:\Users\USER_NAME\.aws\credentials</button> on windows.
                 </span>
                 <button id="[profilename43" class="codebox mt-3 text-left" onclick="copyVal('[profilename]\naws_access_key_id = YOUR_ACCESS_KEY_ID\naws_secret_access_key = YOUR_SECRET_ACCESS_KEY')">
@@ -212,7 +212,7 @@
                 </ol>
               </div>
               <div class="container p-3 bg-dark-purple">
-                <p class="pl-4">Your are all set!  Remember to run  <button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init</button> before using Arjan in your new project.  For more info you can always run <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan --help</button> </p>
+                <p class="pl-4">Your are all set!  Remember to run  <button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init</button> before using it in any of your projects.  For more info you can always run <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan --help</button> </p>
 
               </div>
 
