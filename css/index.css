@@ -16,7 +16,7 @@
 }
 
 .bg-dark-purple{
-  background-color: hsla(288, 100%, 6%, .9);
+  background-color: hsla(288, 100%, 6%, 1);
 }
 
 .bg-ready{
@@ -180,6 +180,16 @@
   margin: 0% 25%;
 }
 
+.circle-img {
+  border-radius: 50%;
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  box-shadow: 0 5px 5px 0 #adb5bd;
+}
+.bg-gradient-primary{
+  background-image: linear-gradient(to right, #acb6e5, #86fde8)
+}
 
 .get-started {
   padding: 1% 0%;
@@ -233,7 +243,6 @@
   .load{
     padding: 3% 1%;
     margin: 0% 10%;
-    background-color: hsla(300, 100%, 50%, .1);
 }
 .card-padding{
   padding: 0rem 7rem;
