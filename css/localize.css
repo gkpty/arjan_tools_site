@@ -77,7 +77,6 @@ padding: 5% 10%;
 
 .form-padding{
   padding: 1rem;
-  max-width: 450px;
   border: hsla(0, 0%, 100%, .6) 1px solid;
 }
 
@@ -86,7 +85,7 @@ line-height:1.4;
 }
 
 .img-brain {
-  opacity:.3
+  opacity:.6
 }
 
 .diagram-padding{

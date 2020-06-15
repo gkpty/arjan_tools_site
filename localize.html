@@ -57,7 +57,7 @@
             <h1 class="localize-text h1 h1-padding">Arjan Localize</h1>
             <p class="header-text-padding">A node module that automatically localizes and translates static sites.  It may also work as a very basic content management system.</p>
             <a href="#getstarted" class="arjan-btn border-color text-white ">Get Started</a>
-            <a href="docs.html#Arjan_Locali5" class="text-white arjan-btn border-color ">Docs</a>
+            <a href="docs.html#Arjan_Localize166" class="text-white arjan-btn border-color ">Docs</a>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
             <img src="img/arjan_localize_logo.svg" class="audit-logo" alt="">
@@ -81,7 +81,7 @@
       </div>
     </header>
     
-    <!-- HOW IT WORKS -->
+    <!-- TRY IT OUT -->
     <section class="contop">
       <div class="container">
         <h3 class="localize-text text-padding text-center h1">Try it Out</h3>
@@ -90,11 +90,18 @@
           <div class="col-md-6 order-1">
             <div class="row"> 
               <div class="col-12 pt-4 pt-md-0">
-                <p><strong>Under the hood: </strong>It uses the id attributes already present in your html as the keys in the locale. If the elements don't have an ID Arjan automatically creates one.</p>
+                <h5>The Parser:</h5>
+                <p>The parser in Arjan Localize get's all the existing IDs of html elements with text content and saves them as key value pairs in a JSON locale. If the element doesn't have an ID, Arjan automatically creates one.</p>
+              </div>
+              <div class="col-12 pt-4 pt-md-0">
+                <h5>The GUI:</h5>
+                <p>A form with a dropzone made with Super Easy Forms which features a Node.js Lambda function as it's backend. The GUI is pretty limited as you can't update your translations, but it's good for a one time job especially if you don't like using the terminal.
+                </p>
               </div>
             </div>
             <div class="row">
               <div class="col-8">
+                <h5>Automatic Translation:</h5>
                 <p>Arjan also uses AWS’s neural machine translation service to translate your content into any of its 54 available languages</p>
               </div>
               <div class="col-4">
@@ -102,14 +109,12 @@
               </div>
             </div>
           </div>
-          
-          <div class="col-md-6 px-lg-5 order-0">
+        
+            <div class="col-md-6 px-lg-5 order-0">
             <div class="form-padding">
-
-            <!-- TRY IT OUT -->
-
             <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="holoform" action="#">
               <!-- <label for="from" class="small mb-0">From</label> -->
+              <h3 class="h4 localize-text text-center">Automatic Translation GUI</h3>
               <select class="form-control" id="from" name="from" required>
                 <option value="" selected="selected" disabled="disabled">Origin language of your site</option>
                 <option value="af">Afrikaans</option>
@@ -305,7 +310,7 @@
                   <li>If you haven't already, <a class="localize-text" href="index.html#One_time">install Arjan globally</a></li>
                   <li>Go into your project's directory and initialize Arjan <button class="codebox mt-1" onclick="copyVal(this.textContent)">arjan init</button> (only do this once per project =)</li>
                   <li>Localize and translate your site into multiple languages <button class="codebox" onclick="copyVal(this.textContent)">arjan localize en -c -t=es -t=fr</button></li>
-                  <li style="list-style: none;">For more info you can always run <button class="codebox" onclick="copyVal(this.textContent)">arjan localize --help</button> or checkout the <a class="localize-text" href="docs.html#Arjan_Locali5">docs</a> </li>
+                  <li style="list-style: none;">For more info you can always run <button class="codebox" onclick="copyVal(this.textContent)">arjan localize --help</button> or checkout the <a class="localize-text" href="docs.html#Arjan_Localize166">docs</a> </li>
                 </ol>
             </div>
             </div>
