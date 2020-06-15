@@ -136,15 +136,6 @@
   100% {border: hsla(300, 100%, 50%, .4) 1.5px solid;}
 }
 
-.codebox{
-  padding: 1% 0%;
-  background-color: black;
-  color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
-  white-space: nowrap;
-  min-width: max-content;
-}
-
 .codebox:hover {
   border: hsla(120, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
@@ -155,12 +146,12 @@
 
 .img-arrow{
   width: 40px;
-  padding: 0 0%;
+  padding: 0px;
   opacity: 0%;
 }
 .workflow-elem{
   font-size: 140%;
-  padding: 0% 8%;
+  padding: 6px;
 }
 .hidden-workflow-elem{
   visibility: hidden;
@@ -171,7 +162,7 @@
   }
 
   .secondary-arrow{
-   padding-top: 40px;
+   padding-top: 13px;
   }
 }
 .arrow-set{

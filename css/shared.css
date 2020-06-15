@@ -45,6 +45,9 @@ p{
   color: hsla(300, 100%, 50%, 1);
 }
 
+li {
+  padding: 1% 0%;
+}
 
 /* NAV */
 .load-link{padding:0px 17px}
@@ -144,6 +147,8 @@ p{
   border: hsla(120, 100%, 50%, 0) 2px solid;
   white-space: nowrap;
   min-width: max-content;
+  font-size: 15px;
+  margin: 3px 0px;
 }
 
 
