@@ -36,3 +36,4 @@ function copyVal(val){
   document.body.removeChild(el);
 }
 
+function borderanimate(){document.getElementById("main-rect").classList.toggle("rect-border")}

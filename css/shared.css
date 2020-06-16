@@ -228,7 +228,7 @@ li {
   width: 100%;
   position: relative;
   z-index: -1;
-  padding: 0% 2%;
+  padding: 9% 0% 0% 0%;
 }
 .text-padding {
   padding-bottom: 2rem;
@@ -237,9 +237,9 @@ li {
 .audit-logo {
   position: absolute;
   z-index: 1;
-  width: 43%;
+  width: 47%;
   right: 30%;
-  top: 17%;
+  top: 22%;
 }
 .get-started {
   padding: 3% 1%;

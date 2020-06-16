@@ -190,16 +190,22 @@
     </section>
 
     <!--GET STARTED-->
+
     <section class="contop">
       <div class="container">
         <h3 id="getstarted" class="h1 text-padding text-center">Installation</h3>
           <div class="row get-started-1">
             <div class="col-lg-12">
-              <div class="container bg-dark-purple">
+              <h4 id="One_time" class="text-left pl-3">Prerequisites:</h4>
+              <ol>
+                <li id="If_you_alrea34"> Have an <a href="https://aws.amazon.com/">AWS account</a></li>
+                <li id="If_you_alrea34">Have NodejS v. 12.0+ and NPM installed</li> 
+              </ol>
+              <div class="bg-dark-purple">
                 <h4 id="One_time" class="text-center py-3">Only do this once</h4>
                 <ol>
                 <li><span id="Install_the_33">Install the arjan cli globally </span></span><button id="npm_i_-g_arj36" class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
-               <li id="If_you_alrea34"> If you already have a local AWS profile that you intend to use with arjan you can skip steps 3 - 5.</li>
+               <li id="If_you_alrea34"> If you already have a local AWS profile that you intend to use with Arjan skip steps 3 - 4.</li>
                <li><span id="create_an_IA35">Run </span></span><button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan init IAM_USER_NAME AWS_REGION -g</button><span id="._this_will_39">. This will pop open a browser window with the AWS console; finish creating the IAM user and hold on to the keys.</span></li> 
                <li><span id="Update/creat40">Update/create the local AWS profile on your machine by adding the profile and keys in the following format:                 
                 <button id="[profilename43" class="codebox my-3 text-left" onclick="copyVal('[profilename]\naws_access_key_id = YOUR_ACCESS_KEY_ID\naws_secret_access_key = YOUR_SECRET_ACCESS_KEY')">
@@ -212,12 +218,19 @@
                 </li>
                 </ol>
               </div>
-              <div class="container p-3 bg-dark-purple">
-                <p class="pl-4">Your are all set!  Remember to run  <button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init</button> before using it in any of your projects.  For more info you can always run <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan --help</button> </p>
-
-              </div>
-
             </div>
+            <div class="container">
+            <div class="done card bg-gradient-primary card2-outline text-animate-services4">
+              <div class="container bg-dark-purple">
+                <ol>
+                  <li style="list-style: none;">
+                    Your are all set!  Remember to run  <button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init</button> before using it in any of your projects.  For more info you can always run <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan --help</button> 
+                  </li>
+                </ol>
+              </div>
+            </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -239,12 +252,34 @@
     <div class="container">
       <div class="row">
           <div class="col-md-6 text-center">
-            <h3 id="Like_the_ide12" class="h2 text-box-audit">Want to help?</h3> 
+            <h3 id="Like_the_ide12" class="h2 text-box-audit">Help us take it <br>to another level!</h3> 
             <h3 id="Click_on_the13" class="h5 text-box-audit">Check out the board</h3>
+            <h3 id="" class="h5 text-box-audit">Check out the board</h3>
         </div>
           <div class="col-md-6 text-center ">
-            <a href="https://github.com/orgs/arjan-tools/projects/1">
-              <img class="board" src="img/board.svg" alt="github board">
+            <a href="https://github.com/orgs/arjan-tools/projects/1" onmouseover="borderanimate()" onmouseout="borderanimate()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="board" viewBox="0 0 631.48 328.16">
+              <g id="Layer_2-2" data-name="Layer 2">
+                <rect id="main-rect" class="" stroke="hsla(120, 100%, 50%, .6)" stroke-width="2" x="1.5" y="1.5" width="628.48" height="325.16"/>
+                <rect class="cls-2" x="24.87" y="34.15" width="175.44" height="264.59"/>
+                <g class="cls-3">
+                  <rect class="cls-4" x="34.17" y="58.18" width="156.83" height="49.18"/>
+                  <rect class="cls-4" x="34.17" y="121.08" width="156.83" height="49.18"/>
+                  <rect class="cls-4" x="34.17" y="183.97" width="156.83" height="49.18"/>
+                </g>
+                <rect class="cls-5" x="224.09" y="34.15" width="175.44" height="264.59"/>
+                <g class="cls-3">
+                <rect class="cls-6" x="233.4" y="58.18" width="156.83" height="49.18"/>
+                <rect class="cls-6" x="233.4" y="121.08" width="156.83" height="49.18"/>
+              </g>
+              <rect class="cls-7" x="224.09" y="34.15" width="175.44" height="264.59"/>
+              <rect class="cls-8" x="423.32" y="34.15" width="175.44" height="264.59"/>
+              <g class="cls-3"><rect class="cls-6" x="432.62" y="58.18" width="156.83" height="49.18"/>
+              </g>
+              <rect class="cls-9" x="423.32" y="34.15" width="175.44" height="264.59"/>
+              <rect class="cls-10" x="24.87" y="34.15" width="175.44" height="264.59"/>
+              </g>
+              </svg>
             </a>
           </div>
         </div>

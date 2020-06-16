@@ -9,7 +9,7 @@
   100% {border: hsla(120, 100%, 50%, .4) 2px solid;}
 }
 .codebox:hover {
-  border: hsla(120, 100%, 50%, 0) 2px solid;
+  border: hsla(189, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
   animation-duration: .8s;
   animation-fill-mode: forwards;
@@ -137,7 +137,7 @@
 }
 
 .codebox:hover {
-  border: hsla(120, 100%, 50%, 0) 2px solid;
+  border: hsla(288, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
   animation-duration: .8s;
   animation-fill-mode: forwards;
@@ -226,6 +226,13 @@
 
 }
 
+.done {
+  padding:0px;
+}
+.bg-gradient-primary{
+  background-image: linear-gradient(to right, #00ff00,#00e1ff,#e2ff00,#e700ff);
+}
+
 @media(max-width: 768px){
   .arrow-tate{
     transform: rotate(90deg);
@@ -258,3 +265,43 @@
 }
 
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.rect-border{
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash .9s linear forwards;
+}
+
+.cls-1{stroke:aqua;stroke-width:3px;}
+.cls-1,
+.cls-10,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9{stroke-miterlimit:10;}
+.cls-2{fill:lime;}
+.cls-2,
+.cls-5,
+.cls-8{opacity:0.25;}
+.cls-3{opacity:0.4;}
+.cls-4{fill:#fff;}
+.cls-5{fill:#ff0;}
+.cls-6{fill:#e0e0e0;}
+.cls-6,
+.cls-8{stroke:#fff;}
+.cls-10,
+.cls-7,
+.cls-9{fill:none;opacity:0.75;}
+.cls-7{stroke:#ff0;}
+.cls-10,
+.cls-7,
+.cls-8,
+.cls-9{stroke-width:2px;}
+.cls-8{fill:#f0f;}
+.cls-9{stroke:#f0f;}
+.cls-10{stroke:lime;}
