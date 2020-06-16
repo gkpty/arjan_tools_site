@@ -175,7 +175,7 @@ li {
 
 .get-video{
   width: 100%;
-  padding: 0rem 1rem;
+  padding: 0rem;
 }
 
 .nav-logo{
@@ -252,8 +252,8 @@ li {
   max-width: 500px;
 }
 .checklist-padding{
-  padding: 0% 19%;
-  margin: -9% 0%;
+  padding: 0% 20%;
+  margin: -25% 0%;
 
 }
 .get-started-3 {
@@ -310,6 +310,6 @@ li {
 }
 .checklist-padding{
   padding: 0% 28%;
-  margin: -6% 0%;
+  margin: -16% 0%;
 }
 }
