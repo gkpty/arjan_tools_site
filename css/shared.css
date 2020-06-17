@@ -4,7 +4,7 @@ html,body{
   overflow-x: hidden;
   color: #fff;
   /* line-height: 1.6; */
-  font-weight: 300;
+  font-weight: 200;
 }
 h1, h2, h3{
   font-family: 'Montserrat', 'Montserrat';
@@ -248,9 +248,7 @@ li {
 .get-started-1 {
   margin: 0% 2%;
 }
-.get-video {
-  max-width: 500px;
-}
+
 .checklist-padding{
   padding: 0% 20%;
   margin: -25% 0%;

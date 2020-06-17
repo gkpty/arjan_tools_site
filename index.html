@@ -6,15 +6,32 @@
     <meta name="description" content="A better workflow + tools to take your static sites to production in the AWS Cloud">
     <meta name="author" content="Arjan Tools">
     <title id="Arjan_Tools0">Arjan Tools - Open source DevOps toolkit for static sites</title>
+
+<!-- TWITTER META TAG -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ArjanTools">
+    <meta name="twitter:creator" content="@lucas_kardo">
+    <meta name="twitter:title" content="Arjan Tools - DevOps toolkit for static sites">
+    <meta name="twitter:description" content="Take your static site projects to production with the lowest overhead and best performance.">
+    <meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg">
+
+<!-- Open Graph Meta Tag -->
+    <meta property="og:url" content="https://arjan.tools/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arjan Tools - DevOps toolkit for static sites" />
+    <meta property="og:description" content="Take your static site projects to production with the lowest overhead and best performance." />
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/general.css"><link rel="stylesheet" href="css/shared.css">
-<link href="https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:ital,wght@0,200;0,300;0,900;1,800;1,900&display=swap" rel="stylesheet">  
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:ital,wght@0,200;0,300;0,900;1,800;1,900&display=swap" rel="stylesheet">  
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+
 <body id="page-top" class="bg-black">
-    
+
     <!-- NAV -->
     <nav>
       <div class="d-flex justify-content-center py-2 fade-in">
@@ -198,7 +215,7 @@
             <div class="col-lg-12">
               <h4 id="One_time" class="text-left pl-3">Prerequisites:</h4>
               <ol>
-                <li id="If_you_alrea34"> Have an <a href="https://aws.amazon.com/">AWS account</a></li>
+                <li id="If_you_alrea34"><span id="Have_an47"> Have an </span><a id="AWS_account25" href="https://aws.amazon.com/">AWS account</a></li>
                 <li id="If_you_alrea34">Have NodejS v. 12.0+ and NPM installed</li> 
               </ol>
               <div class="bg-dark-purple">
@@ -206,13 +223,13 @@
                 <li><span id="Install_the_33">Install the arjan cli globally </span></span><button id="npm_i_-g_arj36" class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
                <li id="If_you_alrea34"> If you already have a local AWS profile that you intend to use with Arjan skip steps 3 - 4.</li>
                <li><span id="create_an_IA35">Run </span></span><button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan init IAM_USER_NAME AWS_REGION -g</button><span id="._this_will_39">. This will pop open a browser window with the AWS console; finish creating the IAM user and hold on to the keys.</span></li> 
-               <li><span id="Update/creat40">Update/create the local AWS profile on your machine by adding the profile and keys in the following format:                 
-                <button id="[profilename43" class="codebox my-3 text-left" onclick="copyVal('[profilename]\naws_access_key_id = YOUR_ACCESS_KEY_ID\naws_secret_access_key = YOUR_SECRET_ACCESS_KEY')">
+               <li><span id="Update/creat40"><span id="Update/creat37">Update/create the local AWS profile on your machine by adding the profile and keys in the following format:                 
+                </span><button id="[profilename43" class="codebox my-3 text-left" onclick="copyVal('[profilename]\naws_access_key_id = YOUR_ACCESS_KEY_ID\naws_secret_access_key = YOUR_SECRET_ACCESS_KEY')">
                 [profilename]<br>
                 aws_access_key_id = YOUR_ACCESS_KEY_ID<br>
                 aws_secret_access_key = YOUR_SECRET_ACCESS_KEY<br>
                 </button>
-                <br>The AWS profiles are stored in <button class="codebox" onclick="copyVal(this.textContent)">~/.aws/credentials</button> on mac/linux or in <button class="codebox" onclick="copyVal(this.textContent)">C:\Users\USER_NAME\.aws\credentials</button> on windows.
+                <br>The AWS profiles are stored in <button id="~/.aws/crede55" class="codebox" onclick="copyVal(this.textContent)">~/.aws/credentials</button> on mac/linux or in <button id="C:\Users\USE56" class="codebox" onclick="copyVal(this.textContent)">C:\Users\USER_NAME\.aws\credentials</button> on windows.
                 </span>
                 </li>
                 </ol>
@@ -222,8 +239,8 @@
             <div class="done card bg-gradient-primary card2-outline text-animate-services4">
               <div class="bg-dark-purple">
                 <ol>
-                  <li style="list-style: none;">
-                    Your are all set!  Remember to run  <button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init</button> before using it in any of your projects.  For more info you can always run <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan --help</button> 
+                  <li style="list-style: none;"><span id="Your_are_all51">
+                    Your are all set!  Remember to run  </span><button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init</button> before using it in any of your projects.  For more info you can always run <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan --help</button> 
                   </li>
                 </ol>
               </div>
@@ -239,9 +256,9 @@
 <section class="contop">
   <div class="container card-p text-center">
     <h2 class="h1 text-padding"><span id="_What_is_Arj5">Arjan's Mission</span></h3>
-<h3 id="" class="h5 card-padding">
+<h3 id="" class="h5 card-padding"><span id="Arjan_missio9">
   Arjan mission is help with a faster transition to the web 3.0 by democratizing the way in which sites are taken to production. Many technologies supporting the web 3.0 become are just ripe enough for mass adapotion however there are still many barriers.   and have been  and recieve wider support, 
-</div>
+</span></div>
 
 
 </section>   
@@ -291,13 +308,13 @@
 		<!-- TEAM -->
 		<section id="directiva" class="contop">
 			<div class="container text-center">
-				<h2 class="h1" style="z-index: 1; position: relative;">The Team</h2>
+				<h2 id="The_Team6" class="h1" style="z-index: 1; position: relative;">The Team</h2>
 				<div class="row justify-content-center">
 				<!-- <TEAM_MEMBERS> -->
 						<div class="col-md-4 pb-5">
 								<img src="img/arjan_deploy_logo.svg" alt="Gabriel Kardonski" class="mx-auto circle-img">
-								<h2 class="h6 pt-3"><span class="">Gabriel Kardonski</span></h2>
-                <h5 class="h5"><span class="">Lead Developer</span></h5>
+								<h2 class="h6 pt-3"><span id="Gabriel_Kard40" class="">Gabriel Kardonski</span></h2>
+                <h5 class="h5"><span id="Lead_Develop41" class="">Lead Developer</span></h5>
                 <div>
                   <a href="https://github.com/gkpty">
                     <img height="35px" src="img/github_logo_2.svg" alt="github logo outline">
@@ -311,8 +328,8 @@
 				
 						<div class="col-md-4 pb-5">
 								<img src="img/arjan_deploy_logo.svg" alt="Lucas Kardonski" loading="lazy" class="mx-auto circle-img">
-								<h2 class="h6 pt-3"><span class="">Lucas Kardonski</span></h2>
-                <h5><span class="h5">Product Developer</span></h5>
+								<h2 class="h6 pt-3"><span id="Lucas_Kardon42" class="">Lucas Kardonski</span></h2>
+                <h5><span id="Product_Deve43" class="h5">Product Developer</span></h5>
                 <div>
                   <a href="https://github.com/lucaskardo">
                     <img height="35px" src="img/github_logo_2.svg" alt="github logo outline">
@@ -325,8 +342,8 @@
               </div>
               <div class="col-md-4 pb-5">
 								<img src="img/arjan_deploy_logo.svg" alt="Arjan the dog" loading="lazy" class="mx-auto circle-img">
-								<h2 class="h6 pt-3"><span class="">Arjan</span></h2>
-                <h5><span class="h5">Lead Muse</span></h5>
+								<h2 class="h6 pt-3"><span id="Arjan44" class="">Arjan</span></h2>
+                <h5><span id="Lead_Muse45" class="h5">Lead Muse</span></h5>
 							</div>
 						</div>
 				

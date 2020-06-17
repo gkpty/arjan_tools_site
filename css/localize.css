@@ -60,10 +60,10 @@
 
 .form-control{
   border-radius: 0;
-  margin: 4% 0%;
+  margin: 2% 0%;
 }
 
-.header-padding:{
+.header-padding{
 padding: 5% 10%;
 }
 
@@ -98,7 +98,9 @@ line-height:1.4;
     font-size: .9rem;
     letter-spacing: 2px;
 }
-
+.landmark{
+  margin: 0% 0% 0% 0%;
+}
 
 /* The animation code */
 @keyframes squaretop {
@@ -172,6 +174,9 @@ line-height:1.4;
   .workflow-pad{
     padding: 8% 0% 0% 0%;
   }
+  .landmark{
+    margin: 14% 14% 0% 0%;
+  }
 }
 
 @media (min-width: 1200px){
@@ -182,6 +187,9 @@ line-height:1.4;
   }
   .workflow-pad{
     padding: 5% 3% 0% 3%;
+  }
+  .landmark{
+    margin: 8% 21% 0% 0%;
   }
 }
 
@@ -230,9 +238,9 @@ input:-webkit-autofill  {
   text-align: justify;
 }
 #drop-area {
-  border: 2px dashed #ccc;
+  border: 2px dashed #00ff00;
   padding: 5px;
-  background-color: hsla(120, 100%, 50%, .1);
+  background-color: hsla(120, 100%, 50%, .05);
 }
 #drop-area.highlight {
   border-color: hsl(120, 100%, 50%);
