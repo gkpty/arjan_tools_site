@@ -85,7 +85,8 @@ line-height:1.4;
 }
 
 .img-brain {
-  opacity:.6
+  opacity:.6;
+  padding: 0% 14% 0% 14%;
 }
 
 .diagram-padding{
@@ -186,10 +187,10 @@ line-height:1.4;
     margin: 0% 7% 0% 0%;
   }
   .workflow-pad{
-    padding: 5% 3% 0% 3%;
+    padding: 3% 0% 0% 2%;
   }
   .landmark{
-    margin: 8% 21% 0% 0%;
+    margin: 7% 7% 0% 0%;
   }
 }
 
