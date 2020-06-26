@@ -41,6 +41,9 @@
   background-color:  hsla(300, 100%, 50%, .2);
 }
 
+.h1-text{
+  font-size: 3rem;
+}
 .arjan-card-logo{
   width: 70%;
   padding: 3% 0%;
@@ -50,6 +53,7 @@
     padding: 2% 2%;
     height: 100%;
     width: auto;
+    border: none;
 }
 .card-p{
   font-size: 110%;
@@ -64,6 +68,10 @@
 .card-padding{
   width: 100%;
 
+}
+
+.index-text-2{
+  color: #ff758a;
 }
 
 .load{
@@ -166,7 +174,7 @@
   }
 
 .arrow-set{
-  padding: 5% 0%;
+  padding: 2% 0%;
 }
 .arrowanimate{
   opacity: 0%;
@@ -175,6 +183,12 @@
   animation-fill-mode: forwards;
 }
 
+.icons-index{
+  width: 100%;
+  padding: 3rem 2rem 1rem 2rem;
+  max-height: 280px;
+
+}
 
 .board{
   margin: 0% 25%;
@@ -187,15 +201,21 @@
   object-fit: cover;
   box-shadow: 0 5px 5px 0 #adb5bd;
 }
-.bg-gradient-primary{
-  background-image: linear-gradient(to right, #acb6e5, #86fde8)
-}
 
 .get-started {
   padding: 1% 0%;
   margin: 3% 1% 10% 1%;
   line-height: 1.5;
 }
+
+
+.done {
+  padding:1px;
+}
+.bg-gradient-primary{
+  background-image: linear-gradient(to right, #00ff00,#00e1ff,#e2ff00,#e700ff);
+}
+
 
 @media (min-width: 576px) and (max-width: 897px) {
   .h3-about {
@@ -223,14 +243,21 @@
 .board{
   margin: 0% 7%;
 }
-
+.i-left{
+  display: flex;
+  float: left;
 }
 
-.done {
-  padding:0px;
+.i-right{
+  display: flex;  
+  float: right;
 }
-.bg-gradient-primary{
-  background-image: linear-gradient(to right, #00ff00,#00e1ff,#e2ff00,#e700ff);
+.icons-index {
+  width: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+  max-height: 230px;
+}
+
 }
 
 @media(max-width: 768px){
@@ -248,7 +275,7 @@
     margin: 5% 25%;
   }
   .load{
-    padding: 3% 1%;
+    padding: 0% 1%;
     margin: 0% 10%;
 }
 .card-padding{
