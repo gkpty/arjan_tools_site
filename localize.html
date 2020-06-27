@@ -84,24 +84,22 @@
     <!-- TRY IT OUT -->
     <section class="contop">
       <div class="container">
-        <h3 class="localize-text text-padding text-center h1">Try it Out</h3>
-
         <div class="row">
-          <div class="col-lg-6 order-1">
+          <div class="col-lg-6 order-lg-1">
+            <h3 class="localize-text text-padding text-center h1">How it works</h3>
+
             <div class="row"> 
-              <div class="col-12 pt-4 pt-md-0">
-                <p>The parser in Arjan get's all the existing IDs of HTML elements with text content and saves them as key value pairs in a JSON locale. If the element doesn't have an ID, Arjan automatically creates one.</p>
+              <div class="col-12 pt-4 pt-md-0 order-lg-0">
+                <p>Arjan Localize has a parser that gets all the existing IDs of HTML elements with text content and saves them as key value pairs in a JSON locale. If the element doesn't have an ID, Arjan automatically creates one.</p>
               </div>
               <div class="col-12 pt-4 pt-md-0">
-                <h5>The GUI:</h5>
-                <p>A form with a dropzone made with Super Easy Forms which features a Node.js Lambda function as it's backend. The GUI is pretty limited as you can't update your translations, but it's good for a one time job especially if you don't like using the terminal.
-                </p>
+
               </div>
             </div>
             <div class="row">
               <div class="col-8">
                 <h5>Automatic Translation:</h5>
-                <p>Arjan also uses AWS’s neural machine translation service to translate your content into any of its 54 available languages</p>
+                <p>Arjan uses AWS’s neural machine translation service to translate your content into any of its 54 available languages</p>
               </div>
               <div class="col-4">
                 <img class="image-fluid img-brain w-100" src="img/brain.svg" alt="">
@@ -109,7 +107,7 @@
             </div>
           </div>
         
-            <div class="col-lg-6 pb-3 order-0">
+            <div class="col-lg-6 pb-3">
             <div class="form-padding">
             <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="holoform" action="#">
               <!-- <label for="from" class="small mb-0">From</label> -->
@@ -261,41 +259,12 @@
       <div class="container">
         <div class="row">
         <div class="col-lg-6">
-          <h2 class="text-lg-left text-center h2 text-padding localize-text">Manage your Site's Content</h2>
-
-          <p>
-          Arjan Localize can work as a very simple content management system because it can export your HTML site’s content to JSON or CSV, and import the updated content back to your site seamlessly.
-          
-          </p>
+          <h2 class="text-lg-left text-center h2 text-padding localize-text">Localization</h2>
+          <p>Even though machine translation services like Google translate have gotten impressively good,in many scenarios manual intervention is needed.  If you are expanding your digital product/service into a new region it's important to get everything perfect.</P> 
+           <p>In addition, you might want to localize non text content such as image files, video files and other files.</p>
         </div>
         <div class="col-lg-6 workflow-pad">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1036.3 410.9">
-            <g id="diagram_group" data-name="Layer 2">
-              <text class="diagram_text" transform="translate(707 357)">
-                CSV
-              </text>
-              <path class="diagram_line" d="M1036 159H916V1h80l-1 33h41zM996 1l40 33"/>
-              <path class="diagram_line" d="M934 68h44v14h-44zM978 68h44v14h-44zM934 82h44v13h-44zM978 82h44v13h-44zM934 95h44v14h-44zM978 95h44v14h-44zM934 109h44v13h-44zM978 109h44v13h-44z"/>
-              <circle class="diagram_line" cx="77" cy="82.1" r="76.4"/>
-              <ellipse class="diagram_line" cx="77" cy="82.3" rx="45.7" ry="76.4"/>
-              <ellipse class="diagram_line" cx="77" cy="82.3" rx="10.8" ry="76.4"/>
-              <circle class="diagram_line" cx="77.1" cy="82.2" r="76.4"/>
-              <ellipse class="diagram_line" cx="76.9" cy="82.2" rx="76.4" ry="45.7"/>
-              <ellipse class="diagram_line" cx="76.9" cy="82.2" rx="76.4" ry="10.8"/>
-              <text class="diagram_text" transform="translate(220 357)">
-                HTML
-              </text>
-              <path class="diagram_line" d="M172 277h233v133H172zM638 277h232v133H638zM411 14h232v134H411z"/>
-              <text class="diagram_text" transform="translate(460 93)">
-                JSON
-              </text>
-              <path class="diagram_line animated_line" d="M71 159v195h101"/>
-              <path class="diagram_line animated_line_back" d="M86 157v183h86M283 276V75h127"/>
-              <path class="diagram_line animated_line" d="M299 277V88h111M519 149v204h118"/>
-              <path class="diagram_line animated_line_back" d="M534 148v190h103M750 276V75h166"/>
-              <path class="diagram_line animated_line" d="M764 277V90h152"/>
-            </g>
-          </svg>
+          <img src="img/landmarks.svg" class="landmark" alt="landmark outline">
         </div>
       </div>
       </div>
@@ -306,11 +275,37 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 order-1 order-lg-0">
-        <img src="img/landmarks.svg" class="landmark" alt="landmark outline">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1036.3 410.9">
+          <g id="diagram_group" data-name="Layer 2">
+            <text class="diagram_text" transform="translate(707 357)">
+              CSV
+            </text>
+            <path class="diagram_line" d="M1036 159H916V1h80l-1 33h41zM996 1l40 33"/>
+            <path class="diagram_line" d="M934 68h44v14h-44zM978 68h44v14h-44zM934 82h44v13h-44zM978 82h44v13h-44zM934 95h44v14h-44zM978 95h44v14h-44zM934 109h44v13h-44zM978 109h44v13h-44z"/>
+            <circle class="diagram_line" cx="77" cy="82.1" r="76.4"/>
+            <ellipse class="diagram_line" cx="77" cy="82.3" rx="45.7" ry="76.4"/>
+            <ellipse class="diagram_line" cx="77" cy="82.3" rx="10.8" ry="76.4"/>
+            <circle class="diagram_line" cx="77.1" cy="82.2" r="76.4"/>
+            <ellipse class="diagram_line" cx="76.9" cy="82.2" rx="76.4" ry="45.7"/>
+            <ellipse class="diagram_line" cx="76.9" cy="82.2" rx="76.4" ry="10.8"/>
+            <text class="diagram_text" transform="translate(220 357)">
+              HTML
+            </text>
+            <path class="diagram_line" d="M172 277h233v133H172zM638 277h232v133H638zM411 14h232v134H411z"/>
+            <text class="diagram_text" transform="translate(460 93)">
+              JSON
+            </text>
+            <path class="diagram_line animated_line" d="M71 159v195h101"/>
+            <path class="diagram_line animated_line_back" d="M86 157v183h86M283 276V75h127"/>
+            <path class="diagram_line animated_line" d="M299 277V88h111M519 149v204h118"/>
+            <path class="diagram_line animated_line_back" d="M534 148v190h103M750 276V75h166"/>
+            <path class="diagram_line animated_line" d="M764 277V90h152"/>
+          </g>
+        </svg>
       </div>
       <div class="col-lg-6 order-0 order-lg-1">
-        <h2 class="text-lg-left text-center h2 text-padding localize-text">Localization</h2>
-        <p>Even though machine translation services like Google translate have gotten impressively good, there still are several scenarios where manual intervention is needed.If you are expanding your digital product/service into a new region it's important to get everything perfect. Complex grammar rules and slang often cause errors in the translation making some manual intervention or at least revision necessary.</p>
+        <h2 class="text-lg-left text-center h2 text-padding localize-text">Content Management</h2>
+        <p>Arjan Localize can work as a very simple content management system.  It allows you to export a site’s HTML content to JSON or CSV, and import the updated content back to the site seamlessly.</p>
       </div>
     </div>
   </div>
