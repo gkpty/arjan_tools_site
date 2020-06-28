@@ -16,6 +16,23 @@ a:hover{
   color: currentColor;
 }
 
+.catordog{
+  display: flex;
+  justify-content: center;
+  margin: 3% 0% 0% 0%;
+
+}
+
+.catbtn{
+  background-color:transparent;
+  border-color:none;
+  border: #410bff 1px solid;
+  margin: 0% 2px;
+  padding: 5px 5px 0px 15px;
+  color: #fffee9;
+  letter-spacing:2px;
+font-weight: 200;} 
+
 .h5{
   font-weight: 200!important;
 }
@@ -30,7 +47,7 @@ p{
   background-color: hsla(0,0%, 50%, .1);
 }
 .text-white{
-  color: hsla(0, 0% , 100%, 1);
+  color: #fffee9;
 }
 .localize-text{
   color: hsla(120, 100%, 50%, 1);
@@ -257,6 +274,10 @@ li {
 .get-started-3 {
   margin: 0% 10%;
 }
+.catordog{
+  display: flex;
+  justify-content: center;
+  margin: 1% 0% 0% 0%;
 }
 
 
@@ -309,5 +330,9 @@ li {
 .checklist-padding{
   padding: 0% 28%;
   margin: -16% 0%;
+}
+.catordog{
+  display: flex;
+  justify-content: flex-end;
 }
 }
