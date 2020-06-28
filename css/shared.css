@@ -23,13 +23,21 @@ a:hover{
 
 }
 
-.catbtn{
+.modebtn-selected{
+  background-color: hsla(300, 100%, 50%, .25) !important;
+}
+
+button:focus {
+  outline:none
+}
+
+.modebtn{
   background-color:transparent;
   border-color:none;
   border: #410bff 1px solid;
   margin: 0% 2px;
-  padding: 5px 5px 0px 15px;
   color: #fffee9;
+  padding: 0rem 1rem;
   letter-spacing:2px;
 font-weight: 200;} 
 
@@ -308,7 +316,7 @@ li {
 .audit-logo {
     position: absolute;
     z-index: 1;
-    width: 40%;
+    height: 75%;
     right: 32%;
     top: 18%;
 }
