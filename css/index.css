@@ -51,8 +51,10 @@
     border: 2px solid #ffffff; }
 
 .bg-dark-purple{
-  background-color: hsla(253, 100%, 52%, .27)
-  ;
+  background-color: hsla(273, 100%, 10%, 1);
+}
+.bg-dark-purple-2{
+  background-color:hsla(273, 100%, 33%, 0.45);
 }
 
 .bg-ready{
@@ -108,7 +110,7 @@
 }
 
 .index-text-2{
-  color: #ff758a;
+  color: #ffbdc7;
 }
 
 .load{

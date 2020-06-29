@@ -2,7 +2,7 @@ html,body{
   /* font-size: 1.1rem; */
   width: 100%;
   overflow-x: hidden;
-  color: #fff;
+  color: #fffceb;
   /* line-height: 1.6; */
   font-weight: 200;
 }
@@ -24,7 +24,7 @@ a:hover{
 }
 
 .modebtn-selected{
-  background-color: hsla(300, 100%, 50%, .25) !important;
+  background-color: hsla(300, 55%, 33%, .25) !important;
 }
 
 button:focus {
@@ -34,7 +34,7 @@ button:focus {
 .modebtn{
   background-color:transparent;
   border-color:none;
-  border: #410bff 1px solid;
+  border: #b9a7f8 1px solid;
   margin: 0% 2px;
   color: #fffee9;
   padding: 0rem 1rem;
@@ -114,7 +114,7 @@ li {
   100%{color: hsl(60, 100%, 50%);}
 }
 #load_d{
-  color: hsl(300, 100%, 50%, .8);
+  color: hsl(300, 100%, 50%, .9);
   animation-name: colord;
   animation-duration: 1.5s;
 
@@ -325,8 +325,8 @@ li {
 }
 .get-started {
   padding: 3% 1%;
-  margin: 0% 0% 7% 0%;
 }
+
 .get-started-1 {
   margin: 0% 10%;
 
