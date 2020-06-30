@@ -45,6 +45,16 @@ font-weight: 200;}
   font-weight: 200!important;
 }
 
+/* .arjan-head{
+  transition-timing-function: ease-in;
+  }
+  @keyframes fade {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+  }
+} */
+
+
 p{
   font-family: 'quicksand', sans-serif;
 }

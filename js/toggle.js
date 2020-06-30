@@ -7,19 +7,19 @@ function toggleButton(id){
     for(var elem of elems){
         elem.setAttribute('src', elem.getAttribute('src').substr(0, elem.getAttribute('src').lastIndexOf('_'))+`_${id}.svg`)
     }
-    console.log(sessionStorage.getItem('cat'))
 }
 
-//window.toggleButton = toggleButton;
 document.addEventListener("DOMContentLoaded", function(){ 
-    console.log('loading')
     let catvar = sessionStorage.getItem('cat')
     if(catvar === 'true'){
         document.getElementById('dog').classList.remove('modebtn-selected')
         document.getElementById('cat').classList.add('modebtn-selected')
-        var elems = document.getElementsByClassName('arjan-head')
-        for(var elem of elems){
-            elem.setAttribute('src', elem.getAttribute('src').split(`_dog.svg`)[0]+'_cat.svg')
-        }
+    }
+    var elems = document.getElementsByClassName('arjan-head')
+    for(var elem of elems){
+        if(catvar === 'true') elem.setAttribute('src', elem.getAttribute('src').split(`_dog.svg`)[0]+'_cat.svg')
+        elem.removeAttribute('style')
     }
 })
+
+window.toggleButton = toggleButton;

@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
+    <link rel="preload" as="script" href="js/toggle.js">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Arjan Audit uses Google Lighthouse 6 to audit your site's performance in dev mode before depoying.">
+    <meta name="description" content="Audit a site's speed and SEO score in development mode with Lighthouse 6.  Audit multiple pages at once and save your results locally.">
     <meta name="author" content="Torus Project">
-    <title>Arjan Audit - Audit your site's performance and SEO score</title>
+    <title>Arjan Audit - Static Sites</title>
+    <!-- TWITTER META TAG -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ArjanTools">
+    <meta name="twitter:creator" content="@lucas_kardo">
+    <meta name="twitter:title" content="Arjan Audit - Static Sites">
+    <meta name="twitter:description" content="Audit a site's speed and SEO score in development mode with Lighthouse 6.  Audit multiple pages at once and save your results locally.">
+    <meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg">
+<!-- Open Graph Meta Tag -->
+    <meta property="og:url" content="https://arjan.tools/deploy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arjan Audit - Static Sites" />
+    <meta property="og:description" content="Audit a site's speed and SEO score in development mode with Lighthouse 6.  Audit multiple pages at once and save your results locally."/>
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/general.css"><link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/audit.css">
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:ital,wght@0,200;0,300;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">  
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon_audit.ico" type="image/x-icon">
+    <link rel="icon" href="favicon_audit.ico" type="image/x-icon">
     </head>
 
 <body id="page-top" class="bg-black text-white">
@@ -58,7 +72,7 @@
         <div class="row ">
           <div class="col-md-6 text-white text-md-left text-center order-1 order-lg-0">
             <h1 id="Arjan_Audit2" class="audit-text h1-padding">Arjan Audit</h1>
-            <p id="Arjan_audit_7" class="header-text-padding">Audit multiple pages for your site at once, with Lighthouse 6.  Save the results of your audits locally.  Await future feature releases to unlock the power of your data!</p>
+            <p id="Arjan_audit_7" class="header-text-padding">Audit multiple pages for your site at once with Lighthouse 6.  Save the results of your audits locally.  Await future feature releases to unlock the power of your data!</p>
             <a id="Get_Started10" href="#getstarted" class="arjan-btn border-color text-white">Get Started</a>
             <a id="Docs11" href="docs.html#Arjan_Audit_744" class="text-white arjan-btn border-color ">Docs</a>
           </div>
@@ -88,7 +102,7 @@
     <section class="contop">
       <div class="container">
         <div class="bg-aqua bg-color">
-          <h2 id="Test_your_st3" class="h2 text-box-audit">Test your static site's SEO score locally before deploying</h2>
+          <h2 id="Test_your_st3" class="h2 text-box-audit">Test your site's speed and SEO score locally before deploying</h2>
         </div>
       </div>
 

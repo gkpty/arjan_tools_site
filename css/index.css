@@ -130,9 +130,27 @@
   animation-delay: 0ms;
 }
 @keyframes nodarjan {
+
   25% {transform: rotate(10deg);}
   75% {transform: rotate(-10deg);}
   100% {transform: rotate(0deg);}
+}
+
+/* .arjan-head{
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} */
+
+.card:hover{
+  cursor: pointer;
 }
 
 .arjan-localize-card:hover {
