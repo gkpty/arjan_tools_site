@@ -10,15 +10,25 @@ function toggleButton(id){
 }
 
 document.addEventListener("DOMContentLoaded", function(){ 
-    let catvar = sessionStorage.getItem('cat')
+    var catvar = sessionStorage.getItem('cat')
     if(catvar === 'true'){
         document.getElementById('dog').classList.remove('modebtn-selected')
         document.getElementById('cat').classList.add('modebtn-selected')
     }
     var elems = document.getElementsByClassName('arjan-head')
     for(var elem of elems){
-        if(catvar === 'true') elem.setAttribute('src', elem.getAttribute('src').split(`_dog.svg`)[0]+'_cat.svg')
-        elem.removeAttribute('style')
+        var img = new Image()
+        var dogurl = elem.getAttribute('src')
+        var caturl = dogurl.split(`_dog.svg`)[0]+'_cat.svg'
+        if(catvar === 'true') {
+            img.src = caturl
+            elem.setAttribute('src', caturl)
+            elem.removeAttribute('style')
+        }
+        else {
+            img.src = dogurl
+            elem.removeAttribute('style')
+        }
     }
 })
 

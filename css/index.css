@@ -61,6 +61,19 @@
   background-color: hsla(323, 100%, 50%, .2);
 }
 
+.quickfade{
+  opacity: 1;
+  animation-name: quickfade;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+
+@keyframes quickfade{
+  0% {opacity:0}
+  100% {opacity:1}
+}
+
 .header-bg-size{
   padding: 5% 3%;
   margin: 4% 2% 2% 2%;

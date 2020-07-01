@@ -19,6 +19,7 @@ observer.observe(document.querySelector("#arrowset"));
 
 function nodArjan(mod){
   let name = "arjan-logo-"+mod;
+  document.getElementById(name).classList.remove("quickfade")
   document.getElementById(name).classList.add("nodArjan")
 }
 
