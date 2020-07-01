@@ -11,12 +11,6 @@ function toggleButton(id){
     }
 }
 
-function processAjaxData(response, urlPath){
-    document.getElementById("content").innerHTML = response.html;
-    document.title = response.pageTitle;
-    window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
-}
-
 
 function swapBody(current, next){
     var page1 = document.getElementById(current)
@@ -26,6 +20,9 @@ function swapBody(current, next){
     let urlorg = window.location.href
     var url = urlorg.substr(0, urlorg.lastIndexOf('/'))+'/'+next.split('_body')[0]+'.html'
     console.log(url)
+    setTimeout(function(){
+        document.body.removeChild(document.getElementById(current))
+    }, 1000)
     //window.history.pushState({}, 'Optimize', url)
 }
 
