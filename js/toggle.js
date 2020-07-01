@@ -1,3 +1,5 @@
+var pages = {}
+
 function toggleButton(id){
     sessionStorage.setItem('cat', id==='cat'?true:false);
     var btns = document.getElementsByClassName('modebtn')
@@ -9,7 +11,43 @@ function toggleButton(id){
     }
 }
 
+function processAjaxData(response, urlPath){
+    document.getElementById("content").innerHTML = response.html;
+    document.title = response.pageTitle;
+    window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
+}
+
+
+function swapBody(current, next){
+    var page1 = document.getElementById(current)
+    page1.classList.add('fadeout')
+    document.body.innerHTML = pages[next]+ document.body.innerHTML 
+    var page2 = document.getElementById(next)
+    let urlorg = window.location.href
+    var url = urlorg.substr(0, urlorg.lastIndexOf('/'))+'/'+next.split('_body')[0]+'.html'
+    console.log(url)
+    //window.history.pushState({}, 'Optimize', url)
+}
+
 document.addEventListener("DOMContentLoaded", function(){ 
+    //pageload
+    var links = document.getElementsByClassName('pagelink')
+    for(var link of links){
+        var proxyurl = "https://cors-anywhere.herokuapp.com/";
+        var url = 'https://arjan.tools/'+link.getAttribute('alt')
+        var pagename = link.getAttribute('alt').split('.')[0]+'_body'
+        
+        link.addEventListener('mouseover', function(){
+            fetch(proxyurl+url).then(function (response){
+               return response.text();
+            }).then(function(html){
+                console.log(pagename)
+                pages[pagename] = '<div id="'+pagename+'" class="fadein">'+html.split('<body id="page-top" class="bg-black text-white">')[1].split('</body>')[0]+'</div><!--ENDBODY-->'
+                console.log(pages[pagename])
+            }).catch(function(err){console.log(err)})
+        })
+    }
+    //Cat or Dog
     var catvar = sessionStorage.getItem('cat')
     if(catvar === 'true'){
         document.getElementById('dog').classList.remove('modebtn-selected')

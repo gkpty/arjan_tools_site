@@ -23,7 +23,7 @@
     <meta property="og:title" content="Arjan Tools - DevOps toolkit for static sites" />
     <meta property="og:description" content="Take your static site projects to production with the lowest overhead and best performance." />
     <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
-   
+    <link rel="stylesheet" href="css/optimize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/general.css"><link rel="stylesheet" href="css/shared.css">
@@ -36,27 +36,28 @@
 
 
 <body id="page-top" class="bg-black">
+  <div id="index_body">
   <script src="js/toggle.js"></script>
     <!-- NAV -->
     <nav>
       <div class="d-flex justify-content-center py-2 fade-in">
         <div class="load-link">
-          <a href="localize.html" id="localize_nav">
+          <a href="#" alt="localize.html" class="pagelink" id="localize_nav" onclick="swapBody('index_body', 'localize_body')">
             <span id="load_l" class="load_letter">L</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="optimize.html" id="optimize_nav">
+          <a href="#" alt="optimize.html" class="pagelink" id="optimize_nav" onclick="swapBody('index_body', 'optimize_body')">
             <span id="load_o" class="load_letter">O</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="audit.html" id="audit_nav">
+          <a href="#" alt="audit.html" id="audit_nav">
             <span id="load_a" class="load_letter">A</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="deploy.html" id="deploy_nav">
+          <a href="#" alt="deploy.html" id="deploy_nav">
             <span id="load_d" class="load_letter">D</span>
           </a>
         </div>
@@ -423,5 +424,7 @@
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
     crossorigin="anonymous"></script>
     <script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  </div>
+  <!--ENDBODY-->
   </body>
 </html>
