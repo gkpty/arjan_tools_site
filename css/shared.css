@@ -16,7 +16,6 @@ a:hover{
   color: currentColor;
 }
 
-
 .fadein{
   position: static;
   width: 100%;
@@ -87,7 +86,7 @@ p{
   background-color: #000;
 }
 .bg-secondary-nav{
-  background-color: hsla(0,0%, 50%, .1);
+  background-color: hsla(0,0%, 50%, .25);
 }
 .text-white{
   color: #fffee9;
@@ -110,7 +109,7 @@ li {
 }
 
 /* NAV */
-.load-link{padding:0px 17px}
+.load-link{padding:0px 24px; font-size: 24px; font-weight: 300;}
 #load_l{
   color: hsla(120, 100%, 50%, .8);
   animation-name: colorl;
@@ -293,6 +292,7 @@ li {
     padding: 3%;
     margin: 0% 18%;
     line-height: 6.8;
+  }
 }
   .header-text-padding {
     padding: 3% 2% 1% 0%;

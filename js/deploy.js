@@ -1,3 +1,12 @@
+require('../css/general.css')
+require('../css/shared.css')
+require('../css/deploy.css')
+//END_STYLE_INJECT
+
+
+
+
+
 var observer = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true)
 		for(let l of document.getElementsByClassName('checkmark')){

@@ -1,3 +1,13 @@
+require('../css/optimize.css')
+require('../css/index.css')
+require('../css/general.css')
+require('../css/shared.css')
+//END_STYLE_INJECT
+
+
+
+
+
 var observer = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true)
 		for(let l of document.getElementsByClassName('img-arrow')){

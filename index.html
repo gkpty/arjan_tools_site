@@ -2,7 +2,6 @@
 <html lang="en">
   <head> 
     
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A better workflow + tools to take your static sites to production in the AWS Cloud">
@@ -29,8 +28,6 @@
     <link rel="stylesheet" href="css/general.css"><link rel="stylesheet" href="css/shared.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-
 
   </head>
 
@@ -42,22 +39,22 @@
     <nav>
       <div class="d-flex justify-content-center py-2 fade-in">
         <div class="load-link">
-          <a href="#" alt="localize.html" class="pagelink" id="localize_nav" onclick="swapBody('index_body', 'localize_body')">
+          <a href="localize.html" id="localize_nav">
             <span id="load_l" class="load_letter">L</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="#" alt="optimize.html" class="pagelink" id="optimize_nav" onclick="swapBody('index_body', 'optimize_body')">
+          <a href="optimize.html" id="optimize_nav">
             <span id="load_o" class="load_letter">O</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="#" alt="audit.html" id="audit_nav">
+          <a href="audit.html" id="audit_nav">
             <span id="load_a" class="load_letter">A</span>
           </a>
         </div>
         <div class="load-link">
-          <a href="#" alt="deploy.html" id="deploy_nav">
+          <a href="deploy.html" id="deploy_nav">
             <span id="load_d" class="load_letter">D</span>
           </a>
         </div>
@@ -74,7 +71,7 @@
     
     <header>
       <div class="container">
-        <div id="Open_Source_25" class="h1-text text-center header-bg-size bg-dark-purple-2">Modern static sites made easy</div>
+        <div id="Open_Source_25" class="h1-text text-center header-bg-size bg-dark-purple-2">Improve your developer experience with static sites</div>
         
         <div class="container px-lg-5">
           <div class="row px-lg-5">
@@ -213,10 +210,10 @@
 
     <section class="contop" id="arrowset">
       <div class="container"> 
-      <h2 id="The_LOAD_Wor6" class="text-center h1 text-padding">The LOAD Workflow</h2>
+        <h2 id="The_LOAD_Wor6" class="text-center index-text-2 h1 text-padding">The LOAD Workflow</h2>
       <div class="load">
       <div class="done card bg-gradient-primary card2-outline text-animate-services4">
-      <div class="module-border-wrap bg-black ">
+              <div class="module-border-wrap bg-black ">
         <div class="container">
           <div class="arrow-set container">
             <div class="d-flex justify-content-center py-2">
@@ -260,7 +257,7 @@
 
     <section class="contop">
       <div class="container">
-        <h3 id="getstarted" class="h1 text-padding text-center">Getting started</h3>
+        <h3 id="getstarted" class="h1 text-padding index-text-2 text-center">Getting started</h3>
           <div class="row get-started-1">
             <div class="col-lg-12">
               <h4 id="One_time" class="text-left pl-3">Prerequisites:</h4>
@@ -271,9 +268,11 @@
               <div class="bg-dark-purple">
                 <ol>
                 <li><span id="Install_the_33">Install the arjan cli globally </span></span><button id="npm_i_-g_arj36" class="codebox" onclick="copyVal(this.textContent)">npm i -g arjan-cli</button></li>
-               <li id="If_you_alrea34"> If you have a local AWS profile that intend to use with Arjan continue to next step. Otherwise visit the local AWS setup section</li>
-               <li><span id="create_an_IA35">Run </span></span><button id="npm_i_" class="codebox" onclick="copyVal(this.textContent)">arjan init IAM_USER_NAME AWS_REGION -g</button><span id="._this_will_39">. This will pop open a browser window with the AWS console; finish creating the IAM user and hold on to the keys.</span></li> 
-                </ol>
+               <li id="If_you_alrea34"> If you haven't setup a local AWS profile; visit the AWS setup section in the docs. Otherwise continue to next step.</li>
+               <li>
+                Go to your project's root directory and run </span><button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init IAM_USER_NAME REGION </button>
+               </li>
+              </ol>
               </div>
             </div>
             <div class="container">
@@ -281,7 +280,9 @@
               <div class="bg-dark-purple">
                 <ol>
                   <li style="list-style: none;"><span id="Your_are_all51">
-                    Your are all set!  Remember to run  </span><button id="arjan_init_S38" class="codebox" onclick="copyVal(this.textContent)">arjan init</button> before using it in any of your projects.  For more info you can always run <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan --help</button> 
+                  </li>
+                  <li style="list-style: none;">
+                    You are all set! Run <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan start</button> to start your live reload server or check any of the other commands by running <button id="arjan_init_S38" class="codebox mt-1" onclick="copyVal(this.textContent)">arjan --help</button> 
                   </li>
                 </ol>
               </div>
@@ -300,7 +301,7 @@
     <div class="container">
       <div class="row get-started-1">
           <div class="col-md-6 text-center text-md-left">
-            <h3 id="Like_the_ide12" class="h2 text-box-audit">Want to contribute?</h3> 
+            <h3 id="Like_the_ide12" class="h2 index-text-2 text-box-audit">Want to contribute?</h3> 
             <h3 id="Click_on_the13" class="h5 text-box-audit">Check out the board</h3>
             <h3 id="" class="h5 text-box-audit">or dorp us a message below</h3>
         </div>

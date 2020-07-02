@@ -12,7 +12,7 @@ function toggleButton(id){
 }
 
 
-function swapBody(current, next){
+/* function swapBody(current, next){
     var page1 = document.getElementById(current)
     page1.classList.add('fadeout')
     document.body.innerHTML = pages[next]+ document.body.innerHTML 
@@ -24,11 +24,11 @@ function swapBody(current, next){
         document.body.removeChild(document.getElementById(current))
     }, 1000)
     //window.history.pushState({}, 'Optimize', url)
-}
+} */
 
 document.addEventListener("DOMContentLoaded", function(){ 
     //pageload
-    var links = document.getElementsByClassName('pagelink')
+    /* var links = document.getElementsByClassName('pagelink')
     for(var link of links){
         var proxyurl = "https://cors-anywhere.herokuapp.com/";
         var url = 'https://arjan.tools/'+link.getAttribute('alt')
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 console.log(pages[pagename])
             }).catch(function(err){console.log(err)})
         })
-    }
+    } */
     //Cat or Dog
     var catvar = sessionStorage.getItem('cat')
     if(catvar === 'true'){
