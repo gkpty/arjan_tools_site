@@ -27,6 +27,13 @@ a:hover{
   animation-timing-function: ease-in;
 }
 
+.header-title{
+  font-family: 'Montserrat', 'Montserrat';
+  font-weight: 700!important;
+  font-size: 1.6rem;
+  
+}
+
 .fadeout{
   opacity: 1;
   animation-name: quickout;
