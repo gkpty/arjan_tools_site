@@ -54,6 +54,11 @@ a:hover{
 button:focus {
   outline:none
 }
+.text-footer {
+  color: #ffbdc7!important;}
+
+.text-footer-2 {
+    color: #f0f !important;}
 
 .modebtn{
   background-color:transparent;
@@ -248,6 +253,7 @@ li {
 .get-video{
   width: 100%;
   padding: 0rem;
+  max-width: 800px;
 }
 
 .nav-logo{
@@ -323,8 +329,8 @@ li {
 }
 
 .checklist-padding{
-  padding: 0% 20%;
-  margin: -25% 0%;
+  padding: 0% 25%;
+  margin: 0%;
 
 }
 .get-started-3 {
@@ -384,8 +390,8 @@ li {
   padding-bottom: 10%;
 }
 .checklist-padding{
-  padding: 0% 28%;
-  margin: -16% 0%;
+  padding: 0% 25%;
+  margin: 0%;
 }
 .catordog{
   display: flex;

@@ -1,12 +1,7 @@
-require('../css/general.css')
+/* require('../css/general.css')
 require('../css/shared.css')
-require('../css/optimize.css')
+require('../css/optimize.css') */
 //END_STYLE_INJECT
-
-
-
-
-
 
 var observer = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true)

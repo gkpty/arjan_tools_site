@@ -61,6 +61,8 @@
 .form-control{
   border-radius: 0;
   margin: 2% 0%;
+  color: #ddd!important;
+  font-weight: 200;
 }
 
 .header-padding{

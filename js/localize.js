@@ -1,6 +1,6 @@
-require('../css/general.css')
+/* require('../css/general.css')
 require('../css/shared.css')
-require('../css/localize.css')
+require('../css/localize.css') */
 //END_STYLE_INJECT
 
 

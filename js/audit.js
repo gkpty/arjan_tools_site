@@ -1,12 +1,7 @@
-require('../css/general.css')
+/* require('../css/general.css')
 require('../css/shared.css')
-require('../css/audit.css')
+require('../css/audit.css') */
 //END_STYLE_INJECT
-
-
-
-
-
 
 window.onload = function() {
   animateSquares();
