@@ -1,0 +1,164 @@
+.cls-1{opacity:0.5;}
+.cls-2,.cls-4{fill:#ff00ff;}
+.cls-2,
+.cls-3{opacity:0.45;}
+.cls-3,
+.cls-5{fill: #ff00ff;}
+.cls-4{opacity:0.45;}
+.cls-5{opacity:0.5;}
+
+.rect{
+  border: hsla(300, 100%, 50%, .8) 2px dashed;
+  height: auto;
+  min-height: 100px;
+  padding: 2% 3%;
+}
+.rect1{
+  width: 45%;
+  margin: 2% 28%;
+}
+.rect2{
+  width: 63%;
+  margin: 2% 19%;
+}
+.rect3{
+  margin: 0% 13%;
+  width: 76%;
+}
+
+.border-color{
+  border: hsla(300, 100%, 50%, 1) 1px solid;
+}
+
+.bg-color{
+  background-color: hsla(300, 100%, 50%, .4);
+}
+.bg-color-2{
+  background-color: hsla(300, 100%, 50%, .15);
+
+}
+
+.codebox:hover {
+  border: hsla(300, 100%, 50%, .8) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeborder {
+  0% {border: hsla(300, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(300, 100%, 50%, .45) 2px solid;}
+  100% {border: hsla(300, 100%, 50%, .4) 2px solid;}
+}
+.codebox:hover {
+  border: hsla(300, 100%, 50%, 0) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
+
+.bg-aqua-2{
+  padding: 6% 9%;
+  background-color: hsla(300, 100%, 50%, .2);
+  line-height:1.8;
+}
+
+.text-box-audit{
+line-height:1.4;
+}
+
+.banner-padding{
+  padding-left: 39rem;
+  padding-right: 7rem;
+}
+
+.video-padding{
+  padding: 0% 0% 0% 0%;
+  width: 100%;
+  max-width: 400px;
+
+}
+
+/* The animation code */
+@keyframes squaretop {
+  0% {transform: translateY(-8%); opacity: 0;}
+  25% {transform: translateY(8%); opacity: .2;}
+  50% {transform: translateY(-2%); opacity: .25;}
+  100% {transform: translateY(5%); opacity: .3;}
+}
+
+@keyframes squareright {
+  0% {transform: translateX(-8%); opacity: 0;}
+  25% {transform: translateX(8%); opacity: .2;}
+  50% {transform: translateX(-2%); opacity: .25;}
+  100% {transform: translateX(5%); opacity: .3;}
+}
+
+/* The element to apply the animation to */
+.square-top {
+  top: -8%;
+  opacity: 0%;
+  animation-name: squaretop;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+.square-right {
+  top: -8%;
+  opacity: 0%;
+  animation-name: squareright;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+@media(min-width:768px){
+  .rect1{
+    margin-left: 9%;
+    margin-bottom: -4%;
+    width: 33%;
+  }
+  .rect2{
+    margin-left: 30%;
+    margin-bottom: -2%;
+    width: 37%;
+  }
+  .rect3{
+    margin-left: 55%;
+    width: 46%;
+  }
+}
+
+@media (min-width: 992px){
+  .rect1{
+    margin-left: 10%;
+    margin-bottom: -4%;
+    width: 27%;
+  }
+  .rect2{
+    margin-left: 30%;
+    margin-bottom: -2%;
+    width: 29%;
+  }
+  .rect3{
+    margin-left: 52%;
+    width: 37%;
+  }
+}
+
+.checkmark{
+  opacity: 0;
+}
+
+.checkanimate{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}

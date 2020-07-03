@@ -1,0 +1,120 @@
+.cls-1{opacity:0.5;}
+.cls-2,.cls-4{fill:#00FFFF;}
+.cls-2,
+.cls-3{opacity:0.45;}
+.cls-3,
+.cls-5{fill: #00FFFF;}
+.cls-4{opacity:0.45;}
+.cls-5{opacity:0.5;}
+
+.border-color{
+  border: hsla(180, 100%, 50%, .8) 1px solid;
+}
+.bg-color{
+  background-color:hsla(180, 100%, 50%, .4);
+}
+.bg-color-2{
+  background-color:hsla(180, 100%, 50%, .15);
+}
+
+@keyframes fadeborder {
+  0% {border: hsla(180, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(180, 100%, 50%, .45) 2px solid;}
+  100% {border: hsla(180, 100%, 50%, .4) 2px solid;}
+}
+.codebox:hover {
+  border: hsla(180, 100%, 50%, 0) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
+.banner-container{
+  padding: 6% 4%;
+}
+
+.bg-aqua-2{
+  padding: 3%;
+  background-color: hsla(180, 100%, 50%, .1);
+  line-height:1.8;
+}
+.text-box-audit{
+line-height:1.4;
+}
+
+.hplus{
+  font-size: 280%
+}
+.module-logo{
+  max-width: 170px;
+  max-height: 100px;
+}
+
+.video-size{
+  width: 100%;
+  max-width: 350px;
+  border: hsla(180, 100%, 50%, .6) 1px solid;
+  padding: 1%;
+
+}
+
+/* The animation code */
+@keyframes squaretop {
+  0% {transform: translateY(-8%); opacity: 0;}
+  25% {transform: translateY(8%); opacity: .2;}
+  50% {transform: translateY(-2%); opacity: .25;}
+  100% {transform: translateY(5%); opacity: .3;}
+}
+
+@keyframes squareright {
+  0% {transform: translateX(-8%); opacity: 0;}
+  25% {transform: translateX(8%); opacity: .2;}
+  50% {transform: translateX(-2%); opacity: .25;}
+  100% {transform: translateX(5%); opacity: .3;}
+}
+
+/* The element to apply the animation to */
+.square-top {
+  top: -8%;
+  opacity: 0%;
+  animation-name: squaretop;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+.square-right {
+  top: -8%;
+  opacity: 0%;
+  animation-name: squareright;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+.checkmark{
+  opacity: 0;
+}
+
+.checkanimate{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+
+@media (min-width: 768px){
+
+  .banner-container{
+    padding: 6% 16%;
+  }
+}
+
+@media(min-width:992px){
+  .banner-container{
+    width: 50vw;
+   }
+}

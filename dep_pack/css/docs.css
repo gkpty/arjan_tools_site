@@ -1,0 +1,115 @@
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.code{
+  font-size: 87.5%;
+  color: hsl(120, 100%, 50%);
+  word-break: break-word;
+  background-color: #200028;
+  display: inline-block;
+  padding: 1% 0%;
+  font-size: 13px;
+}
+
+a{
+  color: hsl(180, 100%, 50%);
+}
+
+section, h2 {
+  padding-top: 65px;
+  margin-top: -60px;
+}
+span, i {
+  pointer-events: none;
+}
+.mobibar {
+  padding:1% 5%;
+}
+
+.docs-nav{
+  padding: 10px 0px 40px 0px;
+}
+
+@media (min-width: 800px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+  .mobibar {
+    padding:0%;
+    background-color: hsla(0,0%, 50%, .05) !important;
+    min-width: 25%;
+    border-right: 1px solid rgba(0,0,0,.125);
+  }
+}
+
+.table-dark {
+  background-color: hsla(0,0%, 50%, .05) !important;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+  color: white;
+}
+.list-group-item {
+  color: white;
+  background-color: transparent ;
+}
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: transparent;
+  min-width: 160px;
+}
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+.list-group-item:hover{
+  color: white;
+  background-color: hsla(0,0%, 50%, .05);
+}
+
+.dropdown-content a:hover {
+  background-color: hsla(0,0%, 50%, .05);
+}
+.show {
+  display: block;
+}
+.dropdown a span {
+  margin-left: 25px;
+}
+.dropdown a span, .sub-dropdown span {
+  margin-left: 25px;
+}
+.sub-dropdown {
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+.sub-dropdown a span {
+  margin-left: 50px;
+}

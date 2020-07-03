@@ -1,0 +1,270 @@
+.cls-1{opacity:0.5;}
+.cls-2,.cls-4{fill:#00ff00;}
+.cls-2,
+.cls-3{opacity:0.45;}
+.cls-3,
+.cls-5{fill: #00ff00;}
+.cls-4{opacity:0.45;}
+.cls-5{opacity:0.5;}
+
+@keyframes fadeborder {
+  0% {border: hsla(120, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(120, 100%, 50%, .45) 2px solid;}
+  100% {border: hsla(120, 100%, 50%, .4) 2px solid;}
+}
+.codebox:hover {
+  border: hsla(120, 100%, 50%, 0) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+.diagram_text{font-size:46.54px;fill:#fff;letter-spacing:.05em}
+.diagram_line{
+  fill:none;
+  stroke:#0f0;
+  stroke-miterlimit:10;
+}
+.animated_line{
+  stroke-dasharray: 20;
+  animation: dash 20s infinite;
+  animation-direction: normal;
+}
+.animated_line_back{
+  stroke-dasharray: 20;
+  animation: dash 20s infinite;
+  animation-direction: reverse;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.border-color{
+  border: hsla(120, 100%, 50%, .6) 1px solid;
+}
+
+.bg-color{
+  background-color: hsla(120, 100%, 50%, .15);
+
+}
+
+
+.btn-alt{
+  border: hsla(120, 100%, 50%, .4) 1px solid;
+  background-color: hsla(120, 100%, 50%, .1);
+  padding: 7px 16px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.form-control{
+  border-radius: 0;
+  margin: 2% 0%;
+  color: #ddd!important;
+  font-weight: 200;
+}
+
+.header-padding{
+padding: 5% 10%;
+}
+
+
+.bg-aqua{
+    padding: 1% 2%;
+    margin: 5% 0% 12% 0%;
+    background-color: hsla(120, 100%, 50%, .6);
+    line-height:1.8;
+}
+
+.form-padding{
+  padding: 3%;
+  border: hsla(0, 0%, 100%, .6) 1px solid;
+}
+
+.text-box-audit{
+line-height:1.4;
+}
+
+.img-brain {
+  padding: 0% 14% 0% 14%;
+}
+
+.diagram-padding{
+  padding: 0% 20% 4% 20%;
+}
+
+.btn-gui{
+    padding: 2px 8px;
+    margin: 2% 0rem;
+    font-size: .9rem;
+    letter-spacing: 2px;
+}
+.landmark{
+  margin: 0% 5%;
+}
+
+/* The animation code */
+@keyframes squaretop {
+  0% {transform: translateY(-8%); opacity: 0;}
+  25% {transform: translateY(8%); opacity: .2;}
+  50% {transform: translateY(-2%); opacity: .25;}
+  100% {transform: translateY(5%); opacity: .3;}
+}
+
+@keyframes squareright {
+  0% {transform: translateX(-8%); opacity: 0;}
+  25% {transform: translateX(8%); opacity: .2;}
+  50% {transform: translateX(-2%); opacity: .25;}
+  100% {transform: translateX(5%); opacity: .3;}
+}
+
+/* The element to apply the animation to */
+.square-top {
+  top: -8%;
+  opacity: 0%;
+  animation-name: squaretop;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.square-right {
+  top: -8%;
+  opacity: 0%;
+  animation-name: squareright;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.workflow-padding{
+  padding: 3% 2%;
+}
+
+@media (min-width: 768px){
+
+  .bg-aqua{
+    padding: 3%;
+    margin: 10% 21% 5% 21%;
+    background-color: hsla(120, 100%, 50%, .6);
+    line-height:1.8;
+  }
+
+  .workflow-padding {
+    padding: 0% 12% 0% 12%;
+  }
+  .form-padding{
+    padding: 3%;
+    border: hsla(0, 0%, 100%, .6) 1px solid;
+    margin: 0% 16%;
+  }
+}
+
+
+  
+@media (min-width: 992px){
+  .bg-aqua{
+    padding: 3%;
+    margin: 5% 24% 8% 24%;
+    background-color: hsla(120, 100%, 50%, .6);
+    line-height:1.
+  }
+  .form-padding{
+    padding: 3%;
+    border: hsla(0, 0%, 100%, .6) 1px solid;
+    margin: 0%;
+  }
+  .workflow-pad{
+    padding: 8% 0% 0% 0%;
+  }
+  .landmark{
+    margin: 10% 10% 0% 0%;
+  }
+}
+
+@media (min-width: 1200px){
+  .form-padding{
+    padding: 3%;
+    border: hsla(0, 0%, 100%, .6) 1px solid;
+    margin: 0% 7% 0% 0%;
+  }
+  .workflow-pad{
+    padding: 3% 0% 0% 2%;
+  }
+  .landmark{
+    margin: 7% 7% 0% 0%;
+  }
+}
+
+.diagram-container{
+  padding: 1% 2%;
+  margin: 4% 0% 6% 0%;
+}
+
+/* ARJAN LOCALIZE GUI */
+.holoform select,
+.holoform input,
+.holoform textarea {
+  background: transparent;
+}
+.holoform select option{
+  background: #000;
+}
+.holoform input,
+.holoform textarea{
+  color: hsl(120, 100%, 50%);
+}
+.holoform select:active,
+.holoform select:focus,
+.holoform input:active,
+.holoform input:focus,
+.holoform textarea:active,
+.holoform textarea:focus
+{
+  background-color: hsla(120, 100%, 50%, .1);
+  color: hsl(120, 100%, 50%);
+}
+.holoform select:valid{
+  color: hsl(120, 100%, 50%);
+}
+input:-webkit-autofill  {
+  -webkit-text-fill-color: hsl(120, 100%, 50%)  !important;
+  -webkit-box-shadow: 0 0 0 30px black inset !important;
+}
+
+
+.note {
+  width: 500px;
+  margin: 50px auto;
+  font-size: 1.1em;
+  color: #333;
+  text-align: justify;
+}
+#drop-area {
+  border: 2px dashed #00ff00;
+  padding: 5px;
+  background-color: hsla(120, 100%, 50%, .05);
+}
+#drop-area.highlight {
+  border-color: hsl(120, 100%, 50%);
+}
+p {
+  margin-top: 0;
+}
+.my-form {
+  margin-bottom: 10px;
+}
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px auto;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button:hover {
+  background: #ddd;
+}
+#fileElem {
+  display: none;
+}

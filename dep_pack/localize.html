@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+   <!--Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120987591-4"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-120987591-4');
+   </script>
+   
+    <link rel="preload" as="script" href="js/toggle.js">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Automatic localization and translation of HTML files in 54 languages. Export your site content to CSV and import the updated content back seamlessly.">
+    <meta name="author" content="Torus Project">
+    <title>Arjan Localize - Static Sites</title>
+    <!-- TWITTER META TAG -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ArjanTools">
+    <meta name="twitter:creator" content="@lucas_kardo">
+    <meta name="twitter:title" content="Arjan Localize - Static Sites">
+    <meta name="twitter:description" content="Automatic localization and translation of HTML files in 54 languages. Export your site content to CSV and import the updated content back seamlessly.">
+    <meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg">
+    <!-- Open Graph Meta Tag -->
+    <meta property="og:url" content="https://arjan.tools/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arjan Tools - Static Sites" />
+    <meta property="og:description" content="Automatic localization and translation of HTML files in 54 languages. Export your site content to CSV and import the updated content back seamlessly."/>
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/general.css"><link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/localize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:ital,wght@0,200;0,300;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">  </head>
+    <link rel="shortcut icon" href="favicon_localize.ico" type="image/x-icon">
+    <link rel="icon" href="favicon_localize.ico" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="prefetch" as="document" href="index.html">
+  </head>
+
+<body id="page-top" class="bg-black text-white">
+<script src="js/toggle.js"></script>
+
+    
+    <!-- NAV -->
+    <nav>
+      <div class="d-flex justify-content-center py-2 fade-in">
+        <div class="load-link">
+          <a href="localize.html" id="localize_nav">
+            <span id="load_l" class="load_letter">L</span>
+          </a>
+        </div>
+        <div class="load-link">
+          <a href="optimize.html" id="optimize_nav">
+            <span id="load_o" class="load_letter">O</span>
+          </a>
+        </div>
+        <div class="load-link">
+          <a href="audit.html" id="audit_nav">
+            <span id="load_a" class="load_letter">A</span>
+          </a>
+        </div>
+        <div class="load-link">
+          <a href="deploy.html" id="deploy_nav">
+            <span id="load_d" class="load_letter">D</span>
+          </a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center py-2 bg-secondary-nav text-white">
+        <a href="index.html" class="d-inline nav-logo">
+          <h1 class="h3 d-inline" id="Arjan_Tools0">Arjan Tools</h1>
+          <div class="pt-3 pl-2 d-inline small">Beta</div>
+        </a>
+      </div>
+      <div class="catordog card-p">
+        <button id="dog" class="modebtn text-white modebtn-selected" onclick="toggleButton(this.id)">Dog</button>
+        <button id="cat" class="modebtn text-white" onclick="toggleButton(this.id)">Cat</button>
+      </div>
+    </nav>
+    <script src="js/nav.js"></script>
+
+    <!-- HEADER -->
+    <header>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
+            <h1 class="localize-text h1 h1-padding">Arjan Localize</h1>
+            <p class="header-text-padding">A node module that automatically localizes and translates static sites.  It may also work as a very basic content management system.</p>
+            <a href="#getstarted" class="arjan-btn border-color text-white ">Get Started</a>
+            <a href="docs.html#Arjan_Localize166" class="text-white arjan-btn border-color ">Docs</a>
+          </div>
+          <div class="col-md-6 order-0 order-md-1 text-center">
+            <img src="img/logo_localize_dog.svg" style="visibility: hidden;" class="arjan-head quickfade audit-logo" alt="arjan localize logo dog">
+            <div class="audit-logo-bg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
+              <title>arjan_localize_bg</title>
+                <g class="cls-1">
+                  <rect class="square-right square-top cls-2" x="494.03" y="356.81" width="185.25" height="82"/>
+                  <rect class="square-right cls-2" x="550.85" y="165.97" width="241.81" height="141.05"/>
+                  <rect class="square-top cls-3" x="319.34" y="312.22" width="221.31" height="163.53"/>
+                  <rect class="square-right cls-2" x="60.08" y="181.43" width="241.81" height="220.66"/>
+                  <rect class="square-top cls-4" y="43.2" width="197.76" height="272.11"/>
+                  <rect class="square-right cls-5" x="26.45" y="351.69" width="120.83" height="100.3"/>
+                  <rect class="square-top cls-5 square-right" x="392.56" y="70.7" width="280.81" height="195.93"/>
+                  <rect class="cls-2 square-top" y="0" x="244.13" width="137.15" height="163.8"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- TRY IT OUT -->
+    <section class="contop">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-lg-1">
+            <h2 class="localize-text text-padding text-center h1">How it works</h2>
+
+            <div class="row">
+              <div class="col-12 pt-4 pt-md-0 order-lg-0">
+                <p>Arjan Localize has a parser that gets all the existing IDs of HTML elements with text content and
+                  saves them as key value pairs in a JSON locale. If the element doesn't have an ID, Arjan automatically
+                  creates one.</p>
+              </div>
+              <div class="col-12 pt-4 pt-md-0">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <h3 class="h4 localize-text">Automatic Translation:</h3>
+                <p>Arjan uses AWS’s neural machine translation service to translate your content into any of its 54
+                  available languages</p>
+              </div>
+              <div class="col-4">
+                <img class="image-fluid img-brain w-100" src="img/brain.svg" alt="">
+              </div>
+            </div>
+          </div>
+        
+            <div class="col-lg-6">
+            <div class="form-padding">
+            <form id="arjantranslate-form" alt="Form by Super Easy Forms" class="holoform" action="#">
+              <!-- <label for="from" class="small mb-0">From</label> -->
+              <h3 class="h5 text-center localize-text">Translate HTML Files</h3>
+              <select class="form-control" id="from" name="from" required>
+                <option value="" selected="selected" disabled="disabled">Origin language of your site</option>
+                <option value="af">Afrikaans</option>
+                <option value="sq">Albanian</option>
+                <option value="am">Amharic</option>
+                <option value="ar">Arabic</option>
+                <option value="az">Azerbaijani</option>
+                <option value="bn">Bengali</option>
+                <option value="bs">Bosnian</option>
+                <option value="bg">Bulgarian</option>
+                <option value="zh">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="hr">Croatian</option>
+                <option value="cs">Czech</option>
+                <option value="da">Danish</option>
+                <option value="fa-AF">Dari</option>
+                <option value="nl">Dutch</option>
+                <option value="en">English</option>
+                <option value="et">Estonian</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="fr-CA">French (Canada)</option>
+                <option value="ka">Georgian</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="ha">Hausa</option>
+                <option value="he">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="lv">Latvian</option>
+                <option value="ms">Malay</option>
+                <option value="no">Norwegian</option>
+                <option value="fa">Persian</option>
+                <option value="ps">Pashto</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="sr">Serbian</option>
+                <option value="sk">Slovak</option>
+                <option value="sl">Slovenian</option>
+                <option value="so">Somali</option>
+                <option value="es">Spanish</option>
+                <option value="es-MX">Spanish (Mexico)</option>
+                <option value="sw">Swahili</option>
+                <option value="sv">Swedish</option>
+                <option value="tl">Tagalog</option>
+                <option value="ta">Tamil</option>
+                <option value="th">Thai</option>
+                <option value="tr">Turkish</option>
+                <option value="uk">Ukrainian</option>
+                <option value="ur">Urdu</option>
+                <option value="vi">Vietnamese</option>
+              </select>
+              <!-- <label for="to" class="small mb-0">To</label> -->
+              <select class="form-control" id="to" name="to" required>
+                <option value="" selected="selected" disabled="disabled">Desired translation language</option>
+                <option value="af">Afrikaans</option>
+                <option value="sq">Albanian</option>
+                <option value="am">Amharic</option>
+                <option value="ar">Arabic</option>
+                <option value="az">Azerbaijani</option>
+                <option value="bn">Bengali</option>
+                <option value="bs">Bosnian</option>
+                <option value="bg">Bulgarian</option>
+                <option value="zh">Chinese (Simplified)</option>
+                <option value="zh-TW">Chinese (Traditional)</option>
+                <option value="hr">Croatian</option>
+                <option value="cs">Czech</option>
+                <option value="da">Danish</option>
+                <option value="fa-AF">Dari</option>
+                <option value="nl">Dutch</option>
+                <option value="en">English</option>
+                <option value="et">Estonian</option>
+                <option value="fi">Finnish</option>
+                <option value="fr">French</option>
+                <option value="fr-CA">French (Canada)</option>
+                <option value="ka">Georgian</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="ha">Hausa</option>
+                <option value="he">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="lv">Latvian</option>
+                <option value="ms">Malay</option>
+                <option value="no">Norwegian</option>
+                <option value="fa">Persian</option>
+                <option value="ps">Pashto</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ro">Romanian</option>
+                <option value="ru">Russian</option>
+                <option value="sr">Serbian</option>
+                <option value="sk">Slovak</option>
+                <option value="sl">Slovenian</option>
+                <option value="so">Somali</option>
+                <option value="es">Spanish</option>
+                <option value="es-MX">Spanish (Mexico)</option>
+                <option value="sw">Swahili</option>
+                <option value="sv">Swedish</option>
+                <option value="tl">Tagalog</option>
+                <option value="ta">Tamil</option>
+                <option value="th">Thai</option>
+                <option value="tr">Turkish</option>
+                <option value="uk">Ukrainian</option>
+                <option value="ur">Urdu</option>
+                <option value="vi">Vietnamese</option>
+              </select>
+              <!-- <label for="email" class="small mb-0">Email</label> -->
+              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required>
+              <!-- <label for="file" class="small mb-0">File</label> -->
+              <div id="drop-area">
+                <div class="cotnainer text-center">
+                  <h4 class="text-center h5">Drag & Drop your html file</h4>
+                  <input type="file" id="fileElem" accept="html, markdown, txt" onchange="handleFiles(this.files)">
+                  <label class="btn-gui border-color" for="fileElem">or Browse</label>
+                  <div class=""><span class="pr-2" id="fileName"></span><progress hidden id="progress-bar" max=100 value=0></progress></div>
+                </div>
+              </div>
+              <input id="file" name="file" hidden>
+              <div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT" data-theme="dark"></div>
+              <h4 id="arjantranslate-status" class="text-secondary" style="display:none;">Translating<span>.</span><span>.</span><span>.</span></h4>
+              <button class="btn text-white arjan-btn border-color mt-3" type="submit" id="arjantranslate-btn">Translate</button>
+            </form>
+          </div>
+          <div class="text-center text-lg-left">
+          <small>made with <a class="localize-text" href="http://supereasyforms.com">Super Easy Forms</a></small>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ADVANCED LOCALIZATION WORKFLOW -->
+    <section class="contop">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-6">
+          <h2 class="text-lg-left text-center h2 text-padding localize-text">Localization</h2>
+          <p>Even though machine translation services like Google translate have gotten impressively good,in many scenarios manual intervention is still needed.  If you are expanding your digital product/service into a new region it's important to get everything perfect including slang/language, images, videos, date/time formats and others.</P> 
+           <p>In addition, a project that has been correctly localized will have better SEO.</p>
+        </div>
+        <div class="col-lg-6 workflow-pad">
+          <img src="img/landmarks.svg" class="landmark" alt="landmark outline">
+        </div>
+      </div>
+      </div>
+    </section>
+
+ <!-- LOCALIZATION -->
+<section class="contop">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 order-1 order-lg-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1036.3 410.9">
+          <g id="diagram_group" data-name="Layer 2">
+            <text class="diagram_text" transform="translate(707 357)">
+              CSV
+            </text>
+            <path class="diagram_line" d="M1036 159H916V1h80l-1 33h41zM996 1l40 33"/>
+            <path class="diagram_line" d="M934 68h44v14h-44zM978 68h44v14h-44zM934 82h44v13h-44zM978 82h44v13h-44zM934 95h44v14h-44zM978 95h44v14h-44zM934 109h44v13h-44zM978 109h44v13h-44z"/>
+            <circle class="diagram_line" cx="77" cy="82.1" r="76.4"/>
+            <ellipse class="diagram_line" cx="77" cy="82.3" rx="45.7" ry="76.4"/>
+            <ellipse class="diagram_line" cx="77" cy="82.3" rx="10.8" ry="76.4"/>
+            <circle class="diagram_line" cx="77.1" cy="82.2" r="76.4"/>
+            <ellipse class="diagram_line" cx="76.9" cy="82.2" rx="76.4" ry="45.7"/>
+            <ellipse class="diagram_line" cx="76.9" cy="82.2" rx="76.4" ry="10.8"/>
+            <text class="diagram_text" transform="translate(220 357)">
+              HTML
+            </text>
+            <path class="diagram_line" d="M172 277h233v133H172zM638 277h232v133H638zM411 14h232v134H411z"/>
+            <text class="diagram_text" transform="translate(460 93)">
+              JSON
+            </text>
+            <path class="diagram_line animated_line" d="M71 159v195h101"/>
+            <path class="diagram_line animated_line_back" d="M86 157v183h86M283 276V75h127"/>
+            <path class="diagram_line animated_line" d="M299 277V88h111M519 149v204h118"/>
+            <path class="diagram_line animated_line_back" d="M534 148v190h103M750 276V75h166"/>
+            <path class="diagram_line animated_line" d="M764 277V90h152"/>
+          </g>
+        </svg>
+      </div>
+      <div class="col-lg-6 order-0 order-lg-1">
+        <h2 class="text-lg-left text-center h2 text-padding localize-text">Content Management</h2>
+        <p>Arjan Localize can work as a very simple content management system.  It gives you the option to export a site’s HTML content to JSON or CSV, and import the updated content back to the site seamlessly.</p>
+      </div>
+    </div>
+  </div>
+</section>   
+
+
+    <!--GET STARTED-->
+    <section class="contop">
+      <div class="container"> 
+              <h3 id="getstarted" class="h1 text-center text-padding localize-text">Get Started</h3>
+            <div class="row">
+              <div class="col-lg-6">
+              <div class="container bg-color get-started"> 
+                <ol>
+                  <li>If you haven't already, <a class="localize-text" href="index.html#One_time">install Arjan globally</a></li>
+                  <li>Go into your project's directory and initialize Arjan <button class="codebox mt-1" onclick="copyVal(this.textContent)">arjan init</button> (only do this once per project =)</li>
+                  <li>Localize and translate your site into multiple languages <button class="codebox" onclick="copyVal(this.textContent)">arjan localize en -c -t=es -t=fr</button></li>
+                  <li style="list-style: none;">For more info you can always run <button class="codebox" onclick="copyVal(this.textContent)">arjan localize --help</button> or checkout the <a class="localize-text" href="docs.html#Arjan_Localize166">docs</a> </li>
+                </ol>
+            </div>
+            </div>
+            <div class="col-lg-6 text-left">
+              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
+                <source src="video/localize_vid.mp4">
+                </video>
+            </div>
+             </div> 
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <section> 
+      <div class="social-row d-flex justify-content-center vertical-align-middle d-lg-block">
+        <div class="d-lg-block social-icon">
+          <a href="docs.html">
+            <img height="50px" src="img/docs_icon.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="https://github.com/arjan-tools">
+            <img height="45px" src="img/github_logo_2.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block social-icon">
+          <a href="https://twitter.com/ArjanTools">
+            <img height="45px" src="img/twitter_logo_2.svg" alt="npm logo outline">
+          </a>
+        </div>
+        <div class="d-lg-block  social-icon">
+          <a href="https://join.slack.com/t/arjantools/shared_invite/zt-f1bb8ak5-0DtsGTclY4Z30vGndBJaXg">
+            <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-fluid py-2 footer-deploy bg-secondary-nav text-right">
+      <span class="text-footer">Powered by </span>
+      <a href="https://torus-digital.com/">
+        <span id="torus" class="text-footer-2">Torus</span>
+      </a>
+    </div>
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous">
+</script>
+      <script src="js/localize.js"></script>
+    <script src="js/copy.js"></script>
+  </body>
+</html>
