@@ -7,6 +7,7 @@ require('../css/localize.css')
 
 
 
+
 //dropzone
 let dropArea = document.getElementById("drop-area");
 ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {

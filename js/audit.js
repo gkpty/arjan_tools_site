@@ -7,6 +7,7 @@ require('../css/audit.css')
 
 
 
+
 window.onload = function() {
   animateSquares();
 };

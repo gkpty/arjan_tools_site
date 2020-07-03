@@ -1,8 +1,9 @@
-require('../css/optimize.css')
+/* require('../css/optimize.css')
 require('../css/index.css')
 require('../css/general.css')
-require('../css/shared.css')
+require('../css/shared.css') */
 //END_STYLE_INJECT
+
 
 
 
@@ -18,7 +19,7 @@ var observer = new IntersectionObserver(function(entries) {
         num = parseInt(l.alt.split('arrow')[1])
         l.id='smarrow'+num+2;
       }
-      console.log(num)
+      /* console.log(num) */
       setTimeout(function(){
         document.getElementById(l.id).classList.add('arrowanimate')
       }, num*400)

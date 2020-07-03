@@ -86,7 +86,7 @@ p{
   background-color: #000;
 }
 .bg-secondary-nav{
-  background-color: hsla(0,0%, 50%, .25);
+  background-color: hsla(0,0%, 50%, .15);
 }
 .text-white{
   color: #fffee9;
