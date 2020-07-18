@@ -9,35 +9,84 @@
   100% {border: hsla(120, 100%, 50%, .4) 2px solid;}
 }
 .codebox:hover {
-  border: hsla(120, 100%, 50%, 0) 2px solid;
+  border: hsla(189, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
   animation-duration: .8s;
   animation-fill-mode: forwards;
 }
 
+/* CUBE */
+.cube {
+  position: relative;
+  display: block;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-33.5deg) rotateY(45deg);
+          transform: rotateX(-33.5deg) rotateY(45deg); }
+  .cube__inner, .cube__outer {
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms; }
+  .cube__inner {
+    position: absolute;
+    top: -2px;
+    left: 0; }
+  .cube__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffffff; }
+  .cube .cube__outer .cube__face {
+    background: rgba(141, 214, 249, 0.5);
+    -webkit-transition: border-width 0.2s;
+    transition: border-width 0.2s;
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s; }
+  .cube .cube__inner .cube__face {
+    background: #175d96;
+    border: 2px solid #ffffff; }
+
 .bg-dark-purple{
-  background-color: hsla(288, 100%, 6%, .9);
+  background-color: hsla(273, 100%, 10%, 1);
 }
+.bg-dark-purple-2{
+  background-color:hsla(273, 100%, 33%, 0.45);
+}
+
+.bg-ready{
+  background-color: hsla(323, 100%, 50%, .2);
+}
+
+.quickfade{
+  opacity: 1;
+  animation-name: quickfade;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+
+@keyframes quickfade{
+  0% {opacity:0}
+  100% {opacity:1}
+}
+
 .header-bg-size{
-  padding: 5% 3%;
-  margin: 7% 2%;
+  padding: 5% 1%;
+  margin: 4% 2% 2% 2%;
 }
 
-.arjan-localize-card{
-  background-color: hsla(120, 100%, 50%, .2);
+.h1-text{
+  font-size: 2.7rem;
+  font-weight: 500!important;
+  font-family: 'Montserrat', 'Montserrat';
+  line-height: 1.3;
 }
-.arjan-optimize-card{
-  background-color:  hsla(180, 100%, 50%, .2);
-}
-.arjan-audit-card{
-  background-color:  hsla(60, 100%, 50%, .2);
-}
-.arjan-deploy-card{
-  background-color:  hsla(300, 100%, 50%, .2);
-}
-
 .arjan-card-logo{
-  width: 70%;
+  height: 260px;
   padding: 3% 0%;
 }
 .card{
@@ -45,6 +94,7 @@
     padding: 2% 2%;
     height: 100%;
     width: auto;
+    border: none;
 }
 .card-p{
   font-size: 110%;
@@ -59,6 +109,10 @@
 .card-padding{
   width: 100%;
 
+}
+
+.index-text-2{
+  color: #ffbdc7;
 }
 
 .load{
@@ -78,11 +132,31 @@
   animation-delay: 0ms;
 }
 @keyframes nodarjan {
+
   25% {transform: rotate(10deg);}
   75% {transform: rotate(-10deg);}
   100% {transform: rotate(0deg);}
 }
 
+/* .arjan-head{
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} */
+.card:hover{
+  cursor: pointer;
+}
+.arjan-localize-card{
+  border: hsla(120, 100%, 50%, 0) 2px solid;
+  background-color: hsla(120, 100%, 50%, .2);
+}
 .arjan-localize-card:hover {
   border: hsla(120, 100%, 50%, 0) 2px solid;
   animation-name: fadelocborder;
@@ -90,11 +164,15 @@
   animation-fill-mode: forwards;
 }
 @keyframes fadelocborder {
-  0% {border: hsla(120, 100%, 50%, 0) 1.5px solid;}
-  50% {border: hsla(120, 100%, 50%, .5) 1.5px solid;}
-  100% {border: hsla(120, 100%, 50%, .4) 1.5px solid;}
+  0% {border: hsla(120, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(120, 100%, 50%, .5) 2px solid;}
+  100% {border: hsla(120, 100%, 50%, .4) 2px solid;}
 }
 
+.arjan-optimize-card{
+  border: hsla(180, 100%, 50%, 0) 2px solid;
+  background-color:  hsla(180, 100%, 50%, .2);
+}
 .arjan-optimize-card:hover {
   border: hsla(180, 100%, 50%, 0) 2px solid;
   animation-name: fadeoptborder;
@@ -102,11 +180,15 @@
   animation-fill-mode: forwards;
 }
 @keyframes fadeoptborder {
-  0% {border: hsla(180, 100%, 50%, 0) 1.5px solid;}
-  50% {border: hsla(180, 100%, 50%, .5) 1.5px solid;}
-  100% {border: hsla(180, 100%, 50%, .4) 1.5px solid;}
+  0% {border: hsla(180, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(180, 100%, 50%, .5) 2px solid;}
+  100% {border: hsla(180, 100%, 50%, .4) 2px solid;}
 }
 
+.arjan-audit-card{
+  border: hsla(60, 100%, 50%, 0) 2px solid;
+  background-color:  hsla(60, 100%, 50%, .2);
+}
 .arjan-audit-card:hover {
   border: hsla(60, 100%, 50%, 0) 2px solid;
   animation-name: fadeaudborder;
@@ -114,11 +196,14 @@
   animation-fill-mode: forwards;
 }
 @keyframes fadeaudborder {
-  0% {border: hsla(60, 100%, 50%, 0) 1.5px solid;}
-  50% {border: hsla(60, 100%, 50%, .5) 1.5px solid;}
-  100% {border: hsla(60, 100%, 50%, .4) 1.5px solid;}
+  0% {border: hsla(60, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(60, 100%, 50%, .5) 2px solid;}
+  100% {border: hsla(60, 100%, 50%, .4) 2px solid;}
 }
-
+.arjan-deploy-card{
+  border: hsla(300, 100%, 50%, 0) 2px solid;
+  background-color:  hsla(300, 100%, 50%, .2);
+}
 .arjan-deploy-card:hover {
   border: hsla(300, 100%, 50%, 0) 2px solid;
   animation-name: fadedepborder;
@@ -126,22 +211,13 @@
   animation-fill-mode: forwards;
 }
 @keyframes fadedepborder {
-  0% {border: hsla(300, 100%, 50%, 0) 1.5px solid;}
-  50% {border: hsla(300, 100%, 50%, .5) 1.5px solid;}
-  100% {border: hsla(300, 100%, 50%, .4) 1.5px solid;}
-}
-
-.codebox{
-  padding: 1% 0%;
-  background-color: black;
-  color: white;
-  border: hsla(120, 100%, 50%, 0) 1.5px solid;
-  white-space: nowrap;
-  min-width: max-content;
+  0% {border: hsla(300, 100%, 50%, 0) 2px solid;}
+  50% {border: hsla(300, 100%, 50%, .5) 2px solid;}
+  100% {border: hsla(300, 100%, 50%, .4) 2px solid;}
 }
 
 .codebox:hover {
-  border: hsla(120, 100%, 50%, 0) 2px solid;
+  border: hsla(288, 100%, 50%, 0) 2px solid;
   animation-name: fadeborder;
   animation-duration: .8s;
   animation-fill-mode: forwards;
@@ -150,12 +226,12 @@
 
 .img-arrow{
   width: 40px;
-  padding: 0 0%;
+  padding: 0px;
   opacity: 0%;
 }
 .workflow-elem{
   font-size: 140%;
-  padding: 0% 8%;
+  padding: 6px;
 }
 .hidden-workflow-elem{
   visibility: hidden;
@@ -166,11 +242,11 @@
   }
 
   .secondary-arrow{
-   padding-top: 40px;
+   padding-top: 13px;
   }
-}
+
 .arrow-set{
-  padding: 5% 0%;
+  padding: 2% 0%;
 }
 .arrowanimate{
   opacity: 0%;
@@ -179,17 +255,39 @@
   animation-fill-mode: forwards;
 }
 
+.icons-index{
+  width: 100%;
+  padding: 3rem 2rem 1rem 2rem;
+  max-height: 280px;
+
+}
 
 .board{
   margin: 0% 25%;
 }
 
+.circle-img {
+  border-radius: 50%;
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  box-shadow: 0 5px 5px 0 #adb5bd;
+}
 
 .get-started {
   padding: 1% 0%;
   margin: 3% 1% 10% 1%;
   line-height: 1.5;
 }
+
+
+.done {
+  padding:1px;
+}
+.bg-gradient-primary{
+  background-image: linear-gradient(to right, #00ff00,#00e1ff,#e2ff00,#e700ff);
+}
+
 
 @media (min-width: 576px) and (max-width: 897px) {
   .h3-about {
@@ -217,6 +315,21 @@
 .board{
   margin: 0% 7%;
 }
+.i-left{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.i-right{
+  display: flex;  
+  float: right;
+}
+.icons-index {
+  width: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+  max-height: 230px;
+}
 
 }
 
@@ -235,9 +348,8 @@
     margin: 5% 25%;
   }
   .load{
-    padding: 3% 1%;
+    padding: 0% 1%;
     margin: 0% 10%;
-    background-color: hsla(300, 100%, 50%, .1);
 }
 .card-padding{
   padding: 0rem 7rem;
@@ -253,3 +365,43 @@
 }
 
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.rect-border{
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash .9s linear forwards;
+}
+
+.cls-1{stroke:aqua;stroke-width:3px;}
+.cls-1,
+.cls-10,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9{stroke-miterlimit:10;}
+.cls-2{fill:lime;}
+.cls-2,
+.cls-5,
+.cls-8{opacity:0.25;}
+.cls-3{opacity:0.4;}
+.cls-4{fill:#fff;}
+.cls-5{fill:#ff0;}
+.cls-6{fill:#e0e0e0;}
+.cls-6,
+.cls-8{stroke:#fff;}
+.cls-10,
+.cls-7,
+.cls-9{fill:none;opacity:0.75;}
+.cls-7{stroke:#ff0;}
+.cls-10,
+.cls-7,
+.cls-8,
+.cls-9{stroke-width:2px;}
+.cls-8{fill:#f0f;}
+.cls-9{stroke:#f0f;}
+.cls-10{stroke:lime;}

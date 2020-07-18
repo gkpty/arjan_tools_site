@@ -2,9 +2,9 @@ html,body{
   /* font-size: 1.1rem; */
   width: 100%;
   overflow-x: hidden;
-  color: #fff;
+  color: #fffceb;
   /* line-height: 1.6; */
-  font-weight: 300;
+  font-weight: 200;
 }
 h1, h2, h3{
   font-family: 'Montserrat', 'Montserrat';
@@ -16,9 +16,79 @@ a:hover{
   color: currentColor;
 }
 
+.fadein{
+  position: static;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  animation-name: quickfade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.header-title{
+  font-family: 'Montserrat', 'Montserrat';
+  font-weight: 700!important;
+  font-size: 1.6rem;
+}
+
+.fadeout{
+  opacity: 1;
+  animation-name: quickout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes quickout{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.catordog{
+  display: flex;
+  justify-content: center;
+  margin: 3% 0% 0% 0%;
+
+}
+
+.modebtn-selected{
+  background-color: hsla(300, 55%, 33%, .6) !important;
+}
+
+button:focus {
+  outline:none
+}
+.text-footer {
+  color: #ffbdc7!important;}
+
+.text-footer-2 {
+    color: #f0f !important;}
+
+.modebtn{
+  background-color:transparent;
+  border-color:none;
+  border: #b9a7f8 1px solid;
+  margin: 0% 2px;
+  color: #fffee9;
+  padding: 0rem 1rem;
+  letter-spacing:2px;
+font-weight: 200;} 
+
 .h5{
   font-weight: 200!important;
 }
+
+/* .arjan-head{
+  transition-timing-function: ease-in;
+  }
+  @keyframes fade {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+  }
+} */
+
 
 p{
   font-family: 'quicksand', sans-serif;
@@ -27,10 +97,10 @@ p{
   background-color: #000;
 }
 .bg-secondary-nav{
-  background-color: hsla(0,0%, 50%, .1);
+  background-color: hsla(0,0%, 50%, .15);
 }
 .text-white{
-  color: hsla(0, 0% , 100%, 1);
+  color: #fffee9;
 }
 .localize-text{
   color: hsla(120, 100%, 50%, 1);
@@ -45,9 +115,12 @@ p{
   color: hsla(300, 100%, 50%, 1);
 }
 
+li {
+  padding: 1% 0%;
+}
 
 /* NAV */
-.load-link{padding:0px 17px}
+.load-link{padding:0px 24px; font-size: 24px; font-weight: 300;}
 #load_l{
   color: hsla(120, 100%, 50%, .8);
   animation-name: colorl;
@@ -86,7 +159,7 @@ p{
   100%{color: hsl(60, 100%, 50%);}
 }
 #load_d{
-  color: hsl(300, 100%, 50%, .8);
+  color: hsl(300, 100%, 50%, .9);
   animation-name: colord;
   animation-duration: 1.5s;
 
@@ -112,6 +185,19 @@ p{
     width: 38%;
     right: 32%;
     top: 17%
+}
+
+.quickfade{
+  opacity: 1;
+  animation-name: quickfade;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+
+@keyframes quickfade{
+  0% {opacity:0}
+  100% {opacity:1}
 }
 
 .header-text-padding{
@@ -144,6 +230,8 @@ p{
   border: hsla(120, 100%, 50%, 0) 2px solid;
   white-space: nowrap;
   min-width: max-content;
+  font-size: 15px;
+  margin: 3px 0px;
 }
 
 
@@ -170,7 +258,8 @@ p{
 
 .get-video{
   width: 100%;
-  padding: 0rem 1rem;
+  padding: 0rem;
+  max-width: 800px;
 }
 
 .nav-logo{
@@ -215,6 +304,7 @@ p{
     padding: 3%;
     margin: 0% 18%;
     line-height: 6.8;
+  }
 }
   .header-text-padding {
     padding: 3% 2% 1% 0%;
@@ -223,7 +313,7 @@ p{
   width: 100%;
   position: relative;
   z-index: -1;
-  padding: 0% 2%;
+  padding: 9% 0% 0% 0%;
 }
 .text-padding {
   padding-bottom: 2rem;
@@ -232,9 +322,9 @@ p{
 .audit-logo {
   position: absolute;
   z-index: 1;
-  width: 43%;
+  width: 47%;
   right: 30%;
-  top: 17%;
+  top: 22%;
 }
 .get-started {
   padding: 3% 1%;
@@ -243,17 +333,19 @@ p{
 .get-started-1 {
   margin: 0% 2%;
 }
-.get-video {
-  max-width: 500px;
-}
+
 .checklist-padding{
-  padding: 0% 19%;
-  margin: -9% 0%;
+  padding: 0% 25%;
+  margin: 0%;
 
 }
 .get-started-3 {
-  margin: 0% 10%;
+  margin: 0%;
 }
+.catordog{
+  display: flex;
+  justify-content: center;
+  margin: 3% 0% 0% 0%;
 }
 
 
@@ -284,7 +376,7 @@ p{
 .audit-logo {
     position: absolute;
     z-index: 1;
-    width: 40%;
+    height: 75%;
     right: 32%;
     top: 18%;
 }
@@ -293,8 +385,8 @@ p{
 }
 .get-started {
   padding: 3% 1%;
-  margin: 0% 0% 7% 0%;
 }
+
 .get-started-1 {
   margin: 0% 10%;
 
@@ -304,7 +396,11 @@ p{
   padding-bottom: 10%;
 }
 .checklist-padding{
-  padding: 0% 28%;
-  margin: -6% 0%;
+  padding: 0% 25%;
+  margin: 0%;
+}
+.catordog{
+  display: flex;
+  justify-content: flex-end;
 }
 }
