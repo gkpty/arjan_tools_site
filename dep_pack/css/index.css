@@ -75,13 +75,13 @@
 }
 
 .header-bg-size{
-  padding: 5% 3%;
+  padding: 5% 1%;
   margin: 4% 2% 2% 2%;
 }
 
 .h1-text{
-  font-size: 3rem;
-  font-weight: 400!important;
+  font-size: 2.7rem;
+  font-weight: 500!important;
   font-family: 'Montserrat', 'Montserrat';
   line-height: 1.3;
 }

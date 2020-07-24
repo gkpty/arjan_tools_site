@@ -2,12 +2,6 @@
 require('../css/shared.css')
 require('../css/localize.css') */
 //END_STYLE_INJECT
-
-
-
-
-
-
 //dropzone
 let dropArea = document.getElementById("drop-area");
 ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
