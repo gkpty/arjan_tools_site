@@ -19,6 +19,7 @@ observer.observe(document.querySelector("#arrowset"));
 
 function nodArjan(mod){
   let name = "arjan-logo-"+mod;
+  document.getElementById(name).classList.remove("quickfade")
   document.getElementById(name).classList.add("nodArjan")
 }
 
@@ -36,3 +37,4 @@ function copyVal(val){
   document.body.removeChild(el);
 }
 
+function borderanimate(){document.getElementById("main-rect").classList.toggle("rect-border")}

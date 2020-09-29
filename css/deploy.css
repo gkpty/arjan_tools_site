@@ -1,10 +1,10 @@
-.cls-1{opacity:0.4;}
+.cls-1{opacity:0.5;}
 .cls-2,.cls-4{fill:#ff00ff;}
 .cls-2,
 .cls-3{opacity:0.45;}
 .cls-3,
 .cls-5{fill: #ff00ff;}
-.cls-4{opacity:0.3;}
+.cls-4{opacity:0.45;}
 .cls-5{opacity:0.5;}
 
 .rect{
@@ -38,6 +38,12 @@
 
 }
 
+.codebox:hover {
+  border: hsla(300, 100%, 50%, .8) 2px solid;
+  animation-name: fadeborder;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
 @keyframes fadeborder {
   0% {border: hsla(300, 100%, 50%, 0) 2px solid;}
   50% {border: hsla(300, 100%, 50%, .45) 2px solid;}
@@ -76,15 +82,15 @@ line-height:1.4;
 /* The animation code */
 @keyframes squaretop {
   0% {transform: translateY(-8%); opacity: 0;}
-  25% {transform: translateY(8%); opacity: .1;}
-  50% {transform: translateY(-2%); opacity: .2;}
+  25% {transform: translateY(8%); opacity: .2;}
+  50% {transform: translateY(-2%); opacity: .25;}
   100% {transform: translateY(5%); opacity: .3;}
 }
 
 @keyframes squareright {
   0% {transform: translateX(-8%); opacity: 0;}
-  25% {transform: translateX(8%); opacity: .1;}
-  50% {transform: translateX(-2%); opacity: .2;}
+  25% {transform: translateX(8%); opacity: .2;}
+  50% {transform: translateX(-2%); opacity: .25;}
   100% {transform: translateX(5%); opacity: .3;}
 }
 

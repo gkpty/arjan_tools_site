@@ -8,6 +8,10 @@ html, body {
   font-size: 87.5%;
   color: hsl(120, 100%, 50%);
   word-break: break-word;
+  background-color: #200028;
+  display: inline-block;
+  padding: 1% 0%;
+  font-size: 13px;
 }
 
 a{
@@ -23,6 +27,10 @@ span, i {
 }
 .mobibar {
   padding:1% 5%;
+}
+
+.docs-nav{
+  padding: 10px 0px 40px 0px;
 }
 
 @media (min-width: 800px) {

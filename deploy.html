@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
+    <link rel="preload" as="script" href="js/toggle.js">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Add a CDN, HTTPS and Deploy your static sites to the AWS Cloud with a single command.">
     <meta name="author" content="Torus Project">
-    <title>Arjan Deploy</title>
+    <title>Arjan Deploy - Static Sites</title>
+    <!-- TWITTER META TAG -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ArjanTools">
+    <meta name="twitter:creator" content="@lucas_kardo">
+    <meta name="twitter:title" content="Arjan Deploy - Static Sites">
+    <meta name="twitter:description" content="Add a CDN, HTTPS and Deploy static sites to the AWS Cloud with a single command.">
+    <meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg">
+
+<!-- Open Graph Meta Tag -->
+    <meta property="og:url" content="https://arjan.tools/deploy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arjan Deploy - Static Sites" />
+    <meta property="og:description" content="Add a CDN, HTTPS and Deploy static sites to the AWS Cloud with a single command."/>
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/general.css"><link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/deploy.css">
-<link href="https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:ital,wght@0,200;0,300;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">  </head>
-  <body id="page-top" class="bg-black text-white">
+<link href="https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:ital,wght@0,200;0,300;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon_deploy.ico" type="image/x-icon">
+<link rel="icon" href="favicon_deploy.ico" type="image/x-icon">  
+</head>
+
+<body id="page-top" class="bg-black text-white">
+<script src="js/toggle.js"></script>
 
   <!-- NAV -->
   <nav>
@@ -42,6 +63,10 @@
         </a>
     </div>
   </nav>
+  <div class="catordog card-p">
+    <button id="dog" class="modebtn text-white modebtn-selected" onclick="toggleButton(this.id)">Dog</button>
+    <button id="cat" class="modebtn text-white" onclick="toggleButton(this.id)">Cat</button>
+</div>
   <script src="js/nav.js"></script>
 
 
@@ -50,12 +75,12 @@
         <div class="row ">
           <div class="col-md-6 text-md-left text-center order-1 order-lg-0">
             <h1 id="Arjan_Deploy2" class="deploy-text h1-padding ">Arjan Deploy</h1>
-            <p id="Arjan_deploy19" class="header-text-padding">Arjan deploy is a tool that helps you deploy static sites with CDN and HTTPS to the AWS Cloud using a single command.</p>
+            <p id="Arjan_deploy19" class="header-text-padding">Deploy static sites with CDN and HTTPS to the AWS Cloud using a single command.</p>
             <a id="Get_Started24" href="#getstarted" class="arjan-btn border-color text-white">Get Started</a>
-            <a id="Docs25" href="#docs.html" class="text-white arjan-btn border-color ">Docs</a>
+            <a id="Docs25" href="docs.html#Arjan_Deploy1060" class="text-white arjan-btn border-color ">Docs</a>
           </div>
           <div class="col-md-6 order-0 order-md-1 text-center">
-            <img src="img/arjan_deploy_logo.svg" class="audit-logo" alt="">
+            <img src="img/logo_deploy_dog.svg" class="arjan-head quickfade audit-logo" alt="arjan deploy logo dog">
             <div class="audit-logo-bg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.66 475.75">
               <title id="arjan_audit_0">arjan_audit_bg</title>
@@ -83,7 +108,7 @@
     <section class="contop">
       <div class="container">
         <div class="bg-aqua bg-color">
-          <h2 id="Leverage_the9" class="text-white h2 text-box-audit">Leverage the power and cost savings of the AWS Cloud in your static sites</h2>
+          <h2 id="Leverage_the9" class="text-white h2 text-box-audit">Leverage the power and cost savings of the AWS Cloud in your site</h2>
         </div>
       </div>
     </section>
@@ -92,13 +117,14 @@
     <!-- HOW IT WORKS -->
     <section class="contop">
       <div class="container">
-        <h3 id="How_it_Works14" class="h1 deploy-text text-padding text-center">How it Works</h3>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 pt-5 order-1">
               <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
                 <source src="video/deploy_video.mp4">
                 </video>          </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 order-0">
+            <h3 id="How_it_Works14" class="h1 deploy-text text-padding text-center text-m-left">How it Works</h3>
+
             <p id="Arjan_deploy20">Arjan deploy uses Cloudformation templates to help you provision and deploy all the necessary resources for your site in the AWS cloud. This means your entire stack and all of its resources are kept inside a JSON file which you can store locally and update continually. </p>
           </div>
         </div>
@@ -147,7 +173,7 @@
 
         <section class="contop">
           <div class="container">
-            <h3 id="Features15" class="h1 text-center text-padding deploy-text">Features</h3>
+            <h3 id="Features15" class="h1 text-center text-md-left text-padding deploy-text">Features</h3>
             <div class="row">
               <div class="col-md-6 order-1">
                 <div id="checkbox_container" class="checklist-padding">
@@ -220,7 +246,7 @@
     <section class="contop">
       <div class="container"> 
 
-        <h2 id="For_an_easie10" class="text-left deploy-text pb-3 h2"> For an easier development workflow we've added some pre defined templates</h2>
+        <h2 id="For_an_easie10" class="text-center deploy-text pb-3 h2">Pre defined templates:</h2>
 
       <div class="rect rect1">
         <h2 id="Dev11" class="1 text-center">Dev</h2>
@@ -232,7 +258,7 @@
       </div>
       <div class="rect rect3">
         <h2 id="Production13" class="1 text-center">Production</h2>
-        <p class="text-box-audit"><span id="CDN_w/_Route23">CDN w/ Route53 DNS (https): Deploys s3 bucket, route53 DNS, a cloudfront distribution and creates TLS certificates in AWS ACM.</span></P>
+        <p class="text-box-audit"><span id="CDN_w/_Route23">S3 root bucket, www reroute bucket, Route53 DNS, Cloudfront distribution and an AWS ACM certificate.</span></P>
       </div>
     </section>
 
@@ -242,21 +268,26 @@
     <section class="contop">
       <div class="container">
         <h3 id="getstarted" class="h1 pb-4 text-center deploy-text">Get Started</h3>
-          <div class="row get-started-3">
-            <div class="col-lg-12">
-              <div class="container p-2 bg-color-2">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="container get-started bg-color-2">
               <ol>
-                <li>If you haven't already, <a class="deploy-text" href="index.html#One_time">install Arjan globally</a></li>
-                <li><span id="Go_into_your50">Go into your project's directory </span><button id="cd_SITE_NAME54" class="codebox" onclick="copyVal(this.textContent)">cd SITE_NAME</button></li>
-                <li><span id="Initialize_t51">Initialize the project (you only have to do this once per project) </span><button id="arjan_init_S55" class="codebox" onclick="copyVal(this.textContent)">arjan init SITE_NAME</button></li>
-                <li><span id="Deploy_your_52">Deploy your project </span><button id="arjan_deploy56" class="codebox" onclick="copyVal(this.textContent)">arjan deploy yoursite.com prod</button></li>
+                <li><span id="If_you_haven51">If you haven't already, </span><a id="install_Arja27" class="deploy-text" href="index.html#One_time">install Arjan globally</a></li>
+                <li><span id="Go_into_your50">Go into your project's root directory and initialize Arjan </span><button id="arjan_init_S55" class="codebox" onclick="copyVal(this.textContent)">arjan init</button><span id="only_do_thi51"> (only do this once per project =)</span></li>
+                <li><span id="Deploy_your_52">Deploy your project </span><button id="arjan_deploy56" class="codebox" onclick="copyVal(this.textContent)">arjan deploy yoursite.com create dev</button></li>
+                <li style="list-style: none;"><span id="For_more_inf52">For more info you can always run </span><button id="arjan_deploy55" class="codebox" onclick="copyVal(this.textContent)">arjan deploy --help</button> or checkout the <a id="docs28" class="deploy-text" href="docs.html#Arjan_Deploy1060">docs</a> </li>
               </ol>
             </div>
             </div>
+            <div class="col-lg-6 text-left">
+              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="get-video">
+                <source src="video/localize_vid.mp4">
+                </video>
             </div>
           </div>
         </div>
-
+      </div>
+    </section>
 
         <section> 
           <div class="social-row d-flex justify-content-center vertical-align-middle d-lg-block">
@@ -276,7 +307,7 @@
               </a>
             </div>
             <div class="d-lg-block  social-icon">
-              <a href="#">
+              <a href="https://join.slack.com/t/arjantools/shared_invite/zt-f1bb8ak5-0DtsGTclY4Z30vGndBJaXg">
                 <img height="50px" src="img/slack_logo_2.svg" alt="npm logo outline">
               </a>
             </div>

@@ -1,11 +1,11 @@
-.cls-1{opacity:0.3;}
+.cls-1{opacity:0.5;}
 .cls-2,.cls-4{fill:#00ff00;}
 .cls-2,
-.cls-3{opacity:0.3;}
+.cls-3{opacity:0.45;}
 .cls-3,
 .cls-5{fill: #00ff00;}
-.cls-4{opacity:0.3;}
-.cls-5{opacity:0.3;}
+.cls-4{opacity:0.45;}
+.cls-5{opacity:0.5;}
 
 @keyframes fadeborder {
   0% {border: hsla(120, 100%, 50%, 0) 2px solid;}
@@ -60,10 +60,10 @@
 
 .form-control{
   border-radius: 0;
-  margin: 4% 0%;
+  margin: 2% 0%;
 }
 
-.header-padding:{
+.header-padding{
 padding: 5% 10%;
 }
 
@@ -76,8 +76,7 @@ padding: 5% 10%;
 }
 
 .form-padding{
-  padding: 1rem;
-  max-width: 450px;
+  padding: 3%;
   border: hsla(0, 0%, 100%, .6) 1px solid;
 }
 
@@ -86,7 +85,7 @@ line-height:1.4;
 }
 
 .img-brain {
-  opacity:.3
+  padding: 0% 14% 0% 14%;
 }
 
 .diagram-padding{
@@ -99,20 +98,22 @@ line-height:1.4;
     font-size: .9rem;
     letter-spacing: 2px;
 }
-
+.landmark{
+  margin: 0% 5%;
+}
 
 /* The animation code */
 @keyframes squaretop {
   0% {transform: translateY(-8%); opacity: 0;}
-  25% {transform: translateY(8%); opacity: .1;}
-  50% {transform: translateY(-2%); opacity: .2;}
+  25% {transform: translateY(8%); opacity: .2;}
+  50% {transform: translateY(-2%); opacity: .25;}
   100% {transform: translateY(5%); opacity: .3;}
 }
 
 @keyframes squareright {
   0% {transform: translateX(-8%); opacity: 0;}
-  25% {transform: translateX(8%); opacity: .1;}
-  50% {transform: translateX(-2%); opacity: .2;}
+  25% {transform: translateX(8%); opacity: .2;}
+  50% {transform: translateX(-2%); opacity: .25;}
   100% {transform: translateX(5%); opacity: .3;}
 }
 
@@ -121,7 +122,7 @@ line-height:1.4;
   top: -8%;
   opacity: 0%;
   animation-name: squaretop;
-  animation-duration: 8s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
 }
 
@@ -129,14 +130,13 @@ line-height:1.4;
   top: -8%;
   opacity: 0%;
   animation-name: squareright;
-  animation-duration: 8s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
 }
 
 .workflow-padding{
   padding: 3% 2%;
 }
-
 
 @media (min-width: 768px){
 
@@ -150,6 +150,11 @@ line-height:1.4;
   .workflow-padding {
     padding: 0% 12% 0% 12%;
   }
+  .form-padding{
+    padding: 3%;
+    border: hsla(0, 0%, 100%, .6) 1px solid;
+    margin: 0% 16%;
+  }
 }
 
 
@@ -160,6 +165,31 @@ line-height:1.4;
     margin: 5% 24% 8% 24%;
     background-color: hsla(120, 100%, 50%, .6);
     line-height:1.
+  }
+  .form-padding{
+    padding: 3%;
+    border: hsla(0, 0%, 100%, .6) 1px solid;
+    margin: 0%;
+  }
+  .workflow-pad{
+    padding: 8% 0% 0% 0%;
+  }
+  .landmark{
+    margin: 10% 10% 0% 0%;
+  }
+}
+
+@media (min-width: 1200px){
+  .form-padding{
+    padding: 3%;
+    border: hsla(0, 0%, 100%, .6) 1px solid;
+    margin: 0% 7% 0% 0%;
+  }
+  .workflow-pad{
+    padding: 3% 0% 0% 2%;
+  }
+  .landmark{
+    margin: 7% 7% 0% 0%;
   }
 }
 
@@ -208,9 +238,9 @@ input:-webkit-autofill  {
   text-align: justify;
 }
 #drop-area {
-  border: 2px dashed #ccc;
+  border: 2px dashed #00ff00;
   padding: 5px;
-  background-color: hsla(120, 100%, 50%, .1);
+  background-color: hsla(120, 100%, 50%, .05);
 }
 #drop-area.highlight {
   border-color: hsl(120, 100%, 50%);
