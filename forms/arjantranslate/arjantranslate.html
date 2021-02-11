@@ -1,0 +1,85 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+				<meta name="description" content="Custom serverless forms for your website">
+				<title>arjantranslate Form</title>
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			</head>
+			<body class="p-5 bg-light">
+				<!-- CONTACT SECTION -->
+				<section class="bg-white py-4">
+					<div class="container">
+						<div class="row">
+								<div class="col-md-6">
+									<h4 class="h2 pb-2">Contact Us</h4>
+									<!-- FORM BY SUPER EASY FORMS -->
+									<form id="arjantranslate-form" alt="Form by Super Easy Forms" class="pb-3" action="#">
+										
+										<label for="from" class="small mb-0">From</label>
+										<select class="form-control" id="from" name="from" required><option value="" selected="selected" disabled="disabled">Select a From</option><option value=en>En</option><option value=es>Es</option><option value=fr>Fr</option></select>
+									
+										<label for="to" class="small mb-0">To</label>
+										<select class="form-control" id="to" name="to" required><option value="" selected="selected" disabled="disabled">Select a To</option><option value=en>En</option><option value=es>Es</option><option value=fr>Fr</option></select>
+									
+										<label for="file" class="small mb-0">File</label>
+										<input type="file" class="form-control" id="file" name="file" placeholder="File" required>
+									
+										<label for="email" class="small mb-0">Email</label>
+										<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+										<div class="g-recaptcha pt-3" data-sitekey="6LecsvQUAAAAABJxe9r7x5P3ARE4c5tCMdLeryxT"></div>
+										<h5 id="arjantranslate-status" class="text-secondary" style="display:none;">Thanks for Contacting Us</h5>
+										<button class="btn btn-primary mt-3" type="submit" id="arjantranslate-btn">Send</button>
+									</form>
+									<small>made with <a href="http://supereasyforms.com">super easy forms</a> <small>
+								</div>   
+						</div>
+					</div>         
+				</section>
+				<!--Javascript-->
+				<script
+					src="https://code.jquery.com/jquery-3.4.1.min.js"
+					integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+					crossorigin="anonymous">
+				</script>
+				<script>
+					$(function(){
+						$('#arjantranslate-form').submit(function(e){
+							e.preventDefault();
+							$.ajax({
+								type: "POST",
+								url: "https://u9thejfp8g.execute-api.us-east-1.amazonaws.com/DeploymentStage/",
+								dataType: "json",
+								contentType: "application/json",
+								data: JSON.stringify( { "id": "","from": $('#from').val(),"to": $('#to').val(),"file": $('#file').val(),"email": $('#email').val() } ),
+								beforeSend: function(data) {
+										$('#arjantranslate-btn').prop('disabled', true);
+										$('#arjantranslate-form :input').prop('disabled', true);
+										$('#arjantranslate-status').html('Sending...').show();
+								},
+								success: function(data, status, jqXHR) {
+									console.log(data);
+									if(status === 'success'){
+										$('#arjantranslate-status').text("We'll get back to you soon").show();
+										$('#arjantranslate-form :input').removeProp('disabled');
+										$('#arjantranslate-btn').removeProp('disabled');
+									}
+									else {
+										$('#arjantranslate-status').text('Error. Please try again.').show();
+										$('#arjantranslate-form :input').removeProp('disabled');
+										$('#arjantranslate-btn').removeProp('disabled');
+									}
+								},
+								error: function(jqXHR, textStatus, errorThrown) {
+									$('#arjantranslate-status').text('Error. Please check your network connection and try again.').show();
+									$('#arjantranslate-form :input').removeProp('disabled');
+									$('#arjantranslate-btn').removeProp('disabled');
+								}
+							});
+						}); 				
+					});
+				</script>
+			</body>
+		</html>
